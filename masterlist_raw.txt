@@ -1,0 +1,698 @@
+﻿Abacus Life	No	No	Insurance	Fix	BB	ABXL	9.875%	$25.68	$0.11	9.61%	7.16%	N	NR	NR	$0.62	2/15/2027	11/15/2028	15th 2,5,8,11
+Aberdeen Income Credit	Yes	Var	CEF	Fix	Trad	ACP-A	5.250%	$20.00	$0.00	6.56%	48.28%	Y	NR	A2	$0.33	6/30/2026	NONE	LD 3,6,9,12
+ACRES Commercial	Yes	No	mREIT	Fix	Trad	ACR-D	7.875%	$21.87	-$0.05	8.96%	42.81%	N	NR	NR	$0.49	5/21/2026	NONE	30th 1,4,7,10
+ACRES Commercial	Yes	No	mREIT	Fix-Float	Trad	ACR-C	8.625%	$24.77	$0.04	Float	Float	N	NR	NR	Float	7/30/2024	NONE	30th 1,4,7,10
+Adamas Trust	Yes	No	mREIT	Fix	Trad	ADAMZ	7.000%	$19.39	$0.13	9.08%	#DIV/0!	N	NR	NR	$0.44	1/15/2027	NONE	15th 1,4,7,10
+Adamas Trust	No	No	mREIT	Fix	BB	ADAMI	9.125%	$25.14	$0.01	9.07%	#DIV/0!	N	NR	NR	$0.57	7/1/2026	7/1/2029	1st 1,4,7,10
+Adamas Trust	No	No	mREIT	Fix	BB	ADAMG	9.125%	$25.01	-$0.12	9.12%	#DIV/0!	N	NR	NR	$0.57	4/1/2027	4/1/2030	1st 1,4,7,10
+Adamas Trust	No	No	mREIT	Fix	BB	ADAMH	9.875%	$25.62	-$0.05	9.68%	#DIV/0!	N	NR	NR	0.62	10/1/2027	10/1/2030	1st 1,4,7,10
+Adamas Trust	Yes	No	mREIT	Fix-Float	Trad	ADAMM	7.875%	$25.00	$0.08	Float	0.00%	N	NR	NR	Float	1/15/2025	NONE	15th 1,4,7,10
+Adamas Trust	Yes	No	mREIT	Fix-Float	Trad	ADAMN	8.000%	$21.99	$0.12	9.10%	#DIV/0!	N	NR	NR	$0.50	10/15/2027	NONE	15th 1,4,7,10
+Adamas Trust	Yes	No	mREIT	Fix-Float	Trad	ADAML	6.875%	$22.69	-$0.02	7.58%	#DIV/0!	N	NR	NR	$0.43	10/15/2026	NONE	15th 1,4,7,10
+Aegon Funding Company	No	No	Insurance	Fix	BB	AEFC	5.100%	$19.71	NA	6.49%	21.16%	Y	BBB	Baa1	$0.32	12/15/2024	12/15/2049	15th 3,6,9,12
+Affiliated Managers Group	No	No	Asset Mgr	Fix	BB	MGR	5.875%	$21.21	-$0.14	6.98%	15.16%	Y	BBB-	Baa1	$0.37	3/30/2024	3/30/2059	30th 3,6,9,12
+Affiliated Managers Group	No	No	Asset Mgr	Fix	BB	MGRB	4.750%	$17.20	$0.02	6.90%	-109.30%	Y	BBB-	Baa1	$0.30	9/30/2025	9/30/2060	30th 3,6,9,12
+Affiliated Managers Group	No	No	Asset Mgr	Fix	BB	MGRD	4.200%	$15.49	-$0.09	6.78%	58.78%	Y	BBB-	Baa1	$0.26	9/30/2026	9/30/2061	30th 3,6,9,12
+Affiliated Managers Group	No	No	Asset Mgr	Fix	BB	MGRE	6.750%	$24.40	-$0.02	6.92%	7.66%	Y	BBB-	Baa1	$0.42	3/30/2029	3/30/2064	30th 3,6,9,12
+AG Mortgage Investment	Yes	No	mREIT	Fix	Trad	MITT-B	8.000%	$22.22	$0.07	9.00%	11.12%	N	NR	NR	$0.50	9/27/2017	NONE	17th 3,6,9,12
+AG Mortgage Investment	Yes	No	mREIT	Fix	Trad	MITT-A	8.250%	$23.11	$0.11	9.00%	7.56%	N	NR	NR	$0.52	8/3/2017	NONE	17th 3,6,9,12
+AG Mortgage Investment	No	No	mREIT	Fix	BB	MITN	9.500%	$25.42	-$0.09	9.33%	-6.00%	N	NR	NR	$0.59	2/15/2026	2/15/2029	15th 2,5,8,11
+AG Mortgage Investment	No	No	mREIT	Fix	BB	MITP	9.500%	$25.45	$0.02	9.32%	4.23%	N	NR	NR	$0.59	5/15/2026	5/15/2029	15th 2,5,8,11
+AG Mortgage Investment	Yes	No	mREIT	Fix-Float	Trad	MITT-C	8.000%	$25.28	$0.10	Float	Float	N	NR	NR	Float	9/17/2024	NONE	17th 3,6,9,12
+AGNC Investment	Yes	No	mREIT	Fix-Float	Trad	AGNCN	7.000%	$25.40	$0.07	Float	Float	N	NR	NR	Float	10/15/2022	NONE	15th 1,4,7,10
+AGNC Investment	Yes	No	mREIT	Fix-Float	Trad	AGNCM	6.875%	$24.70	$0.06	Float	Float	N	NR	NR	Float	4/15/2024	NONE	15th 1,4,7,10
+AGNC Investment	Yes	No	mREIT	Fix-Float	Trad	AGNCO	6.500%	$25.20	$0.02	Float	#VALUE!	N	NR	NR	Float	10/15/2024	NONE	15th 1,4,7,10
+AGNC Investment	Yes	No	mREIT	Fix-Float	Trad	AGNCP	6.125%	$24.80	$0.02	Float	#VALUE!	N	NR	NR	Float	4/15/2025	NONE	15th 1,4,7,10
+AGNC Investment	Yes	No	mREIT	FRR	Trad	AGNCL	7.750%	$24.70	$0.01	7.84%	8.52%	N	NR	NR	$0.48	10/15/2027	NONE	15th 1,4,7,10
+AGNC Investment	Yes	No	mREIT	Fix	Trad	AGNCZ	8.750%	$25.45	$0.02	8.60%	#DIV/0!	N	NR	NR	$0.55	10/15/2030	NONE	15th 1,4,7,10
+Agree Realty	Yes	No	eREIT	Fix	Trad	ADC-A	4.250%	$17.21	-$0.09	6.17%	50.95%	Y	NR	Baa3	$0.09	9/17/2026	NONE	1st Month
+Air Lease Corporation	No	Yes	Other	Fix-Float	Trad	AL-A	6.150%	Redeem	Redeem	Redeem	Redeem	N	BB+	NR	$0.38	3/15/2024	NONE	15th 3,6,9,12
+Air T Inc	Yes	No	Other	Fix	Trust P	AIRTP	8.000%	$18.50	$0.00	10.81%	26.00%	N	NR	NR	$0.50	6/7/2024	6/7/2049	15th 2,5,8,11
+Algonquin Power	No	No	Ute	Fix-Float	BB	AQNB	6.200%	$25.55	-$0.03	Float	#VALUE!	N	BB+	NR	Float	7/1/2024	7/1/2079	1st 1,4,7,10
+Allstate	No	Yes	Insurance	Fix	Trad	ALL-H	5.100%	$21.21	-$0.09	6.01%	-4.86%	Y	BBB	Baa2	$0.32	8/15/2024	NONE	15th 1,4,7,10
+Allstate	No	Yes	Insurance	Fix	Trad	ALL-I	4.750%	$19.55	-$0.11	6.07%	21.80%	Y	BBB	Baa2	$0.30	1/15/2025	NONE	15th 1,4,7,10
+Allstate	No	Yes	Insurance	Fix	Trad	ALL-J	7.375%	$26.26	-$0.05	7.02%	5.02%	Y	BBB	Baa2	$0.46	7/15/2028	NONE	15th 1,4,7,10
+Allstate Debentures	No	No	Insurance	Fix-Float	BB	ALL-B	5.100%	$25.93	$0.05	Float	Float	Y	BBB	Baa1	Float	1/15/2023	1/15/2053	15th 1,4,7,10
+Alpine Inome Property Trust	Yes	No	eREIT	Fix	Trad	PINE-A	8.000%	$24.73	$0.01	8.09%		N	NR	NR	$0.50	11/12/2030	NONE	LD 3,6,9,12
+Alta Equipment	Yes	Yes	Other	Fix	Trad	ALTG-A	10.000%	$25.32	$0.00	9.87%	41.02%	N	NR	NR	$0.63	12/22/2025	NONE	LD 1,4,7,10
+American Financial Group	No	No	Insurance	Fix	BB	AFGB	5.875%	$21.76	-$0.01	6.75%	12.96%	Y	BBB-	Baa2	$0.37	3/30/2024	3/30/2059	30th 3,6,9,12
+American Financial Group	No	No	Insurance	Fix	BB	AFGC	5.125%	$19.15	-$0.03	6.69%	23.40%	Y	BBB-	Baa2	$0.32	12/15/2024	12/15/2059	15th 3,6,9,12
+American Financial Group	No	No	Insurance	Fix	BB	AFGD	5.625%	$20.86	-$0.14	6.74%	-20.86%	Y	BBB-	Baa2	$0.35	6/1/2025	6/1/2050	1st 3,6,9,12
+American Financial Group	No	No	Insurance	Fix	BB	AFGE	4.500%	$17.24	$0.07	6.52%	-93.74%	Y	BBB-	Baa2	$0.28	9/15/2025	9/15/2060	15th 3,6,9,12
+American Homes 4 Rent	Yes	No	eREIT	Fix	Trad	AMH-H	6.250%	$24.27	$0.00	6.44%	2.92%	Y	BB+	Baa3	$0.39	9/19/2023	NONE	LD 3,6,9,12
+American Homes 4 Rent	Yes	No	eREIT	Fix	Trad	AMH-G	5.875%	$22.99	$0.00	6.39%	8.04%	Y	BB+	Baa3	$0.37	7/17/2022	NONE	LD 3,6,9,12
+American International Group	No	Yes	Insurance	Fix	Trad	AIG-A	5.850%	Redeem	Redeem	Redeem	Redeem	Y	BBB-	Baa3	$0.37	3/15/2024	NONE	15th 3,6,9,12
+American National Group	No	Yes	Insurance	Fix	Trad	ANG-D	7.375%	$25.00	$0.04	7.38%	0.00%	N	BB+	NR	$0.46	1/15/2030	None	15th 1,4,7,10
+American National Group	No	Yes	Insurance	FRR	Trad	ANG-A	5.950%	Redeem	Redeem	Redeem	#VALUE!	N	BB+	NR	$0.37	12/1/2024	NONE	1st 3,6,9,12
+American National Group	No	Yes	Insurance	FRR	Trad	ANG-B	6.625%	Redeem	Redeem	Redeem	#VALUE!	N	BB+	NR	$0.41	9/1/2025	NONE	1st 3,6,9,12
+AMMO Inc	Yes	Var	Other	Fix	Trad	POWWP	8.750%	$23.96	$0.14	9.18%	20.69%	N	NR	NR	$0.55	5/18/2026	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIA	6.750%	$14.00	$0.00	12.05%	44.00%	N	NR	NR	$0.42	6/10/2018	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIN	6.950%	$13.35	$0.00	13.01%	46.60%	N	NR	NR	$0.43	9/27/2021	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIC	7.625%	$14.65	$0.00	13.01%	41.40%	N	NR	NR	$0.48	9/16/2019	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIB	7.250%	$13.86	$0.00	13.08%	44.56%	N	NR	NR	$0.45	7/1/2019	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIP	7.500%	$14.23	$0.00	13.18%	43.08%	N	NR	NR	$0.47	3/19/2020	NONE	15th 3,6,9,12
+AmTrust Financial Services	No	Yes	Insurance	Fix	Trad	AFSIM	7.750%	$14.50	-$0.28	13.36%	42.00%	N	NR	NR	$0.48	3/15/2021	NONE	15th 3,6,9,12
+Angel Oak Mortgage REIT	No	No	mREIT	Fix	BB	AOMN	9.500%	$25.70	-$0.02	9.24%	4.26%	N	NR	NR	$0.59	7/30/2026	7/30/2029	30th 1,4,7,10
+Angel Oak Mortgage REIT	No	No	mREIT	Fix	BB	AOMD	9.750%	$25.50	$0.08	9.55%	#DIV/0!	N	NR	NR	0.609	6/1/2027	6/1/2030	1st 3,6,9,12
+Annaly Capital Management	Yes	No	mREIT	Fix-Float	Trad	NLY-F	6.950%	$25.70	$0.03	Float	Float	N	NR	NR	Float	9/30/2022	NONE	LD 3,6,9,12
+Annaly Capital Management	Yes	No	mREIT	Fix-Float	Trad	NLY-I	6.750%	$25.57	$0.01	Float	Float	N	NR	NR	Float	6/30/2024	NONE	LD 3,6,9,12
+Annaly Capital Management	Yes	No	mREIT	Fix-Float	Trad	NLY-G	6.500%	$25.12	-$0.02	Float	Float	N	NR	NR	Float	3/31/2023	NONE	LD 3,6,9,12
+Annaly Capital Management	Yes	No	mREIT	Fix	Trad	NLY-J	8.875%	$26.01	$0.00	8.54%	#DIV/0!	N	NR	NR	0.555	9/30/2030	NONE	LD 3,6,9,12
+Apollo Global Management	No	No	Asset Mgr	FRR	BB	APOS	7.625%	$26.11	-$0.07	7.35%	5.84%	Y	BBB	A3	$0.48	12/15/2028	9/15/2053	15th 3,6,9,12
+Applied UV	Yes	Yes	Other	Fix	Trad	AUVIP	10.500%	BK	BK	BK	BK	N	NR	NR	$0.66	7/16/2022	NONE	1th Month
+Arbor Realty Trust	Yes	No	mREIT	Fix	Trad	ABR-D	6.375%	$17.55	$0.06	9.12%	83.11%	N	NR	NR	$0.40	6/2/2026	NONE	30th 1,4,7,10
+Arbor Realty Trust	Yes	No	mREIT	Fix	Trad	ABR-E	6.250%	$17.50	-$0.05	8.94%	59.40%	N	NR	NR	$0.39	8/11/2026	NONE	30th 1,4,7,10
+Arbor Realty Trust	Yes	No	mREIT	Fix-Float	Trad	ABR-F	6.250%	$21.89	-$0.15	7.14%	22.43%	N	NR	NR	$0.39	10/30/2026	NONE	30th 1,4,7,10
+Arch Capital	No	Yes	Insurance	Fix	Trad	ACGLO	5.450%	$20.64	-$0.02	6.60%	17.44%	Y	BBB	Baa3	$0.34	8/17/2022	NONE	LD 3,6,9,12
+Arch Capital	No	Yes	Insurance	Fix	Trad	ACGLN	4.550%	$16.99	-$0.09	6.59%	81.56%	Y	BBB	NR	$0.28	6/11/2026	NONE	LD 3,6,9,12
+Argo Group	No	Yes	Insurance	Fix	BB	ARGD	6.500%	Redeem	Redeem	Redeem	#VALUE!	Y	BBB-	NR	$0.41	9/15/2017	9/15/2042	15th 3,6,9,12
+Argo Group	No	Yes	Insurance	FRR	Trad	ARGO-A	7.000%	Redeem	Redeem	Redeem	#VALUE!	Y	BB	NR	$0.44	9/15/2025	NONE	15th 3,6,9,12
+Arlington Asset Investment  	No	No	mREIT	Fix	BB	AIC	6.750%	Delist	Delist	Delist	Delist	N	NR	NR	$0.42	3/15/2018	3/15/2025	15th 3,6,9,12
+Arlington Asset Investment  	No	No	mREIT	Fix	BB	AAIN	6.000%	Delist	Delist	Delist	Delist	N	NR	NR	$0.38	8/1/2023	8/1/2026	1st 2,5,8,11
+Armada Hoffler	Yes	No	eREIT	Fix	Trad	AHH-A	6.750%	$20.97	$0.05	8.05%	-2.33%	N	NR	NR	$0.42	6/18/2024	NONE	15th 1,4,7,10
+Armour Residential REIT	Yes	No	mREIT	Fix	Trad	ARR-C	7.000%	$20.96	-$0.01	8.35%	16.16%	N	NR	NR	$0.15	1/28/2025	NONE	27th Month
+Ashford Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	AHT-D	8.450%	$19.40	-$0.13	10.89%	22.40%	N	NR	NR	$0.53	7/18/2012	NONE	15th 1,4,7,10
+Ashford Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	AHT-G	7.375%	$14.00	-$0.35	13.17%	44.00%	N	NR	NR	$0.46	10/17/2021	NONE	15th 1,4,7,10
+Ashford Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	AHT-H	7.500%	$14.60	$0.00	12.84%	41.60%	N	NR	NR	$0.47	8/25/2022	NONE	15th 1,4,7,10
+Ashford Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	AHT-I	7.500%	$14.10	$0.00	13.30%	43.60%	N	NR	NR	$0.47	11/25/2022	NONE	15th 1,4,7,10
+Ashford Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	AHT-F	7.375%	$13.83	-$0.50	13.33%	44.68%	N	NR	NR	$0.46	7/15/2021	NONE	15th 1,4,7,10
+Aspen Insurance Holdings	No	Yes	Insurance	Fix	Trad	AHL-D	5.625%	$20.06	$0.00	7.01%	27.04%	N	BB+	Ba1	$0.35	1/1/2027	NONE	1st 1,4,7,10
+Aspen Insurance Holdings	No	Yes	Insurance	Fix	Trad	AHL-E	5.625%	$19.97	-$0.13	7.05%	-8.85%	N	BB+	Ba1	$0.35	10/1/2024	NONE	1st 1,4,7,10
+Aspen Insurance Holdings	No	Yes	Insurance	Fix	Trad 	AHL-F	7.000%	$24.80	-$0.02	7.06%	7.26%	N	BB+	Ba1	$0.44	11/30/2029	NONE	1st 1,4,7,10
+Aspen Insurance Holdings	No	Yes	Insurance	Fix-Float	Trad	AHL-C	5.950%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba1	Float	7/1/2023	NONE	1st 1,4,7,10
+Associated Banc-Corp	No	Yes	Bank	Fix	Trad	ASB-E	5.875%	$21.42	-$0.15	6.86%	14.32%	N	BB	Ba1	$0.37	12/15/2023	NONE	15th 3,6,9,12
+Associated Banc-Corp	No	Yes	Bank	Fix	Trad	ASB-F	5.625%	$20.70	$0.03	6.79%	-48.76%	N	BB	Ba1	$0.35	9/15/2025	NONE	15th 3,6,9,12
+Associated Banc-Corp	No	No	Bank	Fix-Float	BB	ASBA	6.625%	No Quote	#N/A	#VALUE!		Y	BBB-	Baa3	$0.41	3/1/2028	3/1/2033	1st 3,6,9,12
+Assurant Inc	No	No	Insurance	Fix	BB	AIZN	5.250%	$19.80	$0.00	6.67%	850.22%	Y	BB+	Ba1	$0.33	1/15/2026	1/15/2061	15th 1,4,7,10
+AT&T	No	No	Telecom	Fix	BB	TBC	5.625%	Redeem	Redeem	Redeem	Redeem	Y	BBB	Baa2	$0.35	8/1/2023	8/1/2067	1st 2,5,8,11
+AT&T	No	No	Telecom	Fix	BB	TBB	5.350%	$22.51	-$0.05	5.86%	9.96%	Y	BBB	Baa2	$0.33	11/1/2022	11/1/2066	1st 2,5,8,11
+AT&T	Yes	Yes	Telecom	Fix	Trad	T-A	5.000%	$20.55	-$0.06	6.08%	17.80%	N	BB+	Ba1	$0.31	12/12/2024	NONE	1st 2,5,8,11
+AT&T	Yes	Yes	Telecom	Fix	Trad	T-C	4.750%	$19.36	-$0.10	6.13%	-19.44%	N	BB+	Ba1	$0.30	2/18/2025	NONE	1st 2,5,8,11
+Athene Holding LTD	No	Yes	Insurance	Fix	Trad	ATH-B	5.625%	$20.02	-$0.22	7.02%	-8.68%	Y	BBB	Baa3	$0.35	9/30/2024	NONE	30th 3,6,9,12
+Athene Holding LTD	No	Yes	Insurance	Fix	Trad	ATH-D	4.875%	$17.07	-$0.18	7.14%	-1646.84%	Y	BBB	Baa3	$0.30	12/30/2025	NONE	30th 3,6,9,12
+Athene Holding LTD	No	Yes	Insurance	Fix-Float	Trad	ATH-A	6.350%	$24.70	-$0.05	6.43%	6.77%	Y	BBB	Baa3	$0.40	6/30/2029	NONE	30th 3,6,9,12
+Athene Holding LTD	No	Yes	Insurance	FRR	Trad	ATH-C	6.375%	Redeem	Redeem	Redeem	#VALUE!	Y	BBB	Baa3	$0.40	9/30/2025	NONE	30th 3,6,9,12
+Athene Holding LTD	No	Yes	Insurance	FRR	Trad	ATH-E	7.750%	$25.64	-$0.17	7.56%	6.27%	Y	BBB	Baa3	$0.48	12/31/2027	NONE	30th 3,6,9,12
+Athene Holding LTD	No	No	Insurance	FRR	BB	ATHS	7.250%	$25.04	-$0.02	7.24%	7.19%	Y	BBB	Baa2	$0.45	3/30/2029	3/30/2064	30th 3,6,9,12
+Atlantic Union Bancshares	No	Yes	Bank	Fix	Trad	AUB-A	6.875%	$24.45	$0.00	7.03%	0.71%	N	NR	NR	$0.43	9/1/2025	NONE	1st 3,6,9,12
+Atlanticus Holdings	Yes	Yes	Finance	Fix	Trad	ATLCP	7.625%	$24.01	$0.00	8.00%	17.26%	N	NR	NR	$0.48	6/11/2026	NONE	15th 3,6,9,12
+Atlanticus Holdings	No	No	Finance	Fix	BB	ATLCL	6.125%	$24.78	-$0.01	6.13%	7.33%	N	NR	NR	$0.38	10/2/2026	12/31/2026	LD 3,6,9,12
+Atlanticus Holdings	No	No	Finance	Fix	BB	ATLCZ	9.250%	$25.36	-$0.02	9.15%	8.45%	N	NR	NR	$0.58	1/31/2028	1/31/2029	15th 1,4,7,10
+Atlas Corp	Yes	Yes	Shipping	Fix	Trad	ATCO-D	7.950%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.50	1/30/2018	NONE	30th 1,4,7,10
+Atlas Corp	Yes	Yes	Shipping	Fix	Trad	ATCO-H	7.875%	$25.62	$0.12	7.65%	-2.48%	N	NR	NR	$0.49	8/11/2021	NONE	30th 1,4,7,10
+Atlas Corp	No	No	Shipping	Fix	BB	ATCOL	7.125%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.45	5/13/2023	10/30/2027	30th 1,4,7,10
+Axis Capital Holdings	No	Yes	Insurance	Fix	Trad	AXS-E	5.500%	$20.09	-$0.07	6.77%	19.64%	Y	BBB	Baa3	$0.34	11/7/2021	NONE	15th 1,4,7,10
+B Riley Financial	Yes	Yes	Finance	Fix	Trad	RILYL	7.375%	$5.55	$0.30	33.15%	-195.85%	N	NR	NR	$0.46	9/4/2025	NONE	LD 1,4,7,10
+B Riley Financial	No	No	Finance	Fix	BB	RILYZ	5.250%	$12.26	$0.19	10.77%	50.96%	N	NR	NR	$0.33	8/31/2023	8/31/2028	LD 1,4,7,10
+B Riley Financial	No	No	Finance	Fix	BB	RILYG	5.000%	$21.00	$0.30	5.95%	27.66%	N	NR	NR	$0.31	10/2/2026	12/31/2026	LD 1,4,7,10
+B. Riley Financial	Yes	Yes	Finance	Fix	Trad	RILYP	6.875%	$5.19	$0.26	Susp	79.24%	N	NR	NR	Susp	10/7/2024	NONE	LD 1,4,7,10
+B. Riley Financial	No	No	Finance	Fix	BB	RILYN	6.500%	$22.03	$0.05	7.38%	11.88%	N	NR	NR	$0.41	9/30/2022	9/30/2026	LD 1,4,7,10
+B. Riley Financial	No	No	Finance	Fix	BB	RILYO	6.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.42	5/31/2021	5/31/2024	LD 1,4,7,10
+B. Riley Financial	No	No	Finance	Fix	BB	RILYM	6.375%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.40	2/28/2021	2/28/2025	LD 1,4,7,10
+B. Riley Financial	No	No	Finance	Fix	BB	RILYT	6.000%	$14.60	$0.04	10.27%	41.60%	N	NR	NR	$0.38	1/31/2022	1/31/2028	LD 1,4,7,10
+B. Riley Financial	No	No	Finance	Fix	BB	RILYK	5.500%	$24.70	$0.03	5.51%	-82.09%	N	NR	NR	$0.34	1/1/2026	3/31/2026	LD 1,4,7,10
+Babcock and Wilcox	Yes	Yes	Other	Fix	Trad	BW-A	7.750%	$20.07	-$0.22	9.65%	69.13%	N	NR	NR	$0.48	5/7/2026	NONE	LD 3,6,9,12
+Babcock and Wilcox	No	No	Other	Fix	BB	BWSN	8.125%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.51	2/28/2022	2/28/2026	LD 1,4,7,10
+Babcock and Wilcox	N0	No	Other	Fix	BB	BWNB	6.500%	$24.47	$0.07	6.64%	9.52%	N	NR	NR	$0.41	10/2/2026	12/31/2026	LD 3,6,9,12
+Banc of California (Pacwest)	No	Yes	Bank	FRR	Trad	BANC-F	7.750%	$25.09	NA	7.65%	7.43%	N	NR	NR	$0.48	9/1/2027	NONE	1st 3,6,9,12
+Bancroft Fund Ltd	Yes	Var	CEF	Fix	Trad	BCV-A	5.385%	$21.52	$0.02	6.26%	13.92%	Y	NR	A1	$0.34	8/9/2021	NONE	26th 3,6,9,12
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-B	6.000%	$25.29	-$0.04	5.93%	6.38%	Y	BBB-	Baa3	$0.38	6/16/2023	NONE	16th 2,5,8,11
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-M	5.375%	$22.11	-$0.09	6.08%	-1.46%	Y	BBB-	Baa3	$0.34	6/25/2024	NONE	25th 3,6,9,12
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-N	5.000%	$20.85	-$0.10	6.00%	-6.73%	Y	BBB-	Baa3	$0.31	9/17/2024	NONE	17th 1.4,7,10
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-O	4.385%	$18.16	-$0.09	5.95%	-150.09%	Y	BBB-	Baa3	$0.27	11/3/2025	NONE	3rd 2,5,8,11
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-P	4.125%	$17.23	-$0.06	5.98%	426.14%	Y	BBB-	Baa3	$0.26	2/2/2026	NONE	2nd 2,5,8,11
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-Q	4.250%	$17.69	-$0.08	6.11%	39.99%	Y	BBB-	Baa3	$0.27	11/17/2026	NONE	17th 2,5,8,11
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-S	4.750%	$19.79	-$0.13	6.06%	24.75%	Y	BBB-	Baa3	$0.30	2/17/2027	NONE	17th 2,5,8,11
+Bank of America	No	Yes	Bank	Fix	Trad	BAC-K	5.875%	$24.70	-$0.09	5.94%	1.20%	Y	BBB-	Baa3	$0.37	7/24/2023	NONE	24th 1,4,7,10
+Bank of America	No	Yes	Bank	FLR	Trad	BML-J	4.000%	$20.01	-$0.06	Float	Float	Y	BBB-	Baa3	Float	11/21/2010	NONE	28th 2,5,8,11
+Bank of America	No	Yes	Bank	FLR	Trad	BAC-E	4.000%	$19.36	-$0.01	Float	Float	Y	BBB-	Baa3	Float	11/15/2011	NONE	15th  2,5,8,11
+Bank of America	No	Yes	Bank	FLR	Trad	BML-L	4.000%	$19.47	$0.03	Float	Float	Y	BBB-	Baa3	Float	5/21/2010	NONE	21st 2,5,8,11
+Bank of America	No	Yes	Bank	FLR	Trad	BML-G	3.000%	$18.73	-$0.16	Float	25.08%	Y	BBB-	Baa3	Float	11/28/2009	NONE	28th  2,5,8,11
+Bank of America	No	Yes	Bank	FLR	Trad	BML-H	3.000%	$18.73	-$0.11	Float	25.08%	Y	BBB-	Baa3	Float	11/28/2009	NONE	28th  2,5,8,11
+Bank of America Capital Trust	Yes	No	Bank	Fix	Trust P	MER-K	6.450%	$25.55	$0.00	6.31%	-2.20%	N	BB+	Ba1	$0.40	12/15/2011	12/15/2066	15th 3,6,9,12
+Bank of Hawaii	No	Yes	Bank	Fix	Trad	BOH-A	4.375%	$16.71	$0.11	6.55%	33.16%	Y	NR	Baa3	$0.27	8/1/2026	NONE	1st 2,5,8,11
+Bank of Hawaii	No	Yes	Bank	Fix	Trad	BOH-B	8.000%	$26.57	-$0.05	7.53%	-6.28%	Y	NR	Baa3	$0.50	8/1/2029	NONE	1st 2,5,8,11
+Bank OZK	No	Yes	Bank	Fix	Trad	OZKAP	4.625%	$16.65	-$0.13	6.97%	45.92%	N	NR	Ba2	$0.29	11/15/2026	NONE	15th 2,5,8,11
+BFC Capital Trust	Yes	No	Bank	Fix	Trust P	BANFP	7.200%	$26.47	$0.00	6.80%	-5.88%	N	NR	NR	$0.45	3/21/2009	3/31/2034	15th 1,4,7,10
+BIP Bermuda Holdings	No	No	Other	Fix	BB	BIPI	5.125%	$16.69	-$0.05	7.67%	39.60%	N	NR	NR	$0.32	1/21/2027	NONE	LD 3,6,9,12
+Braemar Hotels and Resorts	Yes	No	Hotel REIT	Fix	Trad	BHR-D	8.250%	$18.00	-$0.26	11.46%	28.00%	N	NR	NR	$0.52	11/20/2023	NONE	15th 1,4,7,10
+Braemer Hotels and Resorts (Conv)	Yes	No	Hotel REIT	Fix	Conv	BHR-B	5.500%	$13.93	-$0.42	9.88%	44.28%	N	NR	NR	$0.34	6/11/2020	NONE	15th 1,4,7,10
+Bridgewater Bancshares	No	Yes	Bank	Fix	Trad	BWBBP	5.875%	$19.00	$0.00	7.79%	47.07%	N	NR	NR	$0.37	8/17/2026	NONE	1st 3,6,9,12
+Brighthouse Financial	No	No	Insurance	Fix	BB	BHFAL	6.250%	$17.13	NA	9.12%	31.48%	Y	BBB-	Ba1	$0.39	9/15/2023	9/15/2058	15th 3,6,9,12
+Brighthouse Financial	No	Yes	Insurance	Fix	Trad	BHFAP	6.600%	$15.65	-$0.03	10.54%	37.40%	Y	BBB-	Ba2	$0.41	3/25/2024	NONE	25th 3,6,9,12
+Brighthouse Financial	No	Yes	Insurance	Fix	Trad	BHFAO	6.750%	$16.06	$0.17	10.46%	-56.47%	Y	BBB-	Ba2	$0.42	6/25/2025	NONE	25th 3,6,9,12
+Brighthouse Financial	No	Yes	Insurance	Fix	Trad	BHFAN	5.375%	$12.87	$0.08	10.57%	-1465.25%	Y	BBB-	Ba2	$0.34	12/25/2025	NONE	25th 3,6,9,12
+Brighthouse Financial	No	No	Insurance	Fix	Trad	BHFAM	4.625%	$11.41	$0.05	10.13%	66.34%	Y	BBB-	Ba2	$0.29	12/25/2026	NONE	25th 3,6,9,12
+Brookfield BRP Holdings	No	Yes	MLP	Fix	BB	BEPH	4.625%	$15.38	-$0.01	7.54%	130.75%	Y	BBB-	NR	$0.29	4/30/2026	NONE	30th 1,4,7,10
+Brookfield BRP Holdings	No	Yes	MLP	Fix	BB	BEPI	4.875%	$16.19	$0.01	7.41%	45.58%	Y	BBB-	NR	$0.30	12/9/2026	NONE	30th 1,4,7,10
+Brookfield BRP Holdings	No	Yes	MLP	Fix	BB	BEPJ	7.250%	$25.18	-$0.01	7.15%	#DIV/0!	Y	BBB-	NR	$0.45	3/25/2029	NONE	30th 1,4,7,10
+Brookfield Finance	No	No	Asset Mgr	Fix	BB	BNH	4.625%	$16.01	-$0.07	7.25%	-152.82%	Y	BBB	Baa3	$0.29	10/16/2025	10/16/2080	15th 1,4,7,10
+Brookfield Finance	No	No	Asset Mgr	Fix	BB	BNJ	4.500%	$15.18	-$0.05	7.64%	-325.78%	Y	BBB	Baa3	$0.29	11/24/2025	NONE	24th 2,5,8,11
+Brookfield Infrastructure Finance	No	No	Infrastructure	Fix	BB	BIPH	5.000%	$16.47	-$0.05	7.53%	97.77%	Y	BBB-	NR	$0.31	5/24/2026	5/24/2081	LD 3,6,9,12
+Brookfield Infrastructure Finance	No	No	Infrastructure	Fix	BB	BIPJ	7.250%	$24.91	$0.21	7.23%	7.33%	Y	BBB-	NR	$0.45	5/31/2029	5/31/2084	LD 3,6,9,12
+Brookfield Infrastructure Partners	Yes	No	MLP	Fix	Trad	BIP-A	5.125%	$16.99	$0.01	7.53%	-133.36%	Y	BBB-	NY	$0.32	10/15/2025	NONE	15th 3,6,9,12
+Brookfield Infrastructure Partners	Yes	No	MLP	Fix	Trad	BIP-B	5.000%	$16.83	$0.25	7.37%	298.30%	Y	BBB-	NY	$0.31	2/16/2026	NONE	15th 3,6,9,12
+Brookfield Property Partners LP	Yes	No	MLP	Fix	Trad	BPYPM	6.250%	$15.67	$0.06	9.96%	77.73%	N	B	NR	$0.39	7/26/2026	NONE	LD 3,6,9,12
+Brookfield Property Partners LP	Yes	No	MLP	Fix	Trad	BPYPP	6.500%	$15.03	$0.15	10.81%	39.88%	N	B	NR	$0.41	3/31/2024	NONE	LD 3,6,9,12
+Brookfield Property Partners LP	Yes	No	MLP	Fix	Trad	BPYPO	6.375%	$14.81	$0.03	10.76%	-21.37%	N	B	NR	$0.40	9/30/2024	NONE	LD 3,6,9,12
+Brookfield Property Partners LP	Yes	No	MLP	Fix	Trad	BPYPN	5.750%	$13.75	$0.19	10.47%	-47.98%	N	B	NR	$0.36	3/31/2025	NONE	LD 3,6,9,12
+Brookfield Renewable Partners LP	Yes	No	MLP	Fix	Trad	BEP-A	5.250%	$18.09	-$0.05	7.30%	27.64%	N	NR	NR	$0.33	3/31/2025	NONE	LD 1,4,7,10
+Brunswick Corp	No	No	Other	Fix	BB	BC-B	6.625%	Redeem	Redeem	Redeem	#VALUE!	Y	BBB-	Baa2	$0.41	1/15/2024	1/15/2049	15th 1,4,7,10
+Brunswick Corp	No	No	Other	Fix	BB	BC-A	6.500%	Redeem	Redeem	Redeem	#VALUE!	Y	BBB-	Baa2	$0.41	10/15/2023	10/15/2048	15th 1,4,7,10
+Brunswick Corp	No	No	Other	Fix	BB	BC-C	6.375%	$25.12	$0.06	6.34%	6.62%	Y	BBB-	Baa2	$0.40	4/15/2024	4/15/2049	15th 1,4,7,10
+Cadence Bank	No	Yes	Bank	Fix	Trad	CADE-A	5.500%	$21.70	$0.00	6.34%	13.20%	N	BB	Ba1	$0.34	11/20/2024	NONE	20th 2,5,8,11
+CADIZ Inc	Yes	Yes	Other	Fix	Trad	CDZIP	8.875%	$19.47	$0.07	11.30%	56.91%	N	NR	NR	$0.55	7/2/2026	NONE	15th 1,4,7,10
+Capital One Financial	No	Yes	Bank	Fix	Trad	COF-I	5.000%	$19.33	-$0.07	6.47%	22.68%	Y	BB	Baa3	$0.31	12/1/2024	NONE	1st 3,6,9,12
+Capital One Financial	No	Yes	Bank	Fix	Trad	COF-J	4.800%	$18.38	-$0.14	6.53%	26.48%	Y	BB	Baa3	$0.30	6/1/2025	NONE	1st 3,6,9,12
+Capital One Financial	No	Yes	Bank	Fix	Trad	COF-K	4.625%	$17.69	-$0.15	6.56%	-289.90%	Y	BB	Baa3	$0.29	12/1/2025	NONE	1st 3,6,9,12
+Capital One Financial	No	Yes	Bank	Fix	Trad	COF-L	4.375%	$16.85	-$0.14	6.41%	56.41%	Y	BB	Baa3	$0.27	9/1/2026	NONE	1st 3,6,9,12
+Capital One Financial	No	Yes	Bank	Fix	Trad	COF-N	4.250%	$16.49	-$0.14	6.55%	58.75%	Y	BB	Baa3	$0.27	9/1/2026	NONE	1st 3,6,9,12
+Capital Southwest	No	No	BDC	Fix	BB	CSWCZ	7.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.48	8/1/2025	8/1/2028	1st 2,5,8,11
+CareCloud	Yes	Yes	Other	Fix	Trad	CCLDP	11.000%	Converted	Converted	Converted	Susp	N	NR	NR	$0.23	11/04/2020	NONE	15th Month
+CareCloud	Yes	Yes	Other	Fix	Trad	CCLDO	8.750%	$25.65	-$0.11	8.53%	Susp	N	NR	NR	$0.18	2/15/2024	NONE	15th Month
+Carlyle Credit Income Fund	Yes	Var	CEF	Fix	Term	CCIA	8.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.18	10/31/2025	10/31/2028	LD Month
+Carlyle Credit Income Fund	Yes	Var	CEF	Fix	Term	CCID	7.375%	$25.25	-$0.05	7.32%	#DIV/0!	N	NR	NR	$0.15	10/30/2026	10/30/2028	LD Month
+Carlyle Finance	No	No	Finance	Fix	BB	CGABL	4.625%	$17.28	-$0.13	6.71%	94.09%	Y	BBB-	NR	$0.29	5/15/2026	5/15/2061	15th 2,5,8,11
+Cedar Realty Trust	Yes	No	Retail REIT	Fix	Trad	CDR-B	7.250%	$18.30	-$0.54	9.90%	26.80%	N	NR	NR	$0.45	5/22/2017	NONE	20th 2, 5, 8, 11
+Cedar Realty Trust	Yes	No	Retail REIT	Fix	Trad	CDR-C	6.500%	$16.94	-$0.03	9.59%	32.24%	N	NR	NR	$0.41	8/22/2022	NONE	20th 2,5,8,11
+Centerspace 	Yes	No	eREIT	Fix	Trad	CSR-C	6.625%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	10/2/2022	NONE	LD 3,6,9,12
+Charah Solutions	No	No	Other	Fix	BB	CHRB	8.500%	$22.90	$0.00	9.26%	8.40%	N	NR	NR	$0.53	8/31/2023	8/31/2026	LD 1,4,7,10
+Chatham Lodging Trust	Yes	No	Hotel REIT	Fix	Trad	CLDT-A	6.625%	$19.74	$0.07	8.51%	52.39%	N	NR	NR	$0.42	6/30/2026	NONE	15th 1,4,7,10
+Cherry Hill Mortgage	Yes	No	mREIT	Fix	Trad	CHMI-A	8.200%	$20.80	$0.10	9.86%	16.80%	N	NR	NR	$0.51	8/17/2022	NONE	15th 1,4,7,10
+Cherry Hill Mortgage	Yes	No	eREIT	Fix-Float	Trad	CHMI-B	8.250%	$23.68	-$0.21	Float	Float	N	NR	NR	Float	4/5/2024	NONE	15th 1,4,7,10
+Chicken Soup for the Soul	Yes	Yes	Other	Fix	Trad	CSSEP	9.750%	BK	BK	BK	BK	N	NR	NR	$0.61	6/27/2023	NONE	15th Month
+Chicken Soup for the Soul	No	No	Other	Fix	BB	CSSEN	9.500%	BK	BK	BK	BK	N	NR	NR	$0.59	7/31/2022	7/31/2025	LD 3,6,9,12
+Chimera Investment	Yes	No	mREIT	Fix	Trad	CIM-A	8.000%	$21.61	-$0.14	9.25%	13.56%	N	NR	NR	$0.50	10/21/2021	NONE	30th 3,6,9,12
+Chimera Investment	No	No	mREIT	Fix	BB	CIMN	9.000%	$25.29	$0.04	8.90%	5.61%	N	NR	NR	$0.56	5/15/2026	5/15/2029	15th 2,5,8,11
+Chimera Investment	No	No	mREIT	Fix	BB	CIMO	9.250%	$25.57	$0.07	9.07%	5.31%	N	NR	NR	$0.58	8/15/2026	8/15/2029	15th 2,5,8,11
+Chimera Investment	No	No	mREIT	Fix	BB	CIMP	8.875%	$25.16	$0.02	8.74%	#DIV/0!	N	NR	NR	$0.55	8/15/2027	8/15/2030	15th 2,5,8,11
+Chimera Investment	Yes	No	mREIT	Fix-Float	Trad	CIM-B	8.000%	$23.42	-$0.01	Float	Float	N	NR	NR	Float	3/30/2024	NONE	30th 3,6,9,12
+Chimera Investment	Yes	No	mREIT	Fix-Float	Trad	CIM-D	8.000%	$22.98	$0.00	Float	Float	N	NR	NR	Float	3/30/2024	NONE	30th 3,6,9,12
+Chimera Investment	Yes	No	mREIT	Fix-Float	Trad	CIM-C	7.750%	$21.55	$0.01	8.99%	-42.41%	N	NR	NR	$0.48	9/30/2025	NONE	30th 3,6,9,12
+CHS	Yes	Yes	Ag	Fix	Trad	CHSCP	8.000%	$27.90	$0.05	7.17%	-11.60%	N	NR	NR	$0.50	7/18/2023	NONE	LD 3,6,9,12
+CHS	Yes	Yes	Ag	Fix	Trad	CHSCL	7.500%	$25.48	$0.04	7.36%	9.36%	N	NR	NR	$0.47	1/21/2025	NONE	LD 3,6,9,12
+CHS	Yes	Yes	Ag	Fix	Trad	CHSCO	7.875%	$26.15	$0.10	7.53%	-4.60%	N	NR	NR	$0.49	9/26/2023	NONE	LD 3,6,9,12
+CHS	Yes	Yes	Ag	Now Fixed	Trad	CHSCN	7.100%	$25.10	-$0.12	7.07%	-0.40%	N	NR	NR	$0.44	3/31/2024	NONE	LD 3,6,9,12
+CHS	Yes	Yes	Ag	Now Fixed	Trad	CHSCM	6.750%	$24.84	$0.00	6.79%	6.29%	N	NR	NR	$0.42	9/30/2024	NONE	LD 3,6,9,12
+Citigroup	No	Yes	Bank	Fix-Float	Trad	C-J	7.125%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba1	Float	9/30/2023	NONE	30th 3,6,9,12
+Citigroup	No	Yes	Bank	Fix-Float	Trad	C-K	6.875%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba1	$0.43	11/15/2023	NONE	15th  2,5,8,11
+Citigroup Capital Trust	No	No	Bank	Fix	Trust P	C-N	7.875%	$30.31	-$0.06	6.50%	-21.24%	N	BB+	Ba1	$0.49	10/30/2015	10/30/2040	30th 1,4,7,10
+Citizens Financial	No	Yes	Bank	Fix	Trad	CFG-E	5.000%	$19.30	-$0.07	6.48%	-16.32%	Y	BB+	Baa3	$0.31	1/6/2025	NONE	6th 1,4,7,10
+Citizens Financial	No	Yes	Bank	Fix	Trad	CFG-H	7.375%	$26.39	$0.09	6.97%	5.38%	Y	BB+	Baa3	$0.46	7/6/2029	None	6th 1,4,7,10
+Citizens Financial	No	Yes	Bank	Fix-Float	Trad	CFG-D	6.350%	Redeem	Redeem	Redeem	Redeem	Y	BB+	Baa3	$0.40	7/6/2024	NONE	6th 1,4,7,10
+Citizens Financial	No	Yes	Bank	FRR	Trad	CFG-I	6.500%	$25.36	$0.02	6.40%	#DIV/0!	Y	BB+	Baa3	$0.41	10/6/2030	None	6th 1,4,7,10
+City Office REIT	Yes	no	eREIT	Fix	Trad	CIO-A	6.625%	$25.33	$0.00	6.54%	-1.32%	N	NR	NR	$0.41	9/15/2021	NONE	25th 1,4,7,10
+CMS Energy	No	No	Ute	Fix	BB	CMSA	5.625%	$22.24	-$0.04	6.32%	2.40%	Y	BBB-	Baa2	$0.35	3/15/2023	3/15/2078	15th 3,6,9,12
+CMS Energy	No	No	Ute	Fix	BB	CMSC	5.875%	$22.95	-$0.05	6.40%	8.20%	Y	BBB-	Baa2	$0.37	10/15/2023	10/15/2078	15th 1,4,7,10
+CMS Energy	No	No	Ute	Fix	BB	CMSD	5.875%	$23.50	-$0.10	6.25%	3.01%	Y	BBB-	Baa2	$0.37	3/1/2024	3/1/2079	1st 3,6,9,12
+CMS Energy	Yes	Yes	Ute	Fix	Fix	CMS-C	4.200%	$17.55	-$0.11	5.93%	63.17%	Y	BBB-	Ba1	$0.26	7/15/2026	NONE	15th 1,4,7,10
+CNB Financial	No	Yes	Bank	Fix	Trad	CCNEP	7.125%	$24.88	$0.02	7.23%	5.86%	N	NR	NR	$0.45	9/1/2025	NONE	1st 3,6,9,12
+CNO Financial Group	No	No	Insurance	Fix	BB	CNO-A	5.125%	$19.12	$0.07	6.69%	-197.71%	N	NR	NR	$0.32	11/25/2025	11/25/2060	15th 2,5,8,11
+Comerica	No	Yes	Bank	FRR	Trad	CMA-B	6.875%	$26.05	-$0.01	6.60%		N	BB	Ba1	$0.43	10/1/2030	NONE	1st 1,4,7,10
+Compass Diversified	No	Yes	Other	Fix	Trad	CODI-A	7.250%	$16.41	$0.03	11.05%	34.36%	N	NR	NR	$0.45	7/30/2022	NONE	30th 1,4,7,10
+Compass Diversified	Yes	Yes	Other	Fix	Trad	CODI-C	7.875%	$18.58	-$0.22	10.60%	-16.89%	N	NR	NR	$0.49	1/30/2025	NONE	30th 1,4,7,10
+Compass Diversified	Yes	Yes	Other	Fix-Float	Trad	CODI-B	7.875%	$18.32	-$0.18	10.75%	22.29%	N	NR	NR	$0.49	4/30/2028	NONE	30th 1,4,7,10
+Conifer Holdings	No	No	Insurance	Fix	BB	CNFRL	6.750%	Exchange	Exchange	Exchange	Exchange	N	NR	NR	$0.42	9/30/2021	9/30/2023	LD 3,6,9,12
+ConnectOne Bancorp	No	Yes	Bank	Fix	FRR	CNOBP	5.250%	$24.42	$0.10	5.41%	2.32%	N	NR	NR	$0.33	9/1/2026	NONE	1st 3,6,9,12
+Corebridge Financial	No	No	Insurance	Fix	BB	CRBD	6.375%	$23.74	-$0.28	6.71%	7.98%	N	NR	NR	$0.40	12/15/2029	12/15/2064	15th 3,6,9,12
+CORTS BellSouth	No	No	Telecom	Fix	3rd	KTBA	7.000%	$21.35	$0.00	8.24%	8.45%	N	NR	NR	$0.88	None	12/1/2095	1st 6 and 12
+Costamare Inc	Yes	Yes	Shipping	Fix	Trad	CMRE-C	8.500%	$27.13	$0.25	7.83%	-8.52%	N	NR	NR	$0.53	1/21/2019	NONE	15th 1,4,7,10
+Costamare Inc	Yes	Yes	Shipping	Fix	Trad	CMRE-B	7.625%	$25.65	$0.13	7.43%	-2.60%	N	NR	NR	$0.48	8/6/2018	NONE	15th 1,4,7,10
+Costamare Inc	Yes	Yes	Shipping	Fix	Trad	CMRE-D	8.750%	$27.68	-$0.15	7.90%	-10.72%	N	NR	NR	$0.55	5/13/2020	NONE	15th 1,4,7,10
+Costamare Inc	Yes	Yes	Shipping	Fix	Trad	CMRE-E	8.875%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.55	1/30/2023	NONE	15th 1,4,7,10
+Cowen Group	No	No	Finance	Fix	BB	COWNL	7.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.48	6/15/2023	6/15/2033	15th 3,6,9,12
+CTO Growth	Yes	No	eREIT	Fix	Trad	CTO-A	6.375%	$20.73	NA	7.69%	42.13%	N	NR	NR	$0.40	7/6/2026	NONE	LD 3,6,9,12
+Cullen Frost Banker	No	Yes	Bank	Fix	Trad	CFR-B	4.450%	$17.52	$0.00	6.35%	-490.05%	Y	BBB-	Baa2	0.278	12/15/2025	NONE	15th 3,6,9,12
+Customers Bancorp	No	No	Bank	Fix	BB	CUBB	5.370%	$22.33	-$0.08	6.02%	8.70%	N	NR	NR	$0.34	12/30/2029	12/30/2034	30th 3,6,9,12
+Customers Bancorp	No	Yes	Bank	Fix-Float	Trad	CUBI-E	6.450%	Redeem	Redeem	Redeem	Float	N	NR	NR	Float	6/15/2021	NONE	15th 3,6,9,12
+Customers Bancorp	No	Yes	Bank	Fix-Float	Trad	CUBI-F	6.000%	Redeem	Redeem	Redeem	Float	N	NR	NR	Float	12/14/2021	NONE	15th 3,6,9,12
+DiamondRock Hospitality	Yes	No	eREIT	Fix	Trad	DRH-A	8.250%	$24.99	$0.01	8.25%	8.14%	N	NR	NR	$0.52	8/31/2025	NONE	LD 3,6,9,12
+Diana Shipping	Yes	Yes	Shipping	Fix	Trad	DSX-B	8.875%	$25.99	$0.18	8.54%	-3.96%	N	NR	NR	$0.55	3/14/2019	NONE	15th 1,4,7,10
+Digital Realty Trust	Yes	No	eREIT	Fix	Trad	DLR-K	5.850%	$23.86	-$0.09	6.13%	3.62%	Y	BB+	Baa3	$0.37	3/13/2024	NONE	LD 3,6,9,12
+Digital Realty Trust	Yes	No	eREIT	Fix	Trad	DLR-J	5.250%	$20.80	-$0.11	6.31%	16.80%	Y	BB+	Baa3	$0.33	8/7/2022	NONE	LD 3,6,9,12
+Digital Realty Trust	Yes	No	eREIt	Fix	Trad	DLR-L	5.200%	$20.67	-$0.13	6.29%	-7.67%	Y	BB+	Baa3	$0.33	10/10/2024	NONE	LD 3,6,9,12
+DigitalBridge	Yes	No	C-Corp	Fix	Trad	DBRG-J	7.125%	$19.00	-$0.61	9.38%	24.00%	N	NR	NR	$0.45	9/22/2022	NONE	15th 1,4,7,10
+DigitalBridge	Yes	No	C-Corp	Fix	Trad	DBRG-I	7.150%	$19.24	-$0.36	9.29%	23.04%	N	NR	NR	$0.45	6/5/2022	NONE	15th 1,4,7,10
+DigitalBridge	Yes	No	C-Corp	Fix	Trad	DBRG-H	7.125%	$19.00	-$0.64	9.38%	24.00%	N	NR	NR	$0.45	4/15/2020	NONE	15th 1,4,7,10
+Dillards Capital Trust	Yes	No	Other	Fix	Trust P	DDT	7.500%	$26.30	$0.08	7.15%	-5.20%	Y	BBB-	Ba1	$0.47	8/12/2003	8/1/2038	1st 2,5,8,11
+Dime Community Bancshares	No	Yes	Bank	Fix	Trad	DCOMP	5.500%	$18.40	$0.04	7.47%	26.40%	N	BB-	NR	$0.34	2/15/2025	NONE	15th 2,5,8,11
+Dime Community Bancshares	No	No	Bank	Fix	BB	DCOMG	9.000%	$26.37	$0.00	8.34%	6.79%	N	BB	Baa3	$0.55	7/15/2029	7/15/2034	15th 1,4,7,10
+Diversified Healthcare Trust	Yes	No	eREIT	Fix	BB	DHCNI	5.625%	$16.55	-$0.05	8.46%	33.80%	N	BB-	B3	$0.35	8/1/2017	8/1/2042	1st 2,5,8,11
+Diversified Healthcare Trust	Yes	No	eREIT	Fix	BB	DHCNL	6.250%	$17.85	-$0.34	8.74%	28.60%	N	BB-	B3	$0.39	2/18/2021	2/1/2046	1st 3,6,9,12
+DTE Energy     	No	No	Ute	Fix	BB	DTW	5.250%	$21.34	-$0.16	6.15%	14.64%	Y	BBB-	Baa3	$0.33	12/1/2022	12/1/2077	1st 3,6,9,12
+DTE Energy     	No	No	Ute	Fix	BB	DTB	4.375%	$17.28	-$0.20	6.25%	-129.55%	Y	BBB-	Baa3	$0.27	10/15/2025	10/15/2080	15th 1,4,7,10
+DTE Energy     	No	No	Ute	Fix	BB	DTG	4.375%	$17.37	-$0.07	6.22%	40.08%	Y	BBB-	Baa3	$0.27	12/1/2026	12/1/2081	1st 3,6,9,12
+DTE Energy     	No	No	Ute	Fix	BB	DTK	6.250%	$24.75	-$0.08	6.31%	#DIV/0!	Y	BBB-	Baa3	$0.39	10/1/2030	10/1/2085	1st 1,4,7,10
+Duke Energy	No	No	Ute	Fix	BB	DUKB	5.625%	$24.75	$0.01	5.68%	5.25%	Y	BBB	Baa2	$0.35	9/15/2023	9/15/2078	15th 3,6,9,1
+Duke Energy	No	No	Ute	Fix	Trad	DUK-A	5.750%	$25.02	-$0.03	5.75%	5.80%	Y	BBB-	Baa3	$0.36	6/15/2024	NONE	16th 3,6,9,12
+Dynagas LNG Partners	Yes	No	Shipping	Fix	Trad	DLNG-A	9.000%	$26.30	$0.05	8.56%	-5.20%	N	NR	NR	$0.56	8/12/2020	NONE	12th 2,5,8,11
+Dynagas LNG Partners	Yes	No	Shipping	Fix-Float	Trad	DLNG-B	8.750%	Redeem	Redeem	Redeem	Float	N	NR	NR	Float	11/2/2023	NONE	22nd 2,5,8,11
+Dynex Capital	Yes	No	mREIT	Fix-Float	Trad	DX-C	6.900%	$25.65	-$0.10	Float	#VALUE!	N	NR	NR	Float	4/15/2025	NONE	15th 1,4,7,10
+Eagle Point Credit Co	No	No	CEF	Fix	BB	ECCW	6.750%	$24.61	-$0.13	6.83%	5.95%	N	NR	NR	$0.42	3/29/2024	3/31/2031	LD 3,6,9,12
+Eagle Point Credit Co	Yes	No	CEF	Fix	Term	ECCC	6.375%	$24.55	$0.38	6.35%	5.20%	N	NR	NR	$0.13	6/16/2024	6/30/2031	LD Month
+Eagle Point Credit Co	Yes	Var	CEF	Fix	Trad	ECC-D	6.750%	$19.88	$0.01	8.49%	31.35%	N	NR	NR	$0.14	11/29/2026	NONE	LD Month
+Eagle Point Credit Co	No	No	CEF	Fix	BB	ECCV	5.375%	$23.52	-$0.37	5.78%	-0.57%	N	NR	NR	$0.34	1/31/2025	1/31/2029	LD Month
+Eagle Point Credit Co	No	No	CEF	Fix	BB	ECCX	6.688%	$24.96	$0.06	6.73%	0.16%	N	NR	NR	$0.42	4/30/2021	4/30/2028	LD 3,6,9,12
+Eagle Point Credit Co	No	No	CEF	Fix	BB	ECCU	6.688%	$25.22	$0.01	7.68%	7.08%	N	NR	NR	$0.48	6/30/2027	6/30/2030	LD 3,6,9,12
+Eagle Point Credit Co	Yes	Var	CEF	Fix	Term	ECCF	8.000%	$25.06	$0.00	7.97%	0.67%	N	NR	NR	$0.17	1/18/2026	1/31/2029	LD Month
+Eagle Point Income	Yes	Var	CEF	Fix	Term	EICA	5.000%	$24.67	-$0.01	4.86%	1.32%	N	NR	NR	$0.10	10/31/2023	10/30/2026	LD Month
+Eagle Point Income	Yes	Var	CEF	Fix	Term	EICB	7.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.16	7/31/2025	7/31/2028	LD Month
+Eagle Point Institutional income	Yes	Var	CEF	Fix	Term	EIIA	8.125%	$25.25	$0.04	8.04%	6.82%	N	NR	NR	$0.17	10/31/2026	10/31/2029	LD Month
+Ellington Financial	Yes	No	mREIT	Fix-Float	Trad	EFC-A	6.750%	$25.23	$0.06	6.69%	7.46%	N	NR	NR	$0.42	10/30/2024	NONE	30th 1,4,7,10
+Ellington Financial	Yes	No	mREIT	FRR	Trad	EFC-B	6.250%	$23.62	-$0.02	6.60%	11.78%	N	NR	NR	$0.39	1/30/2027	NONE	30th 1,4,7,10
+Ellington Financial (Arlington)	Yes	No	mREIT	Fix	Trad	EFC-D	7.000%	$24.25	$0.15	7.22%	3.00%	N	NR	NR	$0.44	5/12/2022	NONE	30th 3,6,9,12
+Ellington Financial (Arlington)	Yes	No	mREIT	Fix-Float	Trad	EFC-E	8.250%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	Float	3/30/2024	NONE	30th 3,6,9,12
+Ellsworth Growth and Income	Yes	Var	CEF	Fix	Trad	ECF-A	5.250%	$21.53	$0.00	6.10%	13.88%	Y	NR	A1	$0.33	9/18/2022	NONE	26th 3,6,9,12
+Enbridge Inc Reset Preferred	Yes	Yes	Energy	FRR	Trad	EBBNF	4.959%	$24.18	$0.11	Float	Float	Y	BBB-	NR	Float	9/1/2022	NONE	1st 3,6,9,12
+Energy Transfer	Yes	No	MLP	Fix-Float	Trad	ET-D	7.625%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba2	Float	8/15/2023	NONE	15th 2,5,8,11
+Energy Transfer	Yes	No	MLP	Fix-Float	Trad	ET-C	7.375%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba2	Float	5/15/2023	NONE	15th 2,5,8,11
+Energy Transfer 	Yes	No	MLP	Fix-Float	Trad	ET-E	7.600%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba2	Float	5/15/2024	NONE	15th 2,5,8,11
+Enstar Group	No	Yes	Insurance	Fix	Trad	ESGOF	7.000%	No Quote	#N/A	#VALUE!	#VALUE!	N	BB+	NR	$0.44	3/1/2024	NONE	1st 3,6,9,12
+Enstar Group	No	Yes	Insurance	Fix-Float	Trad	ESGRF	7.000%	$20.75	#N/A	8.43%	14.84%	N	BB+	NR	$0.44	9/1/2028	NONE	1st 3,6,9,12
+Entergy Arkansas  	No	No	Ute	Fix	BB	EAI	4.875%	$20.95	-$0.14	5.82%	16.20%	Y	A	A2	$0.31	9/1/2021	9/1/2066	1st 3,6,9,12
+Entergy Louisiana	No	No	Ute	Fix	BB	ELC	4.875%	$20.66	-$0.02	5.91%	17.36%	Y	A	A2	$0.31	9/1/2021	9/1/2066	1st 3,6,9,12
+Entergy Mississippi	No	No	Ute	Fix	BB	EMP	4.900%	$20.63	-$0.09	5.93%	17.48%	Y	A	A3	$0.31	10/1/2021	10/1/2066	1st 1,4,7,10
+Entergy New Orleans   	No	No	Ute	Fix	BB	ENJ	5.000%	$20.94	-$0.08	5.92%	16.24%	Y	A-	A2	$0.31	12/1/2017	12/1/2052	1st 3,6,9,12
+Entergy New Orleans   	No	No	Ute	Fix	BB	ENO	5.450%	$22.34	-$0.16	6.09%	10.64%	Y	A-	Baa2	$0.34	4/1/2021	4/1/2066	1st 1,4,7,10
+Entergy Texas 	Yes	Yes	Ute	Fix	Trad	ETI-	5.375%	$23.46	$0.01	5.73%	0.71%	Y	BBB-	Ba2	$0.34	10/15/2024	NONE	15th 1,4,7,10
+Enterprise Financial	No	Yes	Bank	Fix	Trad	EFSCP	5.000%	$20.30	$0.05	6.11%	26.11%	N	NR	NR	$0.31	12/15/2026	None	15th 3,6,9,12
+EPR Properties	Yes	No	eREIT	Fix	Trad	EPR-G	5.750%	$19.91	-$0.09	7.22%	20.36%	N	NR	B+	$0.36	11/30/2022	None	15th 1,4,7,10
+EPR Properties	Yes	No	eREIT	Fix	Convert	EPR-C	5.750%	$22.55	-$0.09	6.37%	9.80%	N	NR	B+	$0.36	1/15/2012	None	15th 1,4,7,10
+EPR Properties	Yes	No	eREIT	Fix	Convert	EPR-E	9.000%	$30.58	$0.13	7.36%	-22.32%	N	NR	B+	$0.56	4/20/2013	None	15th 1,4,7,10
+Equitable Holdings	No	Yes	Insurance	Fix	Trad	EQH-A	5.250%	$20.49	-$0.24	6.44%	18.04%	 	BBB-	Ba1	$0.33	12/1/2024	NONE	15th 3,6,9,12
+Equitable Holdings	No	Yes	Insurance	Fix	Trad	EQH-C	4.300%	$16.45	-$0.09	6.57%	190.14%	Y	BBB-	Ba1	$0.27	3/15/2026	NONE	15th 3,6,9,12
+Equity Commonwealth	Yes	No	eREIT	Fix	Covert	EQC-D	6.500%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	11/20/2011	NONE	15th 2,5,8,11
+F & G Annuities and Life	No	No	Insurance	Fix	BB	FGN	7.950%	$25.46	-$0.05	7.81%	7.18%	Y	BBB-	Baa3	$0.50	12/15/2028	12/15/2053	15th 3,6,9,12
+F & G Annuities and Life	No	No	Insurance	Fix	BB	FGSN	7.300%	$22.57	-$0.09	8.08%		N	BB	Ba1	$0.46	1/15/2030	1/15/2065	1st 1,4,7,10
+FAT Brands	Yes	Yes	Other	Fix	Trad	FATBP	8.250%	$0.63	$0.02	327.62%	123.14%	N	NR	NR	$0.17	7/16/2025	NONE	LD Month
+Federal Agricultural Mortgage	No	Yes	Finance	Fix	Trad	AGM-D	5.700%	$20.79	-$0.14	6.85%	-4.57%	N	NR	NR	$0.36	7/17/2024	NONE	17th 1.4,7,10
+Federal Agricultural Mortgage	No	Yes	Finance	Fix	Trad	AGM-E	5.750%	$21.05	-$0.10	6.83%	-26.51%	N	NR	NR	$0.36	7/17/2025	NONE	17th 1.4,7,10
+Federal Agricultural Mortgage	No	Yes	Finance	Fix	Trad	AGM-F	5.250%	$19.30	-$0.12	6.84%	-95.90%	N	NR	NR	$0.33	10/17/2025	NONE	17th 1,4,7,10
+Federal Agricultural Mortgage	No	Yes	Finance	Fix	Trad	AGM-G	4.875%	$18.02	$0.02	6.66%	59.74%	N	NR	NR	$0.30	7/17/2026	NONE	17th 1,4,7,10
+Federal Agricultural Mortgage	No	Yes	Finance	Fix-Float	Trad	AGM-C	6.000%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.38	7/18/2024	NONE	17th 1,4,7,10
+Federal Realty Investment Trust	Yes	No	eREIT	Fix	Trad	FRT-C	5.000%	$20.04	$0.07	6.24%	19.84%	Y	BBB	Baa1	$0.31	9/29/2022	NONE	15th 1,4,7,10
+Fundamental Global	Yes	Yes	Insurance	Fix	Trad	FGNXP	8.000%	$22.70	$0.70	8.81%	9.20%	N	NR	NR	$0.50	2/28/2023	NONE	15th 3,6,9,12
+Fifth Third Bancorp	No	Yes	Bank	Fix	Trad	FITBI	6.625%	$25.64	-$0.02	6.46%	7.73%	Y	BB+	Baa3	$0.41	12/31/2023	NONE	LD 3,6,9,12
+Fifth Third Bancorp	No	Yes	Bank	Fix	Trad	FITBP	6.000%	$24.60	$0.06	6.10%	1.60%	Y	BB+	Baa3	$0.38	11/25/2022	NONE	25th 2,5,8,11
+Fifth Third Bancorp	No	Yes	Bank	Fix	Trad	FITBO	4.950%	$19.57	$0.00	6.32%	-10.81%	Y	BB+	Baa3	$0.31	09/30/2024	NONE	LD 3,6,9,12
+First Busey	No	Yes	Bank	Fix	Trad	BUSEP	8.250%	$25.95	$0.00	7.95%		N	NR	NR	$0.52	6/1/2030	NONE	1st 3,6,9,12
+First Citizens BancShares	No	Yes	Bank	Fix	Trad	FCNCP	5.375%	$20.41	-$0.12	6.66%	-15.90%	N	BB	Ba1	$0.34	3/15/2025	NONE	15th 3,6,9,12
+First Citizens BancShares	No	Yes	Bank	Fix	Trad	FCNCO	5.625%	$21.43	-$0.06	6.35%	-7.12%	N	BB	Ba1	$0.34	12/15/2024	NONE	15th 3,6,9,12
+First Eagle Alternative (Cresent)	No	No	BDC	Fix	BB	FCRX	5.000%	$25.00	$0.00	5.00%	5.00%	N	NR	NR	$0.31	5/25/2023	5/25/2026	30th 3,6,9,12
+First Guaranty Bancshares	No	Yes	Bank	Fix	Trad	FGBIP	6.750%	$16.89	$0.35	9.99%	121.70%	N	NR	NR	$0.42	4/22/2026	NONE	1st 3,6,9,12
+First Horizon National	No	Yes	Bank	Fix	Trad	FHN-F	4.700%	$17.94	$0.00	6.51%	62.23%	N	BB-	Ba2	$0.29	7/10/2026	NONE	10th 1,4,7,10
+First Horizon National	No	Yes	Bank	Fix 	Trad	FHN-E	6.500%	$24.39	-$0.03	6.72%	-3.40%	N	BB-	Ba2	$0.41	10/10/2025	NONE	10th 1,4,7,10
+First Horizon National	No	Yes	Bank	Fix-Float	Trad	FHN-C	6.600%	$25.35	-$0.01	6.51%	2.07%	N	BB-	Ba2	$0.41	5/1/2026	NONE	1st 2,5,8,11
+First Horizon National - Semi	No	Yes	Bank	Fix-Float	Trad	FHN-D	6.100%	Redeem	Redeem	Redeem	Redeem	N	BB-	Ba2	$0.76	5/1/2024	NONE	1st 5 and 11
+First Horizon National - Semi	No	Yes	Bank	Fix-Float	Trad	FHN-B	6.625%	Redeem	Redeem	Redeem	#VALUE!	N	BB-	Ba2	$0.83	8/1/2025	NONE	1st 2 and 8
+First Internet Bancorp	No	No	Bank	Fix-Float	BB	INBKZ	6.000%	$24.72	-$0.08	Float	Float	N	NR	NR	Float	6/30/2024	6/30/2029	30th 3,6,9,12
+First Merchant	No	Yes	Bank	Fix	Trad	FRMEP	7.500%	$25.86	$0.00	7.25%	15.97%	N	NR	NR	$0.47	8/15/2025	NONE	15th 2,5,8,11
+Flagstar (NYCB)	No	Yes	Bank	Fix	Trad	FLG-A	6.375%	$22.09	-$0.03	7.21%	15.28%	N	B+	Ba1	$0.40	6/17/2027	NONE	17th 3,6,9,12
+FNB Corporation	No	Yes	Bank	Fix-Float	Trad	FNB-E	7.250%	Redeem	Redeem	Redeem	Redeem	N	NR	Ba2	Float	2/15/2024	NONE	15th 2,5,8,11
+Ford Motor	No	No	Other	Fix	BB	F-B	6.200%	$21.38	-$0.18	7.30%	-1.75%	N	BB+	NR	$0.39	6/1/2024	6/1/2059	1st 3,6,9,12
+Ford Motor	No	No	Other	Fix	BB	F-C	6.000%	$20.92	-$0.09	7.27%	16.32%	N	BB+	NR	$0.38	12/1/2024	12/1/2059	1st 3,6,9,12
+Ford Motor	No	No	Other	Fix	BB	F-D	6.500%	$22.51	-$0.25	7.29%	13.49%	N	BB+	NR	$0.41	8/15/2027	8/15/2062	15th 2,5,8,11
+Fortress Biotech	Yes	Yes	Other	Fix	Trad	FBIOP	9.375%	$10.51	-$0.19	Susp	Susp	N	NR	NR	Susp	12/15/2022	NONE	LD Month
+Fossil Group	No	No	Other	Fix	BB	FOSLL	7.000%	Exc/Can	Exc/Can	Exc/Can	#VALUE!	N	NR	NR	$0.44	11/30/2023	11/30/2026	LD 2,5,8,11
+Franklin Benefit Street	Yes	No	mREIT	Fix	Trad	FBRT-E	7.500%	$21.29	-$0.13	8.81%	14.84%	N	NR	NR	$0.47	5/13/2018	NONE	15th 1,4,7,10
+FTAI Aviation 	Yes	No	Other	Fix-Float	Trad	FTAIP	8.250%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	Float	9/15/2024	NONE	15th 3,6,9,12
+FTAI Aviation 	Yes	No	Other	Fix-Float	Trad	FTAIO	8.000%	Redeem	Redeem	Redeem	Float	N	NR	NR	Float	12/15/2024	NONE	15th 3,6,9,12
+FTAI Aviation 	Yes	No	Other	FRR	Trad	FTAIN	8.250%	$25.50	$0.08	8.16%	3.59%	N	NR	NR	$0.52	6/15/2026	NONE	15th 3,6,9,12
+FTAI Aviation 	Yes	No	Other	FRR	Trad	FTAIM	9.500%	$27.47	$0.23	8.59%	4.54%	N	NR	NR	$0.59	6/15/2028	NONE	15th 3,6,9,12
+Fulton Financial	No	Yes	Bank	Fix	Trad	FULTP	5.125%	$18.89	-$0.17	6.78%	997.95%	N	NR	Ba1	$0.32	1/15/2026	NONE	15th 1,4,7,10
+Gabelli Div and Income Fund	Yes	Var	CEF	Fix	Trad	GDV-H	5.375%	$22.48	$0.17	5.98%	-0.39%	Y	NR	Aa3	$0.34	6/7/2024	NONE	26th 3,6,9,12
+Gabelli Div and Income Fund	Yes	Var	CEF	Fix	Trad	GDV-K	4.250%	$18.24	$0.09	5.92%	41.94%	Y	NR	Aa3	$0.27	10/7/2026	NONE	26th 3,6,9,12
+Gabelli Equity Trust	Yes	Var	CEF	Fix	Trad	GAB-H	5.000%	$20.87	-$0.03	5.99%	16.52%	Y	NR	A1	$0.31	9/28/2017	NONE	26th 3,6,9,12
+Gabelli Equity Trust	Yes	Var	CEF	Fix	Trad	GAB-G	5.000%	$20.70	-$0.03	6.04%	17.20%	Y	NR	A1	$0.31	8/1/2017	NONE	26th 3,6,9,12
+Gabelli Equity Trust	Yes	Var	CEF	Fix	Trad	GAB-K	5.000%	$20.85	$0.04	6.00%	16.60%	Y	NR	A1	$0.31	12/16/2024	NONE	26th 3,6,9,12
+Gabelli Global Multimedia	Yes	Var	CEF	Fix	Trad	GGT-E	5.125%	$21.35	$0.00	6.00%	14.60%	Y	NR	A2	$0.32	9/26/2022	NONE	26th 3,6,9,12
+Gabelli Global Multimedia	Yes	Var	CEF	Fix	Trad	GGT-G	5.125%	$21.28	$0.00	6.02%	14.88%	Y	NR	A2	$0.32	12/20/2024	NONE	26th 3,6,9,12
+Gabelli Multimedia Trust	Yes	Var	CEF	Fix	Trad	GGT-E	5.125%	$21.35	$0.00	6.00%	14.60%	Y	NR	A2	$0.32	9/26/2022	NONE	26th 3,6,9,12
+Gabelli Utility Trust 	Yes	Var	CEF	Fix	Trad	GUT-C	5.375%	$22.34	$0.09	6.01%	10.64%	Y	NR	A1	$0.34	5/31/2021	NONE	26th 3,6,9,12
+GAMCO Global Gold Nat Res	Yes	Var	CEF	Fix	Trad	GGN-B	5.000%	$20.71	-$0.04	6.04%	17.16%	Y	NR	A2	$0.31	5/7/2018	NONE	26th 3,6,9,12
+GAMCO Natural Resources	Yes	Var	CEF	Fix	Trad	GNT-A	5.200%	$21.14	$0.00	6.15%	15.44%	Y	NR	A2	$0.33	10/26/2022	NONE	26th 3,6,9,12
+GasLog LTD	Yes	Yes	Shipping	Fix	Trad	GLOG-A	8.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.55	4/7/2020	NONE	1st 1,4,7,10
+GasLog Partners	Yes	Yes	Shipping	Fix-Float	Trad	GLOP-A	8.625%	$25.67	-$0.03	8.40%	6.54%	N	NR	NR	$0.54	6/15/2027	NONE	15th 3,6,9,12
+GasLog Partners	Yes	Yes	Shipping	Fix-Float	Trad	GLOP-C	8.500%	$25.50	-$0.14	Float	Float	N	NR	NR	Float	3/15/2024	NONE	15th 3,6,9,12
+GasLog Partners	Yes	Yes	Shipping	Fix-Float	Trad	GLOP-B	8.200%	$25.66	-$0.16	Float	Float	N	NR	NR	Float	3/15/2023	NONE	15th 3,6,9,12
+General American Investors	Yes	No	CEF	Fix	Trad	GAM-B	5.950%	$25.14	$0.09	5.92%	-0.56%	N	NR	NR	$0.37	9/24/2008	NONE	24th 3,6,9,12
+Georgia Power	No	No	Ute	Fix	BB	GPJA	5.000%	$22.73	-$0.07	5.50%	9.08%	Y	BBB	Baa1	$0.31	10/1/2022	10/1/2077	1st 1,4,7,10
+Gladstone Capital	No	No	BDC	Fix	BB	GLADZ	7.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.48	9/1/2025	9/1/2028	1st 3,6,9,12
+Gladstone Commercial	Yes	No	eREIT	Fix	Trad	GOODN	6.625%	$22.59	-$0.10	7.33%	-0.33%	N	NR	NR	$0.14	10/4/2024	NONE	LD Month
+Gladstone Commercial	Yes	No	eREIT	Fix	Trad	GOODO	6.625%	$20.76	-$0.15	7.51%	43.30%	N	NR	NR	$0.13	6/28/2026	NONE	LD Month
+Gladstone investment Corp	No	No	BDC	Fix	BB	GAINN	5.000%	$25.16	$0.02	4.97%	-0.64%	N	NR	NR	$0.31	5/1/2023	5/1/2026	1st 2,5,8,11
+Gladstone investment Corp	No	No	BDC	Fix	BB	GAINZ	4.875%	$23.93	$0.06	5.01%	4.28%	N	NR	NR	$0.30	11/1/2023	11/1/2028	1st 2,5,8,11
+Gladstone investment Corp	No	No	BDC	Fix	BB	GAINL	Redeem	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	#VALUE!	8/1/2025	8/1/2028	1st 2,5,8,11
+Gladstone investment Corp	No	No	BDC	Fix	BB	GAINI	7.875%	$25.80	$0.03	7.60%	4.61%	N	NR	NR	$0.49	2/1/2027	2/1/2030	1st 2,5,8,11
+Gladstone Land	Yes	Var	eREIT	Fix	Trad	LANDO	6.000%	$19.07	$0.09	7.87%	23.72%	N	NR	NR	$0.13	6/1/2022	NONE	LD Month
+Gladstone Land	Yes	Var	eREIT	Fix	Term	LANDM	5.000%	$24.92	-$0.01	5.02%	0.32%	N	NR	NR	$0.10	1/31/2023	1/31/2026	LD Month
+Gladstone Land	Yes	Var	eREIT	Fix	Trad	LANDP	6.000%	$19.16	$0.06	7.83%	-6.77%	N	NR	NR	$0.13	6/1/2024	NONE	5th Month
+Global Medical REIT	Yes	No	eREIT	Fix	Trad	GMRE-A	7.500%	$24.32	$0.12	7.73%	2.72%	N	NR	NR	$0.47	9/15/2022	NONE	LD 1,4,7,10
+Global Medical REIT	Yes	No	eREIT	Fix	Trade	GMRE-B	8.000%	$25.01	$0.15	8.00%	-0.04%	N	NR	0.50%	$0.50	11/20/2030	NONE	LD 1,4,7,10
+Global Net Lease	Yes	No	eREIT	Fix	Trad	GNL-A	7.250%	$22.68	-$0.03	7.99%	9.28%	N	NR	NR	$0.45	9/12/2022	NONE	15th 1,4,7,10
+Global Net Lease	Yes	No	eREIT	Fix	Trad	GNL-B	6.875%	$22.09	$0.07	7.78%	11.64%	N	NR	NR	$0.43	11/26/2024	NONE	15th 1,4,7,10
+Global Net Lease (Necessity)	Yes	No	eREIT	Fix	Trad	GNL-D	7.500%	$24.40	-$0.05	7.68%	6.34%	N	NR	NR	$0.47	3/26/2024	NONE	15th 1,4,7,10
+Global Net Lease (Necessity)	Yes	No	eREIT	Fix	Trad	GNL-E	7.375%	$23.35	-$0.07	7.90%	-118.89%	N	NR	NR	$0.46	12/18/2025	NONE	15th 1,4,7,10
+Global Partners	Yes	No	MLP	Fix	Trad	GLP-B	9.500%	$25.79	$0.00	9.15%	0.21%	N	NR	NR	$0.59	5/15/2026	NONE	15th 2,5,8,11
+Global Partners	Yes	No	MLP	Fix-Float	Trad	GLP-A	9.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	Float	8/15/2023	NONE	15th 2,5,8,11
+Global Ship Lease	Yes	Yes	Shipping	Fix	Trad	GSL-B	8.750%	$26.29	$0.03	8.32%	-5.16%	N	NR	NR	$0.55	8/20/2019	NONE	1st 1,4,7,10
+Globe Life	No	No	Insurance	Fix	BB	GL-D	4.250%	$16.84	$0.01	6.32%	79.86%	Y	BBB+	Baa2	$0.27	6/17/2026	6/17/2061	15th 3,6,9,12
+Golar LNG Partners	Yes	Yes	Shipping	Fix	Trad	GMLPF	8.750%	$0.15	-$0.03	Susp	99.40%	N	NR	NR	$0.55	10/31/2022	NONE	15th 2,5,8,11
+Goldman Sachs Group	No	Yes	Finance	Fix-Float	Trad	GS-K	6.375%	Redeem	Redeem	Redeem	Redeem	N	BB	Ba1	$0.40	5/10/2024	NONE	10th 2,5,8,11
+Goldman Sachs Group	No	Yes	Finance	Fix-Float	Trad	GS-J	5.500%	Redeem	Redeem	Redeem	Redeem	N	BB	Ba1	$0.34	5/10/2023	NONE	10th 2,5,8,11
+Goldman Sachs Group	No	Yes	Finance	FLR	Trad	GS-C	4.000%	$20.17	-$0.02	Float	Float	N	BB	Ba1	Float	5/24/2011	NONE	10th 2,5,8,11
+Goldman Sachs Group	No	Yes	Finance	FLR	Trad	GS-D	4.000%	$19.65	-$0.02	Float	Float	N	BB	Ba1	Float	10/31/2010	NONE	10th 2,5,8,11
+Goldman Sachs Group	No	Yes	Finance	FLR	Trad	GS-A	3.750%	$19.84	-$0.02	Float	Float	N	BB	Ba1	Float	4/10/2010	NONE	10th 2,5,8,11
+Granite Point Mortgage	Yes	No	mREIT	Fix-Float	Trad	GPMT-A	7.000%	$19.90	-$0.18	8.79%	20.40%	N	NR	NR	$0.44	1/15/2027	NONE	15th 1,4,7,10
+Great Ajax 	No	No	mREIT	Fix	CONV	AJXA	7.250%	Convert	Convert	Convert	Convert	N	NR	NR	$0.45	4/30/2022	4/30/2024	15th 1,4,7,10
+Great Elm Capital	No	No	BDC	Fix	BB	GECCM	6.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.42	1/31/2021	1/31/2025	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCN	6.500%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	6/30/2021	6/30/2024	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCO	5.875%	$25.00	$0.00	5.88%	5.88%	N	NR	NR	$0.37	6/30/2023	6/30/2026	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCZ	8.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.55	9/30/2025	9/30/2028	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCI	8.500%	$25.13	-$0.01	8.45%	6.79%	N	NR	NR	$0.53	4/30/2026	4/30/2029	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCH	8.125%	$25.20	$0.00	8.05%	7.23%	N	NR	NR	$0.51	12/31/2026	12/31/2029	LD 3,6,9,12
+Great Elm Capital	No	No	BDC	Fix	BB	GECCG	7.750%	$25.06	-$0.01	7.73%	#DIV/0!	N	NR	NR	$0.48	12/31/2027	12/31/2030	LD 3,6,9,12
+Great Elm Group	No	No	Other	Fix	BB	GEGGL	7.250%	$24.72	$0.00	7.28%	6.54%	N	NR	NR	$0.45	6/30/2024	6/30/2027	LD 3,6,9,12
+Green Brick Partners	Yes	Yes	Other	Fix	Trad	GRBK-A	5.750%	$23.45	-$0.12	6.12%	12.57%	N	NR	NR	$0.36	12/23/2026	NONE	15th 3,6,9,12
+Greenidge Generation	No	No	Other	Fix	BB	GREEL	8.500%	$18.80	$0.16	11.28%	24.80%	N	NR	NR	$0.53	10/31/2023	10/31/2026	LD 1,4,7,10
+Hancock Whitney	No	No	Bank	Fix	BB	HWCPL	5.950%	Redeem	Redeem	Redeem	Redeem	Y	BBB-	Baa3	$0.37	6/15/2020	6/15/2045	15th 3,6,9,12
+Hancock Whitney	No	No	Bank	Fix	BB	HWCPZ	6.250%	$23.28	NA	6.70%	-5.55%	Y	BBB-	Baa3	$0.39	6/15/2025	6/15/2060	15th 3,6,9,12
+Harrow Health	No	No	Other	Fix	BB	HROWL	8.625%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.54	2/1/2026	4/30/2026	LD 1,4,7,10
+Harrow Health	No	No	Other	Fix	BB	HROWM	11.875%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.74	12/31/2024	12/31/2027	LD 1,4,7,10
+Hartfold Financial	No	Yes	Insurance	Fix	Trad	HIG-G	6.000%	$25.16	-$0.04	5.96%	6.26%	Y	BBB-	Baa3	$0.38	11/15/2023	NONE	15th 2,5,8,11
+Hennessy Advisors	No	No	Asset Mgr	Fix	Trad	HNNAZ	4.875%	$25.00	$0.00	4.88%	0.00%	N	NR	NR	$0.30	12/31/2023	12/31/2026	LD 3,6,9,12
+Hercules Capital	No	No	BDC	Fix	BB	HCXY	6.250%	$25.38	$0.00	6.16%	-1.52%	N	NR	NR	$0.39	10/30/2023	10/30/2033	30th 1,4,7,10
+Hersha Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	HT-C	6.875%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.43	3/6/2018	NONE	15th 1,4,7,10
+Hersha Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	HT-D	6.500%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	5/31/2021	NONE	15th 1,4,7,10
+Hersha Hospitality Trust	Yes	No	Hotel REIT	Fix	Trad	HT-E	6.500%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	11/7/2021	NONE	15th 1,4,7,10
+Highland Income Fund	Yes	No	CEF	Fix	Trad	HFRO-A	5.375%	$15.95	-$0.05	8.42%	36.20%	Y	NR	A1	$0.34	9/30/2024	NONE	LD 3,6,9,12
+Hoegh LNG Partners	Yes	Yes	Shipping	Fix	Trad	HMLP-A	8.750%	Delist	Delist	Delist	Delist	N	NR	NR	$0.55	10/5/2022	NONE	15th 2,5,8,11
+Horizon Tech Finance	No	No	BDC	Fix	BB	HTFB	4.875%	$24.96	$0.00	4.81%	4.75%	N	NR	NR	$0.30	3/30/2023	3/30/2026	15th 3,6,9,12
+Horizon Tech Finance	No	No	BDC	Fix	BB	HTFC	6.250%	$24.84	$0.01	6.28%	5.87%	N	NR	NR	$0.39	6/15/2024	6/15/2027	15th 3,6,9,12
+Hovnanian Enterprise	Yes	Yes	Other	Fix	Trad	HOVNP	7.625%	$20.38	$0.08	9.42%	18.48%	N	CCC	Ca	$0.48	7/12/2010	NONE	15th 1,4,7,10
+Hudson Pacific	Yes	No	eREIT	Fix	Trad	HPP-C	4.625%	$15.35	-$0.10	7.82%	52.69%	N	B	NR	$0.30	11/16/2026	NONE	LD 3,6,9,12
+Huntington Bancshares	No	Yes	Bank	Fix	Trad	HBANP	4.500%	$17.36	-$0.03	6.47%	119.15%	Y	BB+	Baa3	$0.28	4/15/2026	NONE	15th 1,4,7,10
+Huntington Bancshares	No	Yes	Bank	Fix	Trad	HBANM	5.700%	$22.39	-$0.05	6.36%	10.44%	N	BB+	Baa3	$0.36	12/1/2022	NONE	1st 3,6,9,12
+Huntington Bancshares	No	Yes	Bank	FRR	Trad	HBANL	6.875%	$25.33	$0.05	6.79%	6.21%	Y	BB+	Baa3	$0.43	4/15/2028	NONE	15th 1,4,7,10
+Hyperscale Data	Yes	Yes	Other	Fix	Trad	GPUS-D	13.000%	$23.11	$0.56	14.02%	7.56%	N	NR	NR	$0.27	Anytime	None	LD Month
+Imperial Petroleum	Yes	No	Other	Fix	Trad	IMPPP	8.750%	$25.81	$0.06	8.52%	-3.24%	N	NR	NR	$0.55	6/30/2022	NONE	30th 3,6,9,12
+Innovative Industrial	Yes	No	Other	Fix	Trad	IIPR-A	9.000%	$23.87	-$0.08	9.32%	4.52%	N	NR	NR	$0.56	10/19/2022	NONE	15th 1,4,7,10
+INPOINT Commercial	Yes	No	mREIT	Fix	Trad	ICR-A	6.750%	$20.61	$0.12	8.15%	32.90%	N	NR	NR	$0.42	9/22/2026	NONE	30th 3,6,9,12
+Invesco Mortgage Capital	Yes	No	mREIT	Fix-Float	Trad	IVR-B	7.75%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.48	12/27/2024	NONE	27th 3,6,9,12
+Invesco Mortgage Capital	Yes	No	mREIT	Fix-Float	Trad	IVR-C	7.500%	$24.67	-$0.08	7.60%	8.37%	N	NR	NR	$0.47	9/27/2027	NONE	27th 3,6,9,12
+Jackson Financial	No	Yes	Insurance	FRR	Trad	JXN-A	8.000%	$25.94	-$0.09	7.71%	6.02%	N	BB+	Ba1	$0.50	3/30/2028	NONE	30th 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-D	5.750%	$25.10	-$0.02	5.73%	-0.40%	Y	BBB-	Baa2	$0.36	12/1/2023	NONE	1st 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-C	6.000%	$25.30	-$0.01	5.93%	6.58%	Y	BBB-	Baa2	$0.38	3/1/2024	NONE	1st 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-J	4.750%	$20.28	-$0.10	5.86%	18.88%	Y	BBB-	Baa2	$0.30	12/1/2024	NONE	1st 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-K	4.550%	$19.52	-$0.11	6.15%	60.95%	Y	BBB-	Baa2	$0.30	6/1/2026	NONE	1st 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-L	4.625%	$19.81	-$0.12	5.84%	57.74%	Y	BBB-	Baa2	$0.29	6/1/2026	NONE	1st 3,6,9,12
+JPMorgan Chase	No	Yes	Bank	Fix	Trad	JPM-M	4.200%	$18.36	-$0.07	5.66%	46.40%	Y	BBB-	Baa2	$0.26	9/1/2026	NONE	1st 3,6,9,12
+Kemper Corporation	No	No	Insurance	FRR	BB	KMPB	5.875%	$23.50	$0.15	6.30%	11.36%	N	BB+	Ba1	$0.37	3/15/2027	3/15/2062	15th 3,6,9,12
+KeyCorp	No	Yes	Bank	Fix	Trad	KEY-K	5.625%	$21.46	$0.03	6.56%	-4.25%	Y	BB+	Baa3	$0.35	9/15/2024	NONE	15th 3,6,9,12
+KeyCorp	No	Yes	Bank	Fix-Float	Trad	KEY-I	6.125%	$24.95	-$0.03	6.14%	6.35%	Y	BB+	Baa3	$0.38	12/15/2026	NONE	15th 3,6,9,12
+KeyCorp	No	Yes	Bank	FRR	Trad	KEY-L	6.200%	$25.33	$0.09	6.16%	5.38%	Y	BB+	Baa3	$0.39	9/15/2027	NONE	15th 3,6,9,12
+KeyCorp 	No	Yes	Bank	Fix	Trad	KEY-J	5.650%	$21.34	$0.00	6.62%	14.64%	Y	BB+	Baa3	$0.35	12/15/2023	NONE	15th 3,6,9,12
+Kimco Realty	Yes	No	eREIT	Fix	Trad	KIM-L	5.125%	$20.02	-$0.12	6.40%	19.92%	Y	BBB-	NR	$0.32	8/16/2022	NONE	15th 1,4,7,10
+Kimco Realty	Yes	No	eREIT	Fix	Trad	KIM-M	5.250%	$20.55	-$0.14	6.39%	17.80%	Y	BBB-	NR	$0.33	12/20/2022	NONE	15th 1,4,7,10
+KKR Finance	No	No	Asset Mgr	Fix	BB	KKRS	4.625%	$17.49	-$0.18	6.61%	135.61%	Y	BBB+	NR	$0.29	4/1/2026	4/1/2061	1st 1,4,7,10
+KKR & Co	No	No	Asset Mgr	Fix	BB	KKRT	6.875%	$25.42	-$0.09	6.77%		Y	BBB+	NR	$0.43	6/1/2030	6/1/2065	1st 3,6,9,12
+KKR Real Estate Finance	Yes	No	eREIT	Fix	Trad	KREF-A	6.500%	$18.28	$0.01	8.97%	107.08%	N	NR	NR	$0.41	4/16/2026	NONE	15th 3,6,9,12
+Level One Bancorp	No	Yes	Bank	Fix	Trad	FRMEP	7.500%	$25.86	$0.00	7.25%	15.97%	N	NR	NR	$0.47	8/15/2025	NONE	15th 2,5,8,11
+Liberty Broadband	Yes	Yes	Other	Fix	Term	LBRDP	7.000%	$24.27	$0.09	7.21%	7.43%	N	NR	NR	$0.44	3/9/2039	3/9/2039	15th 1,4,7,10
+LifeMD Inc	Yes	Yes	Other	Fix	Trad	LFMDP	8.875%	$22.09	-$0.68	9.96%	11.64%	N	NR	NR	$0.55	10/15/2022	None	15th 1,4,7,10
+Lincoln Financial Group	No	Yes	Insurance	Fix	Trad	LNC-D	9.000%	$27.03	-$0.01	8.29%	4.02%	Y	BBB-	Baa3	$0.56	12/1/2027	NONE	1st 3,6,9,12
+Live Oak Bancshares	No	Yes	Bank	Fix	Trad	LOB-A	8.375%	$25.57	$0.08	8.18%	#DIV/0!	N	NR	NR	$0.52	9/15/2030	NONE	15th 3,6,9,12
+Lument Finance Trust	Yes	No	eREIT	Fix	Trad	LFT-A	7.875%	$20.19	$0.00	9.71%	68.72%	N	NR	NR	$0.49	5/5/2026	NONE	15th 1,4,7,10
+LuxUrban Hotels	Yes	Yes	C-Corp	Fix	Trad	LUXHP	13.000%	Delist	Delist	Delist	#VALUE!	N	NR	NR	$0.27	10/26/2026	NONE	LD Month
+M&T Bank  	No	Yes	Bank	Fix	Trad	MTB-J	7.500%	$26.62	-$0.03	7.06%	5.18%	Y	BB+	Baa3	$0.47	6/15/2029	NONE	15th 3,6,9,12
+M&T Bank (People's Financial)	No	Yes	Bank	Fix-Float	Trad	MTB-H	5.625%	$24.75	-$0.06	5.68%	6.75%	Y	BB+	Baa3	$0.35	12/15/2026	NONE	15th 3,6,9,12
+M&T Bank	No	Yes	Bank	Fix	Trad	MTB-K	6.350%	$25.61	$0.00	6.20%	#DIV/0!	Y	BB+	Baa3	$0.40	12/15/2030	NONE	15th 3,6,9,12
+Maiden Holdings LTD	No	No	Insurance	Fix	BB	MHNC	7.750%	$15.80	$0.00	12.15%	36.80%	N	NR	NR	$0.48	12/1/2018	12/1/2043	1st 3,6,9,12
+Maiden Holdings LTD	No	No	Insurance	Fix	BB	MHLA	6.625%	$13.00	$0.00	12.74%	48.00%	N	NR	NR	$0.41	6/14/2021	6/14/2046	4th 3,6,9,12
+MainStreet Bancshares	No	Yes	Bank	Fix	Trad	MNSBP	7.500%	$24.33	-$0.42	7.73%	-2.25%	N	NR	NR	$0.47	09/30/2025	NONE	30th 3,6,9,12
+Medalist Diversified REIT	Yes	No	eREIT	Fix	Trad	MDRRP	8.000%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.50	02/19/2022	NONE	25th 1,4,7,10
+Medallion Bank	No	Yes	Bank	Fix-Float	Trad	MBNKP	8.000%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	Float	04/01/2025	NONE	1st 1,4,7,10
+Merchants Bancorp	No	Yes	Bank	Fix	Trad	MBINN	6.000%	$18.83	-$0.08	8.07%	114.05%	N	NR	Ba3	$0.38	4/1/2026	NONE	1st 1,4,7,10
+Merchants Bancorp	No	Yes	Bank	Fix	Trad	MBINL	7.625%	$22.97	$0.05	8.31%	10.34%	N	NR	Ba3	0.477	1/1/2030	None	1st 1,4,7,10
+Merchants Bancorp	No	Yes	Bank	Fix-Float	Trad	MBINP	7.000%	Redeem	Redeem	Redeem	Redeem	N	NR	Ba3	$0.44	4/1/2024	NONE	1st 1,4,7,10
+Merchants Bancorp	No	Yes	Bank	Fix-Float	Trad	MBINO	6.000%	Redeem	Redeem	Redeem	Float	N	NR	Ba3	Float	10/1/2024	NONE	1st 1,4,7,10
+Merchants Bancorp	No	Yes	Bank	FRR	Trad	MBINM	8.250%	$25.15	-$0.11	8.27%	7.92%	N	NR	Ba3	$0.52	10/1/2027	NONE	1st 1,4,7,10
+MetLife Inc	No	Yes	Insurance	Fix	Trad	MET-E	5.625%	$23.89	-$0.15	5.89%	4.44%	Y	BBB	Baa2	$0.35	6/15/2023	NONE	15th 3,6,9,12
+MetLife Inc	No	Yes	Insurance	Fix	Trad	MET-F	4.750%	$19.85	-$0.16	5.98%	20.60%	Y	BBB	Baa2	$0.30	3/15/2025	NONE	15th 3,6,9,12
+MetLife Inc	No	Yes	Insurance	FLR	Trad	MET-A	4.000%	$21.62	-$0.13	Float	Float	Y	BBB	Baa2	Float	9/15/2010	NONE	15th 3,6,9,12
+MFA Financial	Yes	No	mREIT	Fix	Trad	MFA-B	7.500%	$20.04	-$0.01	9.36%	19.84%	N	NR	NR	$0.47	4/15/2018	NONE	LD 3,6,9,12
+MFA Financial	Yes	No	mREIT	Fix	Trad	MFA-C	6.500%	$22.73	-$0.04	7.22%	-4.58%	N	NR	NR	$0.41	3/31/2025	NONE	LD 3,6,9,12
+MFA Financial	No	No	mREIT	Fix	BB	MFAN	8.875%	$25.29	$0.04	8.76%	-1.82%	N	NR	NR	$0.55	2/15/2026	2/15/2029	15th 2,5,8,11
+MFA Financial	No	No	mREIT	Fix	BB	MFAO	9.000%	$25.42	-$0.01	8.85%	6.08%	N	NR	NR	$0.56	8/15/2026	8/15/2029	15th 2,5,8,11
+Midcap Financial	No	No	BDC	Fix	BB	MFICL	8.000%	No Quote	#N/A	#VALUE!	#VALUE!	N	NR	NR	$0.50	12/15/2025	12/15/2028	15th 3,6,9,12
+Midland States Bancorp	No	Yes	Bank	FRR	Trad	MSBIP	7.750%	$25.00	$0.04	7.68%	7.68%	N	NR	NR	$0.48	9/30/2027	NONE	30th 3,6,9,12
+Morgan Stanley	No	Yes	Finance	Fix	Trad	MS-L	4.875%	$20.56	-$0.12	5.93%	-11.78%	Y	BBB-	Baa3	$0.30	1/5/2025	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix	Trad	MS-O	4.250%	$17.61	-$0.10	6.13%	34.98%	Y	BBB-	Baa3	$0.27	1/15/2027	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix	Trad	MS-P	6.500%	$25.52	-$0.07	6.37%	5.19%	Y	BBB-	Baa3	$0.41	10/15/2027	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix	Trad	MS-Q	6.625%	$26.18	-$0.10	6.34%	5.09%	Y	BBB-	Baa3	$0.42	10/15/2029	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix-Float	Trad	MS-E	7.125%	$25.49	-$0.03	Float	Float	Y	BBB-	Baa3	Float	10/15/2023	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix-Float	Trad	MS-F	6.875%	$25.22	-$0.03	Float	Float	Y	BBB-	Baa3	Float	1/15/2024	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix-Float	Trad	MS-I	6.375%	$25.08	-$0.03	Float	Float	Y	BBB-	Baa3	Float	10/15/2024	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	Fix-Float	Trad	MS-K	5.850%	$24.58	-$0.12	5.95%	7.27%	Y	BBB-	Baa3	$0.37	4/15/2027	NONE	15th 1,4,7,10
+Morgan Stanley	No	Yes	Finance	FLR	Trad	MS-A	4.000%	$19.52	$0.02	Float	Float	Y	BBB-	Baa3	Float	7/15/2011	NONE	15th 1,4,7,10
+National Healthcare Prop	Yes	No	eREIT	Fix	Trad	NHPAP	7.375%	$18.38	NA	10.03%	26.48%	N	NR	NR	$0.46	12/11/2024	NONE	15th 1,4,7,10
+National Healthcare Prop	Yes	No	eREIT	Fix	Trad	NHPBP	7.125%	$18.18	NA	9.90%	46.37%	N	NR	NR	$0.45	10/06/2026	NONE	15th 1,4,7,10
+National Rural Utilities	No	No	Ute	Fix	BB	NRUC	5.500%	$23.92	-$0.05	5.75%	3.12%	Y	BBB+	NR	$0.34	5/15/2024	5/15/2064	15th 2,5,8,11
+National Storage Affiliates	Yes	No	eREIT	Fix	Trad	NSA-A	6.000%	$21.35	-$0.15	7.03%	14.60%	N	NR	NR	$0.38	10/11/2022	NONE	LD 3,6,9,12
+Navient Corp    	No	No	Finance	Fix	BB	JSM	6.000%	$19.64	-$0.14	7.74%	21.44%	N	B+	Ba3	$0.38	12/15/2008	12/15/2043	15th 3,6,9,12
+New Mountain Finance	No	No	BDC	Fix	BB	NMFCZ	8.250%	$25.45	$0.01	8.11%	20.74%	Y	NR	Baa3	$0.52	11/15/2025	11/15/2028	15th 2,5,8,11
+NewtekOne	No	No	Bank	Fix	BB	NEWTL	5.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.36	8/1/2021	8/1/2024	1st 2,5,8,11
+NewtekOne	No	No	Bank	Fix	BB	NEWTZ	5.500%	$25.22	-$0.01	5.45%	-0.88%	N	NR	NR	$0.34	2/1/2022	2/1/2026	1st 2,5,8,11
+NewtekOne	No	No	Bank	Fix	BB	NEWTI	8.000%	$25.37	-$0.01	7.88%	12.14%	N	NR	NR	$0.50	9/1/2025	9/1/2028	1st 3,6,9,12
+NewtekOne	No	No	Bank	Fix	BB	NEWTG	8.500%	$25.26	$0.01	8.39%	7.65%	N	NR	NR	$0.53	6/1/2027	6/1/2029	1st 3,6,9,12
+NewtekOne	No	No	Bank	Fix	BB	NEWTH	8.625%	$25.50	$0.00	8.47%	5.88%	N	NR	NR	$0.54	10/15/2026	10/15/2029	15th 1,4,7,10
+NewtekOne	No	Yes	Bank	Fix	Trad	NEWTP	8.500%	$23.04	$0.19	9.22%	#DIV/0!	N	NR	NR	$0.53	10/1/2030	NONE	1st 1,4,7,10
+Nexpoint Real Estate Finance	Yes	No	mREIT	Fix	Trad	NREF-A	8.500%	$23.95	-$0.14	8.85%	-0.38%	N	NR	NR	$0.53	7/24/2025	NONE	25th 1,4,7,10
+Nextera Energy	No	No	Ute	Fix	BB	NEE-N	5.650%	$23.83	-$0.12	5.93%	2.93%	Y	BBB	Baa2	$0.35	6/15/2024	3/1/2079	1st 3,6,9,12
+Nextera Energy	No	No	Ute	Fix	BB	NEE-U	6.500%	$25.25	-$0.07	6.50%	#DIV/0!	Y	BBB	Baa2	$0.41	6/1/2030	6/1/2085	1st 3,6,9,12
+NiSource	Yes	Yes	Ute	Fix-Float	Trad	NI-B	6.500%	Redeem	Redeem	Redeem	Redeem	Y	BBB-	Ba1	$0.41	3/15/2024	NONE	15th 3,6,9,12
+Northern Trust	No	"Yes
+"	Finance	Fix	Trad	NTRSO	4.700%	$19.56	-$0.12	6.01%	-15.46%	N	BBB+	Baa1	$0.29	1/1/2025	NONE	15th 3,6,9,12
+NuStar Energy	Yes	No	MLP	Fix-Float	Trad	NS-C	9.000%	Redeem	Redeem	Redeem	Redeem	N	B-	B1	Float	12/15/2022	NONE	15th 3,6,9,12
+NuStar Energy	Yes	No	MLP	Fix-Float	Trad	NS-A	8.500%	Redeem	Redeem	Redeem	Redeem	N	B-	B1	Float	12/15/2021	NONE	15th 3,6,9,12
+NuStar Energy	Yes	No	MLP	Fix-Float	Trad	NS-B	7.625%	Redeem	Redeem	Redeem	Redeem	N	B-	B1	Float	6/15/2022	NONE	15th 3,6,9,12
+NuStar Logistics	No	No	MLP	Fix-Float	BB	NSS	7.625%	Redeem	Redeem	Redeem	Redeem	N	B+	Ba2	Float	1/15/2018	1/15/2043	15th 1,4,7,10
+Oaktree Capital	No	No	BDC	Fix	Trad	OAK-A	6.625%	$20.74	-$0.14	7.99%	17.04%	Y	BBB	NR	$0.41	6/15/2023	NONE	15th 3,6,9,12
+Oaktree Capital	No	No	BDC	Fix	Trad	OAK-B	6.550%	$20.66	-$0.06	7.92%	17.36%	Y	BBB	NR	$0.41	9/15/2023	NONE	15th 3,6,9,12
+OceanFirst Financial	No	Yes	Bank	Fix-Float	Trad	OCFCP	7.000%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.44	6/1/2025	NONE	15th 2,5,8,11
+Office Properties Income Trust	No	No	eREIT	Fix	BB	OPINL	6.350%	Default	Default	Default	#VALUE!	N	CCC	Caa1	$0.40	6/23/2025	6/23/2050	1st 3,6,9,12
+OFS Capital	No	No	BDC	Fix	BB	OFSSI	5.950%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.37	10/31/2021	10/31/2024	LD 1,4,7,10
+OFS Capital	No	No	BDC	Fix	BB	OFSSH	4.950%	$23.94	NA	5.18%	3.24%	N	NR	NR	$0.31	10/31/2023	10/31/2028	LD 1,4,7,10
+OFS Capital	No	No	BDC	Fix	BB	OFSSO	7.500%	$25.68	NA	7.29%	#DIV/0!	N	NR	NR	$0.47	7/31/2026	7/31/2028	LD 1,4,7,10
+OFS Credit	Yes	Var	CEF	Fix	Term	OCCIO	6.125%	$24.97	$0.04	6.25%	0.12%	N	NR	NR	$0.13	4/30/2023	4/30/2026	LD Month
+OFS Credit	Yes	Var	CEF	Fix	Term	OCCIN	5.250%	$24.52	$0.00	5.33%	4.38%	N	NR	NR	$0.11	12/31/2023	12/31/2026	LD Month
+OFS Credit	Yes	Var	CEF	Fix	Term	OCCIM	7.875%	$25.14	-$0.06	7.88%	7.19%	N	NR	NR	$0.17	10/31/2026	10/31/2029	LD Month
+Old National Bank	No	Yes	Bank	Fix	Trad	ONBPP	7.000%	$25.10	-$0.01	6.97%	8.02%	N	NR	NR	$0.44	8/20/2025	NONE	20th 2,5,8,11
+Old National Bank	No	Yes	Bank	Fix	Trad	ONBPO	7.000%	$25.15	$0.00	7.00%	8.57%	N	NR	NR	$0.44	8/20/2025	NONE	20th 2,5,8,11
+Osaic Financial (Ladenburg)	Yes	Yes	Finance	Fix	Trad	LTSAP	8.000%	$18.50	$0.00	11.03%	26.00%	N	NR	NR	$0.17	5/24/2018	NONE	28th of Month
+Osaic Financial (Ladenburg)	No	No	Finance	Fix	BB	LTSL	6.500%	$22.24	$0.00	7.37%	11.04%	N	NR	NR	$0.41	11/30/2022	11/30/2027	LD 3,6,9,12
+Osaic Financial (Ladenburg)	No	No	Finance	Fix	BB	LTSH	7.750%	$22.75	$0.72	8.44%	9.00%	N	NR	NR	$0.48	6/30/2022	6/30/2029	LD 3,6,9,12
+Osaic Financial (Ladenburg)	No	No	Finance	Fix	BB	LTSF	7.000%	$22.75	$0.60	7.74%	9.00%	N	NR	NR	$0.44	5/31/2021	5/31/2028	LD 3,6,9,12
+Osaic Financial (Ladenburg)	No	No	Finance	Fix	BB	LTSK	7.250%	$22.50	$0.00	8.00%	10.00%	N	NR	NR	$0.45	9/30/2021	9/30/2028	LD 3,6,9,12
+Oxford Lane Cap	Yes	Var	CEF	Fix	Term	OXLCM	6.750%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.14	6/30/2020	6/30/2024	LD Month
+Oxford Lane Cap	Yes	Var	CEF	Fix	Term	OXLCP	6.250%	$24.68	-$0.01	6.33%	1.28%	N	NR	NR	$0.13	2/28/2023	2/28/2027	LD Month
+Oxford Lane Cap	Yes	Var	CEF	Fix	Term	OXLCO	6.000%	$23.57	$0.00	6.36%	5.72%	N	NR	NR	$0.13	8/31/2024	8/31/2029	LD Month
+Oxford Lane Cap	Yes	Var	CEF	Fix	Term	OXLCN	7.125%	$24.42	$0.01	7.37%	2.32%	N	NR	NR	$0.15	6/30/2024	6/30/2029	LD Month
+Oxford Lane Cap	No	No	CEF	Fix	BB	OXLCL	6.750%	$24.21	$0.00	6.94%	3.16%	N	NR	NR	$0.42	3/16/2024	3/31/2031	30th 3,6,9,12
+Oxford Lane Cap	No	No	CEF	Fix	BB	OXLCZ	5.000%	$24.47	-$0.01	5.11%	2.12%	N	NR	NR	$0.31	1/31/2024	1/31/2027	30th 3,6,9,12
+Oxford Lane Cap	No	No	CEF	Fix	BB	OXLCI	8.760%	$25.70	$0.07	8.48%	7.35%	N	NR	NR	$0.55	6/30/2028	6/30/2030	30th 3,6,9,12
+Oxford Square Capital	No	No	BDC	Fix	BB	OXSQL	6.500%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.41	3/30/2020	3/30/2024	30th 3,6,9,12
+Oxford Square Capital	No	No	BDC	Fix	BB	OXSQZ	6.250%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.39	4/30/2022	4/30/2026	15th 1,4,7,10
+Oxford Square Capital	No	No	BDC	Fix	BB	OXSQH	7.750%	$25.60	NA	7.56%	-2.40%	N	NR	NR	$0.48	7/31/2027	7/31/2030	LD 1,4,7,10
+Partner RE	No	Yes	Insurance	Fix	Trad	PREJF	4.875%	$17.04	$0.00	7.15%	178.06%	Y	BBB	Baa2	$0.30	3/15/2026	NONE	15th 3,6,9,12
+Pearl Diver	Yes	Var	CEF	Fix	Term	PDPA	8.000%	$25.29	$0.00	7.88%	6.70%	N	NR	NR	$0.17	12/31/2026	12/31/2029	LD Month
+Pebblebrook Hotel (was LaSalle)	Yes	No	Hotel REIT	Fix	Trad	PEB-E	6.375%	$19.20	-$0.37	8.30%	23.20%	N	NR	NR	$0.40	3/4/2018	NONE	15th 1,4,7,10
+Pebblebrook Hotel (Was LaSalle)	Yes	No	Hotel REIT	Fix	Trad	PEB-F	6.300%	$19.21	$0.07	8.20%	23.16%	N	NR	NR	$0.39	5/25/2021	NONE	15th 1,4,7,10
+Pebblebrook Hotel Trust	Yes	No	Hotel REIT	Fix	Trad	PEB-H	5.700%	$17.82	$0.00	8.08%	28.72%	N	NR	NR	$0.36	7/27/2026	NONE	15th 1,4,7,10
+PennyMac Mortgage	Yes	No	mREIT	Fix	Trad	PMT-C	6.750%	$18.74	$0.04	8.96%	48.70%	N	NR	NR	$0.42	8/24/2026	NONE	15th 3,6,9,12
+PennyMac Mortgage	No	No	mREIT	Fix	BB	PMTU	8.500%	$25.38	-$0.07	8.37%	14.03%	N	NR	NR	$0.53	9/30/2025	9/30/2028	30th 3,6,9,12
+PennyMac Mortgage	No	No	mREIT	Fix	BB	PMTV	9.000%	$25.59	$0.04	8.75%		N	NR	NR	$0.56	2/15/2027	2/15/2030	15th 2,5,8,11
+PennyMac Mortgage	No	No	mREIT	Fix	BB	PMTW	9.000%	$25.41	$0.01	8.82%		N	NR	NR	$0.56	6/15/2027	6/15/2030	15th 3,6,9,12
+PennyMac Mortgage	Yes	No	mREIT	Now Fix	Trad	PMT-A	8.125%	$24.10	$0.00	8.43%	6.44%	N	NR	NR	$0.51	3/15/2024	NONE	15th 3,6,9,12
+PennyMac Mortgage	Yes	No	mREIT	Now Fix	Trad	PMT-B	8.000%	$23.74	-$0.02	8.42%	5.20%	N	NR	NR	$0.50	6/15/2024	NONE	15th 3,6,9,12
+PhenixFin	No	No	BDC	Fix	BB	PFXNZ	5.250%	$23.73	$0.00	5.56%	5.08%	N	NR	NR	$0.33	11/1/2023	11/1/2028	1st 2,5,8,11
+Pinnacle Financial Partners	No	Yes	Bank	Fix	Trad	PNFPP	6.750%	$25.02	-$0.08	6.74%	6.97%	N	NR	NR	$0.42	9/1/2025	NONE	1st 3,6,9,12
+Pitney Bowes	No	No	Other	Fix	BB	PBI-B	6.700%	$20.57	-$0.06	8.17%	17.72%	N	BB	B1	$0.42	3/7/2018	3/7/2043	7th 3,6,9,12
+Popular	No	No	Bank	Fix	Trust P	BPOPM	6.125%	$25.50	-$0.05	6.00%	-2.00%	N	BB-	B2	$0.13	12/1/2009	12/1/2034	1st Month
+Popular	No	Yes	Bank	Fix	Trad	BPOPO	6.380%	$24.97	-$0.14	6.39%	0.12%	N	B-	B3	$0.13	3/31/2008	NONE	LD Month
+Ready Capital (Anworth)	Yes	No	mREIT	Fix	CONV	RC-C	6.250%	$13.50	-$0.24	11.57%	46.00%	N	NR	NR	$0.39	1/25/2012	NONE	15th 1,4,7,10
+Realty Income (Spirit)	Yes	No	eREIT	Fix	Trad	O-	6.000%	Redeem	Redeem	Redeem	Redeem	N	BB	Ba1	$0.38	10/3/2022	NONE	LD 3,6,9,12
+Redwood Trust	Yes	No	mREIT	Fix	FRR	RWT-A	10.000%	No Quote	#N/A	#VALUE!	#VALUE!	N	NR	NR	$0.63	4/15/2028	NONE	15th 1,4,7,10
+Redwood Trust	No	No	mREIT	Fix	BB	RWTN	9.125%	$24.97	$0.01	9.13%	9.94%	N	NR	NR	$0.57	3/1/2026	3/1/2029	1st 3,6,9,12
+Redwood Trust	No	No	mREIT	Fix	BB	RWTO	9.000%	$25.03	$0.12	8.99%	8.81%	N	NR	NR	$0.56	9/1/2026	9/1/2029	1st 3,6,9,12
+Redwood Trust	No	No	mREIT	Fix	BB	RWTP	9.125%	$24.83	$0.01	9.18%	9.77%	N	NR	NR	$0.57	3/1/2027	3/1/2030	1st 3,6,9,12
+Redwood Trust	No	No	mREIT	Fix	BB	RWTQ	9.500%	$25.98	$0.10	9.15%	#DIV/0!	N	NR	NR	$0.59	12/1/2027	12/1/2030	1st 3,6,9,12
+Regency Centers (Urstadt)	Yes	No	eREIT	Fix	Trad	REGCO	5.875%	$22.68	$0.00	6.53%	-0.81%	N	NR	NR	$0.37	10/1/2024	NONE	LD 1,4,7,10
+Regency Centers (Urstadt)	Yes	No	eREIT	Fix	Trad	REGCP	6.250%	$23.55	-$0.08	6.62%	5.80%	N	NR	NR	$0.39	9/18/2022	NONE	LD 1,4,7,10
+Regions Financial	No	Yes	Bank	Fix	Trad	RF-E	4.450%	$17.39	-$0.12	6.44%	75.88%	Y	BB+	Baa3	$0.28	6/15/2026	NONE	15th 3,6,9,12
+Regions Financial	No	Yes	Bank	Fix-Float	Trad	RF-B	6.375%	Redeem	Redeem	Redeem	Redeem	Y	BB+	Baa3	$0.40	9/15/2024	NONE	15th 3,6,9,12
+Regions Financial	No	Yes	Bank	Fix-Float	Trad	RF-C	5.700%	$23.75	-$0.05	6.00%	7.39%	Y	BB+	Baa3	$0.36	8/15/2029	NONE	15h 2,5,8,11
+Regions Financial	No	Yes	Bank	Fix-Reset	Trad	RF-F	6.950%	$25.36	-$0.05	6.85%	6.46%	Y	BB+	Baa3	$0.43	9/15/2029	NONE	15th 3,6,9,12
+Reinsurance Group of America	No	No	Insurance	Fix	BB	RZB	5.750%	$24.90	-$0.03	5.77%	6.68%	Y	BBB	Baa2	$0.36	6/15/2026	6/15/2056	15th 3,6,9,12
+Reinsurance Group of America	No	No	Insurance	Fix	BB	RZC	7.125%	$25.49	-$0.04	7.06%	5.96%	Y	BBB	Baa2	$0.45	10/15/2027	10/15/2052	1st 1,4,7,10
+RenaissanceRE Holdings	No	Yes	Insurance	Fix	Trad	RNR-G	4.200%	$15.86	-$0.08	6.62%	76.85%	Y	BBB	Baa2	$0.26	7/15/2026	NONE	1st 3,6,9,12
+RenaissanceRE Holdings	No	Yes	Insurance	Fix	Trad	RNR-F	5.750%	$22.30	-$0.06	6.45%	10.80%	Y	BBB	Baa2	$0.36	6/30/2023	NONE	1st 3,6,9,12
+Rexford Industrial Realty	Yes	No	eREIT	Fix	Trad	REXR-B	5.875%	$22.61	$0.00	6.50%	9.56%	N	NR	NR	$0.37	11/13/2022	NONE	LD 3,6,9,12
+Rexford Industrial Realty	Yes	No	eREIT	Fix	Trad	REXR-C	5.625%	$21.58	-$0.12	6.52%	-4.04%	N	NR	NR	$0.35	9/20/2024	NONE	LD 3,6,9,12
+Rithm Capital (New Rez)	Yes	No	mREIT	Fix-Float	Trad	RITM-B	7.125%	$25.51	$0.00	Float	Float	N	NR	NR	Float	8/15/2024	NONE	15th 2,5,8,11
+Rithm Capital (New Rez)	Yes	No	mREIT	Fix-Float	Trad	RITM-A	7.500%	$25.64	$0.04	Float	Float	N	NR	NR	Float	8/15/2024	NONE	15th 2,5,8,11
+Rithm Capital (New Rez)	Yes	No	mREIT	Fix-Float	Trad	RITM-C	6.375%	$24.88	-$0.01	Float	#VALUE!	N	NR	NR	Float	2/15/2025	NONE	15th 2,5,8,11
+Rithm Capital (New Rez)	Yes	No	mREIT	FRR	Trad	RITM-D	7.000%	$24.77	$0.00	7.06%	8.14%	N	NR	NR	$0.44	11/15/2026	NONE	15th 2,5,8,11
+Rithm Capital 	Yes	No	mREIT	Fix	Trad	RITM-E	8.750%	$25.58	$0.01	8.55%	#DIV/0!	N	NR	NR	$0.55	11/15/2030	NONE	15th 2,5,8,11
+Rithm Property Trust	Yes	No	mREIT	FTF	Trad	RPT-C	9.875%	$25.26	$0.00	9.77%	#DIV/0!	N	NR	NR	$0.62	5/15/2030	NONE	15th 2,5,8,11
+RiverNorth Capital and Income	Yes	Var	CEF	Fix	Term	RMPL-	5.875%	Redeemed	Redeemed	Redeemed	Redeemed	N	NR	NR	$0.37	10/31/2020	10/31/2024	15th 2,5,8,11
+RiverNorth Opportunities Fund	Yes	Var	CEF	Fix	Trad	RIV-A	6.000%	$23.25	$0.22	6.45%	11.62%	Y	NR	A1	$0.38	5/15/2027	NONE	15th 2,5,8,11
+RiverNorth/DoubleLine Strategic	Yes	Var	CEF	Fix	Trad	OPP-A	4.375%	$17.02	-$0.03	6.43%	-217.63%	Y	NR	A1	$0.27	11/15/2025	NONE	15th 2,5,8,11
+RiverNorth/DoubleLine Strategic	Yes	Var	CEF	Fix	Trad	OPP-B	4.750%	$18.64	$0.16	6.44%	29.37%	Y	NR	A1	$0.30	2/15/2027	NONE	15th 2,5,8,11
+RLJ Lodging Trust	Yes	No	Hotel REIT	Fix	CONV	RLJ-A	7.800%	$24.94	$0.04	7.82%	NA	N	NR	NR	$0.49	NONE	NONE	LD 1,4,7,10
+Runway Growth Finance	No	No	BDC	Fix	BB	RWAYL	7.500%	$25.25	$0.00	7.43%	8.12%	N	NR	NR	$0.47	7/28/2024	7/28/2027	1st 3,6,9,12
+Runway Growth Finance	No	No	BDC	Fix	BB	RWAYZ	8.000%	$25.28	$0.00	7.91%	9.01%	N	NR	NR	$0.50	12/31/2024	12/31/2027	1st 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCB	7.125%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.45	6/30/2021	6/30/2024	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SACC	6.875%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.43	11/7/2021	12/30/2024	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCC	7.750%	Called	Called	Called	#VALUE!	N	NR	NR	$0.48	9/4/2022	9/30/2025	30th 3,6,9,12
+Sachem Capital	Yes	No	mREIT	Fix	Trad	SACH-A	7.750%	$18.10	$0.32	10.70%	68.60%	N	NR	NR	$0.48	6/29/2026	NONE	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCD	6.000%	$24.30	$0.06	6.26%	2.80%	N	NR	NR	$0.38	9/20/2023	9/30/2026	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCE	6.000%	$23.40	-$0.06	6.50%	3.00%	N	NR	NR	$0.38	3/9/2024	3/30/2026	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCF	7.125%	$23.15	$0.00	7.78%	3.31%	N	NR	NR	$0.45	5/11/2024	6/30/2027	30th 3,6,9,12
+Sachem Capital	No	No	mREIT	Fix	BB	SCCG	8.000%	$23.79	$0.00	8.41%	4.84%	N	NR	NR	$0.50	8/23/2024	9/30/2027	30th 3,6,9,12
+Safe Bulkers	Yes	Yes	Shipping	Fix	Trad	SB-C	8.000%	$25.79	$0.09	7.75%	-3.16%	N	NR	NR	$0.50	5/31/2019	NONE	30th 1,4,7,10
+Safe Bulkers	Yes	Yes	Shipping	Fix	Trad	SB-D	8.000%	$25.65	$0.06	7.80%	-2.60%	N	NR	NR	$0.50	6/30/2019	NONE	30th 1,4,7,10
+Saratoga Investment	No	No	BDC	Fix	BB	SAT	6.000%	$24.88	-$0.01	6.03%	5.75%	N	NR	NR	$0.38	4/27/2024	4/30/2027	LD 2,5,8,11
+Saratoga Investment	No	No	BDC	Fix	BB	SAJ	8.000%	$25.65	$0.11	7.80%	9.97%	N	NR	NR	$0.50	10/27/2024	10/31/2027	LD 2,5,8,11
+Saratoga Investment	No	No	BDC	Fix	BB	SAY	8.125%	$25.32	$0.00	8.02%	9.22%	N	NR	NR	$0.51	12/13/2024	12/31/2027	LD 2,5,8,11
+Saratoga Investment	No	No	BDC	Fix	BB	SAZ	8.500%	$25.37	$0.00	8.38%	10.40%	N	NR	NR	$0.53	4/14/2025	4/15/2028	LD 2,5,8,11
+Saul Centers	Yes	No	eREIT	Fix	Trad	BFS-D	6.125%	$20.56	$0.03	7.45%	17.76%	N	NR	NR	$0.38	1/23/2023	NONE	15th 1,4,7,10
+Saul Centers	Yes	No	eREIT	Fix	Trad	BFS-E	6.000%	$21.57	-$0.18	6.95%	13.72%	N	NR	NR	$0.38	9/17/2024	NONE	15th 1,4,7,10
+SCE Trust	Yes	Yes	Ute	Fix	Trust P	SCE-G	5.100%	$18.07	$0.19	7.06%	27.72%	Y	BB+	Baa3	$0.32	3/15/2018	NONE	15th 3,6,9,12
+SCE Trust	Yes	Yes	Ute	Fix	Trust P	SCE-L	5.000%	$17.58	-$0.10	7.05%	29.68%	Y	BB+	Baa3	$0.31	6/26/2022	NONE	15th 3,6,9,12
+SCE Trust	Yes	Yes	Ute	Fix-Float	Trust P	SCE-K	5.450%	$25.13	$0.06	5.41%	2.62%	Y	BB+	Baa3	$0.34	3/15/2026	NONE	15th 3,6,9,12
+SCE Trust	Yes	Yes	Ute	Fix-Float	Trust P	SCE-J	5.375%	$25.00	$0.01	5.44%	5.44%	Y	BB+	Baa3	$0.34	9/15/2025	NONE	15th 3,6,9,12
+SCE Trust	Yes	Yes	Ute	Fix-Float	Trust P	SCE-H	5.750%	Redeem	Redeem	Redeem	Redeem	Y	BB+	Baa3	Float	3/15/2024	NONE	15th 3,6,9,12
+SCE Trust VII	Yes	Yes	Ute	Fix	Trust P	SCE-M	7.500%	$25.16	$0.01	7.45%	7.23%	Y	BB+	Baa3	$0.47	11/22/2028	NONE	15th 3,6,9,12
+SCE Trust VIII	Yes	Yes	Ute	Fix	Trust P	SCE-N	6.950%	$23.70	-$0.09	7.26%	8.81%	Y	BB+	Baa3	$0.43	5/13/2029	NONE	15th 3,6,9,12
+Schwab Charles	No	Yes	Finance	Fix	Trad	SCHW-D	5.950%	$25.16	-$0.06	5.91%	-0.64%	Y	BBB	Baa2	$0.37	6/1/2021	NONE	1st 3,6,9,12
+Schwab Charles	No	Yes	Finance	Fix	Trad	SCHW-J	4.450%	$18.95	-$0.14	5.91%	66.41%	Y	BBB	Baa2	$0.28	6/1/2026	NONE	1st 3,6,9,12
+Scorpio Tankers	No	No	Shipping	Fix	BB	SBBA	7.000%	Redeemed	Redeemed	Redeemed	#VALUE!	N	NR	NR	$0.44	6/30/2022	6/30/2025	30th 3,6,9,12
+Selective Insurance Group	No	Yes	Insurance	Fix	Trad	SIGIP	4.600%	$16.90	NA	6.80%	-530.74%	N	BB+	Ba1	$0.29	12/15/2025	NONE	15th 3,6,9,12
+Sempra Energy	No	No	Ute	Fix	BB	SREA	5.750%	$22.40	-$0.14	6.42%	-1.80%	Y	BBB-	Baa2	$0.36	10/1/2024	7/1/2079	1st 1,4,7,10
+Seritage Growth Properies	Yes	Yes	C-Corp	Fix	Trad	SRG-A	7.000%	$24.01	NA	7.21%	3.96%	N	NR	NR	$0.43	12/14.2022	NONE	15th 1,4,7,10
+SiriusPoint	Yes	Yes	Insurance	FRR	Trad	SPNT-B	8.000%	$25.33	NA	7.90%	-1.55%	N	NR	BB+	$0.50	2/26/2026	NONE	LD 2,5,8,11
+Site Centers Corp	Yes	No	eREIT	Fix	Trad	SITC-A	6.375%	Redeem	Redeem	Redeem	Redeem	N	BB	Ba1	$0.40	6/5/2022	NONE	15th 1,4,7,10
+SL Green	Yes	No	eREIT	Fix	Trad	SLG-I	6.500%	$21.66	$0.15	7.50%	13.36%	N	BB	Ba1	$0.41	8/10/2017	NONE	15th 1,4,7,10
+Sound Point Meridian	Yes	Var	CEF	Fix	Term	SPMA	8.000%	$25.20	$0.02	7.94%	7.05%	N	NR	NR	$0.17	11/30/2026	11/30/2029	LD Month
+Sound Point Meridian	Yes	Var	CEF	Fix 	Term	SPME	7.875%	$25.15	-$0.08	7.95%	#DIV/0!	N	NR	NR	$0.17	7/31/2027	7/31/2030	LD Month
+Southern California Gas	Yes	Yes	Ute	Fix	Trad	SOCGP	6.000%	$25.05	$0.14	5.99%	NA	Y	BBB+	A3	$0.38	Never	NONE	15th 1,4,7,10
+Southern Company	No	No	Ute	Fix	BB	SOJC	5.250%	$21.83	-$0.13	6.01%	12.68%	Y	BBB	Baa2	$0.33	12/1/2022	12/1/2077	1st 3,6,9,12
+Southern Company	No	No	Ute	Fix	BB	SOJD	4.950%	$20.55	-$0.03	6.03%	17.80%	Y	BBB	Baa2	$0.31	1/30/2025	1/30/2080	30th 1,4,7,10
+Southern Company	No	No	Ute	Fix	BB	SOJE	4.200%	$18.08	-$0.08	5.81%	-115.92%	Y	BBB	Baa2	$0.26	10/15/2025	10/15/2060	15th 1,4,7,10
+Southern Company	No	No	Ute	Fix	BB	SOJF	6.500%	$25.45	-$0.08	6.39%		Y	BBB	Baa2	$0.41	3/15/2030	3/15/2085	15th 3,6,9,12
+Spire Inc	Yes	Yes	Ute	Fix	Trad	SR-A	5.900%	$25.19	$0.00	5.86%	6.40%	Y	BBB-	Ba1	$0.37	8/15/2024	None	15th 2,5,8,11
+State Street Corp	No	Yes	Finance	Fix	Trad	STT-G	5.350%	$22.78	-$0.05	5.87%	53.54%	Y	BBB 	Baa1	$0.33	3/15/2026	NONE	15th 3,6,9,12
+State Street Corp	No	Yes	Finance	Fix	Trad	STT-D	5.900%	Redeem	Redeem	Redeem	Redeem	Y	BBB 	Baa1	$0.37	3/15/2024	NONE	15th 3,6,9,12
+Steel Partners Holdings	Yes	No	MLP	Fix	Trad	SPLPP	6.000%	Redeem	Redeem	Redeem	NA	N	NR	NR	$0.38	Anytime	2/10/2026	15th 3,6,9,12
+Stifel Financial Corp	No	Yes	Finance	Fix	Trad	SF-B	6.250%	$23.79	$0.11	6.57%	3.90%	N	BB-	NR	$0.39	3/15/2024	NONE	15th 3,6,9,12
+Stifel Financial Corp	No	Yes	Finance	Fix	Trad	SF-C	6.125%	$23.45	-$0.04	6.53%	-4.51%	N	BB-	NR	$0.38	6/15/2025	NONE	15th 3,6,9,12
+Stifel Financial Corp	No	Yes	Finance	Fix	Trad	SF-D	4.500%	$17.12	-$0.05	6.54%	58.60%	N	BB-	NR	$0.28	8/15/2026	NONE	15th 3,6,9,12
+StonePeak (AKA Teekay LNG)	Yes	Yes	Shipping	Fix	Trad	SEAL-A	9.000%	$25.41	$0.03	8.85%	9.24%	N	NR	NR	$0.56	10/5/2021	NONE	15th 1,4,7,10
+StonePeak (AKA Teekay LNG)	Yes	Yes	Shipping	Fix-Float	Trad	SEAL-B	8.500%	$25.34	-$0.03	8.39%	7.62%	N	NR	NR	$0.53	10/15/2027	NONE	15th 1,4,7,10
+Summit Hotel Properties	Yes	No	Hotel REIT	Fix	Trad	INN-E	6.250%	$18.46	$0.02	8.46%	26.16%	N	NR	NR	$0.39	11/13/2022	NONE	LD 2,5,8,11
+Summit Hotel Properties	Yes	No	Hotel REIT	Fix	Trad	INN-F	5.875%	$18.40	$0.01	8.04%	52.25%	N	NR	NR	$0.37	8/12/2026	NONE	Ld 2,5,8,11
+Sunstone Hotel Investors	Yes	No	Hotel REIT	Fix	Trad	SHO-H	6.125%	$20.70	$0.40	7.34%	52.84%	N	NR	NR	$0.38	5/24/2026	NONE	15th 1,4,7,10
+Sunstone Hotel Investors	Yes	No	Hotel REIT	Fix	Trad	SHO-I	5.700%	$19.20	-$0.13	7.50%	51.84%	N	NR	NR	$0.36	7/16/2026	NONE	15th 1,4,7,10
+SURO Capital	No	No	BDC	Fix	BB	SSSSL	6.000%	$25.00	$0.00	6.08%	6.08%	N	NR	NR	$0.38	12/30/2024	12/30/2026	30th  3,6,9,12
+SWK Holdings	No	No	Finance	Fix	BB	SWKHL	9.000%	$25.60	$0.00	8.79%	NA	N	NR	NR	$0.56	Anytime	1/31/2027	LD 3,6,9,12
+Synchronoss Technology	No	No	Other	Fix	BB	SNCRL	8.375%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.52	6/30/2022	6/30/2026	LD 1,4,7,10
+Synchrony Financial	No	Yes	Finance	Fix	Trad	SYF-A	5.625%	$19.83	$0.03	7.09%	20.68%	N	BB-	NR	$0.35	11/15/2024	NONE	15th 2,5,8,11
+Synchrony Financial	No	Yes	Finance	FRR	Trad	SYF-B	8.250%	$26.36	$0.14	7.89%	6.27%	N	BB-	NR	$0.52	5/15/2029	NONE	15th 2,5,8,11
+Pinnicle (Synovus)	No	Yes	Bank	Fix-Float	Trad	SNV-D	6.300%	$25.30	-$0.04	Float	Float	N	BB-	NR	Float	6/21/2023	NONE	21st 3,6,9,12
+Pinnicle (Synovus)	No	Yes	Bank	FRR	Trad	SNV-E	5.875%	$25.85	$0.04	Float	#VALUE!	N	BB-	NR	Float	7/1/2024	NONE	1st 1,4,7,10
+T-Mobile	No	No	Telecom	Fix	BB	TMUSI	5.500%	$23.00	-$0.05	5.98%	#DIV/0!	N	NR	Baa2	$0.34	6/1/2026	6/1/2070	1st 3,6,9,12
+T-Mobile	No	No	Telecom	Fix	BB	TMUSL	6.250%	$25.02	$0.00	6.25%	#DIV/0!	N	NR	Baa2	$0.39	7/1/2025	9/1/2069	1st 3,6,9,12
+T-Mobile	No	No	Telecom	Fix	BB	TMUSZ	5.500%	$23.21	-$0.01	5.92%	#DIV/0!	N	NR	Baa2	$0.34	3/1/2026	3/1/2070	1st 3,6,9,12
+Telephone and Data Systems	Yes	Yes	Telecom	Fix	Trad	TDS-U	6.625%	$21.24	-$0.31	7.72%	73.07%	N	BB	Ba3	$0.41	3/31/2026	NONE	LD 3,6,9,12
+Telephone and Data Systems	Yes	Yes	Telecom	Fix	Trad	TDS-V	6.000%	$19.32	-$0.27	7.76%	38.82%	N	BB	Ba3	$0.38	9/30/2026	NONE	LD 3,6,9,12
+Tellurian	No	No	Energy	Fix	BB	TELZ	8.250%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.52	11/30/2023	11/30/2028	LD 1,4,7,10
+Tennessee Valley Authority	No	No	Ute	Spec	BB	TVE	2.216%	$24.39	-$0.08	2.28%	3.01%	Y	AA+	Aaa	$0.14	None	5/1/2029	1st 2,5,8,11
+Tennessee Valley Authority	No	No	Ute	Spec	BB	TVC	2.134%	$24.14	$0.04	2.20%	3.64%	Y	AA+	Aaa	$0.13	None	6/1/2028	1st 3,6,9,12
+Terra Income  Fund 6	No	No	CEF	Fix	BB	TFSA	7.000%	$24.83	$0.00	7.09%	0.68%	N	NR	NR	$0.44	2/10/2023	3/31/2026	30th 3,6,9,12
+Terra Property Trust	No	No	REIT	Fix	BB	TPTA	6.000%	$23.65	-$0.05	6.43%	5.40%	N	NR	NR	$0.38	6/30/2023	6/30/2026	30th 3,6,9,12
+Texas Capital Bancshares	No	Yes	Bank	Fix	Trad	TCBIO	5.750%	$20.25	-$0.14	7.10%	50.44%	N	B+	Ba2	$0.36	6/15/2026	NONE	15th 3,6,9,12
+Textainer Group Holdings	Yes	Yes	Other	Fix	Trad	TGH-B	6.250%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.39	12/15/2026	NONE	15th 3,6,9,12
+Textainer Group Holdings	Yes	Yes	Other	FRR	Trad	TGH-A	7.000%	Redeem	Redeem	Redeem	Redeem	N	NR	NR	$0.44	6/15/2026	NONE	15th 3,6,9,12
+The Bank of New York Mellon	No	Yes	Bank	FRR	Trad	BK-K	6.150%	$25.66	-$0.02	5.94%	#DIV/0!	Y	BBB	Baa1	$0.38	3/20/2030	NONE	20th 3,6,9,12
+TPG Operating	No	No	Other	Fix	BB	TPGXL	6.950%	$25.14	-$0.11	6.91%	6.74%	Y	BBB-	Baa1	$0.43	3/15/2029	3/15/2064	15th 3,6,9,12
+TPG RE Finance	Yes	No	mREIT	Fix	Trad	TRTX-C	6.250%	$18.05	$0.05	8.66%	72.47%	N	NR	NR	$0.39	6/14/2026	NONE	30th 3,6,9,12
+Trinity Capital	No	No	BDC	Fix	BB	TRINL	7.000%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.44	1/16/2023	1/16/2025	15th 3,6,9,12
+Trinity Capital	No	No	BDC	Fix	BB	TRINI	7.875%	$25.35	$0.01	7.73%	5.82%	N	NR	NR	$0.49	9/30/2026	9/30/2029	30th 3,6,9,12
+Trinity Capital	No	No	BDC	Fix 	BB	TRINZ	7.875%	$25.27	-$0.03	7.76%	3.01%	N	NR	NR	$0.49	3/30/2026	3/30/2029	30th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-A	8.500%	$25.68	$0.08	8.27%	9.77%	N	BB+	NR	$0.53	3/15/2024	NONE	15th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-B	8.000%	$25.40	$0.19	7.87%	9.10%	N	BB+	NR	$0.50	9/15/2024	NONE	15th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-C	7.375%	$25.11	$0.00	7.33%	7.74%	N	BB+	NR	$0.46	12/15/2024	NONE	15th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-D	6.875%	$23.03	-$0.18	7.47%	-2.22%	N	BB+	NR	$0.43	3/15/2025	NONE	15th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-E	5.750%	$19.42	-$0.19	7.40%	39.73%	N	BB+	NR	$0.36	9/15/2026	NONE	15th 3,6,9,12
+Triton International	Yes	Yes	Other	Fix	Trad	TRTN-F	7.625%	$25.22	$0.00	7.56%		N	BB+	NR	$0.48	3/15/2030	NONE	15th 3,6,9,12
+Triump Financial	No	Yes	Bank	Fix	Trad	TFINP	7.125%	No Quote	-$6.76	#VALUE!	#VALUE!	N	NR	NR	$0.45	6/30/2025	NONE	LD 3,6,9,12
+Truist Financial	No	Yes	Bank	Fix	Trad	TFC-R	4.750%	$19.49	-$0.08	6.09%	-57.25%	Y	BBB-	Baa2	$0.30	9/1/2025	NONE	1st of 3,6,9,12
+Truist Financial(Suntrust Bank)	No	Yes	Bank	FLR	Trad	TFC-I	4.000%	$19.96	-$0.02	Float	20.16%	Y	BB+	Baa2	Float	9/15/2011	NONE	15th 3,6,9,12
+Tsakos Energy Navigation	Yes	Yes	Shipping	Fix	Trad	TEN-F	9.500%	$27.10	$0.05	8.76%	5.49%	N	NR	NR	$0.59	7/30/2028	NONE	30th 1,4,7,10
+Tsakos Energy Navigation	Yes	Yes	Shipping	Fix-Float	Trad	TEN-E	9.250%	$26.43	$0.02	8.75%	4.63%	N	NR	NR	$0.58	5/28/2027	NONE	28th 2,5,8,11
+Two Harbors Investment	Yes	No	mREIT	Fix-Float	Trad	TWO-A	8.125%	$24.17	$0.07	8.40%	10.96%	N	NR	NR	$0.51	4/26/2027	NONE	27th 1,4,7,10
+Two Harbors Investment	Yes	No	mREIT	Fix-Float	Trad	TWO-B	7.625%	$23.65	-$0.02	8.06%	11.54%	N	NR	NR	$0.48	7/27/2027	NONE	27th 1,4,7,10
+Two Harbors Investment	Yes	No	mREIT	Fix-Float	Trad	TWO-C	7.250%	$24.80	$0.00	Float	#VALUE!	N	NR	NR	Float	1/27/2025	NONE	27th 1,4,7,10
+Two Harbors Investment	No	No	mREIT	Fix	BB	TWOD	9.375%	$25.90	$0.04	9.05%	#DIV/0!	N	NR	NR	$0.59	05/15/2027	8/15/2030	15th 2,5,8,11
+UMB (Heartland Financial)	No	Yes	Bank	FRR	Trad	UMBFP	7.000%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.44	07/15/2025	None	15th 1,4,7,10
+UMH Properties	Yes	No	eREIT	Fix	Trad	UMH-D	6.375%	$22.15	$0.08	7.20%	11.40%	N	NR	NR	$0.40	1/22/2023	NONE	15th 3,6,9,12
+United Community Banks	No	Yes	Bank	Fix	Trad	UCB-I	6.875%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.43	9/15/2025	NONE	15th 3,6,9,12
+United States Cellular  (Array)	No	No	Telecom	Fix	BB	UZD	6.250%	$20.57	$0.14	7.58%	-43.34%	N	BB	Ba1	$0.39	9/1/2025	9/1/2069	1st 3,6,9,12
+United States Cellular  (Array)	No	No	Telecom	Fix	BB	UZE	5.500%	$18.25	$0.07	7.53%	-24.15%	N	BB	Ba1	$0.34	3/1/2025	3/1/2070	1st 3,6,9,12
+United States Cellular  (Array)	No	No	Telecom	Fix	BB	UZF	5.500%	$18.10	$0.10	7.60%	76.60%	N	BB	Ba1	$0.34	6/1/2026	6/1/2070	1st 3,6,9,12
+US Bancorp	No	Yes	Bank	Fix	Trad	USB-P	5.500%	$22.79	-$0.17	6.03%	2.07%	Y	BBB+	Baa2	$0.34	10/15/2023	NONE	15th 1,4,7,10
+US Bancorp	No	Yes	Bank	Fix	Trad	USB-Q	3.750%	$15.36	-$0.17	6.10%	1569.93%	Y	BBB+	Baa2	$0.23	1/15/2026	NONE	15th 1,4,7,10
+US Bancorp	No	Yes	Bank	Fix	Trad	USB-R	4.000%	$16.38	-$0.14	6.11%	133.23%	Y	BBB+	Baa2	$0.25	4/15/2026	NONE	15th 1,4,7,10
+US Bancorp	No	Y	Bank	Fix	Trad	USB-S	4.500%	$18.38	-$0.13	6.09%	26.92%	Y	BBB+	Baa2	$0.28	4/15/2027	NONE	15th 1,4,7,10
+US Bancorp	No	Yes	Bank	FLR	Trad	USB-H	3.500%	$18.11	-$0.06	Float	Float	Y	BBB+	Baa2	Float	4/15/2011	NONE	15th 1,4,7,10
+Unum Group	No	No	Insurance	Fix	BB	UNMA	6.250%	$23.39	$0.03	6.67%	#DIV/0!	N	BB+	Ba1	$0.39	6/15/2023	6/15/2058	15th 3,6,9,12
+Valley National Bank	No	Yes	Bank	Fix-Float	Trad	VLYPP	6.250%	$25.33	$0.09	6.17%	8.70%	N	BB-	NR	$0.39	6/30/2025	NONE	30th  3,6,9,12
+Valley National Bank	No	Yes	Bank	Fix-Float	Trad	VLYPO	5.500%	$24.91	-$0.08	Float	Float	N	BB-	NR	Float	9/30/2022	NONE	30th 3,6,9,12
+Valley National Bank	No	Yes	Bank	FRR	Trad	VLYPN	8.250%	$26.15	-$0.10	7.95%	6.72%	N	BB-	NR	$0.52	9/30/2029	NONE	30th  3,6,9,12
+Via Revewables	Yes	Yes	Ute	Fix-Float	Trad	VIASP	8.750%	$25.38	$0.08	Float	Float	N	NR	NR	Float	4/15/2022	NONE	15th 1,4,7,10
+Virtus Convertible and In II	Yes	Var	CEF	Fix	Trad	NCZ-A	5.500%	$20.68	$0.04	6.65%	17.28%	Y	NR	NR	$0.34	9/11/2023	NONE	LD 3,6,9,12
+Virtus Convertible and Income 	Yes	Var	CEF	Fix	Trad	NCV-A	5.625%	$21.42	$0.08	6.57%	14.32%	Y	NR	NR	$0.35	9/20/2023	NONE	LD 3,6,9,12
+Vornado Realty Trust	Yes	No	eREIT	Fix	Trad	VNO-L	5.400%	$17.65	-$0.24	7.65%	29.40%	N	BB	Ba1	$0.34	1/25/2018	NONE	1st 1,4,7,10
+Vornado Realty Trust	Yes	No	eREIT	Fix	Trad	VNO-M	5.250%	$17.33	$0.12	7.57%	30.68%	N	BB	Ba1	$0.33	12/13/2022	NONE	1st 1,4,7,10
+Vornado Realty Trust	Yes	No	eREIT	Fix	Trad	VNO-N	5.250%	$17.06	-$0.09	7.69%	-261.90%	N	BB	Ba1	$0.33	11/24/2025	NONE	1st 1,4,7,10
+Vornado Realty Trust	Yes	No	eREIT	Fix	Trad	VNO-O	4.450%	$14.42	-$0.16	7.77%	67.41%	N	BB	Ba1	$0.28	9/22/2026	NONE	1st 1,4,7,10
+Voya Financial	No	Yes	Asset Mgr	Fix-Float	Trad	VOYA-B	5.350%	$24.75	-$0.03	5.40%	5.67%	N	BB+	Ba2	$0.33	9/15/2029	NONE	15th 3,6,9,12
+Washington Federal	No	Yes	Bank	Fix	Trad	WAFDP	4.875%	$16.47	-$0.06	7.29%	133.08%	N	NR	Ba1	$0.30	4/15/2026	NONE	15th 1,4,7,10
+Webster Financial	No	Yes	Bank	Fix	Trad	WBS-F	5.250%	$19.14	-$0.21	6.86%	23.44%	N	BB	Baa3	$0.33	12/15/2022	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix	Trad	WFC-A	4.700%	$19.31	-$0.17	6.08%	-371.52%	N	BB	Baa3	$0.29	12/15/2025	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix	Trad	WFC-Y	5.625%	$24.36	-$0.05	5.75%	2.56%	Y	BB+	Baa2	$0.35	6/15/2022	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix	Trad	WFC-Z	4.750%	$19.49	-$0.10	6.16%	-20.93%	Y	BB+	Baa2	$0.30	3/15/2025	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix	Trad	WFC-C	4.375%	$18.05	-$0.13	5.98%	155.20%	Y	BB+	Baa2	$0.27	3/15/2026	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix	Trad	WFC-D	4.250%	$17.74	-$0.14	6.09%	48.15%	Y	BB+	Baa2	$0.27	9/15/2026	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix-Float	Trad	WFC-R	6.625%	Redeem	Redeem	Redeem	Redeem	Y	BB+	Baa2	$0.41	3/15/2024	NONE	15th 3,6,9,12
+Wells Fargo	No	Yes	Bank	Fix-Float	Trad	WFC-Q	5.850%	Redeem	Redeem	Redeem	Redeem	Y	BB+	Baa2	$0.37	9/15/2023	NONE	15th 3,6,9,12
+WesBanco Inc.	No	Yes	Bank	FRR	Trad	WSBCP	6.750%	Redeem	Redeem	Redeem	#VALUE!	N	NR	Ba2	$0.42	11/15/2025	NONE	15th 2,5,8,11
+WesBanco Inc.	No	Yes	Bank	FRR	Trad	WSBCO	7.375%	$25.57	$0.02	7.21%	#DIV/0!	N	NR	Ba2	$0.46	10/1/2030	NONE	1st 1,4,7,10
+Wesco International	Yes	Yes	Other	FRR	Trad	WCC-A	10.625%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.66	6/22/2025	NONE	LD 3,6,9,12
+Western Alliance Bancorp	No	Yes	Bank	Fix	Trad	WAL-A	4.250%	$22.55	-$0.15	4.71%	18.11%	N	NR	Ba3	$0.27	9/30/2026	NONE	30th 3,6,9,12
+Whitehorse Finance	No	No	BDC	Fix	BB	WHFCL	7.875%	$25.31	$0.00	7.78%	11.78%	N	NR	NR	$0.49	9/15/2025	9/15/2028	15th 3,6,9,12
+Wintrust Financial	No	Yes	Bank	Fix-Float	Trad	WTFCM	6.500%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.41	7/15/2025	NONE	15th 1,4,7,10
+Wintrust Financial	No	Yes	Bank	FRR	Trad	WTFCP	6.875%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.43	7/15/2025	NONE	15th 1,4,7,10
+Wintrust Financial	No	Yes	Bank	FRR	Trad	WTFCN	7.875%	$26.35	$0.01	7.47%	#DIV/0!	N	NR	NR	$0.49	7/15/2030	NONE	15th 1,4,7,10
+WR Berkley	No	No	Insurance	Fix	BB	WRB-F	5.100%	$19.94	-$0.20	6.42%	20.24%	Y	BBB-	Baa2	$0.32	12/30/2024	12/30/2059	30th 3,6,9,12
+WR Berkley	No	No	Insurance	Fix	BB	WRB-E	5.700%	$22.19	-$0.17	6.47%	11.24%	Y	BBB-	Baa2	$0.36	3/30/2023	3/30/2058	30th 3,6,9,12
+WR Berkley	No	No	Insurance	Fix	BB	WRB-G	4.250%	$16.84	-$0.11	6.41%	-115.15%	Y	BBB-	Baa2	$0.27	9/30/2025	9/30/2060	30th 3,6,9,12
+WR Berkley	No	No	Insurance	Fix	BB	WRB-H	4.125%	$16.50	-$0.05	6.30%	155.82%	Y	BBB-	Baa2	$0.26	3/30/2026	3/30/2061	30th 3,6,9,12
+XAI Octagon Floating Rate 	Yes	Var	CEF	Fix	Term	XFLT-A	6.500%	Redeem	Redeem	Redeem	#VALUE!	N	NR	NR	$0.41	3/31/2023	3/31/2026	LD 1,4,7,10
+Xcel Energy	No	No	Ute	Fix	BB	XELLL	6.250%	$24.97	-$0.03	6.26%	#DIV/0!	Y	BBB-	Baa2	$0.39	10/15/2030	10/15/2085	15th 1,4,7,10
+Xoma Corporation	Yes	Yes	Other	Fix	Trad	XOMAP	8.625%	$26.50	-$0.28	8.14%	9.61%	N	NR	NR	$0.54	12/15/2021	NONE	15th 1,4,7,10
+Xoma Corporation	Yes	Yes	Other	Fix	Trad	XOMAO	8.375%	$25.35	$0.06	8.21%	-1.40%	N	NR	NR	$0.52	4/15/2022	NONE	15th 1,4,7,10
+Zions Bancorporation	No	No	Bank	Fix-Float	BB	ZIONL	6.950%	Redeem	Redeem	Redeem	Redeem	N	BBB	Ba1	Float	9/15/2023	9/15/2028	15th 3,6,9,12
+Zions Bancorporation	No	Yes	Bank	Fix-Float	Trad	ZIONO	6.300%	Redeem	Redeem	Redeem	Redeem	N	BB+	Ba1	Float	3/15/2023	NONE	15th 3,6,9,12
+Zions Bancorporation	No	Yes	Bank	FLR	Trad	ZIONP	4.000%	$20.27	$0.01	Float	Float	N	BB+	Ba1	Float	12/15/2011	NONE	15th 3,6,9,12

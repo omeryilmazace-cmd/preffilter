@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Trader v3.9 - Dual View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        th {
+            cursor: pointer;
+            transition: background 0.2s;
+            position: relative;
+        }
+
+        th:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        th.sort-asc::after {
+            content: ' ↑';
+            color: var(--accent);
+        }
+
+        th.sort-desc::after {
+            content: ' ↓';
+            color: var(--accent);
+        }
+
+        .price-inputs {
+            display: flex;
+            gap: 5px;
+        }
+
+        .price-inputs input {
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass-bg"></div>
+
+    <div class="sidebar">
+        <div class="brand">
+            <h1>Range<span>Trader</span> <small>v3.9</small></h1>
+            <p>Dual-Range Professional Monitor</p>
+        </div>
+
+        <div class="filter-group">
+            <h3>Lookback & Logic</h3>
+            <div class="check-group">
+                <label><input type="checkbox" id="check7" checked onchange="applyFilters()"> 7-Day Range</label>
+                <label><input type="checkbox" id="check30" checked onchange="applyFilters()"> 30-Day Range</label>
+                <label><input type="checkbox" id="check60" checked onchange="applyFilters()"> 60-Day Range</label>
+            </div>
+            <div class="logic-toggle">
+                <select id="filterLogic" onchange="applyFilters()">
+                    <option value="and">AND (All Checked)</option>
+                    <option value="or">OR (Any Checked)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h3>Asset Filters</h3>
+            <select id="rateFilter" onchange="applyFilters()">
+                <option value="all">All Rates</option>
+                <option value="Fix">Fixed</option>
+                <option value="Fix-Float">Fix-to-Float</option>
+                <option value="FRR">Reset Rate (FRR)</option>
+                <option value="FLR">Floating (FLR)</option>
+            </select>
+            <select id="typeFilter" onchange="applyFilters()">
+                <option value="all">All Types</option>
+                <option value="Trad">Traditional Preferred</option>
+                <option value="BB">Baby Bond (BB)</option>
+                <option value="Trust P">Trust Preferred</option>
+                <option value="Term">Term Preferred</option>
+            </select>
+            <select id="sectorFilter" onchange="applyFilters()">
+                <option value="all">All Sectors</option>
+            </select>
+            <label style="display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.85rem;">
+                <input type="checkbox" id="floatingOnly" onchange="applyFilters()">
+                <span>🔄 Currently Floating Only</span>
+            </label>
+        </div>
+
+        <div class="filter-group">
+            <h3>Price & Threshold</h3>
+            <div class="price-inputs">
+                <input type="number" id="minPrice" placeholder="Min $" oninput="applyFilters()">
+                <input type="number" id="maxPrice" placeholder="Max $" oninput="applyFilters()">
+            </div>
+            <input type="number" id="threshold" value="1.5" step="0.1" onchange="applyFilters()">
+        </div>
+
+        <div class="filter-group">
+            <h3>🔥 Streak Finder</h3>
+            <div style="display: flex; gap: 5px;">
+                <select id="streakType" onchange="applyFilters()">
+                    <option value="any">Any Color</option>
+                    <option value="Green">Green ✅</option>
+                    <option value="Red">Red ❌</option>
+                </select>
+                <input type="number" id="minStreak" value="3" min="2" max="8" style="width: 60px;"
+                    oninput="applyFilters()">
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="scanBtn" class="primary-btn" onclick="triggerScan()">Run Analysis Scan</button>
+            <div id="statusIndicator" class="status-idle">System Idle</div>
+        </div>
+
+        <div class="terminal-container">
+            <h3>Live Progress Log</h3>
+            <div id="logConsole" class="terminal">[SYSTEM] Ready...</div>
+        </div>
+
+        <div class="portfolio-link">
+            <button onclick="toggleManager()">Manage Tickers</button>
+            <button onclick="clearFilters()" style="margin-left:5px; background: rgba(255,255,255,0.05);">Clear
+                All</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header class="top-bar">
+            <div class="search-box">
+                <input type="text" id="tickerSearch" placeholder="Filter results..." oninput="applyFilters()">
+            </div>
+            <div class="global-info">
+                <span id="globalSummary" style="color: var(--accent); font-weight: bold;">0 items found</span>
+            </div>
+        </header>
+
+        <section class="ticker-manager glass hidden" id="managerSection">
+            <h2>Portfolio Management</h2>
+            <div class="add-section">
+                <input type="text" id="newTicker" placeholder="Symbol">
+                <button onclick="addTicker()">Add</button>
+            </div>
+            <div id="tickerList" class="tag-cloud"></div>
+        </section>
+
+        <div class="dual-grid">
+            <!-- BUY SIDE -->
+            <div class="card glass buy-card">
+                <div class="card-header">
+                    <h2>🟢 Deep Dips (Buy)</h2>
+                </div>
+                <div class="table-scroll">
+                    <table id="buyTable">
+                        <thead>
+                            <tr>
+                                <th onclick="setSort('ticker')">Sec</th>
+                                <th onclick="setSort('price')">Price</th>
+                                <th onclick="setSort('raw_yield')">Yield</th>
+                                <th onclick="setSort('sp_rating')">Rating</th>
+                                <th onclick="setSort('call_date')">Call</th>
+                                <th onclick="setSort('maturity')">Mat</th>
+                                <th onclick="setSort('dL7')">7D</th>
+                                <th onclick="setSort('dL30')">30D</th>
+                                <th onclick="setSort('dL60')">60D</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SELL SIDE -->
+            <div class="card glass sell-card">
+                <div class="card-header">
+                    <h2>🔴 Extreme Peaks (Sell)</h2>
+                </div>
+                <div class="table-scroll">
+                    <table id="sellTable">
+                        <thead>
+                            <tr>
+                                <th onclick="setSort('ticker')">Sec</th>
+                                <th onclick="setSort('price')">Price</th>
+                                <th onclick="setSort('raw_yield')">Yield</th>
+                                <th onclick="setSort('sp_rating')">Rating</th>
+                                <th onclick="setSort('call_date')">Call</th>
+                                <th onclick="setSort('maturity')">Mat</th>
+                                <th onclick="setSort('dH7')">7D</th>
+                                <th onclick="setSort('dH30')">30D</th>
+                                <th onclick="setSort('dH60')">60D</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- STREAK SECTION -->
+        <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(255, 107, 107, 0.2);">
+            <div class="card-header">
+                <h2>🔥 Consecutive Streaks (Price Momentum)</h2>
+            </div>
+            <div class="table-scroll">
+                <table id="streakTable">
+                    <thead>
+                        <tr>
+                            <th onclick="setSort('ticker')">Security</th>
+                            <th onclick="setSort('price')">Price</th>
+                            <th onclick="setSort('streak_count')">Streak</th>
+                            <th onclick="setSort('raw_yield')">Yield</th>
+                            <th onclick="setSort('sp_rating')">S&P / Moody</th>
+                            <th onclick="setSort('sector')">Sector</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let rawData = { all_data: [] };
+        let currentSort = { col: 'dL60', dir: 'asc' };
+
+        function clearFilters() {
+            document.getElementById('rateFilter').value = 'all';
+            document.getElementById('typeFilter').value = 'all';
+            document.getElementById('tickerSearch').value = '';
+            document.getElementById('minPrice').value = '';
+            document.getElementById('maxPrice').value = '';
+            document.getElementById('streakType').value = 'any';
+            document.getElementById('minStreak').value = '3';
+            applyFilters();
+        }
+
+        function setSort(col) {
+            if (currentSort.col === col) {
+                currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.col = col; currentSort.dir = 'asc';
+            }
+            updateSortUI();
+            applyFilters();
+        }
+
+        function updateSortUI() {
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+                const onclickAttr = th.getAttribute('onclick') || "";
+                if (onclickAttr.includes(`'${currentSort.col}'`)) {
+                    th.classList.add(currentSort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+                }
+            });
+        }
+
+        function toggleManager() {
+            document.getElementById('managerSection').classList.toggle('hidden');
+            loadTickers();
+        }
+
+        async function triggerScan() {
+            const threshold = document.getElementById('threshold').value;
+            await fetch('/api/scan', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ threshold }) });
+            poll();
+        }
+
+        async function poll() {
+            const res = await fetch('/api/status');
+            const data = await res.json();
+            document.getElementById('statusIndicator').innerText = data.status;
+            document.getElementById('statusIndicator').className = `status-${data.status.toLowerCase().split(' ')[0]}`;
+
+            const logs = await (await fetch('/api/logs')).json();
+            const consoleEl = document.getElementById('logConsole');
+            consoleEl.innerHTML = logs.map(l => `<div>${l}</div>`).join('');
+            consoleEl.scrollTop = consoleEl.scrollHeight;
+
+            if (data.status === 'done' || data.status === 'idle') {
+                document.getElementById('scanBtn').disabled = false;
+                rawData = data;
+                updateSectorList();
+                applyFilters();
+            } else {
+                document.getElementById('scanBtn').disabled = true;
+                setTimeout(poll, 2000);
+            }
+        }
+
+        function updateSectorList() {
+            const sectors = [...new Set(rawData.all_data.map(i => i.sector))].sort();
+            const select = document.getElementById('sectorFilter');
+            const currentVal = select.value;
+            select.innerHTML = '<option value="all">All Sectors</option>' +
+                sectors.map(s => `<option value="${s}">${s}</option>`).join('');
+            select.value = sectors.includes(currentVal) ? currentVal : 'all';
+        }
+
+        function applyFilters() {
+            if (!rawData.all_data) return;
+            const threshold = parseFloat(document.getElementById('threshold').value) / 100;
+            const rate = document.getElementById('rateFilter').value;
+            const type = document.getElementById('typeFilter').value;
+            const minP = parseFloat(document.getElementById('minPrice').value) || 0;
+            const maxP = parseFloat(document.getElementById('maxPrice').value) || 999999;
+            const search = document.getElementById('tickerSearch').value.toUpperCase();
+            const logic = document.getElementById('filterLogic').value;
+            const checks = { 7: document.getElementById('check7').checked, 30: document.getElementById('check30').checked, 60: document.getElementById('check60').checked };
+
+            const sType = document.getElementById('streakType').value;
+            const minStreak = parseInt(document.getElementById('minStreak').value) || 2;
+            const floatingOnly = document.getElementById('floatingOnly').checked;
+
+            const baseFilter = (i) => {
+                if (rate !== 'all' && i.rate !== rate) return false;
+                if (type !== 'all' && i.type !== type) return false;
+                const sector = document.getElementById('sectorFilter').value;
+                if (sector !== 'all' && i.sector !== sector) return false;
+                if (i.price < minP || i.price > maxP) return false;
+                if (search && !i.ticker.includes(search) && !i.name.toUpperCase().includes(search)) return false;
+                if (floatingOnly && !i.is_floating) return false;
+                return true;
+            };
+
+
+            const getStrategyFilter = (mode) => (i) => {
+                const results = [];
+                if (checks[7]) results.push((mode === 'buy' ? i.dL7 : i.dH7) <= threshold);
+                if (checks[30]) results.push((mode === 'buy' ? i.dL30 : i.dH30) <= threshold);
+                if (checks[60]) results.push((mode === 'buy' ? i.dL60 : i.dH60) <= threshold);
+                if (results.length === 0) return true;
+                return logic === 'and' ? results.every(v => v === true) : results.some(v => v === true);
+            };
+
+            let buyList = rawData.all_data.filter(i => baseFilter(i) && getStrategyFilter('buy')(i));
+            let sellList = rawData.all_data.filter(i => baseFilter(i) && getStrategyFilter('sell')(i));
+
+            let streakList = rawData.all_data.filter(i => {
+                if (!baseFilter(i)) return false;
+                if (i.streak_count < minStreak) return false;
+                if (sType !== 'any' && i.streak_type !== sType) return false;
+                return true;
+            });
+
+            const sorter = (a, b) => {
+                let vA = a[currentSort.col];
+                let vB = b[currentSort.col];
+
+                if (typeof vA === 'string') {
+                    return currentSort.dir === 'asc'
+                        ? vA.localeCompare(vB)
+                        : vB.localeCompare(vA);
+                }
+
+                vA = vA || 0;
+                vB = vB || 0;
+                return currentSort.dir === 'asc' ? vA - vB : vB - vA;
+            };
+
+            buyList.sort(sorter); sellList.sort(sorter); streakList.sort(sorter);
+
+            document.getElementById('globalSummary').innerText = `${buyList.length} Dips | ${sellList.length} Peaks | ${streakList.length} Streaks`;
+            renderTable('buyTable', buyList, 'buy');
+            renderTable('sellTable', sellList, 'sell');
+            renderStreakTable(streakList);
+        }
+
+        function renderStreakTable(list) {
+            const tbody = document.querySelector('#streakTable tbody');
+            tbody.innerHTML = list.map(i => {
+                const streakClass = i.streak_type === 'Green' ? 'hit' : 'miss';
+                const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
+                return `<tr>
+                    <td><div class="ticker-cell">${i.ticker}</div><div class="name-sub">${i.name.slice(0, 25)}</div></td>
+                    <td>$${i.price.toFixed(2)}</td>
+                    <td class="diff-val ${streakClass}">${streakIcon} ${i.streak_count} Days</td>
+                    <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
+                    <td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>
+                    <td style="font-size:0.75rem; opacity:0.7;">${i.sector}</td>
+                </tr>`;
+            }).join('');
+        }
+
+        function renderTable(targetId, list, mode) {
+            const tbody = document.querySelector(`#${targetId} tbody`);
+            tbody.innerHTML = list.map(i => {
+                let badge = '';
+                if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
+                if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
+
+                return `<tr>
+                    <td><div class="ticker-cell">${i.ticker} ${badge}</div><div class="name-sub">${i.name.slice(0, 20)}</div></td>
+                    <td>$${i.price.toFixed(2)}</td>
+                    <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
+                    <td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>
+                    <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
+                    <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
+                    <td class="diff-val ${(mode === 'buy' ? i.dL7 : i.dH7) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL7 : i.dH7) * 100).toFixed(2)}%</td>
+                    <td class="diff-val ${(mode === 'buy' ? i.dL30 : i.dH30) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL30 : i.dH30) * 100).toFixed(2)}%</td>
+                    <td class="diff-val ${(mode === 'buy' ? i.dL60 : i.dH60) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL60 : i.dH60) * 100).toFixed(2)}%</td>
+                </tr>`;
+
+            }).join('');
+        }
+
+        async function loadTickers() {
+            const res = await fetch('/api/tickers'); const tickers = await res.json();
+            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag">${t} <button onclick="removeTicker('${t}')">&times;</button></span>`).join('');
+        }
+        async function addTicker() {
+            const input = document.getElementById('newTicker');
+            await fetch('/api/tickers', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ticker: input.value }) });
+            input.value = ''; loadTickers();
+        }
+        async function removeTicker(t) {
+            await fetch(`/api/tickers/${t}`, { method: 'DELETE' }); loadTickers();
+        }
+
+        poll();
+    </script>
+</body>
+
+</html>

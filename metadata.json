@@ -1,0 +1,3074 @@
+{
+    "ABLLL": {
+        "name": "Abacus Life, Inc. 9.875% Fixed Rate Senior Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "ABR-PD": {
+        "name": "Arbor Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ABR-PE": {
+        "name": "Arbor Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ABR-PF": {
+        "name": "Arbor Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ACGLN": {
+        "name": "Arch Capital Group Ltd.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ACGLO": {
+        "name": "Arch Capital Group Ltd.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ACP-PA": {
+        "name": "Abrdn Income Credit Strategies Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ACR-PC": {
+        "name": "ACRES Commercial Realty Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ACR-PD": {
+        "name": "ACRES Commercial Realty Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ADC-PA": {
+        "name": "Agree Realty Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AFGC": {
+        "name": "American Financial Group, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AFGD": {
+        "name": "American Financial Group, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AFGE": {
+        "name": "American Financial Group, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGM-PD": {
+        "name": "Federal Agricultural Mortgage Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGM-PE": {
+        "name": "Federal Agricultural Mortgage Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGM-PF": {
+        "name": "Federal Agricultural Mortgage Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGM-PG": {
+        "name": "Federal Agricultural Mortgage Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGNCL": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGNCM": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGNCN": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGNCO": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AGNCP": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHH-PA": {
+        "name": "Armada Hoffler Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHL-PD": {
+        "name": "Aspen Insurance Holdings Limited",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHL-PE": {
+        "name": "Aspen Insurance Holdings Limited",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHL-PF": {
+        "name": "Aspen Insurance Holdings Limited",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHT-PF": {
+        "name": "Ashford Hospitality Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHT-PG": {
+        "name": "Ashford Hospitality Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHT-PH": {
+        "name": "Ashford Hospitality Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AHT-PI": {
+        "name": "Ashford Hospitality Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AIRTP": {
+        "name": "Air T, Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ALL-PB": {
+        "name": "The Allstate Corporation",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ALL-PH": {
+        "name": "The Allstate Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ALL-PI": {
+        "name": "The Allstate Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ALL-PJ": {
+        "name": "The Allstate Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ALTG-PA": {
+        "name": "Alta Equipment Group Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AMH-PG": {
+        "name": "American Homes 4 Rent",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AMH-PH": {
+        "name": "American Homes 4 Rent",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ANG-PD": {
+        "name": "American National Group Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ARBKL": {
+        "name": "Argo Blockchain plc 8.75% Senior Notes due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "ARR-PC": {
+        "name": "ARMOUR Residential REIT, Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ASB-PE": {
+        "name": "Associated Banc-Corp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ASB-PF": {
+        "name": "Associated Banc-Corp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATCO-PH": {
+        "name": "Atlas Corp.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATH-PA": {
+        "name": "Athene Holding Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATH-PB": {
+        "name": "Athene Holding Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATH-PD": {
+        "name": "Athene Holding Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATH-PE": {
+        "name": "Athene Holding Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATLCL": {
+        "name": "Atlanticus Holdings Corporation 6.125% Senior Notes due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "ATLCP": {
+        "name": "Atlanticus Holdings Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ATLCZ": {
+        "name": "Atlanticus Holdings Corporation 9.25% Senior Notes due 2029",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "AUB-PA": {
+        "name": "Atlantic Union Bankshares Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "AXS-PE": {
+        "name": "AXIS Capital Holdings Limited",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PB": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PE": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PK": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PM": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PN": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PO": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PP": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PQ": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BAC-PS": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BANC-PF": {
+        "name": "Banc of California, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BANFP": {
+        "name": "BFC Capital Trust II PFD TR 7.20%",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BANX": {
+        "name": "ArrowMark Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BC-PC": {
+        "name": "NASDAQ MEA Basic Resources Larg",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BCV": {
+        "name": "Bancroft Fund Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BCV-PA": {
+        "name": "Bancroft Fund Ltd.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BFS-PD": {
+        "name": "Saul Centers, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BFS-PE": {
+        "name": "Saul Centers, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHFAL": {
+        "name": "Brighthouse Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHFAM": {
+        "name": "Brighthouse Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHFAN": {
+        "name": "Brighthouse Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHFAO": {
+        "name": "Brighthouse Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHFAP": {
+        "name": "Brighthouse Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHR-PB": {
+        "name": "Braemar Hotels & Resorts Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BHR-PD": {
+        "name": "Braemar Hotels & Resorts Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BIPJ": {
+        "name": "Brookfield Infrastructure Finance ULC",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BK-PK": {
+        "name": "The Bank of New York Mellon Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BML-PG": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BML-PH": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BML-PJ": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BML-PL": {
+        "name": "Bank of America Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BNH": {
+        "name": "NASDAQ DM Ex US Industrials Ind",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BOH-PA": {
+        "name": "Bank of Hawaii Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BOH-PB": {
+        "name": "Bank of Hawaii Corp",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BPOPM": {
+        "name": "Popular Capital Trust II PFD GTD 6.125%",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BUSEP": {
+        "name": "First Busey Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BW-PA": {
+        "name": "Babcock & Wilcox Enterprises, Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "BWBBP": {
+        "name": "Bridgewater Bancshares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "C-PN": {
+        "name": "Citigroup Capital XIII TR PFD SECS",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CADE-PA": {
+        "name": "Cadence Bank",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CCIA": {
+        "name": "Vertical Capital Income Fund",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CCLDO": {
+        "name": "CareCloud, Inc.",
+        "sector": "Healthcare",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CCNEP": {
+        "name": "CNB Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CDR-PB": {
+        "name": "Cedar Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CDR-PC": {
+        "name": "Cedar Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CDZIP": {
+        "name": "Cadiz Inc.",
+        "sector": "Utilities",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CFG-PE": {
+        "name": "Citizens Financial Group, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CFG-PH": {
+        "name": "Citizens Financial Group, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CFG-PI": {
+        "name": "Citizens Financial Group Inc",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CFR-PB": {
+        "name": "Cullen/Frost Bankers, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CGABL": {
+        "name": "The Carlyle Group Inc. 4.625% Subordinated Notes due 2061",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "CHMI-PA": {
+        "name": "Cherry Hill Mortgage Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHMI-PB": {
+        "name": "Cherry Hill Mortgage Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHSCL": {
+        "name": "CHS Inc.",
+        "sector": "Consumer Defensive",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHSCM": {
+        "name": "CHS Inc.",
+        "sector": "Consumer Defensive",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHSCN": {
+        "name": "CHS Inc.",
+        "sector": "Consumer Defensive",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHSCO": {
+        "name": "CHS Inc.",
+        "sector": "Consumer Defensive",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CHSCP": {
+        "name": "CHS Inc.",
+        "sector": "Consumer Defensive",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CICB": {
+        "name": "CION Investment Corporation",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIM-PA": {
+        "name": "Chimera Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIM-PB": {
+        "name": "Chimera Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIM-PC": {
+        "name": "Chimera Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIM-PD": {
+        "name": "Chimera Investment Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIMO": {
+        "name": "Chimera Investment Corporation",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CIO-PA": {
+        "name": "City Office REIT, Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CLDT-PA": {
+        "name": "Chatham Lodging Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CMRE-PB": {
+        "name": "Costamare Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CMRE-PC": {
+        "name": "Costamare Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CMRE-PD": {
+        "name": "Costamare Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CMS-PC": {
+        "name": "CMS Energy Corporation",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CMSA": {
+        "name": "CMS Energy Corporation 5.6% JRSUB NT 78",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CNOBP": {
+        "name": "ConnectOne Bancorp, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "COF-PI": {
+        "name": "Capital One Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "COF-PJ": {
+        "name": "Capital One Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "COF-PK": {
+        "name": "Capital One Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "COF-PL": {
+        "name": "Capital One Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "COF-PN": {
+        "name": "Capital One Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CTBB": {
+        "name": "Qwest Corp. NT",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CTDD": {
+        "name": "Qwest Corp. 6.75% NT 57",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CTO-PA": {
+        "name": "CTO Realty Growth, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "CUBI-PF": {
+        "name": "Customers Bancorp, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DBRG-PH": {
+        "name": "DigitalBridge Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DBRG-PI": {
+        "name": "DigitalBridge Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DBRG-PJ": {
+        "name": "DigitalBridge Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DCOMG": {
+        "name": "Dime Community Bancshares, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DCOMP": {
+        "name": "Dime Community Bancshares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DDT": {
+        "name": "Dillards Capital Trust I CAP SECS 7.5%",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DHCNL": {
+        "name": "Diversified Healthcare Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DLR-PJ": {
+        "name": "Digital Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DLR-PK": {
+        "name": "Digital Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DLR-PL": {
+        "name": "Digital Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DRH-PA": {
+        "name": "DiamondRock Hospitality Company",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DSX-PB": {
+        "name": "Diana Shipping Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DTW": {
+        "name": "DTE Energy Company JR SUB DB 2017 E",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DUK-PA": {
+        "name": "Duke Energy Corporation",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "DX-PC": {
+        "name": "Dynex Capital, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EAI": {
+        "name": "Entergy Arkansas, Inc. 1M BD 4.875%66",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EARN": {
+        "name": "Ellington Credit Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ECC-PD": {
+        "name": "Eagle Point Credit Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ECCC": {
+        "name": "Eagle Point Credit Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ECCF": {
+        "name": "Eagle Point Credit Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ECCX": {
+        "name": "Eagle Point Credit Company Inc. 6.6875% NT 28",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ECF-PA": {
+        "name": "Ellsworth Growth and Income Fund Ltd.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EFC-PA": {
+        "name": "Ellington Financial Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EFC-PB": {
+        "name": "Ellington Financial Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EFC-PC": {
+        "name": "Ellington Financial Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EFC-PD": {
+        "name": "Ellington Financial Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EFSCP": {
+        "name": "Enterprise Financial Services Corp",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EICA": {
+        "name": "Eagle Point Income Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EICB": {
+        "name": "Eagle Point Income Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EICC": {
+        "name": "Eagle Point Income Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EIIA": {
+        "name": "Eagle Point Institutional Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ELC": {
+        "name": "Entergy Louisiana, LLC COLLATERAL TR MT",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ENJ": {
+        "name": "Entergy Utility Group, Inc. 1ST MTG 5% 52",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ENO": {
+        "name": "Entergy Utility Group, Inc. 1ST MTG BD 66",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EPR-PC": {
+        "name": "EPR Properties",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EPR-PE": {
+        "name": "EPR Properties",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EPR-PG": {
+        "name": "EPR Properties",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EQH-PA": {
+        "name": "Equitable Holdings, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "EQH-PC": {
+        "name": "Equitable Holdings, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FATBP": {
+        "name": "FAT Brands Inc.",
+        "sector": "Consumer Cyclical",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FBRT-PE": {
+        "name": "Franklin BSP Realty Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FCNCO": {
+        "name": "First Citizens BancShares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FCNCP": {
+        "name": "First Citizens BancShares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FCRX": {
+        "name": "Crescent Capital BDC, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FGBIP": {
+        "name": "First Guaranty Bancshares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FHN-PC": {
+        "name": "First Horizon Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FHN-PE": {
+        "name": "First Horizon Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FHN-PF": {
+        "name": "First Horizon Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FITBI": {
+        "name": "Fifth Third Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FITBO": {
+        "name": "Fifth Third Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FITBP": {
+        "name": "Fifth Third Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FLG-PA": {
+        "name": "Flagstar Bank, National Association",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FOSLL": {
+        "name": "Fossil Group, Inc. 7% Senior Notes due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "FRMEP": {
+        "name": "First Merchants Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FRT-PC": {
+        "name": "Federal Realty Investment Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "FULTP": {
+        "name": "Fulton Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GAB-PG": {
+        "name": "The Gabelli Equity Trust Inc. PFD-G",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GAB-PH": {
+        "name": "The Gabelli Equity Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GAB-PK": {
+        "name": "The Gabelli Equity Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GAINI": {
+        "name": "Gladstone Investment Corporation",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GAINL": {
+        "name": "Gladstone Investment Corporation 8.00% Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GAINN": {
+        "name": "Gladstone Investment Corporation 5.00% Notes Due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GAINZ": {
+        "name": "Gladstone Investment Corporation 4.875% Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GAM-PB": {
+        "name": "General American Investors Company, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GDV-PH": {
+        "name": "The Gabelli Dividend & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GDV-PK": {
+        "name": "The Gabelli Dividend & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GECCI": {
+        "name": "Great Elm Capital Corp. 8.50% NOTES DUE 2029",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GECCO": {
+        "name": "Great Elm Capital Corp. 5.875% Notes due 2026",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GEGGL": {
+        "name": "Great Elm Group, Inc.  7.25% Notes due 2027",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GGN-PB": {
+        "name": "GAMCO Global Gold, Natural Resources & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GGT-PE": {
+        "name": "The Gabelli Multimedia Trust Inc. 5.125% PFD SER E",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GGT-PG": {
+        "name": "The Gabelli Multimedia Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJH": {
+        "name": "STRATS Trust for United States Cellular Corp. Securities, Series 2004-6 STRATS 6.375",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJO": {
+        "name": "Strats Trust Wal Mart Stores Inc. STRT CTF 05-4",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJP": {
+        "name": "STRATS Trust For Dominion Resources Inc. Securities, Series 2005-6",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJR": {
+        "name": "Strats Trust For Procter &amp; Gambel Security CTF 2006-1",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJS": {
+        "name": "STRATS Trust for Goldman Sachs Group Securities, Series 2006-2",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GJT": {
+        "name": "Strats(SM) Trust For Allstate Corp Securities, Series 2006-3 06-3 ASSET BKD",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GMRE-PA": {
+        "name": "Global Medical REIT Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GNL-PA": {
+        "name": "Global Net Lease, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GNL-PB": {
+        "name": "Global Net Lease, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GNL-PD": {
+        "name": "Global Net Lease, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GNL-PE": {
+        "name": "Global Net Lease, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GNT-PA": {
+        "name": "GAMCO Natural Resources, Gold & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GOODN": {
+        "name": "Gladstone Commercial Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GOODO": {
+        "name": "Gladstone Commercial Corporation",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GPJA": {
+        "name": "Georgia Power Company 5% JR SUB NT 77",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GPMT-PA": {
+        "name": "Granite Point Mortgage Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GPUS-PD": {
+        "name": "Hyperscale Data, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GRBK-PA": {
+        "name": "Green Brick Partners, Inc.",
+        "sector": "Consumer Cyclical",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GREEL": {
+        "name": "Greenidge Generation Holdings Inc. 8.50% Senior Notes due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "GS-PA": {
+        "name": "The Goldman Sachs Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GS-PC": {
+        "name": "The Goldman Sachs Group, Inc. PFD 1/1000 C",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GS-PD": {
+        "name": "The Goldman Sachs Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GSL-PB": {
+        "name": "Global Ship Lease, Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GTR": {
+        "name": "WisdomTree Target Range Fund",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "GUT-PC": {
+        "name": "The Gabelli Utility Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HBANL": {
+        "name": "Huntington Bancshares Incorporated",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HBANM": {
+        "name": "Huntington Bancshares Incorporated",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HBANP": {
+        "name": "Huntington Bancshares Incorporated",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HCXY": {
+        "name": "Hercules Capital, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HFRO-PA": {
+        "name": "Highland Funds I - Highland Opportunities and Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HIG-PG": {
+        "name": "The Hartford Insurance Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HNNAZ": {
+        "name": "Hennessy Advisors, Inc. 4.875% Notes due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "HOVNP": {
+        "name": "Hovnanian Enterprises, Inc. PFD DEP1/1000A",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HPP-PC": {
+        "name": "Hudson Pacific Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HTFB": {
+        "name": "Horizon Technology Finance Corporation",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "HYT": {
+        "name": "BlackRock Corporate High Yield Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ICR-PA": {
+        "name": "Inpoint Commercial Real Estate Income, Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "IIPR-PA": {
+        "name": "Innovative Industrial Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "IMPPP": {
+        "name": "Imperial Petroleum Inc.",
+        "sector": "Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "INN-PE": {
+        "name": "Summit Hotel Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "INN-PF": {
+        "name": "Summit Hotel Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "IPB": {
+        "name": "Merrill Lynch Depositor Inc.",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "IVR-PC": {
+        "name": "Invesco Mortgage Capital Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JBK": {
+        "name": "Corporate Backed Trust Certificates, Goldman Sachs Capital I Securities-Backed Series 2004-6 04-6 A1 3.50",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PC": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PD": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PJ": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PK": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PL": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JPM-PM": {
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JSM": {
+        "name": "Navient Corporation SR NT 6% 121543",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "JXN-PA": {
+        "name": "Jackson Financial Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KEY-PI": {
+        "name": "KeyCorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KEY-PJ": {
+        "name": "KeyCorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KEY-PK": {
+        "name": "KeyCorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KEY-PL": {
+        "name": "KeyCorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KIM-PL": {
+        "name": "Kimco Realty Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KIM-PM": {
+        "name": "Kimco Realty Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KREF-PA": {
+        "name": "KKR Real Estate Finance Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KTH": {
+        "name": "Corts Trust Peco Energy Capital Trust III",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "KTN": {
+        "name": "Credit-Enhanced Corts Trust Aon",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LANDM": {
+        "name": "Gladstone Land Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LANDO": {
+        "name": "Gladstone Land Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LANDP": {
+        "name": "Gladstone Land Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LBRDP": {
+        "name": "Liberty Broadband Corporation",
+        "sector": "Communication Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LFMDP": {
+        "name": "LifeMD, Inc.",
+        "sector": "Healthcare",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LFT-PA": {
+        "name": "Lument Finance Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "LNC-PD": {
+        "name": "Lincoln National Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MBINL": {
+        "name": "Merchants Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MBINM": {
+        "name": "Merchants Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MBINN": {
+        "name": "Merchants Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MBNKO": {
+        "name": "Medallion Bank",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MDV-PA": {
+        "name": "Modiv Industrial, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MER-PK": {
+        "name": "Merrill Lynch Capital Trust I GTD CAP 6.45%",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MET-PA": {
+        "name": "MetLife, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MET-PE": {
+        "name": "MetLife, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MET-PF": {
+        "name": "MetLife, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "METCZ": {
+        "name": "Ramaco Resources, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MFA-PB": {
+        "name": "MFA Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MFA-PC": {
+        "name": "MFA Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MFICL": {
+        "name": "MidCap Financial Investment Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MHLA": {
+        "name": "Maiden Holdings, Ltd. 6.625 NT 2046",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MHNC": {
+        "name": "Maiden Holdings North America, Ltd.",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MITT-PA": {
+        "name": "TPG Mortgage Investment Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MITT-PB": {
+        "name": "AG Mortgage Investment Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MITT-PC": {
+        "name": "AG Mortgage Investment Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MNSBP": {
+        "name": "MainStreet Bancshares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PA": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PE": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PF": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PI": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PK": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PL": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PO": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PP": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MS-PQ": {
+        "name": "Morgan Stanley",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MSBIP": {
+        "name": "Midland States Bancorp, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MTB-PH": {
+        "name": "M&T Bank Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "MTB-PJ": {
+        "name": "M&T Bank Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NCV-PA": {
+        "name": "Virtus Convertible & Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NCZ-PA": {
+        "name": "Virtus Convertible & Income Fund II",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NEWTG": {
+        "name": "NewtekOne, Inc. 8.50% Fixed Rate Senior Notes due 2029",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "NEWTH": {
+        "name": "NewtekOne, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NEWTI": {
+        "name": "NewtekOne, Inc. 8.00% Fixed Rate Senior Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "NEWTZ": {
+        "name": "Newtek Business Services Corp. 5.50% Notes Due 2026",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "NHPAP": {
+        "name": "National Healthcare Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NHPBP": {
+        "name": "National Healthcare Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NLY-PF": {
+        "name": "Annaly Capital Management, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NLY-PG": {
+        "name": "Annaly Capital Management, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NLY-PI": {
+        "name": "Annaly Capital Management, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NMFCZ": {
+        "name": "New Mountain Finance Corporation 8.250% Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "NREF-PA": {
+        "name": "NexPoint Real Estate Finance, Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NSA-PA": {
+        "name": "National Storage Affiliates Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NTRSO": {
+        "name": "Northern Trust Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "NXDT-PA": {
+        "name": "NexPoint Diversified Real Estate Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OCCIN": {
+        "name": "OFS Credit Company, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OCCIO": {
+        "name": "OFS Credit Company, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OFSSH": {
+        "name": "OFS Capital Corporation 4.95% Notes due 2028",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "OFSSO": {
+        "name": "OFS Capital Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ONBPO": {
+        "name": "Old National Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ONBPP": {
+        "name": "Old National Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OPP-PA": {
+        "name": "RiverNorth/DoubleLine Strategic Opportunity Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OPP-PB": {
+        "name": "RiverNorth/DoubleLine Strategic Opportunity Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OXLCI": {
+        "name": "Oxford Lane Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OXLCL": {
+        "name": "Oxford Lane Capital Corp. 6.75% Notes due 2031",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "OXLCN": {
+        "name": "Oxford Lane Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OXLCO": {
+        "name": "Oxford Lane Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OXLCP": {
+        "name": "Oxford Lane Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OXLCZ": {
+        "name": "Oxford Lane Capital Corp. 5.00% Notes due 2027",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "OXSQG": {
+        "name": "Oxford Square Capital Corp. 5.50% Notes due 2028",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "OXSQH": {
+        "name": "Oxford Square Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "OZKAP": {
+        "name": "Bank OZK",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PBI-PB": {
+        "name": "Pitney Bowes Inc. NT 43",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PA": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PB": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PC": {
+        "name": "Pacific Gas and Electric Company PFD 1ST 5%",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PD": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PE": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PG": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PH": {
+        "name": "Pacific Gas and Electric Company",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PCG-PI": {
+        "name": "Pacific Gas and Electric Company PFD 1ST 4.36%",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PDPA": {
+        "name": "Pearl Diver Credit Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PEB-PE": {
+        "name": "Pebblebrook Hotel Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PEB-PF": {
+        "name": "Pebblebrook Hotel Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PEB-PG": {
+        "name": "Pebblebrook Hotel Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PEB-PH": {
+        "name": "Pebblebrook Hotel Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PFF": {
+        "name": "iShares Preferred and Income Securities ETF",
+        "sector": "Other",
+        "type": "ETF",
+        "rate": "Fixed"
+    },
+    "PFH": {
+        "name": "CABCO Trust for JC Penney Debentures",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "PFXNZ": {
+        "name": "PhenixFIN Corporation  5.25% Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "PMT-PA": {
+        "name": "PennyMac Mortgage Investment Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PMT-PB": {
+        "name": "PennyMac Mortgage Investment Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PMT-PC": {
+        "name": "PennyMac Mortgage Investment Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PMTW": {
+        "name": "PennyMac Mortgage Investment Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PNFPP": {
+        "name": "Pinnacle Financial Partners, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "POWWP": {
+        "name": "Outdoor Holding Company",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PRH": {
+        "name": "Prudential Financial, Inc. JR SUB NT 53",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PRIF-PD": {
+        "name": "Priority Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PRIF-PJ": {
+        "name": "Priority Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PRIF-PK": {
+        "name": "Priority Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PRIF-PL": {
+        "name": "Priority Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PF": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PG": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PH": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PI": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PJ": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PK": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PL": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PM": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PN": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PO": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PP": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PQ": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PR": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSA-PS": {
+        "name": "Public Storage",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PSEC-PA": {
+        "name": "Prospect Capital Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "PYT": {
+        "name": "PPLUS Trust Series GSC-2 GSC 2 CT FL RT",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RC-PC": {
+        "name": "Ready Capital Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RC-PE": {
+        "name": "Ready Capital Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RCB": {
+        "name": "Ready Capital Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "REGCO": {
+        "name": "Regency Centers Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "REGCP": {
+        "name": "Regency Centers Corporation",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "REXR-PB": {
+        "name": "Rexford Industrial Realty, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "REXR-PC": {
+        "name": "Rexford Industrial Realty, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RF-PC": {
+        "name": "Regions Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RF-PE": {
+        "name": "Regions Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RF-PF": {
+        "name": "Regions Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RILYG": {
+        "name": "B. Riley Financial, Inc. 5.00% Senior Notes due 2026",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "RILYK": {
+        "name": "B. Riley Financial, Inc. 5.50% Senior Notes Due 2026",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "RILYL": {
+        "name": "B. Riley Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RILYP": {
+        "name": "B. Riley Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RILYT": {
+        "name": "B. Riley Financial, Inc. 6.00% Senior Notes Due 2028",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "RILYZ": {
+        "name": "B. Riley Financial, Inc. 5.25% Senior Notes due 2028",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "RITM-PA": {
+        "name": "Rithm Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RITM-PB": {
+        "name": "Rithm Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RITM-PC": {
+        "name": "Rithm Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RITM-PD": {
+        "name": "Rithm Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RIV-PA": {
+        "name": "RiverNorth Opportunities Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RJF-PB": {
+        "name": "Raymond James Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RLJ-PA": {
+        "name": "RLJ Lodging Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RNR-PF": {
+        "name": "RenaissanceRe Holdings Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RNR-PG": {
+        "name": "RenaissanceRe Holdings Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RPT-PC": {
+        "name": "Rithm Property Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RWAYZ": {
+        "name": "Runway Growth Finance Corp. 8.00% Notes due 2027",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "RWT-PA": {
+        "name": "Redwood Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RZB": {
+        "name": "Reinsurance Group of America, Incorporated",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "RZC": {
+        "name": "7.125% Fixed-Rate Reset Subordinated Debentures due 2052",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed-to-Float"
+    },
+    "SACH-PA": {
+        "name": "Sachem Capital Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SB-PC": {
+        "name": "Safe Bulkers, Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SB-PD": {
+        "name": "Safe Bulkers, Inc.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PG": {
+        "name": "SCE Trust II TR PFD SECS 5.1%",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PJ": {
+        "name": "SCE Trust IV",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PK": {
+        "name": "SCE Trust V PFD SEC",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PL": {
+        "name": "SCE Trust VI 5% TR PREF SECS",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PM": {
+        "name": "SCE Trust VII",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCE-PN": {
+        "name": "SCE Trust VIII",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCHW-PD": {
+        "name": "The Charles Schwab Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SCHW-PJ": {
+        "name": "The Charles Schwab Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SEAL-PA": {
+        "name": "Seapeak LLC",
+        "sector": "Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SEAL-PB": {
+        "name": "Seapeak LLC",
+        "sector": "Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SF-PB": {
+        "name": "Stifel Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SF-PC": {
+        "name": "Stifel Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SF-PD": {
+        "name": "Stifel Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SHO-PH": {
+        "name": "Sunstone Hotel Investors, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SHO-PI": {
+        "name": "Sunstone Hotel Investors, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SIGIP": {
+        "name": "Selective Insurance Group, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SLG-PI": {
+        "name": "SL Green Realty Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SLNHP": {
+        "name": "Soluna Holdings, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SNV-PD": {
+        "name": "Synovus Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SNV-PE": {
+        "name": "Synovus Financial Corp.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SOHOB": {
+        "name": "Sotherly Hotels Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SOHON": {
+        "name": "Sotherly Hotels Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SOHOO": {
+        "name": "Sotherly Hotels Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SOJC": {
+        "name": "The Southern Company JR 2017B NT 77",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SPE-PC": {
+        "name": "Special Opportunities Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SPMA": {
+        "name": "Sound Point Meridian Capital, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SPME": {
+        "name": "Sound Point Meridian Capital, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SPNT-PB": {
+        "name": "SiriusPoint Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SQFT": {
+        "name": "Presidio Property Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SQFTP": {
+        "name": "Presidio Property Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SR-PA": {
+        "name": "Spire Inc.",
+        "sector": "Utilities",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SSSSL": {
+        "name": "SuRo Capital Corp. 6.00% Notes due 2026",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "STT-PG": {
+        "name": "State Street Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SWKHL": {
+        "name": "SWK Holdings Corporation 9.00% Senior Notes due 2027",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "SYF-PA": {
+        "name": "Synchrony Financial",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "SYF-PB": {
+        "name": "Synchrony Financial",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "T-PA": {
+        "name": "AT&T Inc.",
+        "sector": "Communication Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "T-PC": {
+        "name": "AT&T Inc.",
+        "sector": "Communication Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TBB": {
+        "name": "AT&T Inc. 5.35% GLB NTS 66",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TCBIO": {
+        "name": "Texas Capital Bancshares, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TDS-PU": {
+        "name": "Telephone and Data Systems, Inc.",
+        "sector": "Communication Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TDS-PV": {
+        "name": "Telephone and Data Systems, Inc.",
+        "sector": "Communication Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TECTP": {
+        "name": "Tectonic Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TEN-PE": {
+        "name": "Tsakos Energy Navigation Limited",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TEN-PF": {
+        "name": "Tsakos Energy Navigation Limited",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TFC-PI": {
+        "name": "Truist Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TFC-PO": {
+        "name": "Truist Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TFC-PR": {
+        "name": "Truist Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TPGXL": {
+        "name": "TPG Operating Group II, L.P. 6.950% Fixed-Rate Junior Subordinated Notes due 2064",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "TRINI": {
+        "name": "Trinity Capital Inc. 7.875% Notes Due 2029",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "TRINZ": {
+        "name": "Trinity Capital Inc. 7.875% Notes due 2029",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "TRTN-PA": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTN-PB": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTN-PC": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTN-PD": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTN-PE": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTN-PF": {
+        "name": "Triton International Limited",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TRTX-PC": {
+        "name": "TPG RE Finance Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TVC": {
+        "name": "Tennessee Valley Authority",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TVE": {
+        "name": "Tennessee Valley Authority PARRS A 2029",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TWO-PA": {
+        "name": "Two Harbors Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TWO-PB": {
+        "name": "Two Harbors Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TWO-PC": {
+        "name": "Two Harbors Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "TWOD": {
+        "name": "Two Harbors Investment Corp.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "UMBFO": {
+        "name": "UMB Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "UMH-PD": {
+        "name": "UMH Properties, Inc.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "UNMA": {
+        "name": "Unum Group 6.250% JR NT58",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "USB-PH": {
+        "name": "U.S. Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "USB-PP": {
+        "name": "U.S. Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "USB-PQ": {
+        "name": "U.S. Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "USB-PR": {
+        "name": "U.S. Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "USB-PS": {
+        "name": "U.S. Bancorp",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VIASP": {
+        "name": "Via Renewables, Inc.",
+        "sector": "Utilities",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VLYPN": {
+        "name": "Valley National Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VLYPO": {
+        "name": "Valley National Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VLYPP": {
+        "name": "Valley National Bancorp",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VNO-PL": {
+        "name": "Vornado Realty Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VNO-PM": {
+        "name": "Vornado Realty Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VNO-PN": {
+        "name": "Vornado Realty Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VNO-PO": {
+        "name": "Vornado Realty Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "VOYA-PB": {
+        "name": "Voya Financial, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WAFDP": {
+        "name": "WaFd, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WAL-PA": {
+        "name": "Western Alliance Bancorporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WBS-PF": {
+        "name": "Webster Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WBS-PG": {
+        "name": "Webster Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WFC-PA": {
+        "name": "Wells Fargo & Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WFC-PC": {
+        "name": "Wells Fargo & Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WFC-PD": {
+        "name": "Wells Fargo & Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WFC-PY": {
+        "name": "Wells Fargo & Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WFC-PZ": {
+        "name": "Wells Fargo & Company",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WHFCL": {
+        "name": "WhiteHorse Finance, Inc. 7.875% Notes due 2028",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed"
+    },
+    "WRB-PE": {
+        "name": "W. R. Berkley Corporation 5.70% SB DB 2058",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WSBCP": {
+        "name": "WesBanco, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "WTFCN": {
+        "name": "Wintrust Financial Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "XFLT-PA": {
+        "name": "XAI Octagon Floating Rate & Alternative Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Floating"
+    },
+    "XOMAO": {
+        "name": "XOMA Royalty Corporation",
+        "sector": "Healthcare",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "XOMAP": {
+        "name": "XOMA Royalty Corporation",
+        "sector": "Healthcare",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    },
+    "ZIONP": {
+        "name": "Zions Bancorporation, National Association",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed"
+    }
+}
