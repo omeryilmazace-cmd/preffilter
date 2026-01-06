@@ -584,8 +584,9 @@
                     questionEl.innerText = 'this site is not for you';
                     btnGroup.style.display = 'none';
                 } else {
-                    // Loop Q2: re-apply the same question text
-                    questionEl.innerText = 'are you sure you dont wanna destroy moms ?';
+                    // Go back to Q1
+                    currentQuestion = 1;
+                    questionEl.innerText = 'do you wanna destroy moms ?';
                 }
             }
         }
