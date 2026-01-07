@@ -131,7 +131,12 @@ def run_full_analysis(threshold=None, mode="preferred"):
                                 symbol_cache[o] = v
                                 resolved_map[o] = v
                                 break
-                        except: pass
+            except: pass
+            return
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            for chunk in chunks:
+                executor.submit(resolve_chunk, chunk)
         
         save_json(METADATA_FILE, metadata_cache)
         save_json(SYMBOL_CACHE_FILE, symbol_cache)
