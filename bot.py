@@ -8,6 +8,13 @@ import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, Days_Lookback, Alert_Threshold_Pct
 
+def calculate_rsi(series, period=14):
+    delta = series.diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+    rs = gain / loss
+    return 100 - (100 / (1 + rs))
+
 # Ensure terminal output handles UTF-8
 if sys.stdout.encoding.lower() != 'utf-8':
     try:
@@ -196,11 +203,13 @@ def run_full_analysis(threshold=None, mode="preferred"):
     try:
         closes = combined_prices['Close']
         opens = combined_prices['Open']
+        volumes = combined_prices['Volume']
     except Exception as e:
         log_msg(f"Error accessing Close/Open: {e}")
         # Fallback if flat index (rare but possible with 1 ticker)
         closes = combined_prices
         opens = combined_prices 
+        volumes = pd.DataFrame() # Fallback
     
     if hasattr(closes, 'columns'):
          log_msg(f"Closes columns (first 10): {list(closes.columns)[:10]}")
@@ -241,8 +250,25 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 series = series.iloc[:, 0] # Handle duplicates
             series = series.dropna()
             
-            if len(series) < 5: continue
+            if len(series) < 15: continue # Need enough data for RSI
             current = float(series.iloc[-1])
+            
+            # RSI Calculation
+            try:
+                rsi_s = calculate_rsi(series)
+                rsi_sq = rsi_s.dropna()
+                current_rsi = float(rsi_sq.iloc[-1]) if not rsi_sq.empty else 50.0
+            except:
+                current_rsi = 50.0
+
+            # Volume Calculation
+            try:
+                vol_s = volumes[v]
+                if isinstance(vol_s, pd.DataFrame): vol_s = vol_s.iloc[:, 0]
+                vol_s = vol_s.dropna()
+                avg_vol = float(vol_s.tail(10).mean()) if not vol_s.empty else 0.0
+            except:
+                avg_vol = 0.0
             
             # Streak Detection
             streak_type = "Neutral"
@@ -346,7 +372,9 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 "l60": l60, "h60": h60, "l30": l30, "h30": h30, "l7": l7, "h7": h7,
                 "dL60": (current-l60)/l60, "dH60": (h60-current)/h60, 
                 "dL30": (current-l30)/l30, "dH30": (h30-current)/h30, 
-                "dL7": (current-l7)/l7, "dH7": (h7-current)/h7
+                "dL7": (current-l7)/l7, "dH7": (h7-current)/h7,
+                "rsi": round(current_rsi, 1),
+                "avg_volume": int(avg_vol)
             })
 
     log_msg(f"Scan Finished. {len(results['all_data'])} items analyzed.")

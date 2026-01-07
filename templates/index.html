@@ -409,6 +409,8 @@
                                 <th onclick="setSort('ticker')">Sec</th>
                                 <th onclick="setSort('price')">Price</th>
                                 <th onclick="setSort('raw_yield')">Yield</th>
+                                <th onclick="setSort('rsi')">RSI</th>
+                                <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeader" onclick="setSort('sp_rating')">Rating</th>
                                 <th id="cefDivHeader" class="hidden" onclick="setSort('raw_divergence')">
                                     Sector / Makas
@@ -442,6 +444,8 @@
                                 <th onclick="setSort('ticker')">Sec</th>
                                 <th onclick="setSort('price')">Price</th>
                                 <th onclick="setSort('raw_yield')">Yield</th>
+                                <th onclick="setSort('rsi')">RSI</th>
+                                <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeaderSell" onclick="setSort('sp_rating')">Rating</th>
                                 <th id="cefDivHeaderSell" class="hidden" onclick="setSort('raw_divergence')">
                                     Sector / Makas
@@ -719,6 +723,15 @@
                 if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
                 if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
 
+                let rsiVal = i.rsi || 50;
+                let rsiColor = 'inherit';
+                let rsiWeight = 'normal';
+                if (rsiVal <= 30) { rsiColor = '#4ade80'; rsiWeight = 'bold'; }
+                if (rsiVal >= 70) { rsiColor = '#f87171'; rsiWeight = 'bold'; }
+
+                let vol = i.avg_volume || 0;
+                let volStr = vol > 1000000 ? (vol / 1000000).toFixed(1) + 'M' : (vol > 1000 ? (vol / 1000).toFixed(0) + 'k' : vol);
+
                 let yahooTicker = i.ticker;
                 if (activeMode === 'preferred' && i.ticker.includes('-')) {
                     yahooTicker = i.ticker.replace('-', '-P');
@@ -742,6 +755,8 @@
                     </td>
                     <td>$${i.price.toFixed(2)}</td>
                     <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
+                    <td style="color:${rsiColor}; font-weight:${rsiWeight}">${rsiVal}</td>
+                    <td style="font-size:0.75rem; opacity:0.7">${volStr}</td>
                     ${extraCol}
                     <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
                     <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
