@@ -115,7 +115,6 @@ def run_full_analysis(threshold=None, mode="preferred"):
         def resolve_chunk(chunk_orig):
             to_test = []
             for o in chunk_orig: to_test.extend(ticker_map[o])
-            local_results = []
             try:
                 m_data = yf.Tickers(" ".join(to_test))
                 for o in chunk_orig:
@@ -131,6 +130,7 @@ def run_full_analysis(threshold=None, mode="preferred"):
                                 symbol_cache[o] = v
                                 resolved_map[o] = v
                                 break
+                        except: pass
             except: pass
             return
 
