@@ -135,8 +135,9 @@ def run_full_analysis(threshold=None, mode="preferred"):
             return
 
         with ThreadPoolExecutor(max_workers=5) as executor:
-            for chunk in chunks:
-                executor.submit(resolve_chunk, chunk)
+            futures = [executor.submit(resolve_chunk, chunk) for chunk in chunks]
+            for future in as_completed(futures):
+                future.result()
         
         save_json(METADATA_FILE, metadata_cache)
         save_json(SYMBOL_CACHE_FILE, symbol_cache)
