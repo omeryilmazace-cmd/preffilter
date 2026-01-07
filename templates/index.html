@@ -264,6 +264,11 @@
                 <option value="Utility">Utility</option>
                 <option value="Real Estate">Real Estate</option>
             </select>
+            <div style="margin-top: 8px;">
+                <label style="font-size: 0.75rem; opacity: 0.7;">Min Makas (Div %):</label>
+                <input type="number" id="minDivergence" value="0" step="0.5" oninput="applyFilters()"
+                    style="width: 100%; margin-top: 4px;">
+            </div>
         </div>
 
         <div class="filter-group">
@@ -347,7 +352,8 @@
                                 <th onclick="setSort('ticker')">Sec</th>
                                 <th onclick="setSort('price')">Price</th>
                                 <th onclick="setSort('raw_yield')">Yield</th>
-                                <th onclick="setSort('sp_rating')">Rating</th>
+                                <th id="prefRatingHeader" onclick="setSort('sp_rating')">Rating</th>
+                                <th id="cefDivHeader" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th onclick="setSort('call_date')">Call</th>
                                 <th onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dL7')">7D</th>
@@ -372,7 +378,8 @@
                                 <th onclick="setSort('ticker')">Sec</th>
                                 <th onclick="setSort('price')">Price</th>
                                 <th onclick="setSort('raw_yield')">Yield</th>
-                                <th onclick="setSort('sp_rating')">Rating</th>
+                                <th id="prefRatingHeaderSell" onclick="setSort('sp_rating')">Rating</th>
+                                <th id="cefDivHeaderSell" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th onclick="setSort('call_date')">Call</th>
                                 <th onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dH7')">7D</th>
@@ -478,6 +485,12 @@
             document.getElementById('prefFilters').classList.toggle('hidden', mode === 'cef');
             document.getElementById('cefFilters').classList.toggle('hidden', mode === 'preferred');
 
+            // Toggle table headers
+            document.getElementById('cefDivHeader').classList.toggle('hidden', mode === 'preferred');
+            document.getElementById('cefDivHeaderSell').classList.toggle('hidden', mode === 'preferred');
+            document.getElementById('prefRatingHeader').classList.toggle('hidden', mode === 'cef');
+            document.getElementById('prefRatingHeaderSell').classList.toggle('hidden', mode === 'cef');
+
             // Sync current data view
             rawData = fullModesData[activeMode];
             updateSectorList();
@@ -556,6 +569,8 @@
                 } else {
                     const cefCat = document.getElementById('cefCategoryFilter').value;
                     if (cefCat !== 'all' && i.sector !== cefCat) return false;
+                    const minDiv = parseFloat(document.getElementById('minDivergence').value) || -999;
+                    if (i.raw_divergence * 100 < minDiv) return false;
                 }
 
                 const sector = document.getElementById('sectorFilter').value;
@@ -633,11 +648,15 @@
                 if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
                 if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
 
+                const extraCol = activeMode === 'cef'
+                    ? `<td style="color:var(--accent); font-weight:bold;">${i.divergence}</td>`
+                    : `<td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>`;
+
                 return `<tr>
                     <td><div class="ticker-cell">${i.ticker} ${badge}</div><div class="name-sub">${i.name.slice(0, 20)}</div></td>
                     <td>$${i.price.toFixed(2)}</td>
                     <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
-                    <td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>
+                    ${extraCol}
                     <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
                     <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
                     <td class="diff-val ${(mode === 'buy' ? i.dL7 : i.dH7) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL7 : i.dH7) * 100).toFixed(2)}%</td>

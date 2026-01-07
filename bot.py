@@ -146,20 +146,36 @@ def run_full_analysis(threshold=None, mode="preferred"):
         log_msg("All tickers resolved from cache. Skipping trials.")
 
     # Step 2: Price Fetching
-    symbols_to_download = list(set(resolved_map.values()))
-    log_msg(f"Fetching prices for {len(symbols_to_download)} active symbols...")
+    SECTOR_ETFS = {
+        "Municipal Bond": ["XMPT", "MUB"],
+        "Equity/Core": ["QQQ", "SPY"],
+        "Utility": ["XLU"],
+        "Real Estate": ["XLRE", "VNQ"],
+        "Mixed/Debt": ["SPY"]
+    }
+    
+    benchmark_symbols = []
+    if mode == "cef":
+        for etf_list in SECTOR_ETFS.values():
+            benchmark_symbols.extend(etf_list)
+    
+    symbols_to_download = list(set(resolved_map.values()) | set(benchmark_symbols))
+    log_msg(f"Fetching prices for {len(symbols_to_download)} symbols (Mode: {mode})...")
     
     chunk_size = 200
     all_prices = []
     chunks = [symbols_to_download[i:i+chunk_size] for i in range(0, len(symbols_to_download), chunk_size)]
     
+    # CEFs need adjusted Close (IDV adjusted)
+    adj_flag = True if mode == "cef" else False
+
     def fetch_chunk(chunk):
         try:
-            return yf.download(chunk, period="4mo", progress=False, threads=True, auto_adjust=False)
+            return yf.download(chunk, period="4mo", progress=False, threads=True, auto_adjust=adj_flag)
         except Exception:
             return pd.DataFrame()
 
-    log_msg(f"Starting parallel fetch in {len(chunks)} chunks...")
+    log_msg(f"Parallel fetch (Auto-Adjust={adj_flag}) in {len(chunks)} chunks...")
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_chunk = {executor.submit(fetch_chunk, c): c for c in chunks}
         for i, future in enumerate(as_completed(future_to_chunk)):
@@ -175,9 +191,20 @@ def run_full_analysis(threshold=None, mode="preferred"):
 
     log_msg("Crunching range analytics...")
     combined_prices = pd.concat(all_prices, axis=1)
-    # v3.9.5: Use both Open and Close for streak detection
     closes = combined_prices['Close']
     opens = combined_prices['Open']
+
+    # Pre-calculate benchmark dips if in CEF mode
+    benchmarks_dL60 = {}
+    if mode == "cef":
+        for sym in benchmark_symbols:
+            if isinstance(closes, pd.DataFrame) and sym in closes.columns:
+                s = closes[sym].dropna()
+                if not s.empty:
+                    current = float(s.iloc[-1])
+                    h60 = float(s.tail(60).max())
+                    if h60 > 0:
+                        benchmarks_dL60[sym] = (h60 - current) / h60
 
     for orig, v in resolved_map.items():
         if isinstance(closes, pd.DataFrame) and v in closes.columns:
@@ -247,11 +274,23 @@ def run_full_analysis(threshold=None, mode="preferred"):
                     pass
             
             # Yield & Display
+            raw_divergence = 0.0
+            display_divergence = "-"
+            
             if mode == "cef":
                 m_info = metadata_cache.get(v, {})
                 div_rate = m_info.get("dividendRate", 0.0)
                 cur_yield = (div_rate / current) if current > 0 else 0.0
                 display_coupon = f"${div_rate:.2f}"
+                
+                # Divergence calculation
+                relevant_etfs = SECTOR_ETFS.get(sector, [])
+                etf_dips = [benchmarks_dL60[e] for e in relevant_etfs if e in benchmarks_dL60]
+                if etf_dips:
+                    avg_etf_dip = sum(etf_dips) / len(etf_dips)
+                    cef_dip = (h60 - current) / h60 # How much it dipped from 60D high
+                    raw_divergence = (cef_dip - avg_etf_dip)
+                    display_divergence = f"{raw_divergence*100:+.1f}%"
             else:
                 # Preferred logic: (Coupon * FaceValue) / CurrentPrice. Assuming $25 face value.
                 cur_yield = (coupon * 25.0 / current) if current > 0 and coupon > 0 else 0.0
@@ -271,6 +310,8 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 "coupon": display_coupon,
                 "price": current,
                 "yield": f"{cur_yield*100:.2f}%" if cur_yield > 0 else "N/A",
+                "divergence": display_divergence,
+                "raw_divergence": raw_divergence,
                 "raw_yield": float(cur_yield),
                 "streak_type": streak_type,
                 "streak_count": streak_count,
