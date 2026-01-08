@@ -91,8 +91,20 @@ def run_full_analysis(threshold=None, mode="preferred"):
         ticker_map = {t: [t] for t in cef_master.keys()}
         master_metadata = cef_master
     else:
-        ticker_map = load_tickers()
         master_metadata = load_json(MASTER_METADATA_FILE)
+        # Scan ALL tickers in master metadata, not just the watchlist
+        raw_tickers = list(master_metadata.keys())
+        ticker_map = {}
+        for t in raw_tickers:
+            t = t.strip().upper()
+            possible = [t]
+            if "-" in t:
+                parts = t.split("-")
+                if len(parts) == 2 and len(parts[1]) == 1:
+                    possible.append(f"{parts[0]}-P{parts[1]}")
+                    possible.append(f"{parts[0]}-PR{parts[1]}")
+                    possible.append(f"{parts[0]}.P{parts[1]}")
+            ticker_map[t] = list(set(possible))
 
     metadata_cache = load_json(METADATA_FILE)
     symbol_cache = load_json(SYMBOL_CACHE_FILE)
