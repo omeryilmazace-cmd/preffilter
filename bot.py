@@ -212,6 +212,11 @@ def run_full_analysis(threshold=None, mode="preferred"):
         closes = combined_prices
         opens = combined_prices 
         volumes = pd.DataFrame() # Fallback
+
+    # Ensure DataFrame format
+    if isinstance(closes, pd.Series): closes = closes.to_frame()
+    if isinstance(opens, pd.Series): opens = opens.to_frame()
+    if isinstance(volumes, pd.Series): volumes = volumes.to_frame()
     
     if hasattr(closes, 'columns'):
          log_msg(f"Closes columns (first 10): {list(closes.columns)[:10]}")
@@ -245,7 +250,7 @@ def run_full_analysis(threshold=None, mode="preferred"):
 
     analysis_count = 0
     for orig, v in resolved_map.items():
-        if isinstance(closes, pd.DataFrame) and v in closes.columns:
+        if v in closes.columns:
             analysis_count += 1
             series = closes[v]
             if isinstance(series, pd.DataFrame):
@@ -351,7 +356,6 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 if etf_dips:
                     avg_etf_dip = sum(etf_dips) / len(etf_dips)
                     cef_dip = (h60 - current) / h60 # How much it dipped from 60D high
-                    raw_divergence = (cef_dip - avg_etf_dip)
                     raw_divergence = (cef_dip - avg_etf_dip)
                     display_divergence = f"{raw_divergence*100:+.1f}%"
                 else:
