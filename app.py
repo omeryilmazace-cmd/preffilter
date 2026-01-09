@@ -101,6 +101,22 @@ def remove_ticker(ticker):
         return jsonify({"message": "OK"})
     return jsonify({"message": "404"}), 404
 
+@app.route('/api/calc-stats', methods=['POST'])
+def calc_stats():
+    """
+    On-demand calculation for historical index stats.
+    Wraps bot.calculate_historical_index.
+    """
+    data = request.json
+    target = data.get('target', '')
+    peers = data.get('peers', [])
+    
+    if not target or not peers:
+        return jsonify({"error": "Missing params"}), 400
+        
+    stats = bot.calculate_historical_index(target, peers)
+    return jsonify(stats)
+
 if __name__ == '__main__':
     # Start background scheduler
     t = threading.Thread(target=scheduled_scan_loop, daemon=True)
