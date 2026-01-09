@@ -200,7 +200,8 @@ def run_full_analysis(threshold=None, mode="preferred"):
     log_msg(f"Download Sample: {symbols_to_download[:10]}")
     log_msg(f"Fetching prices for {len(symbols_to_download)} symbols (Mode: {mode})...")
     
-    chunk_size = 200
+    # Reduce chunk size for lower memory usage on Railway
+    chunk_size = 75  # Was 200, reduced for memory efficiency
     all_prices = []
     chunks = [symbols_to_download[i:i+chunk_size] for i in range(0, len(symbols_to_download), chunk_size)]
     
@@ -213,8 +214,9 @@ def run_full_analysis(threshold=None, mode="preferred"):
         except Exception:
             return pd.DataFrame()
 
-    log_msg(f"Parallel fetch (Auto-Adjust={adj_flag}) in {len(chunks)} chunks...")
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    log_msg(f"Parallel fetch (Auto-Adjust={adj_flag}) in {len(chunks)} chunks (chunk_size={chunk_size})...")
+    # Use fewer workers to reduce peak memory usage
+    with ThreadPoolExecutor(max_workers=2) as executor:  # Was 5, reduced for memory
         future_to_chunk = {executor.submit(fetch_chunk, c): c for c in chunks}
         for i, future in enumerate(as_completed(future_to_chunk)):
             data = future.result()
