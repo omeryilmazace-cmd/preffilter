@@ -5951,5 +5951,1132 @@
         "type": "Preferred Stock",
         "rate": "Fixed",
         "dividendRate": 1.05
+    },
+    "GLADZ": {
+        "name": "GLADZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TGH-B": {
+        "name": "TGH-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GMRE-PRB": {
+        "name": "GMRE-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TGH-PA": {
+        "name": "TGH-PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TRINL": {
+        "name": "TRINL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLP.PA": {
+        "name": "GLP.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TFINP": {
+        "name": "TFINP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GL-PD": {
+        "name": "GL-PD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GMLPF": {
+        "name": "Golar LNG Partners LP",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "UMBFP": {
+        "name": "UMBFP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GS-PK": {
+        "name": "GS-PK",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "UCB.PI": {
+        "name": "UCB.PI",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AL.PA": {
+        "name": "AL.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GS-PRJ": {
+        "name": "GS-PRJ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AJXA": {
+        "name": "Great Ajax Corp. 7.25 CV SR NT 24",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.18
+    },
+    "GECCM": {
+        "name": "GECCM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AIG.PA": {
+        "name": "AIG.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WFC-PRR": {
+        "name": "WFC-PRR",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GECCN": {
+        "name": "GECCN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ANG-PRA": {
+        "name": "ANG-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GECCZ": {
+        "name": "GECCZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WFC.PQ": {
+        "name": "WFC.PQ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ANG-B": {
+        "name": "ANG-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WCC-PRA": {
+        "name": "WCC-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HWCPL": {
+        "name": "HWCPL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WTFCM": {
+        "name": "WTFCM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WTFCP": {
+        "name": "WTFCP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AUVIP": {
+        "name": "AUVIP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HROWL": {
+        "name": "HROWL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB-PRF": {
+        "name": "WRB-PRF",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ARGD": {
+        "name": "ARGD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HROWM": {
+        "name": "HROWM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB-PG": {
+        "name": "WRB-PG",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HT.PC": {
+        "name": "HT.PC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ARGO.PA": {
+        "name": "ARGO.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB-H": {
+        "name": "WRB-H",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HT-D": {
+        "name": "HT-D",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AIC": {
+        "name": "AIC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ZIONL": {
+        "name": "ZIONL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HT-PE": {
+        "name": "HT-PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AAIN": {
+        "name": "AAIN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ZIONO": {
+        "name": "ZIONO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HMLP-PRA": {
+        "name": "HMLP-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AHL.PC": {
+        "name": "AHL.PC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ASBA": {
+        "name": "ASBA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "IVR-B": {
+        "name": "IVR-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TBC": {
+        "name": "TBC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ATH-C": {
+        "name": "ATH-C",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PSBXP": {
+        "name": "Link Parks, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "ATCO-PRD": {
+        "name": "ATCO-PRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PSBYP": {
+        "name": "Link Parks, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "PSBZP": {
+        "name": "Link Parks, Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "ATCOL": {
+        "name": "ATCOL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LUXHP": {
+        "name": "LuxUrban Hotels Inc.",
+        "sector": "Consumer Cyclical",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.25
+    },
+    "RILYO": {
+        "name": "RILYO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MTB-PK": {
+        "name": "M&T Bank Corporation",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.2
+    },
+    "MDRRP": {
+        "name": "MDRRP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RILYM": {
+        "name": "RILYM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MBNKP": {
+        "name": "MBNKP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BWSN": {
+        "name": "BWSN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MBINP": {
+        "name": "MBINP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MBINO": {
+        "name": "MBINO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NEWTL": {
+        "name": "NEWTL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NEE.PN": {
+        "name": "NEE.PN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NEE.PU": {
+        "name": "NEE.PU",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BIP.PB": {
+        "name": "BIP.PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NI.PB": {
+        "name": "NI.PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BEP.PA": {
+        "name": "BEP.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BC-PRB": {
+        "name": "BC-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NS.PC": {
+        "name": "NS.PC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NS-PRA": {
+        "name": "NS-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BC-PRA": {
+        "name": "BC-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CSWCZ": {
+        "name": "CSWCZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NS-PRB": {
+        "name": "NS-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CCLDP": {
+        "name": "CCLDP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NSS": {
+        "name": "NSS",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CSR-PC": {
+        "name": "CSR-PC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OAK-PRA": {
+        "name": "OAK-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CSSEP": {
+        "name": "CSSEP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OAK-PB": {
+        "name": "Oaktree Capital Group, LLC",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.97
+    },
+    "OCFCP": {
+        "name": "OCFCP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CSSEN": {
+        "name": "CSSEN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OPINL": {
+        "name": "OPINL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OFSSI": {
+        "name": "OFSSI",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "C.PJ": {
+        "name": "C.PJ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "C.PK": {
+        "name": "C.PK",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OXLCM": {
+        "name": "OXLCM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CFG-D": {
+        "name": "CFG-D",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OXSQL": {
+        "name": "OXSQL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OXSQZ": {
+        "name": "OXSQZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CMA-PB": {
+        "name": "Comerica Inc",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "PRIF-PF": {
+        "name": "PRIF-PF",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CODI-PA": {
+        "name": "Compass Diversified",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.81
+    },
+    "CODI-PC": {
+        "name": "Compass Diversified",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.97
+    },
+    "PRIF-PRG": {
+        "name": "PRIF-PRG",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CNFRL": {
+        "name": "CNFRL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PRIF-H": {
+        "name": "PRIF-H",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PRIF-I": {
+        "name": "PRIF-I",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CMRE-PE": {
+        "name": "CMRE-PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PRS": {
+        "name": "PRS",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "COWNL": {
+        "name": "COWNL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PXSAP": {
+        "name": "PXSAP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "QVCD": {
+        "name": "QVCD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CUBI-PE": {
+        "name": "CUBI-PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "QVCC": {
+        "name": "QVCC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "METCL": {
+        "name": "METCL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RCC": {
+        "name": "RCC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RCD": {
+        "name": "Invesco S&P 500 Equal Weight Consumer Discretionary ETF",
+        "sector": "Other",
+        "type": "ETF",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "O-": {
+        "name": "O-",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DLNG.PA": {
+        "name": "DLNG.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RF-PB": {
+        "name": "RF-PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DLNG-PRB": {
+        "name": "DLNG-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RITM.PE": {
+        "name": "RITM.PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RMPL-": {
+        "name": "RMPL-",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCCB": {
+        "name": "SCCB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "EFC-PE": {
+        "name": "EFC-PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SACC": {
+        "name": "SACC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ET-PD": {
+        "name": "ET-PD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCCC": {
+        "name": "SCCC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ET-C": {
+        "name": "ET-C",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ET-PE": {
+        "name": "ET-PE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ESGOF": {
+        "name": "Enstar Group Limited",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.75
+    },
+    "ESGRF": {
+        "name": "Enstar Group Limited",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.75
+    },
+    "EQC-PRD": {
+        "name": "EQC-PRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCE-PH": {
+        "name": "SCE-PH",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SBBA": {
+        "name": "SBBA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AGM-PRC": {
+        "name": "AGM-PRC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SITC-PRA": {
+        "name": "SITC-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FHN-PRD": {
+        "name": "FHN-PRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FHN-PRB": {
+        "name": "FHN-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "STT-PD": {
+        "name": "STT-PD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SPLPP": {
+        "name": "Steel Partners Holdings L.P.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.5
+    },
+    "FNB-PRE": {
+        "name": "FNB-PRE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SNCRL": {
+        "name": "SNCRL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "F-PRB": {
+        "name": "F-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TELZ": {
+        "name": "TELZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "F-PRD": {
+        "name": "F-PRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FTAIP": {
+        "name": "FTAIP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FTAIO": {
+        "name": "FTAIO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLOG-PRA": {
+        "name": "GLOG-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLOP-PA": {
+        "name": "GasLog Partners LP",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.16
+    },
+    "GLOP-PC": {
+        "name": "GasLog Partners LP",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.49
+    },
+    "GLOP.PB": {
+        "name": "GLOP.PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
     }
 }
