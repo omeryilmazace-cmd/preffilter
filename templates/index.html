@@ -4,269 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Range Trader v3.9 - Dual View</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Range Trader v4.0 - Professional Monitor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <style>
-        th {
-            cursor: pointer;
-            transition: background 0.2s;
-            position: relative;
-        }
-
-        th:hover {
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        th.sort-asc::after {
-            content: ' ↑';
-            color: var(--accent);
-        }
-
-        th.sort-desc::after {
-            content: ' ↓';
-            color: var(--accent);
-        }
-
-        .price-inputs {
-            display: flex;
-            gap: 5px;
-        }
-
-        .price-inputs input {
-            width: 48%;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                position: fixed;
-                left: -340px;
-                top: 0;
-                height: 100vh;
-                z-index: 1000;
-                transition: left 0.3s ease;
-                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
-            }
-
-            .sidebar.mobile-open {
-                left: 0;
-            }
-
-            .main-content {
-                width: 100%;
-            }
-
-            .search-box input {
-                width: 150px !important;
-            }
-
-            .table-scroll {
-                overflow-x: auto;
-            }
-
-            table {
-                min-width: 600px;
-            }
-
-            .ticker-manager {
-                width: 90% !important;
-                left: 5% !important;
-                right: auto !important;
-            }
-
-            .menu-toggle {
-                display: block !important;
-            }
-        }
-
-        .menu-toggle {
-            display: none;
-            background: var(--accent);
-            border: none;
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        /* CEF RED THEME */
-        body.cef-mode {
-            --side-bg: #450a0a;
-            --main-bg: #180808;
-            --accent: #f87171;
-            --card: rgba(127, 29, 29, 0.3);
-            --border: rgba(248, 113, 113, 0.15);
-        }
-
-        .mode-switcher {
-            display: flex;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 4px;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .mode-btn {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            background: none;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 700;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: 0.2s;
-            opacity: 0.5;
-        }
-
-        .mode-btn.active {
-            background: var(--accent);
-            opacity: 1;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .ticker-link {
-            color: white;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-            text-decoration-color: rgba(255, 255, 255, 0.2);
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .ticker-link:hover {
-            color: var(--accent);
-            text-decoration-color: var(--accent);
-            text-shadow: 0 0 10px var(--accent);
-        }
-
-        .info-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 14px;
-            height: 14px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 50%;
-            font-size: 10px;
-            font-weight: bold;
-            margin-left: 5px;
-            cursor: help;
-            position: relative;
-        }
-
-        .info-icon:hover .tooltip {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .tooltip {
-            visibility: hidden;
-            width: 220px;
-            background-color: #000;
-            color: #fff;
-            text-align: left;
-            border-radius: 6px;
-            padding: 10px;
-            position: absolute;
-            z-index: 100;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -110px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 0.7rem;
-            line-height: 1.4;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            border: 1px solid var(--accent);
-            pointer-events: none;
-        }
-
-        /* Intro Modal Styles */
-        #momModal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(2, 6, 23, 0.98);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-        }
-
-        #momModal h1 {
-            color: var(--accent);
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
-
-        .mom-btns {
-            display: flex;
-            gap: 20px;
-        }
-
-        .mom-btn {
-            padding: 12px 30px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s;
-        }
-
-        .mom-btn:hover {
-            transform: scale(1.05);
-        }
-
-        .mom-btn.yes {
-            background: var(--buy);
-            color: white;
-        }
-
-        .mom-btn.no {
-            background: var(--sell);
-            color: white;
-        }
-
-        .peer-tag {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 4px 8px;
-            border-radius: 4px;
-            margin: 2px;
-            font-size: 0.75rem;
-            cursor: pointer;
-            border: 1px solid transparent;
-            user-select: none;
-        }
-
-        .peer-tag:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .peer-tag.excluded {
-            opacity: 0.4;
-            text-decoration: line-through;
-            border-color: rgba(255, 255, 255, 0.1);
-            background: transparent;
-        }
-    </style>
+    <!-- Fonts are imported in CSS -->
 </head>
 
 <body>
@@ -278,24 +18,22 @@
             <button class="mom-btn no" onclick="handleMom(false)">NO</button>
         </div>
         <label
-            style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+            style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5; cursor: pointer; display: flex; align-items: center; gap: 8px; color:white;">
             <input type="checkbox" id="dontAskAgain"> dont ask me again
         </label>
     </div>
 
-    <div class="glass-bg"></div>
-
+    <!-- Sidebar -->
     <div class="sidebar">
         <div class="brand">
-            <h1>Range<span>Trader</span> <small>v4.0</small></h1>
-            <p>Dual-Market Professional Monitor</p>
+            <h1>Range<span>Trader</span></h1>
+            <p>Dual-Market Professional Monitor v4.0</p>
         </div>
 
         <div class="mode-switcher">
             <button id="prefBtn" class="mode-btn active" onclick="switchMode('preferred')">PREFERRED</button>
             <button id="cefBtn" class="mode-btn" onclick="switchMode('cef')">CEFs</button>
         </div>
-
 
         <div class="filter-group">
             <h3>Lookback & Logic</h3>
@@ -304,7 +42,7 @@
                 <label><input type="checkbox" id="check30" checked onchange="applyFilters()"> 30-Day Range</label>
                 <label><input type="checkbox" id="check60" checked onchange="applyFilters()"> 60-Day Range</label>
             </div>
-            <div class="logic-toggle">
+            <div style="margin-top: 8px;">
                 <select id="filterLogic" onchange="applyFilters()">
                     <option value="and">AND (All Checked)</option>
                     <option value="or">OR (Any Checked)</option>
@@ -320,10 +58,9 @@
                 <label><input type="checkbox" value="FRR" checked onchange="applyFilters()"> Reset Rate (FRR)</label>
                 <label><input type="checkbox" value="FLR" checked onchange="applyFilters()"> Floating (FLR)</label>
             </div>
-            <h3 style="margin-top: 12px;">Security Type (Multi-Select)</h3>
+            <h3 style="margin-top: 12px;">Security Type</h3>
             <div class="check-group" id="typeFilterGroup">
-                <label><input type="checkbox" value="Trad" checked onchange="applyFilters()"> Traditional
-                    Preferred</label>
+                <label><input type="checkbox" value="Trad" checked onchange="applyFilters()"> Traditional Preferred</label>
                 <label><input type="checkbox" value="BB" checked onchange="applyFilters()"> Baby Bond (BB)</label>
                 <label><input type="checkbox" value="Trust P" checked onchange="applyFilters()"> Trust Preferred</label>
                 <label><input type="checkbox" value="Term" checked onchange="applyFilters()"> Term Preferred</label>
@@ -333,14 +70,16 @@
                 <input type="number" id="minCoupon" placeholder="Min %" step="0.5" oninput="applyFilters()">
                 <input type="number" id="maxCoupon" placeholder="Max %" step="0.5" oninput="applyFilters()">
             </div>
-            <label style="display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.85rem;">
-                <input type="checkbox" id="investmentGradeOnly" onchange="applyFilters()">
-                <span>⭐ Investment Grade Only (BBB-/Baa3+)</span>
-            </label>
-            <label style="display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.85rem;">
-                <input type="checkbox" id="floatingOnly" onchange="applyFilters()">
-                <span>🔄 Currently Floating Only</span>
-            </label>
+            <div class="check-group" style="margin-top: 10px;">
+                <label>
+                    <input type="checkbox" id="investmentGradeOnly" onchange="applyFilters()">
+                    <span>⭐ Investment Grade Only</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="floatingOnly" onchange="applyFilters()">
+                    <span>🔄 Currently Floating Only</span>
+                </label>
+            </div>
         </div>
 
         <div class="filter-group hidden" id="cefFilters">
@@ -354,9 +93,8 @@
                 <option value="Real Estate">Real Estate</option>
             </select>
             <div style="margin-top: 8px;">
-                <label style="font-size: 0.75rem; opacity: 0.7;">Min Makas (Div %):</label>
-                <input type="number" id="minDivergence" value="0" step="0.5" oninput="applyFilters()"
-                    style="width: 100%; margin-top: 4px;">
+                <label style="font-size: 0.75rem; opacity: 0.7; margin-bottom:4px; display:block;">Min Makas (Div %):</label>
+                <input type="number" id="minDivergence" value="0" step="0.5" oninput="applyFilters()">
             </div>
         </div>
 
@@ -373,7 +111,7 @@
                 <input type="number" id="minPrice" placeholder="Min $" oninput="applyFilters()">
                 <input type="number" id="maxPrice" placeholder="Max $" oninput="applyFilters()">
             </div>
-            <input type="number" id="threshold" value="1.5" step="0.1" onchange="applyFilters()">
+            <input type="number" id="threshold" value="1.5" step="0.1" onchange="applyFilters()" style="margin-top:8px;">
         </div>
 
         <div class="filter-group">
@@ -384,53 +122,60 @@
                     <option value="Green">Green ✅</option>
                     <option value="Red">Red ❌</option>
                 </select>
-                <input type="number" id="minStreak" value="3" min="2" max="8" style="width: 60px;"
-                    oninput="applyFilters()">
+                <input type="number" id="minStreak" value="3" min="2" max="8" style="width: 70px;" oninput="applyFilters()">
             </div>
         </div>
 
         <div class="actions">
             <button id="scanBtn" class="primary-btn" onclick="triggerScan()">Force Refresh</button>
-            <div id="statusIndicator" class="status-idle">Auto-scanning...</div>
+        </div>
+        
+        <div style="display: flex; align-items: center; gap: 8px; margin-top: 10px; justify-content: center;">
+            <span class="status-dot" id="statusDot"></span>
+            <span class="status-text" id="statusIndicator">Ready</span>
         </div>
 
         <div class="terminal-container">
-            <h3>Live Progress Log</h3>
             <div id="logConsole" class="terminal">[SYSTEM] Ready...</div>
         </div>
 
-        <div class="portfolio-link">
-            <button onclick="toggleManager()">Manage Tickers</button>
-            <button onclick="clearFilters()" style="margin-left:5px; background: rgba(255,255,255,0.05);">Clear
-                All</button>
+        <div style="margin-top: auto; padding-top: 1rem; display: flex; gap: 10px; justify-content: center;">
+            <button onclick="toggleManager()" class="mode-btn" style="border: 1px solid var(--border-glass);">Tickers</button>
+            <button onclick="clearFilters()" class="mode-btn" style="border: 1px solid var(--border-glass);">Reset</button>
         </div>
     </div>
 
+    <!-- Main Content -->
     <div class="main-content">
         <header class="top-bar">
-            <div style="display: flex; align-items: center;">
-                <button class="menu-toggle" onclick="toggleMobileSidebar()">☰ Menu</button>
+            <div style="display: flex; align-items: center; gap: 1rem; flex: 1;">
+                <button class="menu-toggle" onclick="toggleMobileSidebar()">☰</button>
                 <div class="search-box">
-                    <input type="text" id="tickerSearch" placeholder="Filter..." oninput="applyFilters()">
+                    <input type="text" id="tickerSearch" placeholder="Search ticker or name..." oninput="applyFilters()">
                 </div>
             </div>
-            <div class="global-info">
-                <span id="globalSummary" style="color: var(--accent); font-weight: bold;">0 items</span>
+            <div class="global-info" style="margin-left: 1rem;">
+                <span id="globalSummary" style="color: var(--accent-primary); font-weight: bold; font-size: 0.9rem;">Wait...</span>
             </div>
         </header>
 
-        <section class="ticker-manager glass hidden" id="managerSection">
-            <h2>Portfolio Management</h2>
-            <div class="add-section">
+        <!-- Ticker Manager Modal (Popup style now?) -->
+        <section class="ticker-manager glass hidden" id="managerSection" style="position: absolute; right: 2rem; top: 80px; width: 350px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h2>Portfolio</h2>
+                <button onclick="toggleManager()" style="background:none; border:none; color:white; font-size:1.2rem; cursor:pointer;">&times;</button>
+            </div>
+            <div class="add-section" style="display:flex; gap:5px;">
                 <input type="text" id="newTicker" placeholder="Symbol">
-                <button onclick="addTicker()">Add</button>
+                <button onclick="addTicker()" class="primary-btn" style="width: auto; padding: 0.5rem 1rem;">Add</button>
             </div>
             <div id="tickerList" class="tag-cloud"></div>
         </section>
 
+        <!-- Buy / Sell Grid -->
         <div class="dual-grid">
             <!-- BUY SIDE -->
-            <div class="card glass buy-card">
+            <div class="card buy-card">
                 <div class="card-header">
                     <h2>🟢 Deep Dips (Buy)</h2>
                 </div>
@@ -444,14 +189,7 @@
                                 <th onclick="setSort('rsi')">RSI</th>
                                 <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeader" onclick="setSort('sp_rating')">Rating</th>
-                                <th id="cefDivHeader" class="hidden" onclick="setSort('raw_divergence')">
-                                    Sector / Makas
-                                    <span class="info-icon">i
-                                        <span class="tooltip">Makas (Divergence) = CEF'in 60 günlük düşüşü - Sektör
-                                            ETF'lerinin (MUB, QQQ/SPY, vb.) ortalama düşüşü. Pozitif (+) sonuç fonun
-                                            sektörden daha derin düştüğünü (fırsat) gösterir.</span>
-                                    </span>
-                                </th>
+                                <th id="cefDivHeader" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th onclick="setSort('call_date')">Call</th>
                                 <th onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dL7')">7D</th>
@@ -465,7 +203,7 @@
             </div>
 
             <!-- SELL SIDE -->
-            <div class="card glass sell-card">
+            <div class="card sell-card">
                 <div class="card-header">
                     <h2>🔴 Extreme Peaks (Sell)</h2>
                 </div>
@@ -479,14 +217,7 @@
                                 <th onclick="setSort('rsi')">RSI</th>
                                 <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeaderSell" onclick="setSort('sp_rating')">Rating</th>
-                                <th id="cefDivHeaderSell" class="hidden" onclick="setSort('raw_divergence')">
-                                    Sector / Makas
-                                    <span class="info-icon">i
-                                        <span class="tooltip">Makas (Divergence) = CEF'in 60 günlük düşüşü - Sektör
-                                            ETF'lerinin (MUB, QQQ/SPY, vb.) ortalama düşüşü. Pozitif (+) sonuç fonun
-                                            sektörden daha derin düştüğünü (fırsat) gösterir.</span>
-                                    </span>
-                                </th>
+                                <th id="cefDivHeaderSell" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th onclick="setSort('call_date')">Call</th>
                                 <th onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dH7')">7D</th>
@@ -500,132 +231,103 @@
             </div>
         </div>
 
-        <!-- FAIR VALUE CALCULATOR -->
-        <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(100, 200, 255, 0.2);">
-            <div class="card-header">
-                <h2>⚖️ Fair Value Calculator</h2>
-            </div>
-            <div style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
-                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 200px;">
-                        <label style="font-size: 0.8rem; opacity: 0.7;">Target Ticker</label>
-                        <input type="text" id="calcTicker" placeholder="e.g. JPM-L"
-                            style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px;"
-                            oninput="calculateFairValue()">
-                    </div>
-                    <div style="flex: 1; min-width: 200px;">
-                        <label style="font-size: 0.8rem; opacity: 0.7;">Coupon Tolerance (+/- %)</label>
-                        <input type="number" id="calcTolerance" value="0.5" step="0.1"
-                            style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px;"
-                            oninput="calculateFairValue()">
-                    </div>
-                    <div style="flex: 0 0 auto; display: flex; align-items: flex-end;">
-                        <button onclick="calculateFairValue()" class="primary-btn" style="height: 35px;">Search /
-                            Calc</button>
-                    </div>
+        <!-- Bottom Section: Calculator & Streaks -->
+        <div class="bottom-section">
+            <div class="card glass-effect" style="overflow: visible;">
+                 <div class="card-header">
+                    <h2>⚖️ Fair Value Calculator</h2>
                 </div>
-                <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                    <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
-                        <input type="checkbox" id="calcIgOnly" checked onchange="calculateFairValue()">
-                        <span>⭐ Use Investment Grade Peers Only</span>
-                    </label>
-                    <div style="display: flex; align-items: center; gap: 5px;">
-                        <label style="font-size: 0.85rem; opacity: 0.7;">Sector:</label>
-                        <select id="calcSector" onchange="calculateFairValue()"
-                            style="padding: 4px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; max-width: 150px;">
-                            <option value="all">Any</option>
-                            <!-- Populated by JS -->
-                        </select>
+                <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="display: flex; gap: 1rem; align-items: flex-end; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 150px;">
+                            <label style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; display:block;">Target Ticker</label>
+                            <input type="text" id="calcTicker" placeholder="e.g. JPM-L" oninput="calculateFairValue()">
+                        </div>
+                        <div style="flex: 1; min-width: 150px;">
+                            <label style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; display:block;">Tol. (+/- %)</label>
+                            <input type="number" id="calcTolerance" value="0.5" step="0.1" oninput="calculateFairValue()">
+                        </div>
+                         <div style="min-width: 150px;">
+                            <label style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; display:block;">Sector</label>
+                            <select id="calcSector" onchange="calculateFairValue()">
+                                <option value="all">Any</option>
+                            </select>
+                        </div>
+                        <div style="padding-bottom: 2px;">
+                            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer;">
+                                <input type="checkbox" id="calcIgOnly" checked onchange="calculateFairValue()">
+                                <span>IG Only</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div id="calcResult" style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; display: none;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div>
-                        <h3 id="calcTickerDisplay" style="margin: 0; color: var(--accent);">JPM-L</h3>
-                        <div id="calcTickerDetail" style="font-size: 0.8rem; opacity: 0.7;">Price: $25.00 | Coupon:
-                            5.75%</div>
-                    </div>
-                    <div style="text-align: right;">
-                        <div id="calcIndexValue" style="font-size: 1.5rem; font-weight: bold;">1.00</div>
-                        <div id="calcStatus" style="font-size: 0.9rem; font-weight: bold;">FAIR VALUE</div>
-                    </div>
-                </div>
+                    <div id="calcResult" style="background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-glass); display: none;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div>
+                                <h3 id="calcTickerDisplay" style="margin: 0; color: var(--accent-primary); font-size: 1.5rem;">JPM-L</h3>
+                                <div id="calcTickerDetail" style="font-size: 0.8rem; opacity: 0.7;">Price: $25.00</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div id="calcIndexValue" style="font-size: 2rem; font-weight: 800; color: white;">1.00</div>
+                                <div id="calcStatus" style="font-size: 0.9rem; font-weight: bold;">FAIR VALUE</div>
+                            </div>
+                        </div>
 
-                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 10px;">
-                    <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 5px;">Peer Group</div>
-                    <div id="calcPeerStats" style="font-size: 0.9rem;">
-                        Avg Price: $25.00 | Count: 0 | Range: 5.25% - 6.25%
-                    </div>
-                    <div id="calcPeerList"
-                        style="font-size: 0.75rem; opacity: 0.5; margin-top: 5px; max-height: 80px; overflow-y: auto;">
-                        <!-- Peer list here -->
-                    </div>
-                    <div style="margin-top: 8px; display: flex; gap: 5px;">
-                        <input type="text" id="manualPeerInput" placeholder="+ Add Ticker"
-                            style="padding: 4px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white; width: 100px; font-size: 0.8rem;">
-                        <button onclick="addManualPeer()" class="primary-btn"
-                            style="padding: 4px 8px; font-size: 0.8rem;">Add</button>
-                    </div>
-                </div>
+                        <div style="border-top: 1px solid var(--border-glass); padding-top: 1rem;">
+                            <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 5px;">Peer Group</div>
+                            <div id="calcPeerStats" style="font-size: 0.9rem;"></div>
+                            <div id="calcPeerList" style="margin-top: 10px; max-height: 100px; overflow-y: auto;"></div>
+                            
+                            <div style="margin-top: 1rem; display: flex; gap: 8px;">
+                                <input type="text" id="manualPeerInput" placeholder="+ Add Ticker" style="width: 120px; padding: 0.5rem;">
+                                <button onclick="addManualPeer()" class="primary-btn" style="width: auto; padding: 0.5rem 1rem;">Add</button>
+                            </div>
+                        </div>
 
-                <!-- Historical Stats -->
-                <div id="calcHistory"
-                    style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 10px; display:none;">
-                    <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 5px;">Historical Index Context (90 Days)
-                    </div>
-                    <div id="calcHistoryContent"
-                        style="font-size: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
-                        <!-- Populated by JS -->
-                        Loading...
+                         <div id="calcHistory" style="border-top: 1px solid var(--border-glass); padding-top: 1rem; margin-top: 1rem; display:none;">
+                            <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 8px;">Historical Index Context (90 Days)</div>
+                            <div id="calcHistoryContent" style="font-size: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">Loading...</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- STREAK SECTION -->
-    <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(255, 107, 107, 0.2);">
-        <div class="card-header">
-            <h2>🔥 Consecutive Streaks (Price Momentum)</h2>
+            <div class="card glass-effect" style="height: 100%;">
+                <div class="card-header">
+                    <h2>🔥 Consec. Streaks</h2>
+                </div>
+                <div class="table-scroll">
+                    <table id="streakTable">
+                        <thead>
+                            <tr>
+                                <th onclick="setSort('ticker')">Sec</th>
+                                <th onclick="setSort('price')">Price</th>
+                                <th onclick="setSort('streak_count')">Cnt</th>
+                                <th onclick="setSort('raw_yield')">Yld</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="table-scroll">
-            <table id="streakTable">
-                <thead>
-                    <tr>
-                        <th onclick="setSort('ticker')">Security</th>
-                        <th onclick="setSort('price')">Price</th>
-                        <th onclick="setSort('streak_count')">Streak</th>
-                        <th onclick="setSort('raw_yield')">Yield</th>
-                        <th onclick="setSort('sp_rating')">S&P / Moody</th>
-                        <th onclick="setSort('call_date')">Call</th>
-                        <th onclick="setSort('maturity')">Mat</th>
-                        <th onclick="setSort('sector')">Sector</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
     </div>
 
     <script>
+        // Data State
         let rawData = { all_data: [] };
         let fullModesData = { preferred: { all_data: [] }, cef: { all_data: [] } };
         let activeMode = 'preferred';
         let currentSort = { col: 'dL60', dir: 'asc' };
 
+        // --- Core Functions ---
+
         function clearFilters() {
-            // Reset multi-select checkboxes to all checked
             document.querySelectorAll('#rateFilterGroup input').forEach(el => el.checked = true);
             document.querySelectorAll('#typeFilterGroup input').forEach(el => el.checked = true);
-            // Reset coupon range
             document.getElementById('minCoupon').value = '';
             document.getElementById('maxCoupon').value = '';
-            // Reset investment grade
             document.getElementById('investmentGradeOnly').checked = false;
-            // Reset other filters
             document.getElementById('tickerSearch').value = '';
             document.getElementById('minPrice').value = '';
             document.getElementById('maxPrice').value = '';
@@ -647,10 +349,12 @@
 
         function updateSortUI() {
             document.querySelectorAll('th').forEach(th => {
-                th.classList.remove('sort-asc', 'sort-desc');
+                th.style.color = 'var(--text-muted)'; // reset
+                // Remove custom arrow indicators if implemented via classes
                 const onclickAttr = th.getAttribute('onclick') || "";
                 if (onclickAttr.includes(`'${currentSort.col}'`)) {
-                    th.classList.add(currentSort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+                    th.style.color = 'var(--accent-primary)';
+                    // We can add arrow here if needed, but color is good enough for now
                 }
             });
         }
@@ -667,7 +371,7 @@
         document.addEventListener('click', (e) => {
             const sidebar = document.querySelector('.sidebar');
             const toggle = document.querySelector('.menu-toggle');
-            if (window.innerWidth <= 768 &&
+            if (window.innerWidth <= 1024 &&
                 sidebar && !sidebar.contains(e.target) &&
                 toggle && !toggle.contains(e.target) &&
                 sidebar.classList.contains('mobile-open')) {
@@ -677,21 +381,22 @@
 
         function switchMode(mode) {
             activeMode = mode;
-            document.body.classList.toggle('cef-mode', mode === 'cef');
+            // Class adjustments for theme handled by JS if strictly needed, but CSS handles standard styles
+            // We just toggle buttons
             document.getElementById('prefBtn').classList.toggle('active', mode === 'preferred');
             document.getElementById('cefBtn').classList.toggle('active', mode === 'cef');
 
-            // Toggle filter visibility
+            // Visibility
             document.getElementById('prefFilters').classList.toggle('hidden', mode === 'cef');
             document.getElementById('cefFilters').classList.toggle('hidden', mode === 'preferred');
 
-            // Toggle table headers
+            // Headers
             document.getElementById('cefDivHeader').classList.toggle('hidden', mode === 'preferred');
             document.getElementById('cefDivHeaderSell').classList.toggle('hidden', mode === 'preferred');
             document.getElementById('prefRatingHeader').classList.toggle('hidden', mode === 'cef');
             document.getElementById('prefRatingHeaderSell').classList.toggle('hidden', mode === 'cef');
 
-            // Sync current data view
+            // Sync
             rawData = fullModesData[activeMode];
             updateSectorList();
             applyFilters();
@@ -704,61 +409,101 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ threshold })
             });
-            // poll();
+            // Status will update via poll
         }
 
         async function poll() {
-            const res = await fetch('/api/status');
-            const data = await res.json();
+            try {
+                const res = await fetch('/api/status');
+                const data = await res.json();
 
-            fullModesData = data;
-            rawData = fullModesData[activeMode];
+                fullModesData = data;
+                rawData = fullModesData[activeMode];
 
-            // Check overall status
-            const prefStatus = data.preferred.status;
-            const cefStatus = data.cef.status;
+                const prefStatus = data.preferred.status;
+                const cefStatus = data.cef.status;
+                
+                const isScanning = prefStatus === 'scanning' || cefStatus === 'scanning';
+                
+                // Update Status UI
+                const dot = document.getElementById('statusDot');
+                const text = document.getElementById('statusIndicator');
+                
+                if (isScanning) {
+                    dot.classList.add('scanning');
+                    text.innerText = 'Scanning...';
+                    document.getElementById('scanBtn').disabled = true;
+                    document.getElementById('scanBtn').innerText = 'Scanning...';
+                } else {
+                    dot.classList.remove('scanning');
+                    text.innerText = "Idle";
+                    document.getElementById('scanBtn').disabled = false;
+                    document.getElementById('scanBtn').innerText = 'Force Refresh';
+                }
+                
+                if (prefStatus.includes("Error") || cefStatus.includes("Error")) {
+                     text.innerText = "Error - Check Logs";
+                     text.style.color = "var(--danger)";
+                }
 
-            let statusText = `PREF: ${prefStatus} | CEF: ${cefStatus}`;
-            document.getElementById('statusIndicator').innerText = statusText;
+                // Logs
+                const logs = await (await fetch('/api/logs')).json();
+                const consoleEl = document.getElementById('logConsole');
+                // Only scroll if near bottom to allow user reading? For now just scroll.
+                const wasAtBottom = consoleEl.scrollHeight - consoleEl.scrollTop === consoleEl.clientHeight;
+                consoleEl.innerHTML = logs.map(l => `<div>${l}</div>`).join('');
+                if (wasAtBottom || logs.length < 100) consoleEl.scrollTop = consoleEl.scrollHeight;
 
-            const isScanning = prefStatus === 'scanning' || cefStatus === 'scanning';
-            document.getElementById('scanBtn').disabled = isScanning;
-
-            const logs = await (await fetch('/api/logs')).json();
-            const consoleEl = document.getElementById('logConsole');
-            consoleEl.innerHTML = logs.map(l => `<div>${l}</div>`).join('');
-            consoleEl.scrollTop = consoleEl.scrollHeight;
-
-            if (isScanning) {
-                setTimeout(poll, 2000);
-            } else {
-                updateSectorList();
-                applyFilters();
+                if (isScanning) {
+                    setTimeout(poll, 2000);
+                } else {
+                    // Update UI if we were scanning and just finished, or just periodically
+                    // We should only re-render if data changed? 
+                    // For simplicity, re-apply filters every poll if not scanning is risky for performance if rapid polling.
+                    // But poll is 7s.
+                    // Let's only Apply Filters if we have data and we are not scanning to avoid jitter?
+                    // actually re-rendering table is fast.
+                    updateSectorList();
+                    applyFilters();
+                    
+                    // Re-schedule
+                     setTimeout(poll, 7000);
+                }
+            } catch (e) {
+                console.error("Poll Error:", e);
+                setTimeout(poll, 10000); // Retry later
             }
         }
 
         function updateSectorList() {
+            if (!rawData || !rawData.all_data) return;
             const sectors = [...new Set(rawData.all_data.map(i => i.sector))].sort();
             const select = document.getElementById('sectorFilter');
             const currentVal = select.value;
-            select.innerHTML = '<option value="all">All Sectors</option>' +
+            // Only update if length changed to prevent losing selection or flicker ?
+            // Actually innerHTML replacement resets selection.
+            
+            // Rebuild only if different?
+            const curOpts = [...select.options].map(o => o.value).join(',');
+            const newOpts = ['all', ...sectors].join(',');
+            
+            if (curOpts !== newOpts) {
+                 select.innerHTML = '<option value="all">All Sectors</option>' +
                 sectors.map(s => `<option value="${s}">${s}</option>`).join('');
-            select.value = sectors.includes(currentVal) ? currentVal : 'all';
+                select.value = sectors.includes(currentVal) ? currentVal : 'all';
+            }
         }
 
         function applyFilters() {
             if (!rawData.all_data) return;
             const threshold = parseFloat(document.getElementById('threshold').value) / 100;
 
-            // Multi-select: get all checked values for rate and type
             const selectedRates = [...document.querySelectorAll('#rateFilterGroup input:checked')].map(el => el.value);
             const selectedTypes = [...document.querySelectorAll('#typeFilterGroup input:checked')].map(el => el.value);
 
-            // Coupon range
             const minCoupon = parseFloat(document.getElementById('minCoupon').value) || 0;
             const maxCoupon = parseFloat(document.getElementById('maxCoupon').value) || 999;
 
-            // Investment grade filter
             const investmentGradeOnly = document.getElementById('investmentGradeOnly').checked;
             const IG_SP_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA'];
             const IG_MOODY_RATINGS = ['Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
@@ -775,22 +520,16 @@
 
             const baseFilter = (i) => {
                 if (activeMode === 'preferred') {
-                    // Multi-select rate filter
                     if (selectedRates.length > 0 && !selectedRates.includes(i.rate)) return false;
-                    // Multi-select type filter
                     if (selectedTypes.length > 0 && !selectedTypes.includes(i.type)) return false;
                     if (floatingOnly && !i.is_floating) return false;
 
-
-                    // Coupon filter - extract numeric value from coupon string (e.g., "6.50%")
                     const couponStr = i.coupon || '';
                     const couponMatch = couponStr.match(/([\d.]+)/);
                     const couponVal = couponMatch ? parseFloat(couponMatch[1]) : 0;
-                    // Only apply filter if user has set a value
                     if (minCoupon > 0 && couponVal < minCoupon) return false;
                     if (maxCoupon < 999 && couponVal > maxCoupon) return false;
 
-                    // Investment grade filter
                     if (investmentGradeOnly) {
                         const spOk = IG_SP_RATINGS.includes(i.sp_rating);
                         const moodyOk = IG_MOODY_RATINGS.includes(i.moody_rating);
@@ -809,7 +548,6 @@
                 if (search && !i.ticker.includes(search) && !i.name.toUpperCase().includes(search)) return false;
                 return true;
             };
-
 
             const getStrategyFilter = (mode) => (i) => {
                 const results = [];
@@ -833,279 +571,17 @@
             const sorter = (a, b) => {
                 let vA = a[currentSort.col];
                 let vB = b[currentSort.col];
-
-                if (typeof vA === 'string') {
-                    return currentSort.dir === 'asc'
-                        ? vA.localeCompare(vB)
-                        : vB.localeCompare(vA);
-                }
-
-                vA = vA || 0;
-                vB = vB || 0;
+                if (typeof vA === 'string') return currentSort.dir === 'asc' ? vA.localeCompare(vB) : vB.localeCompare(vA);
+                vA = vA || 0; vB = vB || 0;
                 return currentSort.dir === 'asc' ? vA - vB : vB - vA;
             };
 
             buyList.sort(sorter); sellList.sort(sorter); streakList.sort(sorter);
 
-            document.getElementById('globalSummary').innerText = `${buyList.length} Dips | ${sellList.length} Peaks | ${streakList.length} Streaks`;
+            document.getElementById('globalSummary').innerText = `${buyList.length} Dips | ${sellList.length} Peaks | ${streakList.length} Momentum`;
             renderTable('buyTable', buyList, 'buy');
             renderTable('sellTable', sellList, 'sell');
             renderStreakTable(streakList);
-        }
-
-        function renderStreakTable(list) {
-            const tbody = document.querySelector('#streakTable tbody');
-            tbody.innerHTML = list.map(i => {
-                const streakClass = i.streak_type === 'Green' ? 'hit' : 'miss';
-                const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
-                return `<tr>
-                    <td>
-                        <div class="ticker-cell" onclick="setCalcTicker('${yahooTicker}')">${i.ticker}</div>
-                        <div class="name-sub">${i.name.slice(0, 25)}</div>
-                        ${badge}
-                    </td>
-                    <td>$${i.price.toFixed(2)}</td>
-                    <td style="color:${rsiColor}; font-weight:${rsiWeight}">${rsiVal}</td>
-                    <td style="font-size:0.8rem; opacity:0.7">${volStr}</td>
-                    
-                    ${extraCol}
-
-                    <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
-                    <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
-                    <td class="diff-val ${i.dL7 <= 0.01 ? 'hit' : ''}">${(i.dL7 * 100).toFixed(1)}%</td>
-                    <td class="diff-val ${i.dL30 <= 0.01 ? 'hit' : ''}">${(i.dL30 * 100).toFixed(1)}%</td>
-                    <td class="diff-val ${i.dL60 <= 0.01 ? 'hit' : ''}">${(i.dL60 * 100).toFixed(1)}%</td>
-                </tr>`;
-            }).join('');
-        }
-
-        function setCalcTicker(ticker) {
-            document.getElementById('calcTicker').value = ticker;
-            calculateFairValue();
-            document.getElementById('calcTicker').scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-
-        let currentPeers = []; // Global to track calculator peers
-        let excludedPeers = new Set();
-        let manualPeersList = new Set(); // Manually added tickers
-        let currentTargetTicker = "";
-
-        function addManualPeer() {
-            const input = document.getElementById('manualPeerInput');
-            const ticker = input.value.toUpperCase().trim();
-            if (!ticker) return;
-
-            // Verify it exists in data
-            const prefData = fullModesData['preferred'].all_data || [];
-            const exists = prefData.find(i => i.ticker === ticker || i.ticker.replace('-P', '-') === ticker);
-
-            if (exists) {
-                manualPeersList.add(exists.ticker);
-                input.value = '';
-                calculateFairValue(false); // Trigger full recalc to include new manual peer
-            } else {
-                alert('Ticker not found in database!');
-            }
-        }
-
-        function calculateFairValue(isRecalc = false) {
-            const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
-            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
-            const resultDiv = document.getElementById('calcResult');
-
-            if (!tickerInput || !rawData.all_data) {
-                resultDiv.style.display = 'none';
-                return;
-            }
-
-            const prefData = fullModesData['preferred'].all_data || [];
-            const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
-
-            if (!target) return;
-
-            resultDiv.style.display = 'block';
-
-            // Constants for IG logic
-            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
-                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
-
-            const useIgOnly = document.getElementById('calcIgOnly').checked;
-            const sectorFilter = document.getElementById('calcSector').value;
-
-            // Lazy populate sectors if needed
-            const sectorSelect = document.getElementById('calcSector');
-            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
-                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
-                sectors.forEach(s => {
-                    const opt = document.createElement('option');
-                    opt.value = s;
-                    opt.innerText = s;
-                    sectorSelect.appendChild(opt);
-                });
-            }
-
-            // Only find peers if this is a fresh calculation or parameters changed
-            if (!isRecalc) {
-                currentTargetTicker = target.ticker;
-                const targetCoupon = target.raw_coupon || 0;
-                const minC = targetCoupon - (tolerance / 100);
-                const maxC = targetCoupon + (tolerance / 100);
-
-                const autoPeers = prefData.filter(i => {
-                    if (i.ticker === target.ticker) return false;
-
-                    if (useIgOnly) {
-                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
-                        if (!isIG) return false;
-                        // Manual peers ignore IG filter? No, if user adds them manually they want them.
-                        // But here we are filtering "Auto" peers.
-                    }
-
-                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
-
-                    const c = i.raw_coupon || 0;
-                    return c >= minC && c <= maxC;
-                });
-
-                // Merge Auto + Manual
-                // manualPeers is a list of Tickers. We need to find their objects.
-                const manualPeerObjs = [];
-                manualPeersList.forEach(t => {
-                    const p = prefData.find(x => x.ticker === t);
-                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
-                });
-
-                // Combine and Dedupe
-                const combined = [...autoPeers, ...manualPeerObjs];
-                const seen = new Set();
-                currentPeers = combined.filter(item => {
-                    if (seen.has(item.ticker)) return false;
-                    seen.add(item.ticker);
-                    return true;
-                });
-
-                excludedPeers.clear();
-                renderPeerList();
-            }
-
-            // Calculate Metrics based on ACTIVE peers
-            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
-
-            let avgPrice = 0;
-            if (activePeers.length > 0) {
-                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
-            }
-
-            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
-
-            // Display
-            document.getElementById('calcTickerDisplay').innerText = target.ticker;
-            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
-
-            const idxEl = document.getElementById('calcIndexValue');
-            const statusEl = document.getElementById('calcStatus');
-
-            if (activePeers.length === 0) {
-                idxEl.innerText = "N/A";
-                statusEl.innerText = "No peers selected";
-                statusEl.style.color = "gray";
-            } else {
-                idxEl.innerText = indexVal.toFixed(2);
-                if (indexVal < 0.98) {
-                    statusEl.innerText = "CHEAP (Undervalued)";
-                    statusEl.style.color = "#4ade80"; // Green
-                } else if (indexVal > 1.02) {
-                    statusEl.innerText = "EXPENSIVE (Overvalued)";
-                    statusEl.style.color = "#f87171"; // Red
-                } else {
-                    statusEl.innerText = "FAIR VALUE";
-                    statusEl.style.color = "white";
-                }
-            }
-
-            document.getElementById('calcPeerStats').innerHTML = `
-                Avg Peer Price: <b>$${avgPrice.toFixed(2)}</b> | 
-                Active Count: <b>${activePeers.length}</b> / ${currentPeers.length}`;
-
-            // Trigger Historical Stats (Debounced)
-            clearTimeout(histDebounce);
-            if (activePeers.length > 0) {
-                document.getElementById('calcHistory').style.display = 'block';
-                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
-                histDebounce = setTimeout(() => {
-                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
-                }, 1000); // 1s wait
-            } else {
-                document.getElementById('calcHistory').style.display = 'none';
-            }
-        }
-
-        let histDebounce = null;
-        async function fetchHistoricalStats(target, peers) {
-            try {
-                const res = await fetch('/api/calc-stats', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ target, peers })
-                });
-                const data = await res.json();
-
-                if (data.error) {
-                    document.getElementById('calcHistoryContent').innerHTML = `<span style="color:red">${data.error}</span>`;
-                    return;
-                }
-
-                // Format Data
-                // l7, h7, l30, h30, l60, h60, l90, h90, current
-                const fmt = (v) => v ? v.toFixed(3) : '-';
-                const color = (val) => {
-                    if (!val || !data.current) return 'inherit';
-                    if (data.current < val) return '#4ade80'; // below historic low? Cheap
-                    if (data.current > val) return '#f87171';
-                    return 'inherit';
-                };
-
-                const html = `
-                    <div>Current Index: <b>${data.current}</b></div>
-                    <div></div>
-                    
-                    <div style="opacity:0.7">7 Days:</div>
-                    <div>L: ${fmt(data.l7)} - H: ${fmt(data.h7)}</div>
-                    
-                    <div style="opacity:0.7">30 Days:</div>
-                    <div>L: ${fmt(data.l30)} - H: ${fmt(data.h30)}</div>
-                    
-                    <div style="opacity:0.7">60 Days:</div>
-                    <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
-                    
-                    <div style="opacity:0.7">90 Days:</div>
-                    <div>L: ${fmt(data.l90)} - H: ${fmt(data.h90)}</div>
-                `;
-                document.getElementById('calcHistoryContent').innerHTML = html;
-            } catch (e) {
-                console.error(e);
-                document.getElementById('calcHistoryContent').innerText = "Error loading stats";
-            }
-        }
-
-        function renderPeerList() {
-            const container = document.getElementById('calcPeerList');
-            container.innerHTML = currentPeers.map(p => {
-                const isEx = excludedPeers.has(p.ticker);
-                return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
-                    ${p.ticker} ($${p.price.toFixed(2)})
-                </span>`;
-            }).join('');
-        }
-
-        function togglePeer(ticker) {
-            if (excludedPeers.has(ticker)) {
-                excludedPeers.delete(ticker);
-            } else {
-                excludedPeers.add(ticker);
-            }
-            renderPeerList(); // re-render to update classes
-            calculateFairValue(true); // reclac
         }
 
         function renderTable(targetId, list, mode) {
@@ -1136,37 +612,251 @@
                 const extraCol = activeMode === 'cef'
                     ? `<td>
                         <div style="font-size:0.75rem; font-weight:bold;">${i.sector}</div>
-                        <div style="font-size:0.7rem; color:var(--accent); font-weight:bold;">${i.divergence} Makas</div>
-                        <div style="font-size:0.6rem; opacity:0.5; margin-top:2px;">${i.benchmark_str || '-'}</div>
+                        <div style="font-size:0.7rem; color:var(--accent-primary); font-weight:bold;">${i.divergence} Div</div>
                        </td>`
-                    : `<td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>`;
+                    : `<td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>`;
+
+                // Format percentages
+                const fmtP = (v) => (v * 100).toFixed(2) + '%';
+                const hitClass = (val) => val <= 0.015 ? 'yield-cell' : ''; // Using yield-cell as highlight green for now or create new
 
                 return `<tr>
                     <td>
                         <div class="ticker-cell">
-                            <a href="${tickerLink}" target="_blank" class="ticker-link">${i.ticker}</a>
+                            <a href="${tickerLink}" target="_blank" style="color:inherit; text-decoration:none;">${i.ticker}</a>
                             ${badge}
                         </div>
-                        <div class="name-sub">${i.name.slice(0, 20)}</div>
+                        <div style="font-size:0.7rem; opacity:0.5;">${i.name.slice(0, 15)}...</div>
                     </td>
-                    <td>$${i.price.toFixed(2)}</td>
-                    <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
+                    <td class="price-cell">$${i.price.toFixed(2)}</td>
+                    <td class="yield-cell">${i.yield}</td>
                     <td style="color:${rsiColor}; font-weight:${rsiWeight}">${rsiVal}</td>
                     <td style="font-size:0.75rem; opacity:0.7">${volStr}</td>
                     ${extraCol}
-                    <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
-                    <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
-                    <td class="diff-val ${(mode === 'buy' ? i.dL7 : i.dH7) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL7 : i.dH7) * 100).toFixed(2)}%</td>
-                    <td class="diff-val ${(mode === 'buy' ? i.dL30 : i.dH30) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL30 : i.dH30) * 100).toFixed(2)}%</td>
-                    <td class="diff-val ${(mode === 'buy' ? i.dL60 : i.dH60) <= 0.015 ? 'hit' : ''}">${((mode === 'buy' ? i.dL60 : i.dH60) * 100).toFixed(2)}%</td>
+                    <td style="font-size:0.75rem;">${i.call_date || '-'}</td>
+                    <td style="font-size:0.75rem;">${i.maturity || '-'}</td>
+                    <td class="${mode === 'buy' && i.dL7 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL7) : fmtP(i.dH7)}</td>
+                    <td class="${mode === 'buy' && i.dL30 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL30) : fmtP(i.dH30)}</td>
+                    <td class="${mode === 'buy' && i.dL60 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL60) : fmtP(i.dH60)}</td>
                 </tr>`;
-
             }).join('');
         }
 
+        function renderStreakTable(list) {
+            const tbody = document.querySelector('#streakTable tbody');
+            tbody.innerHTML = list.map(i => {
+                const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
+                // Add click to calc
+                return `<tr style="cursor:pointer;" onclick="setCalcTicker('${i.ticker}')">
+                    <td>
+                        <div class="ticker-cell">${i.ticker} ${streakIcon}</div>
+                        <div style="font-size:0.7rem; opacity:0.5;">${i.name.slice(0, 15)}</div>
+                    </td>
+                    <td>$${i.price.toFixed(2)}</td>
+                    <td style="font-weight:bold;">${i.streak_count}</td>
+                    <td class="yield-cell">${i.yield}</td>
+                </tr>`;
+            }).join('');
+        }
+
+        // --- Calculator Logic ---
+        function setCalcTicker(ticker) {
+            document.getElementById('calcTicker').value = ticker;
+            calculateFairValue();
+            // Scroll to calculator
+            document.querySelector('.bottom-section').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+         let currentPeers = [];
+        let excludedPeers = new Set();
+        let manualPeersList = new Set();
+        let currentTargetTicker = "";
+
+        function addManualPeer() {
+            const input = document.getElementById('manualPeerInput');
+            const ticker = input.value.toUpperCase().trim();
+            if (!ticker) return;
+
+             const prefData = fullModesData['preferred'].all_data || [];
+            const exists = prefData.find(i => i.ticker === ticker || i.ticker.replace('-P', '-') === ticker);
+
+            if (exists) {
+                manualPeersList.add(exists.ticker);
+                input.value = '';
+                calculateFairValue(false);
+            } else {
+                alert('Ticker not found in database!');
+            }
+        }
+
+        function calculateFairValue(isRecalc = false) {
+             const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
+            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
+            const resultDiv = document.getElementById('calcResult');
+
+            if (!tickerInput || !rawData.all_data) {
+                resultDiv.style.display = 'none';
+                return;
+            }
+
+            const prefData = fullModesData['preferred'].all_data || [];
+            const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
+
+            if (!target) return;
+
+            resultDiv.style.display = 'block';
+
+            // Constants for IG logic (copied from original)
+            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
+                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
+
+            const useIgOnly = document.getElementById('calcIgOnly').checked;
+            const sectorFilter = document.getElementById('calcSector').value;
+
+             // Lazy populate sectors if needed for calculator specifics
+            const sectorSelect = document.getElementById('calcSector');
+            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
+                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
+                sectors.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s;
+                    opt.innerText = s;
+                    sectorSelect.appendChild(opt);
+                });
+            }
+
+            if (!isRecalc) {
+                currentTargetTicker = target.ticker;
+                const targetCoupon = target.raw_coupon || 0;
+                const minC = targetCoupon - (tolerance / 100);
+                const maxC = targetCoupon + (tolerance / 100);
+
+                const autoPeers = prefData.filter(i => {
+                    if (i.ticker === target.ticker) return false;
+                     if (useIgOnly) {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (!isIG) return false;
+                    }
+                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
+                    const c = i.raw_coupon || 0;
+                    return c >= minC && c <= maxC;
+                });
+
+                 // Merge Auto + Manual
+                const manualPeerObjs = [];
+                manualPeersList.forEach(t => {
+                    const p = prefData.find(x => x.ticker === t);
+                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
+                });
+
+                const combined = [...autoPeers, ...manualPeerObjs];
+                const seen = new Set();
+                currentPeers = combined.filter(item => {
+                    if (seen.has(item.ticker)) return false;
+                    seen.add(item.ticker);
+                    return true;
+                });
+                excludedPeers.clear();
+                renderPeerList();
+            }
+
+            // Calc
+            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
+            let avgPrice = 0;
+            if (activePeers.length > 0) {
+                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
+            }
+            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
+
+            document.getElementById('calcTickerDisplay').innerText = target.ticker;
+            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
+
+            const idxEl = document.getElementById('calcIndexValue');
+            const statusEl = document.getElementById('calcStatus');
+
+            if (activePeers.length === 0) {
+                idxEl.innerText = "N/A";
+                statusEl.innerText = "No peers";
+                statusEl.style.color = "var(--text-muted)";
+            } else {
+                idxEl.innerText = indexVal.toFixed(2);
+                if (indexVal < 0.98) {
+                    statusEl.innerText = "CHEAP (Undervalued)";
+                    statusEl.style.color = "var(--success)"; 
+                } else if (indexVal > 1.02) {
+                    statusEl.innerText = "EXPENSIVE (Overvalued)";
+                    statusEl.style.color = "var(--danger)";
+                } else {
+                    statusEl.innerText = "FAIR VALUE";
+                    statusEl.style.color = "white";
+                }
+            }
+             document.getElementById('calcPeerStats').innerHTML = `
+                Avg Peer Price: <b>$${avgPrice.toFixed(2)}</b> | 
+                Active Count: <b>${activePeers.length}</b> / ${currentPeers.length}`;
+            
+            // Historical Stats
+             clearTimeout(histDebounce);
+            if (activePeers.length > 0) {
+                document.getElementById('calcHistory').style.display = 'block';
+                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
+                histDebounce = setTimeout(() => {
+                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
+                }, 1000); 
+            } else {
+                document.getElementById('calcHistory').style.display = 'none';
+            }
+        }
+        
+        let histDebounce = null;
+        async function fetchHistoricalStats(target, peers) {
+             try {
+                const res = await fetch('/api/calc-stats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ target, peers })
+                });
+                const data = await res.json();
+                if (data.error) {
+                    document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">${data.error}</span>`;
+                    return;
+                }
+                const fmt = (v) => v ? v.toFixed(3) : '-';
+                 const html = `
+                    <div>Current Index: <b>${data.current}</b></div>
+                    <div></div>
+                    <div style="opacity:0.7">7 Days:</div>
+                    <div>L: ${fmt(data.l7)} - H: ${fmt(data.h7)}</div>
+                    <div style="opacity:0.7">30 Days:</div>
+                    <div>L: ${fmt(data.l30)} - H: ${fmt(data.h30)}</div>
+                    <div style="opacity:0.7">60 Days:</div>
+                    <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
+                `;
+                document.getElementById('calcHistoryContent').innerHTML = html;
+            } catch(e) { console.error(e); }
+        }
+
+        function renderPeerList() {
+            const container = document.getElementById('calcPeerList');
+            container.innerHTML = currentPeers.map(p => {
+                const isEx = excludedPeers.has(p.ticker);
+                return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
+                    ${p.ticker} ($${p.price.toFixed(2)})
+                </span>`;
+            }).join('');
+        }
+        
+        function togglePeer(ticker) {
+            if (excludedPeers.has(ticker)) excludedPeers.delete(ticker);
+            else excludedPeers.add(ticker);
+            renderPeerList();
+            calculateFairValue(true);
+        }
+
+        // Ticker Manager
         async function loadTickers() {
             const res = await fetch('/api/tickers'); const tickers = await res.json();
-            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag">${t} <button onclick="removeTicker('${t}')">&times;</button></span>`).join('');
+            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag" style="background:var(--card-glass); padding:5px; border-radius:4px; margin:2px; display:inline-block;">${t} <button onclick="removeTicker('${t}')" style="color:red; cursor:pointer; background:none; border:none;">&times;</button></span>`).join('');
         }
         async function addTicker() {
             const input = document.getElementById('newTicker');
@@ -1177,12 +867,14 @@
             await fetch(`/api/tickers/${t}`, { method: 'DELETE' }); loadTickers();
         }
 
-        poll();
-        setInterval(poll, 7000); // Poll every 7s
-
-        // Mom-Destroyer Logic
+        // Mom Logic
         if (localStorage.getItem('hideMomModal') === 'true') {
             document.getElementById('momModal').style.display = 'none';
+            // Start polling if modal skipped
+             poll();
+        } else {
+             // If modal is shown, don't poll until they say yes? No, poll anyway in background.
+             poll();
         }
 
         let currentQuestion = 1;
@@ -1201,11 +893,9 @@
                 }
             } else {
                 if (isYes) {
-                    // Say "this site is not for you" and hide buttons
                     questionEl.innerText = 'this site is not for you';
                     btnGroup.style.display = 'none';
                 } else {
-                    // Go back to Q1
                     currentQuestion = 1;
                     questionEl.innerText = 'do you wanna destroy moms ?';
                 }
