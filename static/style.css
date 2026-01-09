@@ -673,3 +673,83 @@ tr:hover td {
     border-color: rgba(255, 255, 255, 0.1);
     background: transparent;
 }
+
+/* Comparison Feature */
+.comparison-card {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.comp-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.comp-metadata {
+    font-size: 0.8rem;
+}
+
+.mini-meta {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mini-meta td {
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mini-meta td:last-child {
+    text-align: right;
+    color: white;
+}
+
+.comp-chart {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.peer-tag-row {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin: 3px;
+    border: 1px solid var(--border-glass);
+}
+
+.peer-tag-row .peer-tag {
+    background: transparent !important;
+    margin: 0;
+    border: none;
+    padding-right: 5px;
+}
+
+.compare-btn {
+    padding: 4px 6px;
+    background: rgba(99, 102, 241, 0.2);
+    border: none;
+    border-left: 1px solid var(--border-glass);
+    color: var(--accent-primary);
+    cursor: pointer;
+    font-size: 0.7rem;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.2s;
+}
+
+.compare-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+}

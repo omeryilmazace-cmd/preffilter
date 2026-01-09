@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Range Trader v4.0 - Professional Monitor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- Fonts are imported in CSS -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 </head>
 
 <body>
@@ -315,6 +315,25 @@
                             <div id="calcHistoryContent"
                                 style="font-size: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                                 Loading...</div>
+                        </div>
+
+                        <!-- NEW: Comparison Section -->
+                        <div id="calcComparison"
+                            style="display:none; margin-top: 1.5rem; border-top: 1px solid var(--border-glass); padding-top: 1rem;">
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <!-- Target Card -->
+                                <div id="targetComparisonCard" class="comparison-card">
+                                    <h4 class="comp-title">Target</h4>
+                                    <div id="targetMetadata" class="comp-metadata"></div>
+                                    <div id="targetChart" class="comp-chart"></div>
+                                </div>
+                                <!-- Peer Card -->
+                                <div id="peerComparisonCard" class="comparison-card">
+                                    <h4 class="comp-title">Compare Peer</h4>
+                                    <div id="peerMetadata" class="comp-metadata">Select a peer to compare</div>
+                                    <div id="peerChart" class="comp-chart"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -892,7 +911,7 @@
                 document.getElementById('calcHistory').style.display = 'block';
                 document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
                 histDebounce = setTimeout(() => {
-                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
+                    fetchHistoricalStats(target, activePeers.map(p => p.ticker));
                 }, 1000);
             } else if (target._isStatic) {
                 document.getElementById('calcHistory').style.display = 'block';
@@ -1005,7 +1024,8 @@
             }
         }
 
-        async function fetchHistoricalStats(target, peers) {
+        async function fetchHistoricalStats(targetObj, peers) {
+            const target = targetObj.ticker;
             try {
                 const res = await fetch('/api/calc-stats', {
                     method: 'POST',
@@ -1031,19 +1051,84 @@
                     </div>
                 `;
                 document.getElementById('calcHistoryContent').innerHTML = html;
+
+                // Also update comparison for target
+                updateComparison(targetObj, 'target');
             } catch (e) {
                 console.error(e);
                 document.getElementById('calcHistoryContent').innerHTML = '<span style="color:var(--danger)">Failed to load data.</span>';
             }
         }
 
+        function getTVTicker(ticker) {
+            // Conversion for TradingView: JPM-C -> JPM.PR.C or just JPM-C
+            // yfinance uses -P, our masterlist uses -
+            if (activeMode === 'cef') return ticker;
+            let formatted = ticker.replace('-P', '.PR.').replace('-', '.PR.');
+            // Common preferred stock symbology in TV
+            return formatted;
+        }
+
+        function updateComparison(item, type) {
+            const containerId = type === 'target' ? 'targetMetadata' : 'peerMetadata';
+            const chartId = type === 'target' ? 'targetChart' : 'peerChart';
+            const cardId = type === 'target' ? 'targetComparisonCard' : 'peerComparisonCard';
+            const titleEl = document.querySelector(`#${cardId} .comp-title`);
+
+            document.getElementById('calcComparison').style.display = 'block';
+            if (type === 'peer') {
+                titleEl.innerText = `Peer: ${item.ticker}`;
+                titleEl.style.color = 'var(--accent-primary)';
+            } else {
+                titleEl.innerText = `Target: ${item.ticker}`;
+                titleEl.style.color = 'var(--text-color)';
+            }
+
+            // 1. Render Metadata
+            const html = `
+                <table class="mini-meta">
+                    <tr><td>Ticker</td><td><b>${item.ticker}</b></td></tr>
+                    <tr><td>Price</td><td><b>$${item.price.toFixed(2)}</b></td></tr>
+                    <tr><td>Coupon</td><td>${(item.raw_coupon * 100).toFixed(2)}%</td></tr>
+                    <tr><td>Yield</td><td>${item.yield}</td></tr>
+                    <tr><td>Rating</td><td>${item.sp_rating}</td></tr>
+                    <tr><td>Sector</td><td>${item.sector}</td></tr>
+                    <tr><td>Call</td><td>${item.call_date || '-'}</td></tr>
+                </table>
+            `;
+            document.getElementById(containerId).innerHTML = html;
+
+            // 2. Load Chart
+            document.getElementById(chartId).innerHTML = ''; // Clear
+            const tvTicker = getTVTicker(item.ticker);
+            new TradingView.widget({
+                "autosize": true,
+                "symbol": tvTicker,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "hide_top_toolbar": true,
+                "allow_symbol_change": false,
+                "container_id": chartId
+            });
+        }
+
         function renderPeerList() {
             const container = document.getElementById('calcPeerList');
             container.innerHTML = currentPeers.map(p => {
                 const isEx = excludedPeers.has(p.ticker);
-                return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
-                    ${p.ticker} ($${p.price.toFixed(2)})
-                </span>`;
+                return `
+                    <div class="peer-tag-row">
+                        <span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
+                            ${p.ticker} ($${p.price.toFixed(2)})
+                        </span>
+                        <button class="compare-btn" onclick="updateComparison(${JSON.stringify(p).replace(/"/g, '&quot;')}, 'peer')">🔍</button>
+                    </div>
+                `;
             }).join('');
         }
 
