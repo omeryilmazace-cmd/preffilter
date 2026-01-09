@@ -242,79 +242,98 @@ select:focus {
 }
 
 /* MAIN CONTENT */
+/* MAIN CONTENT */
 .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
+    /* Height constraint removed to allow scrolling */
     height: 100vh;
-    overflow: hidden;
+    overflow-y: auto;
+    /* Enable page scrolling */
+    overflow-x: hidden;
     min-width: 0;
-    /* Prevent flex blowout */
 }
 
 .top-bar {
-    height: 70px;
-    padding: 0 2rem;
+    height: 60px;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--border-glass);
-    background: rgba(3, 7, 18, 0.6);
+    background: rgba(3, 7, 18, 0.8);
     backdrop-filter: blur(10px);
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 40;
 }
 
 .search-box {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .search-box input {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    padding-left: 2.5rem;
+    padding-left: 2.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-color: transparent;
+    font-size: 0.85rem;
 }
 
 .search-box input:focus {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-color: var(--border-glass);
 }
 
 .search-box::before {
     content: '\1F50D';
-    /* Search Icon Unicode */
     position: absolute;
-    left: 1rem;
+    left: 0.8rem;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.5;
 }
 
 /* Dashboard Grid */
 .dual-grid {
-    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(0, 1fr);
-    /* Crucial for scrolling inside grid items */
-    gap: 1.5rem;
-    padding: 1.5rem;
-    overflow: hidden;
-    /* Contains child scrollbars */
+    gap: 1rem;
+    padding: 1rem;
+    /* Fixed relative height to force internal scrolling */
+    height: 55vh;
+    min-height: 450px;
+    flex-shrink: 0;
+}
+
+.bottom-section {
+    padding: 0 1rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    /* Fixed relative height for bottom section */
+    height: 40vh;
+    min-height: 350px;
+    flex-shrink: 0;
 }
 
 .card {
     background: var(--card-glass);
     backdrop-filter: blur(12px);
     border: 1px solid var(--border-glass);
-    border-radius: 16px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Ensures header sticks and body scrolls */
     position: relative;
+    height: 100%;
 }
 
 .buy-card {
