@@ -1,96 +1,118 @@
+import pandas as pd
 import json
-import os
+import re
 
-def parse_line(line):
-    # Exclusion list for inactive stocks (based on price column)
-    EXCLUDE_STATUSES = ['BK', 'CONVERT', 'CONVERTED', 'DELIST', 'EXCHANGE', 'REDEEM', 'REDEEMED', 'CALLED']
-    
-    # Manual exclusion list for specific tickers
-    EXCLUDE_TICKERS = [
-        'GMLPF', 'RILYP', 'TFINP', 'AUVIP', 'CSSEP', 'CSSEN', 'SCCC', 'AJXA', 'CCLDP', 'OPINL',
-        'AIC', 'AAIN', 'HMLP-A', 'LUXHP', 'FOSLL', 'CNFRL', 'AL-A', 'AIG-A', 'ANG-A', 'ANG-B',
-        'ARGD', 'ARGO-A', 'AHL-C', 'TBC', 'ATH-C', 'ATCO-D', 'ATCOL', 'RILYO', 'RILYM', 'BWSN',
-        'BC-B', 'BC-A', 'CSWCZ', 'CCIA', 'CSR-C', 'C-J', 'C-K', 'CFG-D', 'CMRE-E', 'COWNL',
-        'CUBI-E', 'CUBI-F', 'DLNG-B', 'EICB', 'EFC-E', 'ET-D', 'ET-C', 'ET-E', 'EQC-D', 'AGM-C',
-        'FHN-D', 'FHN-B', 'FNB-E', 'FTAIP', 'FTAIO', 'GLOG-A', 'GLADZ', 'GAINL', 'GLP-A', 'GS-K',
-        'GS-J', 'GECCM', 'GECCN', 'GECCZ', 'HWCPL', 'HROWL', 'HROWM', 'HT-C', 'HT-D', 'HT-E',
-        'IVR-B', 'MDRRP', 'MBNKP', 'MBINP', 'MBINO', 'NEWTL', 'NI-B', 'NS-C', 'NS-A', 'NS-B',
-        'NSS', 'OCFCP', 'OFSSI', 'OXLCM', 'OXSQL', 'OXSQZ', 'PRIF-F', 'PRIF-G', 'PRIF-H', 'PRIF-I',
-        'PXSAP', 'METCL', 'O-', 'RF-B', 'SCCB', 'SACC', 'SCE-H', 'SITC-A', 'STT-D', 'SPLPP',
-        'SNCRL', 'TELZ', 'TGH-B', 'TGH-A', 'TRINL', 'UMBFP', 'UCB-I', 'WFC-R', 'WFC-Q', 'WSBCP',
-        'WCC-A', 'WTFCM', 'WTFCP', 'XFLT-A', 'ZIONL', 'ZIONO', 'RMPL-', 'SBBA', 'ASBA', 'ESGOF',
-        'ESGRF', 'MFICL'
-    ]
-    
-    parts = line.split('\t')
-    if len(parts) < 15:
-        # Try splitting by multiple spaces if tabs aren't present
-        import re
-        parts = re.split(r'\t| {2,}', line.strip())
-    
-    if len(parts) < 15:
-        return None
-    
-    # Check ticker against manual exclusion list
-    ticker = parts[6].strip().upper()
-    if ticker in EXCLUDE_TICKERS:
-        return None
-    
-    # Check if price column (index 8) contains an exclusion status
-    price_col = parts[8].strip().upper()
-    for status in EXCLUDE_STATUSES:
-        if status in price_col:
-            return None  # Skip this stock
+# Read the CSV file (skip blank rows, handle irregular header)
+df = pd.read_csv("masterlist.csv", skiprows=1, encoding='utf-8')
 
+# Fix column names (split if necessary)
+# From viewing the file:
+# Columns: [None], Issuer, Cum, QDI, Sector, Fix/Float, Type, Ticker, Coupon  Percent, Current Price, Change, Current Yield, Ann Yield to Worst , IG, S&P Rating, Moody Rating, Quarterly Int / Div, 1st Call, Maturity Date, Pay Dates, [blank], All
+
+# Rename Columns Explicitly for clarity
+df.columns = [
+    "_blank_", "Issuer", "Cum", "QDI", "Sector", "Fix_Float", "Type", "Ticker", "Coupon", 
+    "Price", "Change", "Current_Yield", "Yield_to_Worst", "IG", "SP_Rating", "Moody_Rating",
+    "Quarterly_Div", "Call_Date", "Maturity", "Pay_Dates", "_blank2_", "_All_"
+]
+
+# The Ticker column is what we use as the key
+# We need to normalize tickers:
+# - The CSV often has tickers like "JPM-C" which is what we want.
+# - Some may have .PX or -PX format, but we standardize to Original format
+
+output = {}
+for idx, row in df.iterrows():
+    ticker = row.get("Ticker")
+    if pd.isna(ticker) or ticker is None or str(ticker).strip() == "":
+        continue
+    ticker = str(ticker).strip().upper()
     
-    ticker = parts[6].strip().upper()
-    coupon_str = parts[7].strip().replace('%', '')
-    sector = parts[3].strip()
-    rate_type = parts[4].strip()
-    asset_type = parts[5].strip()
-    sp_rating = parts[13].strip()
-    moody_rating = parts[14].strip()
+    # Clean it (e.g. "JPM-C" stays)
+    # Yahoo uses JPM-PC but our original ticker is JPM-C, so we store as JPM-C
     
-    # Call date at index 16, maturity at index 17
-    call_date = ""
-    maturity = ""
-    if len(parts) > 16:
-        call_date = parts[16].strip()
-    if len(parts) > 17:
-        maturity = parts[17].strip()
+    issuer = str(row.get("Issuer", "")).strip()
     
+    # Coupon: "9.875%" -> raw value 0.09875
+    coupon_str = str(row.get("Coupon", "0%")).replace(",", "").strip()
+    coupon_match = re.search(r'([\d.]+)', coupon_str)
+    raw_coupon = float(coupon_match.group(1)) / 100 if coupon_match else 0.0  # e.g. 9.875% -> 0.09875
+    
+    # Yield is already formatted like "9.52%"
+    yield_str = str(row.get("Current_Yield", "0%")).strip()
+    if "%" not in yield_str:
+        yield_str = yield_str + "%"
+    
+    # Price
+    price_str = str(row.get("Price", "$0")).replace("$", "").replace(",", "").strip()
     try:
-        coupon = float(coupon_str) / 100
+        price = float(price_str)
     except:
-        coupon = 0.0
-        
-    return {
-        "ticker": ticker,
-        "coupon": coupon,
+        price = 0.0
+    
+    # Call Date (e.g. "2/15/2027")
+    call_date = str(row.get("Call_Date", "")).strip()
+    if call_date.lower() == "nan" or call_date == "": call_date = "NONE"
+    
+    # Maturity
+    maturity = str(row.get("Maturity", "")).strip()
+    if maturity.lower() == "nan" or maturity == "" or "NONE" in maturity.upper(): maturity = "NONE"
+    
+    # Ratings
+    sp_rating = str(row.get("SP_Rating", "NR")).strip()
+    if sp_rating.lower() == "nan" or sp_rating == "": sp_rating = "NR"
+    
+    moody_rating = str(row.get("Moody_Rating", "NR")).strip()
+    if moody_rating.lower() == "nan" or moody_rating == "": moody_rating = "NR"
+    
+    # Sector
+    sector = str(row.get("Sector", "Other")).strip()
+    if sector.lower() == "nan": sector = "Other"
+    
+    # Type (Trad, BB, Trust P)
+    sec_type = str(row.get("Type", "Preferred")).strip()
+    if sec_type.lower() == "nan": sec_type = "Preferred"
+    
+    # Rate Type (Fix, Float, Fix-Float)
+    rate = str(row.get("Fix_Float", "Fix")).strip()
+    if rate.lower() == "nan": rate = "Fix"
+    
+    # IG
+    ig = str(row.get("IG", "N")).strip().upper()
+    is_ig = ig == "Y"
+    
+    # Cum
+    cum = str(row.get("Cum", "No")).strip().upper()
+    is_cum = cum == "YES"
+    
+    # QDI
+    qdi = str(row.get("QDI", "No")).strip().upper()
+    is_qdi = qdi == "YES" or qdi == "VAR"
+    
+    # Is Floating if rate contains FLOAT
+    is_floating = "FLOAT" in rate.upper()
+    
+    output[ticker] = {
+        "name": issuer,
         "sector": sector,
-        "rate": rate_type,
-        "type": asset_type,
+        "type": sec_type,
+        "rate": rate,
+        "coupon": coupon_str,
+        "raw_coupon": raw_coupon,
+        "yield": yield_str,
+        "price": price,
         "call_date": call_date,
         "maturity": maturity,
         "sp_rating": sp_rating,
-        "moody_rating": moody_rating
+        "moody_rating": moody_rating,
+        "is_ig": is_ig,
+        "is_cum": is_cum,
+        "is_qdi": is_qdi,
+        "is_floating": is_floating
     }
 
-def main():
-    metadata = {}
-    if not os.path.exists('masterlist_raw.txt'):
-        print("Raw masterlist not found.")
-        return
-        
-    with open('masterlist_raw.txt', 'r', encoding='utf-8') as f:
-        for line in f:
-            res = parse_line(line)
-            if res:
-                metadata[res['ticker']] = res
-    
-    with open('master_metadata.json', 'w') as f:
-        json.dump(metadata, f, indent=4)
-    print(f"Saved {len(metadata)} entries to master_metadata.json")
+# Write to master_metadata.json
+with open("master_metadata.json", "w", encoding="utf-8") as f:
+    json.dump(output, f, indent=2)
 
-if __name__ == "__main__":
-    main()
+print(f"Processed {len(output)} tickers. Saved to master_metadata.json")

@@ -1,0 +1,741 @@
+ ,Issuer,Cum,QDI,Sector,"Fix/
+Float",Type,Ticker,Coupon  Percent,Current Price,Change,Current Yield,Ann Yield to Worst ,IG,S&P Rating,Moody Rating,Quarterly Int / Div,1st Call,Maturity Date,Pay Dates,,All
+,Abacus Life,No,No,Insurance,Fix,BB,ABXL,9.875%,$25.92,$0.01,9.52%,6.18%,N,NR,NR,$0.62,2/15/2027,11/15/2028,"15th 2,5,8,11",1.10,All
+,Aberdeen Income Credit,Yes,Var,CEF,Fix,Trad,ACP-A,5.250%,$20.22,$0.16,6.49%,47.07%,Y,NR,A2,$0.33,6/30/2026,NONE,"LD 3,6,9,12",0.47,All
+,ACRES Commercial,Yes,No,mREIT,Fix,Trad,ACR-D,7.875%,$21.85,-$0.01,8.97%,43.81%,N,NR,NR,$0.49,5/21/2026,NONE,"30th 1,4,7,10",0.36,All
+,ACRES Commercial,Yes,No,mREIT,Fix-Float,Trad,ACR-C,8.625%,$24.85,$0.08,Float,Float,N,NR,NR,Float,7/30/2024,NONE,"30th 1,4,7,10",-1.45,All
+,Adamas Trust,Yes,No,mREIT,Fix,Trad,ADAMZ,7.000%,$18.99,-$0.17,9.27%,#DIV/0!,N,NR,NR,$0.44,1/15/2027,NONE,"15th 1,4,7,10",,All
+,Adamas Trust,No,No,mREIT,Fix,BB,ADAMI,9.125%,$25.17,-$0.09,9.06%,#DIV/0!,N,NR,NR,$0.57,7/1/2026,7/1/2029,"1st 1,4,7,10",,All
+,Adamas Trust,No,No,mREIT,Fix,BB,ADAMG,9.125%,$24.93,-$0.07,9.15%,#DIV/0!,N,NR,NR,$0.57,4/1/2027,4/1/2030,"1st 1,4,7,10",,All
+,Adamas Trust,No,No,mREIT,Fix,BB,ADAMH,9.875%,$25.59,-$0.03,9.69%,#DIV/0!,N,NR,NR,0.62,10/1/2027,10/1/2030,"1st 1,4,7,10",,All
+,Adamas Trust,Yes,No,mREIT,Fix-Float,Trad,ADAMM,7.875%,$24.95,-$0.02,Float,0.20%,N,NR,NR,Float,1/15/2025,NONE,"15th 1,4,7,10",,All
+,Adamas Trust,Yes,No,mREIT,Fix-Float,Trad,ADAMN,8.000%,$22.29,$0.13,8.97%,#DIV/0!,N,NR,NR,$0.50,10/15/2027,NONE,"15th 1,4,7,10",,All
+,Adamas Trust,Yes,No,mREIT,Fix-Float,Trad,ADAML,6.875%,$22.90,$0.06,7.51%,#DIV/0!,N,NR,NR,$0.43,10/15/2026,NONE,"15th 1,4,7,10",,All
+,Aegon Funding Company,No,No,Insurance,Fix,BB,AEFC,5.100%,$19.90,NA,6.43%,20.40%,Y,BBB,Baa1,$0.32,12/15/2024,12/15/2049,"15th 3,6,9,12",-1.07,All
+,Affiliated Managers Group,No,No,Asset Mgr,Fix,BB,MGR,5.875%,$21.32,$0.07,6.94%,14.72%,Y,BBB-,Baa1,$0.37,3/30/2024,3/30/2059,"30th 3,6,9,12",-1.78,All
+,Affiliated Managers Group,No,No,Asset Mgr,Fix,BB,MGRB,4.750%,$17.31,$0.17,6.86%,-104.30%,Y,BBB-,Baa1,$0.30,9/30/2025,9/30/2060,"30th 3,6,9,12",-0.28,All
+,Affiliated Managers Group,No,No,Asset Mgr,Fix,BB,MGRD,4.200%,$15.48,$0.04,6.78%,59.43%,Y,BBB-,Baa1,$0.26,9/30/2026,9/30/2061,"30th 3,6,9,12",0.72,All
+,Affiliated Managers Group,No,No,Asset Mgr,Fix,BB,MGRE,6.750%,$24.22,-$0.08,6.97%,7.94%,Y,BBB-,Baa1,$0.42,3/30/2029,3/30/2064,"30th 3,6,9,12",3.22,All
+,AG Mortgage Investment,Yes,No,mREIT,Fix,Trad,MITT-B,8.000%,$22.37,$0.00,8.94%,10.52%,N,NR,NR,$0.50,9/27/2017,NONE,"17th 3,6,9,12",-8.29,All
+,AG Mortgage Investment,Yes,No,mREIT,Fix,Trad,MITT-A,8.250%,$23.15,$0.07,8.98%,7.40%,N,NR,NR,$0.52,8/3/2017,NONE,"17th 3,6,9,12",-8.44,All
+,AG Mortgage Investment,No,No,mREIT,Fix,BB,MITN,9.500%,$25.57,$0.00,9.28%,-13.22%,N,NR,NR,$0.59,2/15/2026,2/15/2029,"15th 2,5,8,11",0.10,All
+,AG Mortgage Investment,No,No,mREIT,Fix,BB,MITP,9.500%,$25.44,-$0.01,9.32%,4.23%,N,NR,NR,$0.59,5/15/2026,5/15/2029,"15th 2,5,8,11",0.35,All
+,AG Mortgage Investment,Yes,No,mREIT,Fix-Float,Trad,MITT-C,8.000%,$25.35,$0.01,Float,Float,N,NR,NR,Float,9/17/2024,NONE,"17th 3,6,9,12",-1.31,All
+,AGNC Investment,Yes,No,mREIT,Fix-Float,Trad,AGNCN,7.000%,$25.47,$0.00,Float,Float,N,NR,NR,Float,10/15/2022,NONE,"15th 1,4,7,10",-3.24,All
+,AGNC Investment,Yes,No,mREIT,Fix-Float,Trad,AGNCM,6.875%,$24.75,$0.09,Float,Float,N,NR,NR,Float,4/15/2024,NONE,"15th 1,4,7,10",-1.74,All
+,AGNC Investment,Yes,No,mREIT,Fix-Float,Trad,AGNCO,6.500%,$25.25,$0.06,Float,#VALUE!,N,NR,NR,Float,10/15/2024,NONE,"15th 1,4,7,10",-1.24,All
+,AGNC Investment,Yes,No,mREIT,Fix-Float,Trad,AGNCP,6.125%,$24.79,$0.01,Float,#VALUE!,N,NR,NR,Float,4/15/2025,NONE,"15th 1,4,7,10",-0.74,All
+,AGNC Investment,Yes,No,mREIT,FRR,Trad,AGNCL,7.750%,$24.70,-$0.03,7.84%,8.52%,N,NR,NR,$0.48,10/15/2027,NONE,"15th 1,4,7,10",1.76,All
+,AGNC Investment,Yes,No,mREIT,Fix,Trad,AGNCZ,8.750%,$25.62,$0.00,8.54%,#DIV/0!,N,NR,NR,$0.55,10/15/2030,NONE,"15th 1,4,7,10",,All
+,Agree Realty,Yes,No,eREIT,Fix,Trad,ADC-A,4.250%,$17.27,$0.05,6.15%,51.12%,Y,NR,Baa3,$0.09,9/17/2026,NONE,1st Month,0.69,All
+,Air Lease Corporation,No,Yes,Other,Fix-Float,Trad,AL-A,6.150%,Redeem,Redeem,Redeem,Redeem,N,BB+,NR,$0.38,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Air T Inc,Yes,No,Other,Fix,Trust P,AIRTP,8.000%,$18.50,$0.00,10.81%,26.00%,N,NR,NR,$0.50,6/7/2024,6/7/2049,"15th 2,5,8,11",-1.59,All
+,Algonquin Power,No,No,Ute,Fix-Float,BB,AQNB,6.200%,$25.55,-$0.04,Float,#VALUE!,N,BB+,NR,Float,7/1/2024,7/1/2079,"1st 1,4,7,10",-1.53,All
+,Allstate,No,Yes,Insurance,Fix,Trad,ALL-H,5.100%,$21.23,$0.02,6.01%,-4.74%,Y,BBB,Baa2,$0.32,8/15/2024,NONE,"15th 1,4,7,10",-1.40,All
+,Allstate,No,Yes,Insurance,Fix,Trad,ALL-I,4.750%,$19.55,-$0.11,6.07%,21.80%,Y,BBB,Baa2,$0.30,1/15/2025,NONE,"15th 1,4,7,10",-0.98,All
+,Allstate,No,Yes,Insurance,Fix,Trad,ALL-J,7.375%,$26.21,-$0.07,7.04%,5.11%,Y,BBB,Baa2,$0.46,7/15/2028,NONE,"15th 1,4,7,10",2.52,All
+,Allstate Debentures,No,No,Insurance,Fix-Float,BB,ALL-B,5.100%,$25.87,-$0.16,Float,Float,Y,BBB,Baa1,Float,1/15/2023,1/15/2053,"15th 1,4,7,10",-2.99,All
+,Alpine Inome Property Trust,Yes,No,eREIT,Fix,Trad,PINE-A,8.000%,$24.79,$0.04,8.07%,,N,NR,NR,$0.50,11/12/2030,NONE,"LD 3,6,9,12",,All
+,Alta Equipment,Yes,Yes,Other,Fix,Trad,ALTG-A,10.000%,$25.63,$0.13,9.75%,60.85%,N,NR,NR,$0.63,12/22/2025,NONE,"LD 1,4,7,10",-0.05,All
+,American Financial Group,No,No,Insurance,Fix,BB,AFGB,5.875%,$21.71,$0.02,6.77%,13.16%,Y,BBB-,Baa2,$0.37,3/30/2024,3/30/2059,"30th 3,6,9,12",-1.78,All
+,American Financial Group,No,No,Insurance,Fix,BB,AFGC,5.125%,$19.18,-$0.10,6.68%,23.28%,Y,BBB-,Baa2,$0.32,12/15/2024,12/15/2059,"15th 3,6,9,12",-1.07,All
+,American Financial Group,No,No,Insurance,Fix,BB,AFGD,5.625%,$21.03,$0.05,6.69%,-19.42%,Y,BBB-,Baa2,$0.35,6/1/2025,6/1/2050,"1st 3,6,9,12",-0.61,All
+,American Financial Group,No,No,Insurance,Fix,BB,AFGE,4.500%,$17.18,$0.06,6.54%,-91.88%,Y,BBB-,Baa2,$0.28,9/15/2025,9/15/2060,"15th 3,6,9,12",-0.32,All
+,American Homes 4 Rent,Yes,No,eREIT,Fix,Trad,AMH-H,6.250%,$23.69,-$0.13,6.60%,5.24%,Y,BB+,Baa3,$0.39,9/19/2023,NONE,"LD 3,6,9,12",-2.31,All
+,American Homes 4 Rent,Yes,No,eREIT,Fix,Trad,AMH-G,5.875%,$22.90,-$0.16,6.41%,8.40%,Y,BB+,Baa3,$0.37,7/17/2022,NONE,"LD 3,6,9,12",-3.48,All
+,American International Group,No,Yes,Insurance,Fix,Trad,AIG-A,5.850%,Redeem,Redeem,Redeem,Redeem,Y,BBB-,Baa3,$0.37,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,American National Group,No,Yes,Insurance,Fix,Trad,ANG-D,7.375%,$25.00,$0.02,7.38%,0.00%,N,BB+,NR,$0.46,1/15/2030,None,"15th 1,4,7,10",4.02,All
+,American National Group,No,Yes,Insurance,FRR,Trad,ANG-A,5.950%,Redeem,Redeem,Redeem,#VALUE!,N,BB+,NR,$0.37,12/1/2024,NONE,"1st 3,6,9,12",-1.11,All
+,American National Group,No,Yes,Insurance,FRR,Trad,ANG-B,6.625%,Redeem,Redeem,Redeem,#VALUE!,N,BB+,NR,$0.41,9/1/2025,NONE,"1st 3,6,9,12",-0.36,All
+,AMMO Inc,Yes,Var,Other,Fix,Trad,POWWP,8.750%,$24.25,$0.14,9.07%,17.56%,N,NR,NR,$0.55,5/18/2026,NONE,"15th 3,6,9,12",0.35,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIA,6.750%,$13.20,$0.00,12.78%,47.20%,N,NR,NR,$0.42,6/10/2018,NONE,"15th 3,6,9,12",-7.59,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIN,6.950%,$13.45,-$0.01,12.92%,46.20%,N,NR,NR,$0.43,9/27/2021,NONE,"15th 3,6,9,12",-4.29,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIC,7.625%,$14.57,$0.15,13.08%,41.72%,N,NR,NR,$0.48,9/16/2019,NONE,"15th 3,6,9,12",-6.32,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIB,7.250%,$13.75,-$0.25,13.18%,45.00%,N,NR,NR,$0.45,7/1/2019,NONE,"15th 3,6,9,12",-6.53,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIP,7.500%,$14.30,$0.06,13.11%,42.80%,N,NR,NR,$0.47,3/19/2020,NONE,"15th 3,6,9,12",-5.81,All
+,AmTrust Financial Services,No,Yes,Insurance,Fix,Trad,AFSIM,7.750%,$14.55,$0.18,13.32%,41.80%,N,NR,NR,$0.48,3/15/2021,NONE,"15th 3,6,9,12",-4.82,All
+,Angel Oak Mortgage REIT,No,No,mREIT,Fix,BB,AOMN,9.500%,$25.71,$0.10,9.24%,4.11%,N,NR,NR,$0.59,7/30/2026,7/30/2029,"30th 1,4,7,10",0.55,All
+,Angel Oak Mortgage REIT,No,No,mREIT,Fix,BB,AOMD,9.750%,$25.55,-$0.06,9.53%,#DIV/0!,N,NR,NR,0.609,6/1/2027,6/1/2030,"1st 3,6,9,12",,All
+,Annaly Capital Management,Yes,No,mREIT,Fix-Float,Trad,NLY-F,6.950%,$25.70,$0.04,Float,Float,N,NR,NR,Float,9/30/2022,NONE,"LD 3,6,9,12",-3.28,All
+,Annaly Capital Management,Yes,No,mREIT,Fix-Float,Trad,NLY-I,6.750%,$25.58,$0.00,Float,Float,N,NR,NR,Float,6/30/2024,NONE,"LD 3,6,9,12",-1.53,All
+,Annaly Capital Management,Yes,No,mREIT,Fix-Float,Trad,NLY-G,6.500%,$25.23,$0.10,Float,Float,N,NR,NR,Float,3/31/2023,NONE,"LD 3,6,9,12",-2.78,All
+,Annaly Capital Management,Yes,No,mREIT,Fix,Trad,NLY-J,8.875%,$26.21,-$0.06,8.47%,#DIV/0!,N,NR,NR,0.555,9/30/2030,NONE,"LD 3,6,9,12",,All
+,Apollo Global Management,No,No,Asset Mgr,FRR,BB,APOS,7.625%,$26.33,$0.15,7.29%,5.48%,Y,BBB,A3,$0.48,12/15/2028,9/15/2053,"15th 3,6,9,12",2.93,All
+,Applied UV,Yes,Yes,Other,Fix,Trad,AUVIP,10.500%,BK,BK,BK,BK,N,NR,NR,$0.66,7/16/2022,NONE,1th Month,-3.49,All
+,Arbor Realty Trust,Yes,No,mREIT,Fix,Trad,ABR-D,6.375%,$17.84,$0.11,8.97%,81.56%,N,NR,NR,$0.40,6/2/2026,NONE,"30th 1,4,7,10",0.39,All
+,Arbor Realty Trust,Yes,No,mREIT,Fix,Trad,ABR-E,6.250%,$17.57,$0.16,8.90%,59.59%,N,NR,NR,$0.39,8/11/2026,NONE,"30th 1,4,7,10",0.59,All
+,Arbor Realty Trust,Yes,No,mREIT,Fix-Float,Trad,ABR-F,6.250%,$21.98,-$0.04,7.12%,22.11%,N,NR,NR,$0.39,10/30/2026,NONE,"30th 1,4,7,10",0.81,All
+,Arch Capital,No,Yes,Insurance,Fix,Trad,ACGLO,5.450%,$20.47,-$0.05,6.66%,18.12%,Y,BBB,Baa3,$0.34,8/17/2022,NONE,"LD 3,6,9,12",-3.40,All
+,Arch Capital,No,Yes,Insurance,Fix,Trad,ACGLN,4.550%,$17.04,$0.06,6.57%,82.53%,Y,BBB,NR,$0.28,6/11/2026,NONE,"LD 3,6,9,12",0.42,All
+,Argo Group,No,Yes,Insurance,Fix,BB,ARGD,6.500%,Redeem,Redeem,Redeem,#VALUE!,Y,BBB-,NR,$0.41,9/15/2017,9/15/2042,"15th 3,6,9,12",-8.32,All
+,Argo Group,No,Yes,Insurance,FRR,Trad,ARGO-A,7.000%,Redeem,Redeem,Redeem,#VALUE!,Y,BB,NR,$0.44,9/15/2025,NONE,"15th 3,6,9,12",-0.32,All
+,Arlington Asset Investment  ,No,No,mREIT,Fix,BB,AIC,6.750%,Delist,Delist,Delist,Delist,N,NR,NR,$0.42,3/15/2018,3/15/2025,"15th 3,6,9,12",-7.83,All
+,Arlington Asset Investment  ,No,No,mREIT,Fix,BB,AAIN,6.000%,Delist,Delist,Delist,Delist,N,NR,NR,$0.38,8/1/2023,8/1/2026,"1st 2,5,8,11",-2.44,All
+,Armada Hoffler,Yes,No,eREIT,Fix,Trad,AHH-A,6.750%,$21.11,$0.19,8.00%,-1.97%,N,NR,NR,$0.42,6/18/2024,NONE,"15th 1,4,7,10",-1.56,All
+,Armour Residential REIT,Yes,No,mREIT,Fix,Trad,ARR-C,7.000%,$21.00,$0.04,8.33%,16.00%,N,NR,NR,$0.15,1/28/2025,NONE,27th Month,-0.95,All
+,Ashford Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,AHT-D,8.450%,$20.00,$0.77,10.56%,20.00%,N,NR,NR,$0.53,7/18/2012,NONE,"15th 1,4,7,10",,All
+,Ashford Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,AHT-G,7.375%,$14.09,$0.00,13.09%,43.64%,N,NR,NR,$0.46,10/17/2021,NONE,"15th 1,4,7,10",,All
+,Ashford Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,AHT-H,7.500%,$14.27,$0.10,13.14%,42.92%,N,NR,NR,$0.47,8/25/2022,NONE,"15th 1,4,7,10",,All
+,Ashford Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,AHT-I,7.500%,$13.99,-$0.01,13.40%,44.04%,N,NR,NR,$0.47,11/25/2022,NONE,"15th 1,4,7,10",,All
+,Ashford Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,AHT-F,7.375%,$13.91,-$0.14,13.25%,44.36%,N,NR,NR,$0.46,7/15/2021,NONE,"15th 1,4,7,10",,All
+,Aspen Insurance Holdings,No,Yes,Insurance,Fix,Trad,AHL-D,5.625%,$19.84,$0.00,7.09%,28.19%,N,BB+,Ba1,$0.35,1/1/2027,NONE,"1st 1,4,7,10",0.98,All
+,Aspen Insurance Holdings,No,Yes,Insurance,Fix,Trad,AHL-E,5.625%,$19.82,-$0.15,7.10%,-9.16%,N,BB+,Ba1,$0.35,10/1/2024,NONE,"1st 1,4,7,10",-1.27,All
+,Aspen Insurance Holdings,No,Yes,Insurance,Fix,Trad ,AHL-F,7.000%,$24.73,$0.03,7.08%,7.35%,N,BB+,Ba1,$0.44,11/30/2029,NONE,"1st 1,4,7,10",3.89,All
+,Aspen Insurance Holdings,No,Yes,Insurance,Fix-Float,Trad,AHL-C,5.950%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba1,Float,7/1/2023,NONE,"1st 1,4,7,10",-2.53,All
+,Associated Banc-Corp,No,Yes,Bank,Fix,Trad,ASB-E,5.875%,$21.37,-$0.01,6.87%,14.52%,N,BB,Ba1,$0.37,12/15/2023,NONE,"15th 3,6,9,12",-2.07,All
+,Associated Banc-Corp,No,Yes,Bank,Fix,Trad,ASB-F,5.625%,$20.66,$0.05,6.81%,-47.82%,N,BB,Ba1,$0.35,9/15/2025,NONE,"15th 3,6,9,12",-0.32,All
+,Associated Banc-Corp,No,No,Bank,Fix-Float,BB,ASBA,6.625%,No Quote,#N/A,#VALUE!,,Y,BBB-,Baa3,$0.41,3/1/2028,3/1/2033,"1st 3,6,9,12",,All
+,Assurant Inc,No,No,Insurance,Fix,BB,AIZN,5.250%,$19.73,-$0.11,6.69%,1289.06%,Y,BB+,Ba1,$0.33,1/15/2026,1/15/2061,"15th 1,4,7,10",0.02,All
+,AT&T,No,No,Telecom,Fix,BB,TBC,5.625%,Redeem,Redeem,Redeem,Redeem,Y,BBB,Baa2,$0.35,8/1/2023,8/1/2067,"1st 2,5,8,11",-2.44,All
+,AT&T,No,No,Telecom,Fix,BB,TBB,5.350%,$22.60,$0.04,5.84%,9.60%,Y,BBB,Baa2,$0.33,11/1/2022,11/1/2066,"1st 2,5,8,11",-3.19,All
+,AT&T,Yes,Yes,Telecom,Fix,Trad,T-A,5.000%,$20.62,$0.08,6.06%,17.52%,N,BB+,Ba1,$0.31,12/12/2024,NONE,"1st 2,5,8,11",-1.08,All
+,AT&T,Yes,Yes,Telecom,Fix,Trad,T-C,4.750%,$19.46,$0.04,6.10%,-18.79%,N,BB+,Ba1,$0.30,2/18/2025,NONE,"1st 2,5,8,11",-0.89,All
+,Athene Holding LTD,No,Yes,Insurance,Fix,Trad,ATH-B,5.625%,$20.10,$0.03,7.00%,-8.35%,Y,BBB,Baa3,$0.35,9/30/2024,NONE,"30th 3,6,9,12",-1.28,All
+,Athene Holding LTD,No,Yes,Insurance,Fix,Trad,ATH-D,4.875%,$17.10,-$0.07,7.12%,-1146.28%,Y,BBB,Baa3,$0.30,12/30/2025,NONE,"30th 3,6,9,12",-0.03,All
+,Athene Holding LTD,No,Yes,Insurance,Fix-Float,Trad,ATH-A,6.350%,$24.82,-$0.11,6.40%,6.61%,Y,BBB,Baa3,$0.40,6/30/2029,NONE,"30th 3,6,9,12",3.47,All
+,Athene Holding LTD,No,Yes,Insurance,FRR,Trad,ATH-C,6.375%,Redeem,Redeem,Redeem,#VALUE!,Y,BBB,Baa3,$0.40,9/30/2025,NONE,"30th 3,6,9,12",-0.28,All
+,Athene Holding LTD,No,Yes,Insurance,FRR,Trad,ATH-E,7.750%,$25.65,-$0.07,7.55%,6.24%,Y,BBB,Baa3,$0.48,12/31/2027,NONE,"30th 3,6,9,12",1.98,All
+,Athene Holding LTD,No,No,Insurance,FRR,BB,ATHS,7.250%,$25.11,$0.05,7.22%,7.08%,Y,BBB,Baa2,$0.45,3/30/2029,3/30/2064,"30th 3,6,9,12",3.22,All
+,Atlantic Union Bancshares,No,Yes,Bank,Fix,Trad,AUB-A,6.875%,$24.34,-$0.01,7.07%,-0.35%,N,NR,NR,$0.43,9/1/2025,NONE,"1st 3,6,9,12",-0.36,All
+,Atlanticus Holdings,Yes,Yes,Finance,Fix,Trad,ATLCP,7.625%,$24.25,$0.00,7.92%,15.07%,N,NR,NR,$0.48,6/11/2026,NONE,"15th 3,6,9,12",0.42,All
+,Atlanticus Holdings,No,No,Finance,Fix,BB,ATLCL,6.125%,$24.79,$0.01,6.13%,7.28%,N,NR,NR,$0.38,10/2/2026,12/31/2026,"LD 3,6,9,12",0.73,All
+,Atlanticus Holdings,No,No,Finance,Fix,BB,ATLCZ,9.250%,$25.53,-$0.01,9.09%,8.06%,N,NR,NR,$0.58,1/31/2028,1/31/2029,"15th 1,4,7,10",2.06,All
+,Atlas Corp,Yes,Yes,Shipping,Fix,Trad,ATCO-D,7.950%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.50,1/30/2018,NONE,"30th 1,4,7,10",-7.95,All
+,Atlas Corp,Yes,Yes,Shipping,Fix,Trad,ATCO-H,7.875%,$25.62,$0.12,7.65%,-2.48%,N,NR,NR,$0.49,8/11/2021,NONE,"30th 1,4,7,10",-4.42,All
+,Atlas Corp,No,No,Shipping,Fix,BB,ATCOL,7.125%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.45,5/13/2023,10/30/2027,"30th 1,4,7,10",-2.66,All
+,Axis Capital Holdings,No,Yes,Insurance,Fix,Trad,AXS-E,5.500%,$19.98,-$0.11,6.81%,20.08%,Y,BBB,Baa3,$0.34,11/7/2021,NONE,"15th 1,4,7,10",-4.18,All
+,B Riley Financial,Yes,Yes,Finance,Fix,Trad,RILYL,7.375%,$7.95,$0.64,23.14%,-172.86%,N,NR,NR,$0.46,9/4/2025,NONE,"LD 1,4,7,10",-0.35,All
+,B Riley Financial,No,No,Finance,Fix,BB,RILYZ,5.250%,$14.10,$0.65,9.36%,43.60%,N,NR,NR,$0.33,8/31/2023,8/31/2028,"LD 1,4,7,10",-2.36,All
+,B Riley Financial,No,No,Finance,Fix,BB,RILYG,5.000%,$20.90,$0.01,5.98%,28.48%,N,NR,NR,$0.31,10/2/2026,12/31/2026,"LD 1,4,7,10",0.73,All
+,B. Riley Financial,Yes,Yes,Finance,Fix,Trad,RILYP,6.875%,$7.31,$0.29,Susp,70.76%,N,NR,NR,Susp,10/7/2024,NONE,"LD 1,4,7,10",-1.26,All
+,B. Riley Financial,No,No,Finance,Fix,BB,RILYN,6.500%,$23.13,$0.58,7.03%,7.48%,N,NR,NR,$0.41,9/30/2022,9/30/2026,"LD 1,4,7,10",-3.28,All
+,B. Riley Financial,No,No,Finance,Fix,BB,RILYO,6.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.42,5/31/2021,5/31/2024,"LD 1,4,7,10",-4.61,All
+,B. Riley Financial,No,No,Finance,Fix,BB,RILYM,6.375%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.40,2/28/2021,2/28/2025,"LD 1,4,7,10",-4.87,All
+,B. Riley Financial,No,No,Finance,Fix,BB,RILYT,6.000%,$15.99,$0.28,9.38%,36.04%,N,NR,NR,$0.38,1/31/2022,1/31/2028,"LD 1,4,7,10",-3.94,All
+,B. Riley Financial,No,No,Finance,Fix,BB,RILYK,5.500%,$24.70,-$0.02,5.51%,-49.24%,N,NR,NR,$0.34,1/1/2026,3/31/2026,"LD 1,4,7,10",-0.02,All
+,Babcock and Wilcox,Yes,Yes,Other,Fix,Trad,BW-A,7.750%,$20.55,-$0.42,9.42%,64.48%,N,NR,NR,$0.48,5/7/2026,NONE,"LD 3,6,9,12",0.32,All
+,Babcock and Wilcox,No,No,Other,Fix,BB,BWSN,8.125%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.51,2/28/2022,2/28/2026,"LD 1,4,7,10",-3.87,All
+,Babcock and Wilcox,N0,No,Other,Fix,BB,BWNB,6.500%,$24.64,$0.11,6.59%,8.57%,N,NR,NR,$0.41,10/2/2026,12/31/2026,"LD 3,6,9,12",0.73,All
+,Banc of California (Pacwest),No,Yes,Bank,FRR,Trad,BANC-F,7.750%,$25.14,NA,7.64%,7.30%,N,NR,NR,$0.48,9/1/2027,NONE,"1st 3,6,9,12",1.64,All
+,Bancroft Fund Ltd,Yes,Var,CEF,Fix,Trad,BCV-A,5.385%,$21.77,$0.01,6.18%,12.92%,Y,NR,A1,$0.34,8/9/2021,NONE,"26th 3,6,9,12",-4.42,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-B,6.000%,$25.28,-$0.04,5.93%,6.37%,Y,BBB-,Baa3,$0.38,6/16/2023,NONE,"16th 2,5,8,11",-2.57,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-M,5.375%,$22.26,-$0.03,6.04%,-1.07%,Y,BBB-,Baa3,$0.34,6/25/2024,NONE,"25th 3,6,9,12",-1.54,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-N,5.000%,$20.87,-$0.04,5.99%,-6.60%,Y,BBB-,Baa3,$0.31,9/17/2024,NONE,"17th 3,6,9,12",-1.31,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-O,4.385%,$18.24,$0.02,5.92%,-141.39%,Y,BBB-,Baa3,$0.27,11/3/2025,NONE,"3rd 2,5,8,11",-0.18,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-P,4.125%,$17.23,-$0.03,5.98%,478.66%,Y,BBB-,Baa3,$0.26,2/2/2026,NONE,"2nd 2,5,8,11",0.07,All
+ ,Bank of America,No,Yes,Bank,Fix,Trad,BAC-Q,4.250%,$17.69,$0.02,6.11%,40.31%,Y,BBB-,Baa3,$0.27,11/17/2026,NONE,"17th 2,5,8,11",0.85,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-S,4.750%,$19.79,-$0.09,6.06%,24.89%,Y,BBB-,Baa3,$0.30,2/17/2027,NONE,"17th 2,5,8,11",1.11,All
+,Bank of America,No,Yes,Bank,Fix,Trad,BAC-K,5.875%,$24.72,-$0.02,5.94%,1.12%,Y,BBB-,Baa3,$0.37,7/24/2023,NONE,"24th 1,4,7,10",-2.47,All
+,Bank of America,No,Yes,Bank,FLR,Trad,BML-J,4.000%,$20.34,$0.09,Float,Float,Y,BBB-,Baa3,Float,11/21/2010,NONE,"28th 2,5,8,11",-15.15,All
+,Bank of America,No,Yes,Bank,FLR,Trad,BAC-E,4.000%,$19.82,$0.34,Float,Float,Y,BBB-,Baa3,Float,11/15/2011,NONE,"15th  2,5,8,11",-14.16,All
+,Bank of America,No,Yes,Bank,FLR,Trad,BML-L,4.000%,$19.70,-$0.05,Float,Float,Y,BBB-,Baa3,Float,5/21/2010,NONE,"21st 2,5,8,11",-15.65,All
+,Bank of America,No,Yes,Bank,FLR,Trad,BML-G,3.000%,$19.05,-$0.02,Float,23.80%,Y,BBB-,Baa3,Float,11/28/2009,NONE,"28th  2,5,8,11",-16.13,All
+,Bank of America,No,Yes,Bank,FLR,Trad,BML-H,3.000%,$19.02,-$0.05,Float,23.92%,Y,BBB-,Baa3,Float,11/28/2009,NONE,"28th  2,5,8,11",-16.13,All
+,Bank of America Capital Trust,Yes,No,Bank,Fix,Trust P,MER-K,6.450%,$25.58,$0.11,6.30%,-2.32%,N,BB+,Ba1,$0.40,12/15/2011,12/15/2066,"15th 3,6,9,12",-14.08,All
+,Bank of Hawaii,No,Yes,Bank,Fix,Trad,BOH-A,4.375%,$16.65,$0.11,6.57%,33.40%,Y,NR,Baa3,$0.27,8/1/2026,NONE,"1st 2,5,8,11",0.56,All
+,Bank of Hawaii,No,Yes,Bank,Fix,Trad,BOH-B,8.000%,$26.61,-$0.08,7.52%,-6.44%,Y,NR,Baa3,$0.50,8/1/2029,NONE,"1st 2,5,8,11",3.56,All
+,Bank OZK,No,Yes,Bank,Fix,Trad,OZKAP,4.625%,$16.72,$0.07,6.94%,45.93%,N,NR,Ba2,$0.29,11/15/2026,NONE,"15th 2,5,8,11",0.85,All
+,BFC Capital Trust,Yes,No,Bank,Fix,Trust P,BANFP,7.200%,$26.10,-$0.05,6.90%,-4.40%,N,NR,NR,$0.45,3/21/2009,3/31/2034,"15th 1,4,7,10",-16.82,All
+,BIP Bermuda Holdings,No,No,Other,Fix,BB,BIPI,5.125%,$16.80,-$0.02,7.62%,39.38%,N,NR,NR,$0.32,1/21/2027,NONE,"LD 3,6,9,12",1.03,All
+,Braemar Hotels and Resorts,Yes,No,Hotel REIT,Fix,Trad,BHR-D,8.250%,$18.38,$0.11,11.22%,26.48%,N,NR,NR,$0.52,11/20/2023,NONE,"15th 1,4,7,10",-2.14,All
+,Braemer Hotels and Resorts (Conv),Yes,No,Hotel REIT,Fix,Conv,BHR-B,5.500%,$13.95,-$0.05,9.86%,44.20%,N,NR,NR,$0.34,6/11/2020,NONE,"15th 1,4,7,10",-5.58,All
+,Bridgewater Bancshares,No,Yes,Bank,Fix,Trad,BWBBP,5.875%,$19.45,$0.25,7.61%,44.44%,N,NR,NR,$0.37,8/17/2026,NONE,"1st 3,6,9,12",0.60,All
+,Brighthouse Financial,No,No,Insurance,Fix,BB,BHFAL,6.250%,$17.32,NA,9.02%,30.72%,Y,BBB-,Ba1,$0.39,9/15/2023,9/15/2058,"15th 3,6,9,12",-2.32,All
+,Brighthouse Financial,No,Yes,Insurance,Fix,Trad,BHFAP,6.600%,$15.71,-$0.08,10.50%,37.16%,Y,BBB-,Ba2,$0.41,3/25/2024,NONE,"25th 3,6,9,12",-1.79,All
+,Brighthouse Financial,No,Yes,Insurance,Fix,Trad,BHFAO,6.750%,$16.13,-$0.15,10.42%,-54.99%,Y,BBB-,Ba2,$0.42,6/25/2025,NONE,"25th 3,6,9,12",-0.54,All
+,Brighthouse Financial,No,Yes,Insurance,Fix,Trad,BHFAN,5.375%,$13.06,-$0.02,10.41%,-1151.75%,Y,BBB-,Ba2,$0.34,12/25/2025,NONE,"25th 3,6,9,12",-0.04,All
+,Brighthouse Financial,No,No,Insurance,Fix,Trad,BHFAM,4.625%,$11.54,-$0.11,10.02%,66.17%,Y,BBB-,Ba2,$0.29,12/25/2026,NONE,"25th 3,6,9,12",0.96,All
+,Brookfield BRP Holdings,No,Yes,MLP,Fix,BB,BEPH,4.625%,$15.34,$0.00,7.56%,134.62%,Y,BBB-,NR,$0.29,4/30/2026,NONE,"30th 1,4,7,10",0.30,All
+,Brookfield BRP Holdings,No,Yes,MLP,Fix,BB,BEPI,4.875%,$16.13,-$0.05,7.44%,46.21%,Y,BBB-,NR,$0.30,12/9/2026,NONE,"30th 1,4,7,10",0.92,All
+,Brookfield BRP Holdings,No,Yes,MLP,Fix,BB,BEPJ,7.250%,$25.12,-$0.08,7.17%,#DIV/0!,Y,BBB-,NR,$0.45,3/25/2029,NONE,"30th 1,4,7,10",,All
+,Brookfield Finance,No,No,Asset Mgr,Fix,BB,BNH,4.625%,$16.07,-$0.05,7.22%,-146.17%,Y,BBB,Baa3,$0.29,10/16/2025,10/16/2080,"15th 1,4,7,10",-0.23,All
+,Brookfield Finance,No,No,Asset Mgr,Fix,BB,BNJ,4.500%,$15.27,$0.02,7.60%,-301.23%,Y,BBB,Baa3,$0.29,11/24/2025,NONE,"24th 2,5,8,11",-0.13,All
+,Brookfield Infrastructure Finance,No,No,Infrastructure,Fix,BB,BIPH,5.000%,$16.60,$0.05,7.47%,98.31%,Y,BBB-,NR,$0.31,5/24/2026,5/24/2081,"LD 3,6,9,12",0.37,All
+,Brookfield Infrastructure Finance,No,No,Infrastructure,Fix,BB,BIPJ,7.250%,$24.64,-$0.01,7.31%,7.73%,Y,BBB-,NR,$0.45,5/31/2029,5/31/2084,"LD 3,6,9,12",3.39,All
+,Brookfield Infrastructure Partners,Yes,No,MLP,Fix,Trad,BIP-A,5.125%,$16.98,-$0.03,7.54%,-128.62%,Y,BBB-,NY,$0.32,10/15/2025,NONE,"15th 3,6,9,12",-0.24,All
+,Brookfield Infrastructure Partners,Yes,No,MLP,Fix,Trad,BIP-B,5.000%,$16.75,-$0.16,7.40%,324.38%,Y,BBB-,NY,$0.31,2/16/2026,NONE,"15th 3,6,9,12",0.10,All
+,Brookfield Property Partners LP,Yes,No,MLP,Fix,Trad,BPYPM,6.250%,$15.51,-$0.11,10.06%,80.03%,N,B,NR,$0.39,7/26/2026,NONE,"LD 3,6,9,12",0.54,All
+,Brookfield Property Partners LP,Yes,No,MLP,Fix,Trad,BPYPP,6.500%,$14.86,$0.11,10.94%,40.56%,N,B,NR,$0.41,3/31/2024,NONE,"LD 3,6,9,12",-1.78,All
+,Brookfield Property Partners LP,Yes,No,MLP,Fix,Trad,BPYPO,6.375%,$14.68,$0.14,10.86%,-21.48%,N,B,NR,$0.40,9/30/2024,NONE,"LD 3,6,9,12",-1.28,All
+,Brookfield Property Partners LP,Yes,No,MLP,Fix,Trad,BPYPN,5.750%,$13.42,$0.06,10.73%,-48.80%,N,B,NR,$0.36,3/31/2025,NONE,"LD 3,6,9,12",-0.78,All
+,Brookfield Renewable Partners LP,Yes,No,MLP,Fix,Trad,BEP-A,5.250%,$18.27,$0.17,7.22%,26.92%,N,NR,NR,$0.33,3/31/2025,NONE,"LD 1,4,7,10",-0.78,All
+,Brunswick Corp,No,No,Other,Fix,BB,BC-B,6.625%,Redeem,Redeem,Redeem,#VALUE!,Y,BBB-,Baa2,$0.41,1/15/2024,1/15/2049,"15th 1,4,7,10",-1.99,All
+,Brunswick Corp,No,No,Other,Fix,BB,BC-A,6.500%,Redeem,Redeem,Redeem,#VALUE!,Y,BBB-,Baa2,$0.41,10/15/2023,10/15/2048,"15th 1,4,7,10",-2.24,All
+,Brunswick Corp,No,No,Other,Fix,BB,BC-C,6.375%,$25.17,$0.13,6.33%,6.72%,Y,BBB-,Baa2,$0.40,4/15/2024,4/15/2049,"15th 1,4,7,10",-1.74,All
+,Cadence Bank,No,Yes,Bank,Fix,Trad,CADE-A,5.500%,$21.60,$0.04,6.37%,13.60%,N,BB,Ba1,$0.34,11/20/2024,NONE,"20th 2,5,8,11",-1.14,All
+,CADIZ Inc,Yes,Yes,Other,Fix,Trad,CDZIP,8.875%,$19.58,-$0.02,11.24%,56.71%,N,NR,NR,$0.55,7/2/2026,NONE,"15th 1,4,7,10",0.48,All
+,Capital One Financial,No,Yes,Bank,Fix,Trad,COF-I,5.000%,$19.25,$0.04,6.49%,23.00%,Y,BB,Baa3,$0.31,12/1/2024,NONE,"1st 3,6,9,12",-1.11,All
+,Capital One Financial,No,Yes,Bank,Fix,Trad,COF-J,4.800%,$18.37,$0.00,6.53%,26.52%,Y,BB,Baa3,$0.30,6/1/2025,NONE,"1st 3,6,9,12",-0.61,All
+,Capital One Financial,No,Yes,Bank,Fix,Trad,COF-K,4.625%,$17.68,-$0.03,6.56%,-267.47%,Y,BB,Baa3,$0.29,12/1/2025,NONE,"1st 3,6,9,12",-0.11,All
+,Capital One Financial,No,Yes,Bank,Fix,Trad,COF-L,4.375%,$16.88,-$0.03,6.40%,56.85%,Y,BB,Baa3,$0.27,9/1/2026,NONE,"1st 3,6,9,12",0.64,All
+,Capital One Financial,No,Yes,Bank,Fix,Trad,COF-N,4.250%,$16.54,$0.08,6.53%,59.09%,Y,BB,Baa3,$0.27,9/1/2026,NONE,"1st 3,6,9,12",0.64,All
+,Capital Southwest,No,No,BDC,Fix,BB,CSWCZ,7.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.48,8/1/2025,8/1/2028,"1st 2,5,8,11",-0.44,All
+,CareCloud,Yes,Yes,Other,Fix,Trad,CCLDP,11.000%,Converted,Converted,Converted,Susp,N,NR,NR,$0.23,11/04/2020,NONE,15th Month,-5.18,All
+,CareCloud,Yes,Yes,Other,Fix,Trad,CCLDO,8.750%,$25.98,$0.19,8.42%,Susp,N,NR,NR,$0.18,2/15/2024,NONE,15th Month,-1.90,All
+,Carlyle Credit Income Fund,Yes,Var,CEF,Fix,Term,CCIA,8.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.18,10/31/2025,10/31/2028,LD Month,-0.19,All
+,Carlyle Credit Income Fund,Yes,Var,CEF,Fix,Term,CCID,7.375%,$25.33,$0.07,7.30%,#DIV/0!,N,NR,NR,$0.15,10/30/2026,10/30/2028,LD Month,,All
+,Carlyle Finance,No,No,Finance,Fix,BB,CGABL,4.625%,$17.47,$0.07,6.64%,93.89%,Y,BBB-,NR,$0.29,5/15/2026,5/15/2061,"15th 2,5,8,11",0.35,All
+,Cedar Realty Trust,Yes,No,Retail REIT,Fix,Trad,CDR-B,7.250%,$18.52,$0.37,9.79%,25.92%,N,NR,NR,$0.45,5/22/2017,NONE,"20th 2, 5, 8, 11",-8.64,All
+,Cedar Realty Trust,Yes,No,Retail REIT,Fix,Trad,CDR-C,6.500%,$17.17,-$0.42,9.46%,31.32%,N,NR,NR,$0.41,8/22/2022,NONE,"20th 2,5,8,11",-3.39,All
+,Centerspace ,Yes,No,eREIT,Fix,Trad,CSR-C,6.625%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,10/2/2022,NONE,"LD 3,6,9,12",-3.27,All
+,Charah Solutions,No,No,Other,Fix,BB,CHRB,8.500%,$23.00,$0.10,9.22%,8.00%,N,NR,NR,$0.53,8/31/2023,8/31/2026,"LD 1,4,7,10",-2.36,All
+,Chatham Lodging Trust,Yes,No,Hotel REIT,Fix,Trad,CLDT-A,6.625%,$19.99,$0.16,8.40%,50.93%,N,NR,NR,$0.42,6/30/2026,NONE,"15th 1,4,7,10",0.47,All
+,Cherry Hill Mortgage,Yes,No,mREIT,Fix,Trad,CHMI-A,8.200%,$20.80,$0.18,9.86%,16.80%,N,NR,NR,$0.51,8/17/2022,NONE,"15th 1,4,7,10",-3.40,All
+,Cherry Hill Mortgage,Yes,No,eREIT,Fix-Float,Trad,CHMI-B,8.250%,$23.70,$0.09,Float,Float,N,NR,NR,Float,4/5/2024,NONE,"15th 1,4,7,10",-1.76,All
+,Chicken Soup for the Soul,Yes,Yes,Other,Fix,Trad,CSSEP,9.750%,BK,BK,BK,BK,N,NR,NR,$0.61,6/27/2023,NONE,15th Month,-2.54,All
+,Chicken Soup for the Soul,No,No,Other,Fix,BB,CSSEN,9.500%,BK,BK,BK,BK,N,NR,NR,$0.59,7/31/2022,7/31/2025,"LD 3,6,9,12",-3.45,All
+,Chimera Investment,Yes,No,mREIT,Fix,Trad,CIM-A,8.000%,$21.77,$0.12,9.19%,12.92%,N,NR,NR,$0.50,10/21/2021,NONE,"30th 3,6,9,12",-4.22,All
+,Chimera Investment,No,No,mREIT,Fix,BB,CIMN,9.000%,$25.39,$0.02,8.86%,4.34%,N,NR,NR,$0.56,5/15/2026,5/15/2029,"15th 2,5,8,11",0.35,All
+,Chimera Investment,No,No,mREIT,Fix,BB,CIMO,9.250%,$25.59,$0.00,9.07%,5.11%,N,NR,NR,$0.58,8/15/2026,8/15/2029,"15th 2,5,8,11",0.60,All
+,Chimera Investment,No,No,mREIT,Fix,BB,CIMP,8.875%,$25.04,-$0.05,8.79%,#DIV/0!,N,NR,NR,$0.55,8/15/2027,8/15/2030,"15th 2,5,8,11",,All
+,Chimera Investment,Yes,No,mREIT,Fix-Float,Trad,CIM-B,8.000%,$23.34,-$0.04,Float,Float,N,NR,NR,Float,3/30/2024,NONE,"30th 3,6,9,12",-1.78,All
+,Chimera Investment,Yes,No,mREIT,Fix-Float,Trad,CIM-D,8.000%,$22.92,$0.07,Float,Float,N,NR,NR,Float,3/30/2024,NONE,"30th 3,6,9,12",-1.78,All
+,Chimera Investment,Yes,No,mREIT,Fix-Float,Trad,CIM-C,7.750%,$21.81,$0.07,8.88%,-37.23%,N,NR,NR,$0.48,9/30/2025,NONE,"30th 3,6,9,12",-0.28,All
+,CHS,Yes,Yes,Ag,Fix,Trad,CHSCP,8.000%,$27.71,-$0.14,7.22%,-10.84%,N,NR,NR,$0.50,7/18/2023,NONE,"LD 3,6,9,12",-2.48,All
+,CHS,Yes,Yes,Ag,Fix,Trad,CHSCL,7.500%,$25.56,$0.10,7.34%,9.65%,N,NR,NR,$0.47,1/21/2025,NONE,"LD 3,6,9,12",-0.97,All
+,CHS,Yes,Yes,Ag,Fix,Trad,CHSCO,7.875%,$26.25,$0.04,7.50%,-5.00%,N,NR,NR,$0.49,9/26/2023,NONE,"LD 3,6,9,12",-2.29,All
+,CHS,Yes,Yes,Ag,Now Fixed,Trad,CHSCN,7.100%,$25.15,$0.04,7.06%,-0.60%,N,NR,NR,$0.44,3/31/2024,NONE,"LD 3,6,9,12",-1.78,All
+,CHS,Yes,Yes,Ag,Now Fixed,Trad,CHSCM,6.750%,$24.90,$0.03,6.78%,6.46%,N,NR,NR,$0.42,9/30/2024,NONE,"LD 3,6,9,12",-1.28,All
+,Citigroup,No,Yes,Bank,Fix-Float,Trad,C-J,7.125%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba1,Float,9/30/2023,NONE,"30th 3,6,9,12",-2.28,All
+,Citigroup,No,Yes,Bank,Fix-Float,Trad,C-K,6.875%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba1,$0.43,11/15/2023,NONE,"15th  2,5,8,11",-2.15,All
+,Citigroup Capital Trust,No,No,Bank,Fix,Trust P,C-N,7.875%,$30.47,$0.05,6.46%,-21.88%,N,BB+,Ba1,$0.49,10/30/2015,10/30/2040,"30th 1,4,7,10",-10.20,All
+,Citizens Financial,No,Yes,Bank,Fix,Trad,CFG-E,5.000%,$19.38,$0.06,6.45%,-15.85%,Y,BB+,Baa3,$0.31,1/6/2025,NONE,"6th 1,4,7,10",-1.01,All
+,Citizens Financial,No,Yes,Bank,Fix,Trad,CFG-H,7.375%,$26.50,$0.09,6.94%,5.22%,Y,BB+,Baa3,$0.46,7/6/2029,None,"6th 1,4,7,10",3.49,All
+,Citizens Financial,No,Yes,Bank,Fix-Float,Trad,CFG-D,6.350%,Redeem,Redeem,Redeem,Redeem,Y,BB+,Baa3,$0.40,7/6/2024,NONE,"6th 1,4,7,10",-1.51,All
+,Citizens Financial,No,Yes,Bank,FRR,Trad,CFG-I,6.500%,$25.32,$0.03,6.41%,#DIV/0!,Y,BB+,Baa3,$0.41,10/6/2030,None,"6th 1,4,7,10",,All
+,City Office REIT,Yes,no,eREIT,Fix,Trad,CIO-A,6.625%,$25.37,$0.04,6.53%,-1.48%,N,NR,NR,$0.41,9/15/2021,NONE,"25th 1,4,7,10",-4.32,All
+,CMS Energy,No,No,Ute,Fix,BB,CMSA,5.625%,$22.19,-$0.07,6.34%,2.36%,Y,BBB-,Baa2,$0.35,3/15/2023,3/15/2078,"15th 3,6,9,12",-2.82,All
+,CMS Energy,No,No,Ute,Fix,BB,CMSC,5.875%,$23.04,$0.09,6.37%,7.84%,Y,BBB-,Baa2,$0.37,10/15/2023,10/15/2078,"15th 1,4,7,10",-2.24,All
+,CMS Energy,No,No,Ute,Fix,BB,CMSD,5.875%,$23.50,$0.05,6.25%,3.02%,Y,BBB-,Baa2,$0.37,3/1/2024,3/1/2079,"1st 3,6,9,12",-1.86,All
+,CMS Energy,Yes,Yes,Ute,Fix,Fix,CMS-C,4.200%,$17.54,-$0.01,5.93%,64.17%,Y,BBB-,Ba1,$0.26,7/15/2026,NONE,"15th 1,4,7,10",0.51,All
+,CNB Financial,No,Yes,Bank,Fix,Trad,CCNEP,7.125%,$24.90,$0.02,7.23%,6.11%,N,NR,NR,$0.45,9/1/2025,NONE,"1st 3,6,9,12",-0.36,All
+,CNO Financial Group,No,No,Insurance,Fix,BB,CNO-A,5.125%,$19.02,$0.02,6.73%,-187.29%,N,NR,NR,$0.32,11/25/2025,11/25/2060,"15th 2,5,8,11",-0.12,All
+,Comerica,No,Yes,Bank,FRR,Trad,CMA-B,6.875%,$26.03,$0.00,6.61%,,N,BB,Ba1,$0.43,10/1/2030,NONE,"1st 1,4,7,10",,All
+,Compass Diversified,No,Yes,Other,Fix,Trad,CODI-A,7.250%,$17.16,$0.13,10.56%,31.36%,N,NR,NR,$0.45,7/30/2022,NONE,"30th 1,4,7,10",-3.45,All
+,Compass Diversified,Yes,Yes,Other,Fix,Trad,CODI-C,7.875%,$19.57,$0.44,10.06%,-12.99%,N,NR,NR,$0.49,1/30/2025,NONE,"30th 1,4,7,10",-0.94,All
+,Compass Diversified,Yes,Yes,Other,Fix-Float,Trad,CODI-B,7.875%,$19.32,$0.29,10.19%,20.04%,N,NR,NR,$0.49,4/30/2028,NONE,"30th 1,4,7,10",2.31,All
+,Conifer Holdings,No,No,Insurance,Fix,BB,CNFRL,6.750%,Exchange,Exchange,Exchange,Exchange,N,NR,NR,$0.42,9/30/2021,9/30/2023,"LD 3,6,9,12",-4.28,All
+,ConnectOne Bancorp,No,Yes,Bank,Fix,FRR,CNOBP,5.250%,$24.37,$0.07,5.42%,2.52%,N,NR,NR,$0.33,9/1/2026,NONE,"1st 3,6,9,12",0.64,All
+,Corebridge Financial,No,No,Insurance,Fix,BB,CRBD,6.375%,$23.73,$0.01,6.71%,8.00%,N,NR,NR,$0.40,12/15/2029,12/15/2064,"15th 3,6,9,12",3.93,All
+,CORTS BellSouth,No,No,Telecom,Fix,3rd,KTBA,7.000%,$21.75,$0.40,8.09%,8.28%,N,NR,NR,$0.88,None,12/1/2095,1st 6 and 12,69.94,All
+,Costamare Inc,Yes,Yes,Shipping,Fix,Trad,CMRE-C,8.500%,$27.07,$0.00,7.85%,-8.28%,N,NR,NR,$0.53,1/21/2019,NONE,"15th 1,4,7,10",-6.97,All
+,Costamare Inc,Yes,Yes,Shipping,Fix,Trad,CMRE-B,7.625%,$25.99,$0.19,7.33%,-3.96%,N,NR,NR,$0.48,8/6/2018,NONE,"15th 1,4,7,10",-7.43,All
+,Costamare Inc,Yes,Yes,Shipping,Fix,Trad,CMRE-D,8.750%,$28.01,$0.01,7.81%,-12.04%,N,NR,NR,$0.55,5/13/2020,NONE,"15th 1,4,7,10",-5.66,All
+,Costamare Inc,Yes,Yes,Shipping,Fix,Trad,CMRE-E,8.875%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.55,1/30/2023,NONE,"15th 1,4,7,10",-2.95,All
+,Cowen Group,No,No,Finance,Fix,BB,COWNL,7.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.48,6/15/2023,6/15/2033,"15th 3,6,9,12",-2.57,All
+,CTO Growth,Yes,No,eREIT,Fix,Trad,CTO-A,6.375%,$20.89,NA,7.63%,41.34%,N,NR,NR,$0.40,7/6/2026,NONE,"LD 3,6,9,12",0.49,All
+,Cullen Frost Banker,No,Yes,Bank,Fix,Trad,CFR-B,4.450%,$17.56,$0.02,6.33%,-428.16%,Y,BBB-,Baa2,0.278,12/15/2025,NONE,"15th 3,6,9,12",-0.07,All
+,Customers Bancorp,No,No,Bank,Fix,BB,CUBB,5.370%,$22.47,$0.18,5.98%,8.53%,N,NR,NR,$0.34,12/30/2029,12/30/2034,"30th 3,6,9,12",3.98,All
+,Customers Bancorp,No,Yes,Bank,Fix-Float,Trad,CUBI-E,6.450%,Redeem,Redeem,Redeem,Float,N,NR,NR,Float,6/15/2021,NONE,"15th 3,6,9,12",-4.57,All
+,Customers Bancorp,No,Yes,Bank,Fix-Float,Trad,CUBI-F,6.000%,Redeem,Redeem,Redeem,Float,N,NR,NR,Float,12/14/2021,NONE,"15th 3,6,9,12",-4.07,All
+,DiamondRock Hospitality,Yes,No,eREIT,Fix,Trad,DRH-A,8.250%,$24.99,$0.01,8.25%,8.14%,N,NR,NR,$0.52,8/31/2025,NONE,"LD 3,6,9,12",-0.36,All
+,Diana Shipping,Yes,Yes,Shipping,Fix,Trad,DSX-B,8.875%,$26.10,$0.03,8.50%,-4.40%,N,NR,NR,$0.55,3/14/2019,NONE,"15th 1,4,7,10",-6.83,All
+,Digital Realty Trust,Yes,No,eREIT,Fix,Trad,DLR-K,5.850%,$23.97,$0.08,6.10%,3.85%,Y,BB+,Baa3,$0.37,3/13/2024,NONE,"LD 3,6,9,12",-1.83,All
+,Digital Realty Trust,Yes,No,eREIT,Fix,Trad,DLR-J,5.250%,$20.86,$0.03,6.29%,16.56%,Y,BB+,Baa3,$0.33,8/7/2022,NONE,"LD 3,6,9,12",-3.43,All
+,Digital Realty Trust,Yes,No,eREIt,Fix,Trad,DLR-L,5.200%,$20.53,-$0.08,6.33%,-7.98%,Y,BB+,Baa3,$0.33,10/10/2024,NONE,"LD 3,6,9,12",-1.25,All
+,DigitalBridge,Yes,No,C-Corp,Fix,Trad,DBRG-J,7.125%,$20.21,$0.45,8.81%,19.16%,N,NR,NR,$0.45,9/22/2022,NONE,"15th 1,4,7,10",-3.30,All
+,DigitalBridge,Yes,No,C-Corp,Fix,Trad,DBRG-I,7.150%,$20.35,$0.63,8.78%,18.60%,N,NR,NR,$0.45,6/5/2022,NONE,"15th 1,4,7,10",-3.60,All
+,DigitalBridge,Yes,No,C-Corp,Fix,Trad,DBRG-H,7.125%,$20.12,$0.47,8.85%,19.52%,N,NR,NR,$0.45,4/15/2020,NONE,"15th 1,4,7,10",-5.74,All
+,Dillards Capital Trust,Yes,No,Other,Fix,Trust P,DDT,7.500%,$26.36,$0.04,7.13%,-5.44%,Y,BBB-,Ba1,$0.47,8/12/2003,8/1/2038,"1st 2,5,8,11",-22.43,All
+,Dime Community Bancshares,No,Yes,Bank,Fix,Trad,DCOMP,5.500%,$18.34,-$0.05,7.50%,26.64%,N,BB-,NR,$0.34,2/15/2025,NONE,"15th 2,5,8,11",-0.90,All
+,Dime Community Bancshares,No,No,Bank,Fix,BB,DCOMG,9.000%,$26.36,$0.11,8.35%,6.80%,N,BB,Baa3,$0.55,7/15/2029,7/15/2034,"15th 1,4,7,10",3.52,All
+,Diversified Healthcare Trust,Yes,No,eREIT,Fix,BB,DHCNI,5.625%,$16.93,$0.29,8.27%,32.28%,N,BB-,B3,$0.35,8/1/2017,8/1/2042,"1st 2,5,8,11",-8.45,All
+,Diversified Healthcare Trust,Yes,No,eREIT,Fix,BB,DHCNL,6.250%,$17.75,-$0.06,8.79%,29.00%,N,BB-,B3,$0.39,2/18/2021,2/1/2046,"1st 3,6,9,12",-4.89,All
+,DTE Energy     ,No,No,Ute,Fix,BB,DTW,5.250%,$21.60,$0.03,6.08%,13.60%,Y,BBB-,Baa3,$0.33,12/1/2022,12/1/2077,"1st 3,6,9,12",-3.11,All
+,DTE Energy     ,No,No,Ute,Fix,BB,DTB,4.375%,$17.43,$0.04,6.20%,-122.32%,Y,BBB-,Baa3,$0.27,10/15/2025,10/15/2080,"15th 1,4,7,10",-0.24,All
+,DTE Energy     ,No,No,Ute,Fix,BB,DTG,4.375%,$17.49,-$0.02,6.17%,39.81%,Y,BBB-,Baa3,$0.27,12/1/2026,12/1/2081,"1st 3,6,9,12",0.89,All
+,DTE Energy     ,No,No,Ute,Fix,BB,DTK,6.250%,$24.79,$0.03,6.30%,#DIV/0!,Y,BBB-,Baa3,$0.39,10/1/2030,10/1/2085,"1st 1,4,7,10",,All
+,Duke Energy,No,No,Ute,Fix,BB,DUKB,5.625%,$24.63,-$0.09,5.71%,5.07%,Y,BBB,Baa2,$0.35,9/15/2023,9/15/2078,"15th 3,6,9,1",-2.32,All
+,Duke Energy,No,No,Ute,Fix,Trad,DUK-A,5.750%,$25.01,$0.00,5.75%,5.77%,Y,BBB-,Baa3,$0.36,6/15/2024,NONE,"16th 3,6,9,12",-1.57,All
+,Dynagas LNG Partners,Yes,No,Shipping,Fix,Trad,DLNG-A,9.000%,$26.33,-$0.05,8.55%,-5.32%,N,NR,NR,$0.56,8/12/2020,NONE,"12th 2,5,8,11",-5.41,All
+,Dynagas LNG Partners,Yes,No,Shipping,Fix-Float,Trad,DLNG-B,8.750%,Redeem,Redeem,Redeem,Float,N,NR,NR,Float,11/2/2023,NONE,"22nd 2,5,8,11",-2.19,All
+,Dynex Capital,Yes,No,mREIT,Fix-Float,Trad,DX-C,6.900%,$25.66,-$0.01,Float,#VALUE!,N,NR,NR,Float,4/15/2025,NONE,"15th 1,4,7,10",-0.74,All
+,Eagle Point Credit Co,No,No,CEF,Fix,BB,ECCW,6.750%,$24.83,-$0.02,6.77%,6.38%,N,NR,NR,$0.42,3/29/2024,3/31/2031,"LD 3,6,9,12",-1.78,All
+,Eagle Point Credit Co,Yes,No,CEF,Fix,Term,ECCC,6.375%,$24.54,$0.19,6.36%,5.18%,N,NR,NR,$0.13,6/16/2024,6/30/2031,LD Month,-1.57,All
+,Eagle Point Credit Co,Yes,Var,CEF,Fix,Trad,ECC-D,6.750%,$19.89,$0.02,8.48%,31.51%,N,NR,NR,$0.14,11/29/2026,NONE,LD Month,0.89,All
+,Eagle Point Credit Co,No,No,CEF,Fix,BB,ECCV,5.375%,$23.51,-$0.14,5.78%,-0.56%,N,NR,NR,$0.34,1/31/2025,1/31/2029,LD Month,-0.94,All
+,Eagle Point Credit Co,No,No,CEF,Fix,BB,ECCX,6.688%,$24.94,$0.03,6.74%,0.24%,N,NR,NR,$0.42,4/30/2021,4/30/2028,"LD 3,6,9,12",-4.70,All
+,Eagle Point Credit Co,No,No,CEF,Fix,BB,ECCU,6.688%,$25.13,$0.06,7.70%,7.35%,N,NR,NR,$0.48,6/30/2027,6/30/2030,"LD 3,6,9,12",1.47,All
+,Eagle Point Credit Co,Yes,Var,CEF,Fix,Term,ECCF,8.000%,$25.09,-$0.03,7.96%,-6.64%,N,NR,NR,$0.17,1/18/2026,1/31/2029,LD Month,0.02,All
+,Eagle Point Income,Yes,Var,CEF,Fix,Term,EICA,5.000%,$24.71,-$0.04,4.86%,1.16%,N,NR,NR,$0.10,10/31/2023,10/30/2026,LD Month,-2.19,All
+,Eagle Point Income,Yes,Var,CEF,Fix,Term,EICB,7.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.16,7/31/2025,7/31/2028,LD Month,-0.44,All
+,Eagle Point Institutional income,Yes,Var,CEF,Fix,Term,EIIA,8.125%,$25.25,$0.02,8.04%,6.80%,N,NR,NR,$0.17,10/31/2026,10/31/2029,LD Month,0.81,All
+,Ellington Financial,Yes,No,mREIT,Fix-Float,Trad,EFC-A,6.750%,$25.22,$0.01,6.69%,7.43%,N,NR,NR,$0.42,10/30/2024,NONE,"30th 1,4,7,10",-1.19,All
+,Ellington Financial,Yes,No,mREIT,FRR,Trad,EFC-B,6.250%,$23.66,-$0.12,6.59%,11.66%,N,NR,NR,$0.39,1/30/2027,NONE,"30th 1,4,7,10",1.06,All
+,Ellington Financial (Arlington),Yes,No,mREIT,Fix,Trad,EFC-D,7.000%,$24.20,$0.00,7.23%,3.20%,N,NR,NR,$0.44,5/12/2022,NONE,"30th 3,6,9,12",-3.67,All
+,Ellington Financial (Arlington),Yes,No,mREIT,Fix-Float,Trad,EFC-E,8.250%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,Float,3/30/2024,NONE,"30th 3,6,9,12",-1.78,All
+,Ellsworth Growth and Income,Yes,Var,CEF,Fix,Trad,ECF-A,5.250%,$21.54,$0.19,6.09%,13.84%,Y,NR,A1,$0.33,9/18/2022,NONE,"26th 3,6,9,12",-3.31,All
+,Enbridge Inc Reset Preferred,Yes,Yes,Energy,FRR,Trad,EBBNF,4.959%,$24.36,$0.22,Float,Float,Y,BBB-,NR,Float,9/1/2022,NONE,"1st 3,6,9,12",-3.36,All
+,Energy Transfer,Yes,No,MLP,Fix-Float,Trad,ET-D,7.625%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba2,Float,8/15/2023,NONE,"15th 2,5,8,11",-2.41,All
+,Energy Transfer,Yes,No,MLP,Fix-Float,Trad,ET-C,7.375%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba2,Float,5/15/2023,NONE,"15th 2,5,8,11",-2.66,All
+,Energy Transfer ,Yes,No,MLP,Fix-Float,Trad,ET-E,7.600%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba2,Float,5/15/2024,NONE,"15th 2,5,8,11",-1.65,All
+,Enstar Group,No,Yes,Insurance,Fix,Trad,ESGOF,7.000%,No Quote,#N/A,#VALUE!,#VALUE!,N,BB+,NR,$0.44,3/1/2024,NONE,"1st 3,6,9,12",-1.86,All
+,Enstar Group,No,Yes,Insurance,Fix-Float,Trad,ESGRF,7.000%,$20.75,#N/A,8.43%,14.86%,N,BB+,NR,$0.44,9/1/2028,NONE,"1st 3,6,9,12",2.65,All
+,Entergy Arkansas  ,No,No,Ute,Fix,BB,EAI,4.875%,$21.09,$0.10,5.78%,15.64%,Y,A,A2,$0.31,9/1/2021,9/1/2066,"1st 3,6,9,12",-4.36,All
+,Entergy Louisiana,No,No,Ute,Fix,BB,ELC,4.875%,$20.62,-$0.03,5.92%,17.52%,Y,A,A2,$0.31,9/1/2021,9/1/2066,"1st 3,6,9,12",-4.36,All
+,Entergy Mississippi,No,No,Ute,Fix,BB,EMP,4.900%,$20.77,$0.00,5.89%,16.92%,Y,A,A3,$0.31,10/1/2021,10/1/2066,"1st 1,4,7,10",-4.28,All
+,Entergy New Orleans   ,No,No,Ute,Fix,BB,ENJ,5.000%,$20.97,$0.00,5.91%,16.12%,Y,A-,A2,$0.31,12/1/2017,12/1/2052,"1st 3,6,9,12",-8.11,All
+,Entergy New Orleans   ,No,No,Ute,Fix,BB,ENO,5.450%,$22.34,$0.13,6.09%,10.64%,Y,A-,Baa2,$0.34,4/1/2021,4/1/2066,"1st 1,4,7,10",-4.78,All
+,Entergy Texas ,Yes,Yes,Ute,Fix,Trad,ETI-,5.375%,$23.50,$0.25,5.72%,0.86%,Y,BBB-,Ba2,$0.34,10/15/2024,NONE,"15th 1,4,7,10",-1.24,All
+,Enterprise Financial,No,Yes,Bank,Fix,Trad,EFSCP,5.000%,$20.89,$0.03,5.94%,23.58%,N,NR,NR,$0.31,12/15/2026,None,"15th 3,6,9,12",0.93,All
+,EPR Properties,Yes,No,eREIT,Fix,Trad,EPR-G,5.750%,$20.88,$0.06,6.88%,16.48%,N,NR,B+,$0.36,11/30/2022,None,"15th 1,4,7,10",-3.11,All
+,EPR Properties,Yes,No,eREIT,Fix,Convert,EPR-C,5.750%,$23.43,$0.20,6.14%,6.28%,N,NR,B+,$0.36,1/15/2012,None,"15th 1,4,7,10",,All
+,EPR Properties,Yes,No,eREIT,Fix,Convert,EPR-E,9.000%,$30.96,$0.01,7.27%,-23.84%,N,NR,B+,$0.56,4/20/2013,None,"15th 1,4,7,10", ,All
+,Equitable Holdings,No,Yes,Insurance,Fix,Trad,EQH-A,5.250%,$20.72,-$0.01,6.37%,17.12%, ,BBB-,Ba1,$0.33,12/1/2024,NONE,"15th 3,6,9,12",-1.11,All
+,Equitable Holdings,No,Yes,Insurance,Fix,Trad,EQH-C,4.300%,$16.58,-$0.01,6.51%,195.64%,Y,BBB-,Ba1,$0.27,3/15/2026,NONE,"15th 3,6,9,12",0.18,All
+,Equity Commonwealth,Yes,No,eREIT,Fix,Covert,EQC-D,6.500%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,11/20/2011,NONE,"15th 2,5,8,11",-14.15,All
+,F & G Annuities and Life,No,No,Insurance,Fix,BB,FGN,7.950%,$25.60,$0.01,7.77%,6.95%,Y,BBB-,Baa3,$0.50,12/15/2028,12/15/2053,"15th 3,6,9,12",2.93,All
+,F & G Annuities and Life,No,No,Insurance,Fix,BB,FGSN,7.300%,$22.24,-$0.02,8.20%,,N,BB,Ba1,$0.46,1/15/2030,1/15/2065,"1st 1,4,7,10",4.02,All
+,FAT Brands,Yes,Yes,Other,Fix,Trad,FATBP,8.250%,$0.95,$0.08,217.26%,18.88%,N,NR,NR,$0.17,7/16/2025,NONE,LD Month,-0.48,All
+,Federal Agricultural Mortgage,No,Yes,Finance,Fix,Trad,AGM-D,5.700%,$21.09,$0.16,6.76%,-3.80%,N,NR,NR,$0.36,7/17/2024,NONE,"17th 1,4,7,10",-1.48,All
+,Federal Agricultural Mortgage,No,Yes,Finance,Fix,Trad,AGM-E,5.750%,$21.39,$0.12,6.72%,-23.23%,N,NR,NR,$0.36,7/17/2025,NONE,"17th 1,4,7,10",-0.48,All
+,Federal Agricultural Mortgage,No,Yes,Finance,Fix,Trad,AGM-F,5.250%,$19.38,-$0.04,6.81%,-90.87%,N,NR,NR,$0.33,10/17/2025,NONE,"17th 1,4,7,10",-0.23,All
+,Federal Agricultural Mortgage,No,Yes,Finance,Fix,Trad,AGM-G,4.875%,$18.08,$0.01,6.64%,60.09%,N,NR,NR,$0.30,7/17/2026,NONE,"17th 1,4,7,10",0.52,All
+,Federal Agricultural Mortgage,No,Yes,Finance,Fix-Float,Trad,AGM-C,6.000%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.38,7/18/2024,NONE,"17th 1,4,7,10",-1.48,All
+,Federal Realty Investment Trust,Yes,No,eREIT,Fix,Trad,FRT-C,5.000%,$20.00,-$0.05,6.25%,20.00%,Y,BBB,Baa1,$0.31,9/29/2022,NONE,"15th 1,4,7,10",-3.28,All
+,Fifth Third Bancorp,No,Yes,Bank,Fix,Trad,FITBI,6.625%,$25.71,$0.10,6.44%,7.84%,Y,BB+,Baa3,$0.41,12/31/2023,NONE,"LD 3,6,9,12",-2.03,All
+,Fifth Third Bancorp,No,Yes,Bank,Fix,Trad,FITBP,6.000%,$24.49,-$0.01,6.12%,2.04%,Y,BB+,Baa3,$0.38,11/25/2022,NONE,"25th 2,5,8,11",-3.13,All
+,Fifth Third Bancorp,No,Yes,Bank,Fix,Trad,FITBO,4.950%,$19.65,$0.00,6.29%,-10.47%,Y,BB+,Baa3,$0.31,09/30/2024,NONE,"LD 3,6,9,12",-1.28,All
+,First Busey,No,Yes,Bank,Fix,Trad,BUSEP,8.250%,$26.14,$0.09,7.89%,,N,NR,NR,$0.52,6/1/2030,NONE,"1st 3,6,9,12",,All
+,First Citizens BancShares,No,Yes,Bank,Fix,Trad,FCNCP,5.375%,$20.47,$0.03,6.64%,-15.40%,N,BB,Ba1,$0.34,3/15/2025,NONE,"15th 3,6,9,12",-0.82,All
+,First Citizens BancShares,No,Yes,Bank,Fix,Trad,FCNCO,5.625%,$21.47,-$0.01,6.33%,-6.88%,N,BB,Ba1,$0.34,12/15/2024,NONE,"15th 3,6,9,12",-1.07,All
+,First Eagle Alternative (Cresent),No,No,BDC,Fix,BB,FCRX,5.000%,$25.00,$0.02,5.00%,5.00%,N,NR,NR,$0.31,5/25/2023,5/25/2026,"30th 3,6,9,12",-2.63,All
+,First Guaranty Bancshares,No,Yes,Bank,Fix,Trad,FGBIP,6.750%,$16.84,-$0.08,10.02%,125.69%,N,NR,NR,$0.42,4/22/2026,NONE,"1st 3,6,9,12",0.28,All
+,First Horizon National,No,Yes,Bank,Fix,Trad,FHN-F,4.700%,$17.78,-$0.01,6.57%,64.49%,N,BB-,Ba2,$0.29,7/10/2026,NONE,"10th 1,4,7,10",0.50,All
+,First Horizon National,No,Yes,Bank,Fix ,Trad,FHN-E,6.500%,$24.33,-$0.05,6.74%,-4.01%,N,BB-,Ba2,$0.41,10/10/2025,NONE,"10th 1,4,7,10",-0.25,All
+,First Horizon National,No,Yes,Bank,Fix-Float,Trad,FHN-C,6.600%,$25.38,$0.00,6.50%,1.55%,N,BB-,Ba2,$0.41,5/1/2026,NONE,"1st 2,5,8,11",0.31,All
+,First Horizon National - Semi,No,Yes,Bank,Fix-Float,Trad,FHN-D,6.100%,Redeem,Redeem,Redeem,Redeem,N,BB-,Ba2,$0.76,5/1/2024,NONE,1st 5 and 11,-1.69,All
+,First Horizon National - Semi,No,Yes,Bank,Fix-Float,Trad,FHN-B,6.625%,Redeem,Redeem,Redeem,#VALUE!,N,BB-,Ba2,$0.83,8/1/2025,NONE,1st 2 and 8,-0.44,All
+,First Internet Bancorp,No,No,Bank,Fix-Float,BB,INBKZ,6.000%,$24.82,$0.07,Float,Float,N,NR,NR,Float,6/30/2024,6/30/2029,"30th 3,6,9,12",-1.53,All
+,First Merchant,No,Yes,Bank,Fix,Trad,FRMEP,7.500%,$25.60,-$0.24,7.32%,13.28%,N,NR,NR,$0.47,8/15/2025,NONE,"15th 2,5,8,11",-0.40,All
+,Flagstar (NYCB),No,Yes,Bank,Fix,Trad,FLG-A,6.375%,$22.42,$0.02,7.11%,14.30%,N,B+,Ba1,$0.40,6/17/2027,NONE,"17th 3,6,9,12",1.44,All
+,FNB Corporation,No,Yes,Bank,Fix-Float,Trad,FNB-E,7.250%,Redeem,Redeem,Redeem,Redeem,N,NR,Ba2,Float,2/15/2024,NONE,"15th 2,5,8,11",-1.90,All
+,Ford Motor,No,No,Other,Fix,BB,F-B,6.200%,$21.61,$0.00,7.22%,-1.21%,N,BB+,NR,$0.39,6/1/2024,6/1/2059,"1st 3,6,9,12",-1.61,All
+,Ford Motor,No,No,Other,Fix,BB,F-C,6.000%,$21.23,$0.05,7.16%,15.08%,N,BB+,NR,$0.38,12/1/2024,12/1/2059,"1st 3,6,9,12",-1.11,All
+,Ford Motor,No,No,Other,Fix,BB,F-D,6.500%,$22.81,$0.10,7.19%,12.67%,N,BB+,NR,$0.41,8/15/2027,8/15/2062,"15th 2,5,8,11",1.60,All
+,Fortress Biotech,Yes,Yes,Other,Fix,Trad,FBIOP,9.375%,$10.27,$0.17,Susp,Susp,N,NR,NR,Susp,12/15/2022,NONE,LD Month,-3.07,All
+,Fossil Group,No,No,Other,Fix,BB,FOSLL,7.000%,Exc/Can,Exc/Can,Exc/Can,#VALUE!,N,NR,NR,$0.44,11/30/2023,11/30/2026,"LD 2,5,8,11",-2.11,All
+,Franklin Benefit Street,Yes,No,mREIT,Fix,Trad,FBRT-E,7.500%,$21.68,$0.36,8.65%,13.28%,N,NR,NR,$0.47,5/13/2018,NONE,"15th 1,4,7,10",-7.67,All
+,FTAI Aviation ,Yes,No,Other,Fix-Float,Trad,FTAIP,8.250%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,Float,9/15/2024,NONE,"15th 3,6,9,12",-1.32,All
+,FTAI Aviation ,Yes,No,Other,Fix-Float,Trad,FTAIO,8.000%,Redeem,Redeem,Redeem,Float,N,NR,NR,Float,12/15/2024,NONE,"15th 3,6,9,12",-1.07,All
+,FTAI Aviation ,Yes,No,Other,FRR,Trad,FTAIN,8.250%,$25.47,$0.05,8.17%,3.80%,N,NR,NR,$0.52,6/15/2026,NONE,"15th 3,6,9,12",0.43,All
+,FTAI Aviation ,Yes,No,Other,FRR,Trad,FTAIM,9.500%,$27.10,$0.02,8.71%,5.26%,N,NR,NR,$0.59,6/15/2028,NONE,"15th 3,6,9,12",2.43,All
+,Fulton Financial,No,Yes,Bank,Fix,Trad,FULTP,5.125%,$18.45,-$0.11,6.94%,1600.77%,N,NR,Ba1,$0.32,1/15/2026,NONE,"15th 1,4,7,10",0.02,All
+,Fundamental Global,Yes,Yes,Insurance,Fix,Trad,FGNXP,8.000%,$24.00,$0.05,8.33%,4.00%,N,NR,NR,$0.50,2/28/2023,NONE,"15th 3,6,9,12",-2.87,All
+,Gabelli Div and Income Fund,Yes,Var,CEF,Fix,Trad,GDV-H,5.375%,$22.73,$0.08,5.91%,0.21%,Y,NR,Aa3,$0.34,6/7/2024,NONE,"26th 3,6,9,12",-1.59,All
+,Gabelli Div and Income Fund,Yes,Var,CEF,Fix,Trad,GDV-K,4.250%,$18.29,$0.08,5.90%,42.05%,Y,NR,Aa3,$0.27,10/7/2026,NONE,"26th 3,6,9,12",0.74,All
+,Gabelli Equity Trust,Yes,Var,CEF,Fix,Trad,GAB-H,5.000%,$20.87,$0.01,5.99%,16.52%,Y,NR,A1,$0.31,9/28/2017,NONE,"26th 3,6,9,12",-8.29,All
+,Gabelli Equity Trust,Yes,Var,CEF,Fix,Trad,GAB-G,5.000%,$20.85,$0.05,6.00%,16.60%,Y,NR,A1,$0.31,8/1/2017,NONE,"26th 3,6,9,12",-8.45,All
+,Gabelli Equity Trust,Yes,Var,CEF,Fix,Trad,GAB-K,5.000%,$21.03,$0.09,5.94%,15.88%,Y,NR,A1,$0.31,12/16/2024,NONE,"26th 3,6,9,12",-1.07,All
+,Gabelli Global Multimedia,Yes,Var,CEF,Fix,Trad,GGT-E,5.125%,$21.37,$0.08,6.00%,14.52%,Y,NR,A2,$0.32,9/26/2022,NONE,"26th 3,6,9,12",-3.29,All
+,Gabelli Global Multimedia,Yes,Var,CEF,Fix,Trad,GGT-G,5.125%,$21.28,$0.00,6.02%,14.88%,Y,NR,A2,$0.32,12/20/2024,NONE,"26th 3,6,9,12",-1.05,All
+,Gabelli Multimedia Trust,Yes,Var,CEF,Fix,Trad,GGT-E,5.125%,$21.37,$0.08,6.00%,14.52%,Y,NR,A2,$0.32,9/26/2022,NONE,"26th 3,6,9,12",-3.29,All
+,Gabelli Utility Trust ,Yes,Var,CEF,Fix,Trad,GUT-C,5.375%,$22.38,-$0.01,6.00%,10.48%,Y,NR,A1,$0.34,5/31/2021,NONE,"26th 3,6,9,12",-4.61,All
+,GAMCO Global Gold Nat Res,Yes,Var,CEF,Fix,Trad,GGN-B,5.000%,$20.85,$0.02,6.00%,16.60%,Y,NR,A2,$0.31,5/7/2018,NONE,"26th 3,6,9,12",-7.68,All
+,GAMCO Natural Resources,Yes,Var,CEF,Fix,Trad,GNT-A,5.200%,$21.31,$0.15,6.10%,14.76%,Y,NR,A2,$0.33,10/26/2022,NONE,"26th 3,6,9,12",-3.21,All
+,GasLog LTD,Yes,Yes,Shipping,Fix,Trad,GLOG-A,8.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.55,4/7/2020,NONE,"1st 1,4,7,10",-5.76,All
+,GasLog Partners,Yes,Yes,Shipping,Fix-Float,Trad,GLOP-A,8.625%,$25.82,-$0.13,8.35%,6.06%,N,NR,NR,$0.54,6/15/2027,NONE,"15th 3,6,9,12",1.43,All
+,GasLog Partners,Yes,Yes,Shipping,Fix-Float,Trad,GLOP-C,8.500%,$25.42,-$0.07,Float,Float,N,NR,NR,Float,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,GasLog Partners,Yes,Yes,Shipping,Fix-Float,Trad,GLOP-B,8.200%,$25.79,$0.01,Float,Float,N,NR,NR,Float,3/15/2023,NONE,"15th 3,6,9,12",-2.82,All
+,General American Investors,Yes,No,CEF,Fix,Trad,GAM-B,5.950%,$25.09,$0.01,5.93%,-0.36%,N,NR,NR,$0.37,9/24/2008,NONE,"24th 3,6,9,12",-17.30,All
+,Georgia Power,No,No,Ute,Fix,BB,GPJA,5.000%,$22.73,-$0.03,5.50%,9.08%,Y,BBB,Baa1,$0.31,10/1/2022,10/1/2077,"1st 1,4,7,10",-3.28,All
+,Gladstone Capital,No,No,BDC,Fix,BB,GLADZ,7.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.48,9/1/2025,9/1/2028,"1st 3,6,9,12",-0.36,All
+,Gladstone Commercial,Yes,No,eREIT,Fix,Trad,GOODN,6.625%,$22.71,$0.08,7.29%,0.06%,N,NR,NR,$0.14,10/4/2024,NONE,LD Month,-1.27,All
+,Gladstone Commercial,Yes,No,eREIT,Fix,Trad,GOODO,6.625%,$20.70,$0.09,7.54%,44.47%,N,NR,NR,$0.13,6/28/2026,NONE,LD Month,0.47,All
+,Gladstone investment Corp,No,No,BDC,Fix,BB,GAINN,5.000%,$25.15,-$0.08,4.97%,-0.60%,N,NR,NR,$0.31,5/1/2023,5/1/2026,"1st 2,5,8,11",-2.70,All
+,Gladstone investment Corp,No,No,BDC,Fix,BB,GAINZ,4.875%,$24.05,$0.21,4.99%,3.80%,N,NR,NR,$0.30,11/1/2023,11/1/2028,"1st 2,5,8,11",-2.19,All
+,Gladstone investment Corp,No,No,BDC,Fix,BB,GAINL,Redeem,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,#VALUE!,8/1/2025,8/1/2028,"1st 2,5,8,11",-0.44,All
+,Gladstone investment Corp,No,No,BDC,Fix,BB,GAINI,7.875%,$25.81,$0.07,7.59%,4.55%,N,NR,NR,$0.49,2/1/2027,2/1/2030,"1st 2,5,8,11",1.06,All
+,Gladstone Land,Yes,Var,eREIT,Fix,Trad,LANDO,6.000%,$19.41,$0.22,7.73%,22.36%,N,NR,NR,$0.13,6/1/2022,NONE,LD Month,-3.61,All
+,Gladstone Land,Yes,Var,eREIT,Fix,Term,LANDM,5.000%,$25.02,$0.00,5.00%,-0.08%,N,NR,NR,$0.10,1/31/2023,1/31/2026,LD Month,-2.94,All
+,Gladstone Land,Yes,Var,eREIT,Fix,Trad,LANDP,6.000%,$19.35,$0.08,7.75%,-6.30%,N,NR,NR,$0.13,6/1/2024,NONE,5th Month,-1.61,All
+,Global Medical REIT,Yes,No,eREIT,Fix,Trad,GMRE-A,7.500%,$24.38,$0.25,7.71%,2.48%,N,NR,NR,$0.47,9/15/2022,NONE,"LD 1,4,7,10",-3.32,All
+,Global Medical REIT,Yes,No,eREIT,Fix,Trade,GMRE-B,8.000%,$25.30,-$0.07,7.91%,-1.20%,N,NR,0.50%,$0.50,11/20/2030,NONE,"LD 1,4,7,10",,All
+,Global Net Lease,Yes,No,eREIT,Fix,Trad,GNL-A,7.250%,$22.95,-$0.01,7.90%,8.20%,N,NR,NR,$0.45,9/12/2022,NONE,"15th 1,4,7,10",-3.33,All
+,Global Net Lease,Yes,No,eREIT,Fix,Trad,GNL-B,6.875%,$22.43,$0.40,7.66%,10.28%,N,NR,NR,$0.43,11/26/2024,NONE,"15th 1,4,7,10",-1.12,All
+,Global Net Lease (Necessity),Yes,No,eREIT,Fix,Trad,GNL-D,7.500%,$24.57,-$0.02,7.63%,6.67%,N,NR,NR,$0.47,3/26/2024,NONE,"15th 1,4,7,10",-1.79,All
+,Global Net Lease (Necessity),Yes,No,eREIT,Fix,Trad,GNL-E,7.375%,$23.48,$0.00,7.85%,-93.02%,N,NR,NR,$0.46,12/18/2025,NONE,"15th 1,4,7,10",-0.06,All
+,Global Partners,Yes,No,MLP,Fix,Trad,GLP-B,9.500%,$25.83,$0.05,9.14%,-0.48%,N,NR,NR,$0.59,5/15/2026,NONE,"15th 2,5,8,11",0.35,All
+,Global Partners,Yes,No,MLP,Fix-Float,Trad,GLP-A,9.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,Float,8/15/2023,NONE,"15th 2,5,8,11",-2.41,All
+,Global Ship Lease,Yes,Yes,Shipping,Fix,Trad,GSL-B,8.750%,$26.33,$0.04,8.31%,-5.32%,N,NR,NR,$0.55,8/20/2019,NONE,"1st 1,4,7,10",-6.39,All
+,Globe Life,No,No,Insurance,Fix,BB,GL-D,4.250%,$16.74,$0.04,6.36%,82.20%,Y,BBB+,Baa2,$0.27,6/17/2026,6/17/2061,"15th 3,6,9,12",0.44,All
+,Golar LNG Partners,Yes,Yes,Shipping,Fix,Trad,GMLPF,8.750%,$0.20,$0.05,Susp,99.20%,N,NR,NR,$0.55,10/31/2022,NONE,"15th 2,5,8,11",-3.19,All
+,Goldman Sachs Group,No,Yes,Finance,Fix-Float,Trad,GS-K,6.375%,Redeem,Redeem,Redeem,Redeem,N,BB,Ba1,$0.40,5/10/2024,NONE,"10th 2,5,8,11",-1.67,All
+,Goldman Sachs Group,No,Yes,Finance,Fix-Float,Trad,GS-J,5.500%,Redeem,Redeem,Redeem,Redeem,N,BB,Ba1,$0.34,5/10/2023,NONE,"10th 2,5,8,11",-2.67,All
+,Goldman Sachs Group,No,Yes,Finance,FLR,Trad,GS-C,4.000%,$20.26,-$0.09,Float,Float,N,BB,Ba1,Float,5/24/2011,NONE,"10th 2,5,8,11",-14.64,All
+,Goldman Sachs Group,No,Yes,Finance,FLR,Trad,GS-D,4.000%,$19.94,$0.05,Float,Float,N,BB,Ba1,Float,10/31/2010,NONE,"10th 2,5,8,11",-15.20,All
+,Goldman Sachs Group,No,Yes,Finance,FLR,Trad,GS-A,3.750%,$19.97,-$0.04,Float,Float,N,BB,Ba1,Float,4/10/2010,NONE,"10th 2,5,8,11",-15.76,All
+,Granite Point Mortgage,Yes,No,mREIT,Fix-Float,Trad,GPMT-A,7.000%,$20.04,-$0.01,8.73%,19.84%,N,NR,NR,$0.44,1/15/2027,NONE,"15th 1,4,7,10",1.02,All
+,Great Ajax ,No,No,mREIT,Fix,CONV,AJXA,7.250%,Convert,Convert,Convert,Convert,N,NR,NR,$0.45,4/30/2022,4/30/2024,"15th 1,4,7,10",-3.70,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCM,6.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.42,1/31/2021,1/31/2025,"LD 3,6,9,12",-4.94,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCN,6.500%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,6/30/2021,6/30/2024,"LD 3,6,9,12",-4.53,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCO,5.875%,$25.00,-$0.01,5.88%,5.88%,N,NR,NR,$0.37,6/30/2023,6/30/2026,"LD 3,6,9,12",-2.53,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCZ,8.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.55,9/30/2025,9/30/2028,"LD 3,6,9,12",-0.28,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCI,8.500%,$25.19,$0.09,8.43%,5.93%,N,NR,NR,$0.53,4/30/2026,4/30/2029,"LD 3,6,9,12",0.30,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCH,8.125%,$25.18,-$0.03,8.05%,7.32%,N,NR,NR,$0.51,12/31/2026,12/31/2029,"LD 3,6,9,12",0.98,All
+,Great Elm Capital,No,No,BDC,Fix,BB,GECCG,7.750%,$25.07,$0.06,7.72%,#DIV/0!,N,NR,NR,$0.48,12/31/2027,12/31/2030,"LD 3,6,9,12",,All
+,Great Elm Group,No,No,Other,Fix,BB,GEGGL,7.250%,$24.62,$0.00,7.31%,6.32%,N,NR,NR,$0.45,6/30/2024,6/30/2027,"LD 3,6,9,12",-1.53,All
+,Green Brick Partners,Yes,Yes,Other,Fix,Trad,GRBK-A,5.750%,$23.36,-$0.33,6.15%,13.03%,N,NR,NR,$0.36,12/23/2026,NONE,"15th 3,6,9,12",0.95,All
+,Greenidge Generation,No,No,Other,Fix,BB,GREEL,8.500%,$20.00,$0.68,10.60%,20.00%,N,NR,NR,$0.53,10/31/2023,10/31/2026,"LD 1,4,7,10",-2.19,All
+,Hancock Whitney,No,No,Bank,Fix,BB,HWCPL,5.950%,Redeem,Redeem,Redeem,Redeem,Y,BBB-,Baa3,$0.37,6/15/2020,6/15/2045,"15th 3,6,9,12",-5.57,All
+,Hancock Whitney,No,No,Bank,Fix,BB,HWCPZ,6.250%,$23.27,NA,6.70%,-5.44%,Y,BBB-,Baa3,$0.39,6/15/2025,6/15/2060,"15th 3,6,9,12",-0.57,All
+,Harrow Health,No,No,Other,Fix,BB,HROWL,8.625%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.54,2/1/2026,4/30/2026,"LD 1,4,7,10",0.06,All
+,Harrow Health,No,No,Other,Fix,BB,HROWM,11.875%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.74,12/31/2024,12/31/2027,"LD 1,4,7,10",-1.02,All
+,Hartfold Financial,No,Yes,Insurance,Fix,Trad,HIG-G,6.000%,$25.06,-$0.08,5.99%,6.10%,Y,BBB-,Baa3,$0.38,11/15/2023,NONE,"15th 2,5,8,11",-2.15,All
+,Hennessy Advisors,No,No,Asset Mgr,Fix,Trad,HNNAZ,4.875%,$25.00,$0.00,4.88%,0.00%,N,NR,NR,$0.30,12/31/2023,12/31/2026,"LD 3,6,9,12",-2.03,All
+,Hercules Capital,No,No,BDC,Fix,BB,HCXY,6.250%,$25.47,$0.00,6.13%,-1.88%,N,NR,NR,$0.39,10/30/2023,10/30/2033,"30th 1,4,7,10",-2.20,All
+,Hersha Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,HT-C,6.875%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.43,3/6/2018,NONE,"15th 1,4,7,10",-7.85,All
+,Hersha Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,HT-D,6.500%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,5/31/2021,NONE,"15th 1,4,7,10",-4.61,All
+,Hersha Hospitality Trust,Yes,No,Hotel REIT,Fix,Trad,HT-E,6.500%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,11/7/2021,NONE,"15th 1,4,7,10",-4.18,All
+,Highland Income Fund,Yes,No,CEF,Fix,Trad,HFRO-A,5.375%,$15.99,-$0.01,8.40%,36.04%,Y,NR,A1,$0.34,9/30/2024,NONE,"LD 3,6,9,12",-1.28,All
+,Hoegh LNG Partners,Yes,Yes,Shipping,Fix,Trad,HMLP-A,8.750%,Delist,Delist,Delist,Delist,N,NR,NR,$0.55,10/5/2022,NONE,"15th 2,5,8,11",-3.27,All
+,Horizon Tech Finance,No,No,BDC,Fix,BB,HTFB,4.875%,$24.97,$0.00,4.81%,4.76%,N,NR,NR,$0.30,3/30/2023,3/30/2026,"15th 3,6,9,12",-2.78,All
+,Horizon Tech Finance,No,No,BDC,Fix,BB,HTFC,6.250%,$24.90,$0.01,6.27%,6.01%,N,NR,NR,$0.39,6/15/2024,6/15/2027,"15th 3,6,9,12",-1.57,All
+,Hovnanian Enterprise,Yes,Yes,Other,Fix,Trad,HOVNP,7.625%,$20.38,$0.00,9.42%,18.48%,N,CCC,Ca,$0.48,7/12/2010,NONE,"15th 1,4,7,10",-15.51,All
+,Hudson Pacific,Yes,No,eREIT,Fix,Trad,HPP-C,4.625%,$15.84,$0.10,7.58%,50.58%,N,B,NR,$0.30,11/16/2026,NONE,"LD 3,6,9,12",0.85,All
+,Huntington Bancshares,No,Yes,Bank,Fix,Trad,HBANP,4.500%,$17.45,-$0.02,6.44%,121.26%,Y,BB+,Baa3,$0.28,4/15/2026,NONE,"15th 1,4,7,10",0.26,All
+,Huntington Bancshares,No,Yes,Bank,Fix,Trad,HBANM,5.700%,$22.42,-$0.08,6.36%,10.32%,N,BB+,Baa3,$0.36,12/1/2022,NONE,"1st 3,6,9,12",-3.11,All
+,Huntington Bancshares,No,Yes,Bank,FRR,Trad,HBANL,6.875%,$25.31,-$0.04,6.80%,6.25%,Y,BB+,Baa3,$0.43,4/15/2028,NONE,"15th 1,4,7,10",2.27,All
+,Hyperscale Data,Yes,Yes,Other,Fix,Trad,GPUS-D,13.000%,$24.43,$2.03,13.26%,2.28%,N,NR,NR,$0.27,Anytime,None,LD Month,,All
+,Imperial Petroleum,Yes,No,Other,Fix,Trad,IMPPP,8.750%,$25.76,$0.00,8.54%,-3.04%,N,NR,NR,$0.55,6/30/2022,NONE,"30th 3,6,9,12",-3.53,All
+,Innovative Industrial,Yes,No,Other,Fix,Trad,IIPR-A,9.000%,$23.30,-$0.03,9.55%,6.80%,N,NR,NR,$0.56,10/19/2022,NONE,"15th 1,4,7,10",-3.23,All
+,INPOINT Commercial,Yes,No,mREIT,Fix,Trad,ICR-A,6.750%,$20.70,$0.01,8.12%,32.64%,N,NR,NR,$0.42,9/22/2026,NONE,"30th 3,6,9,12",0.70,All
+,Invesco Mortgage Capital,Yes,No,mREIT,Fix-Float,Trad,IVR-B,7.75%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.48,12/27/2024,NONE,"27th 3,6,9,12",-1.04,All
+,Invesco Mortgage Capital,Yes,No,mREIT,Fix-Float,Trad,IVR-C,7.500%,$24.93,$0.02,7.52%,7.68%,N,NR,NR,$0.47,9/27/2027,NONE,"27th 3,6,9,12",1.72,All
+,Jackson Financial,No,Yes,Insurance,FRR,Trad,JXN-A,8.000%,$25.90,-$0.07,7.72%,6.10%,N,BB+,Ba1,$0.50,3/30/2028,NONE,"30th 3,6,9,12",2.22,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-D,5.750%,$25.06,-$0.02,5.74%,-0.24%,Y,BBB-,Baa2,$0.36,12/1/2023,NONE,"1st 3,6,9,12",-2.11,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-C,6.000%,$25.25,-$0.03,5.94%,6.48%,Y,BBB-,Baa2,$0.38,3/1/2024,NONE,"1st 3,6,9,12",-1.86,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-J,4.750%,$20.44,-$0.04,5.81%,18.24%,Y,BBB-,Baa2,$0.30,12/1/2024,NONE,"1st 3,6,9,12",-1.11,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-K,4.550%,$19.56,$0.00,6.13%,61.68%,Y,BBB-,Baa2,$0.30,6/1/2026,NONE,"1st 3,6,9,12",0.39,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-L,4.625%,$19.83,-$0.02,5.83%,58.62%,Y,BBB-,Baa2,$0.29,6/1/2026,NONE,"1st 3,6,9,12",0.39,All
+,JPMorgan Chase,No,Yes,Bank,Fix,Trad,JPM-M,4.200%,$18.50,$0.04,5.62%,46.00%,Y,BBB-,Baa2,$0.26,9/1/2026,NONE,"1st 3,6,9,12",0.64,All
+,Kemper Corporation,No,No,Insurance,FRR,BB,KMPB,5.875%,$23.50,$0.01,6.30%,11.39%,N,BB+,Ba1,$0.37,3/15/2027,3/15/2062,"15th 3,6,9,12",1.18,All
+,KeyCorp,No,Yes,Bank,Fix,Trad,KEY-K,5.625%,$21.69,-$0.03,6.49%,-3.56%,Y,BB+,Baa3,$0.35,9/15/2024,NONE,"15th 3,6,9,12",-1.32,All
+,KeyCorp,No,Yes,Bank,Fix-Float,Trad,KEY-I,6.125%,$25.00,$0.04,6.13%,6.13%,Y,BB+,Baa3,$0.38,12/15/2026,NONE,"15th 3,6,9,12",0.93,All
+,KeyCorp,No,Yes,Bank,FRR,Trad,KEY-L,6.200%,$25.17,$0.02,6.20%,5.79%,Y,BB+,Baa3,$0.39,9/15/2027,NONE,"15th 3,6,9,12",1.68,All
+,KeyCorp ,No,Yes,Bank,Fix,Trad,KEY-J,5.650%,$21.54,$0.00,6.56%,13.84%,Y,BB+,Baa3,$0.35,12/15/2023,NONE,"15th 3,6,9,12",-2.07,All
+,Kimco Realty,Yes,No,eREIT,Fix,Trad,KIM-L,5.125%,$20.25,$0.07,6.33%,19.00%,Y,BBB-,NR,$0.32,8/16/2022,NONE,"15th 1,4,7,10",-3.40,All
+,Kimco Realty,Yes,No,eREIT,Fix,Trad,KIM-M,5.250%,$20.76,$0.03,6.32%,16.96%,Y,BBB-,NR,$0.33,12/20/2022,NONE,"15th 1,4,7,10",-3.06,All
+,KKR & Co,No,No,Asset Mgr,Fix,BB,KKRT,6.875%,$25.45,$0.02,6.76%,,Y,BBB+,NR,$0.43,6/1/2030,6/1/2065,"1st 3,6,9,12",,All
+,KKR Finance,No,No,Asset Mgr,Fix,BB,KKRS,4.625%,$17.56,$0.03,6.58%,139.05%,Y,BBB+,NR,$0.29,4/1/2026,4/1/2061,"1st 1,4,7,10",0.22,All
+,KKR Real Estate Finance,Yes,No,eREIT,Fix,Trad,KREF-A,6.500%,$18.05,-$0.20,9.09%,113.69%,N,NR,NR,$0.41,4/16/2026,NONE,"15th 3,6,9,12",0.27,All
+,Level One Bancorp,No,Yes,Bank,Fix,Trad,FRMEP,7.500%,$25.60,-$0.24,7.32%,13.28%,N,NR,NR,$0.47,8/15/2025,NONE,"15th 2,5,8,11",-0.40,All
+,Liberty Broadband,Yes,Yes,Other,Fix,Term,LBRDP,7.000%,$24.09,-$0.16,7.26%,7.54%,N,NR,NR,$0.44,3/9/2039,3/9/2039,"15th 1,4,7,10",13.17,All
+,LifeMD Inc,Yes,Yes,Other,Fix,Trad,LFMDP,8.875%,$22.42,$0.12,9.81%,10.32%,N,NR,NR,$0.55,10/15/2022,None,"15th 1,4,7,10",-3.24,All
+,Lincoln Financial Group,No,Yes,Insurance,Fix,Trad,LNC-D,9.000%,$26.77,-$0.07,8.37%,4.63%,Y,BBB-,Baa3,$0.56,12/1/2027,NONE,"1st 3,6,9,12",1.89,All
+,Link Parks (PS Business),Yes,No,eREIT,Fix,Trad,PSBXP,5.250%,$9.92,$0.00,13.23%,60.32%,N,NR,WD,$0.33,9/21/2022,NONE,"LD 3,6,9,12",-3.30,All
+,Link Parks (PS Business),Yes,No,eREIT,Fix,Trad,PSBYP,5.200%,$11.00,$0.00,11.82%,56.00%,N,NR,WD,$0.33,12/7/2022,NONE,"LD 3,6,9,12",-3.09,All
+,Link Parks (PS Business),Yes,No,eREIT,Fix,Trad,PSBZP,4.875%,$9.01,-$0.34,13.53%,63.96%,N,NR,WD,$0.30,11/4/2024,NONE,"LD 3,6,9,12",-1.18,All
+,Live Oak Bancshares,No,Yes,Bank,Fix,Trad,LOB-A,8.375%,$25.90,$0.07,8.08%,#DIV/0!,N,NR,NR,$0.52,9/15/2030,NONE,"15th 3,6,9,12",,All
+,Lument Finance Trust,Yes,No,eREIT,Fix,Trad,LFT-A,7.875%,$20.27,-$0.20,9.67%,69.20%,N,NR,NR,$0.49,5/5/2026,NONE,"15th 1,4,7,10",0.32,All
+,LuxUrban Hotels,Yes,Yes,C-Corp,Fix,Trad,LUXHP,13.000%,Delist,Delist,Delist,#VALUE!,N,NR,NR,$0.27,10/26/2026,NONE,LD Month,0.79,All
+,M&T Bank,No,Yes,Bank,Fix,Trad,MTB-K,6.350%,$25.40,-$0.05,6.25%,#DIV/0!,Y,BB+,Baa3,$0.40,12/15/2030,NONE,"15th 3,6,9,12",,All
+,M&T Bank  ,No,Yes,Bank,Fix,Trad,MTB-J,7.500%,$26.65,-$0.04,7.05%,5.13%,Y,BB+,Baa3,$0.47,6/15/2029,NONE,"15th 3,6,9,12",3.43,All
+,M&T Bank (People's Financial),No,Yes,Bank,Fix-Float,Trad,MTB-H,5.625%,$24.87,$0.01,5.65%,6.21%,Y,BB+,Baa3,$0.35,12/15/2026,NONE,"15th 3,6,9,12",0.93,All
+,Maiden Holdings LTD,No,No,Insurance,Fix,BB,MHNC,7.750%,$15.88,$0.07,12.09%,36.48%,N,NR,NR,$0.48,12/1/2018,12/1/2043,"1st 3,6,9,12",-7.11,All
+,Maiden Holdings LTD,No,No,Insurance,Fix,BB,MHLA,6.625%,$13.03,$0.00,12.71%,47.88%,N,NR,NR,$0.41,6/14/2021,6/14/2046,"4th 3,6,9,12",-4.58,All
+,MainStreet Bancshares,No,Yes,Bank,Fix,Trad,MNSBP,7.500%,$24.90,$0.15,7.55%,6.10%,N,NR,NR,$0.47,09/30/2025,NONE,"30th 3,6,9,12",-0.28,All
+,Medalist Diversified REIT,Yes,No,eREIT,Fix,Trad,MDRRP,8.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.50,02/19/2022,NONE,"25th 1,4,7,10",-3.89,All
+,Medallion Bank,No,Yes,Bank,Fix-Float,Trad,MBNKP,8.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,Float,04/01/2025,NONE,"1st 1,4,7,10",-0.78,All
+,Merchants Bancorp,No,Yes,Bank,Fix,Trad,MBINN,6.000%,$19.27,$0.40,7.89%,109.91%,N,NR,Ba3,$0.38,4/1/2026,NONE,"1st 1,4,7,10",0.22,All
+,Merchants Bancorp,No,Yes,Bank,Fix,Trad,MBINL,7.625%,$23.26,$0.19,8.20%,9.95%,N,NR,Ba3,0.477,1/1/2030,None,"1st 1,4,7,10",3.98,All
+,Merchants Bancorp,No,Yes,Bank,Fix-Float,Trad,MBINP,7.000%,Redeem,Redeem,Redeem,Redeem,N,NR,Ba3,$0.44,4/1/2024,NONE,"1st 1,4,7,10",-1.78,All
+,Merchants Bancorp,No,Yes,Bank,Fix-Float,Trad,MBINO,6.000%,Redeem,Redeem,Redeem,Float,N,NR,Ba3,Float,10/1/2024,NONE,"1st 1,4,7,10",-1.27,All
+,Merchants Bancorp,No,Yes,Bank,FRR,Trad,MBINM,8.250%,$25.16,$0.04,8.27%,7.90%,N,NR,Ba3,$0.52,10/1/2027,NONE,"1st 1,4,7,10",1.73,All
+,MetLife Inc,No,Yes,Insurance,Fix,Trad,MET-E,5.625%,$23.87,-$0.08,5.89%,4.52%,Y,BBB,Baa2,$0.35,6/15/2023,NONE,"15th 3,6,9,12",-2.57,All
+,MetLife Inc,No,Yes,Insurance,Fix,Trad,MET-F,4.750%,$19.80,-$0.09,6.00%,20.80%,Y,BBB,Baa2,$0.30,3/15/2025,NONE,"15th 3,6,9,12",-0.82,All
+,MetLife Inc,No,Yes,Insurance,FLR,Trad,MET-A,4.000%,$21.53,-$0.06,Float,Float,Y,BBB,Baa2,Float,9/15/2010,NONE,"15th 3,6,9,12",-15.33,All
+,MFA Financial,Yes,No,mREIT,Fix,Trad,MFA-B,7.500%,$20.16,$0.05,9.30%,19.36%,N,NR,NR,$0.47,4/15/2018,NONE,"LD 3,6,9,12",-7.74,All
+,MFA Financial,Yes,No,mREIT,Fix,Trad,MFA-C,6.500%,$22.82,$0.06,7.19%,-4.02%,N,NR,NR,$0.41,3/31/2025,NONE,"LD 3,6,9,12",-0.78,All
+,MFA Financial,No,No,mREIT,Fix,BB,MFAN,8.875%,$25.31,$0.03,8.76%,-3.48%,N,NR,NR,$0.55,2/15/2026,2/15/2029,"15th 2,5,8,11",0.10,All
+,MFA Financial,No,No,mREIT,Fix,BB,MFAO,9.000%,$25.48,-$0.07,8.83%,5.62%,N,NR,NR,$0.56,8/15/2026,8/15/2029,"15th 2,5,8,11",0.60,All
+,Midcap Financial,No,No,BDC,Fix,BB,MFICL,8.000%,No Quote,#N/A,#VALUE!,#VALUE!,N,NR,NR,$0.50,12/15/2025,12/15/2028,"15th 3,6,9,12",-0.07,All
+,Midland States Bancorp,No,Yes,Bank,FRR,Trad,MSBIP,7.750%,$25.28,$0.12,7.59%,6.95%,N,NR,NR,$0.48,9/30/2027,NONE,"30th 3,6,9,12",1.72,All
+,Morgan Stanley,No,Yes,Finance,Fix,Trad,MS-L,4.875%,$20.53,-$0.04,5.94%,-11.75%,Y,BBB-,Baa3,$0.30,1/5/2025,NONE,"15th 1,4,7,10",-1.01,All
+,Morgan Stanley,No,Yes,Finance,Fix,Trad,MS-O,4.250%,$17.75,$0.08,6.08%,34.62%,Y,BBB-,Baa3,$0.27,1/15/2027,NONE,"15th 1,4,7,10",1.02,All
+,Morgan Stanley,No,Yes,Finance,Fix,Trad,MS-P,6.500%,$25.45,-$0.04,6.39%,5.37%,Y,BBB-,Baa3,$0.41,10/15/2027,NONE,"15th 1,4,7,10",1.76,All
+,Morgan Stanley,No,Yes,Finance,Fix,Trad,MS-Q,6.625%,$26.28,-$0.01,6.32%,4.96%,Y,BBB-,Baa3,$0.42,10/15/2029,NONE,"15th 1,4,7,10",3.77,All
+,Morgan Stanley,No,Yes,Finance,Fix-Float,Trad,MS-E,7.125%,$25.53,$0.01,Float,Float,Y,BBB-,Baa3,Float,10/15/2023,NONE,"15th 1,4,7,10",-2.24,All
+,Morgan Stanley,No,Yes,Finance,Fix-Float,Trad,MS-F,6.875%,$25.24,-$0.01,Float,Float,Y,BBB-,Baa3,Float,1/15/2024,NONE,"15th 1,4,7,10",-1.99,All
+,Morgan Stanley,No,Yes,Finance,Fix-Float,Trad,MS-I,6.375%,$25.06,$0.01,Float,Float,Y,BBB-,Baa3,Float,10/15/2024,NONE,"15th 1,4,7,10",-1.24,All
+,Morgan Stanley,No,Yes,Finance,Fix-Float,Trad,MS-K,5.850%,$24.61,$0.02,5.94%,7.18%,Y,BBB-,Baa3,$0.37,4/15/2027,NONE,"15th 1,4,7,10",1.26,All
+,Morgan Stanley,No,Yes,Finance,FLR,Trad,MS-A,4.000%,$19.72,$0.01,Float,Float,Y,BBB-,Baa3,Float,7/15/2011,NONE,"15th 1,4,7,10",-14.50,All
+,National Healthcare Prop,Yes,No,eREIT,Fix,Trad,NHPAP,7.375%,$18.75,NA,9.83%,25.00%,N,NR,NR,$0.46,12/11/2024,NONE,"15th 1,4,7,10",-1.08,All
+,National Healthcare Prop,Yes,No,eREIT,Fix,Trad,NHPBP,7.125%,$18.03,NA,9.98%,47.67%,N,NR,NR,$0.45,10/06/2026,NONE,"15th 1,4,7,10",0.74,All
+,National Rural Utilities,No,No,Ute,Fix,BB,NRUC,5.500%,$24.08,$0.16,5.71%,3.49%,Y,BBB+,NR,$0.34,5/15/2024,5/15/2064,"15th 2,5,8,11",-1.65,All
+,National Storage Affiliates,Yes,No,eREIT,Fix,Trad,NSA-A,6.000%,$21.61,$0.14,6.94%,13.56%,N,NR,NR,$0.38,10/11/2022,NONE,"LD 3,6,9,12",-3.25,All
+,Navient Corp    ,No,No,Finance,Fix,BB,JSM,6.000%,$19.63,$0.09,7.74%,21.48%,N,B+,Ba3,$0.38,12/15/2008,12/15/2043,"15th 3,6,9,12",-17.08,All
+,New Mountain Finance,No,No,BDC,Fix,BB,NMFCZ,8.250%,$25.46,$0.00,8.11%,20.32%,Y,NR,Baa3,$0.52,11/15/2025,11/15/2028,"15th 2,5,8,11",-0.15,All
+,NewtekOne,No,No,Bank,Fix,BB,NEWTL,5.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.36,8/1/2021,8/1/2024,"1st 2,5,8,11",-4.44,All
+,NewtekOne,No,No,Bank,Fix,BB,NEWTZ,5.500%,$25.22,-$0.01,5.45%,-0.88%,N,NR,NR,$0.34,2/1/2022,2/1/2026,"1st 2,5,8,11",-3.94,All
+,NewtekOne,No,No,Bank,Fix,BB,NEWTI,8.000%,$25.25,$0.00,7.92%,10.73%,N,NR,NR,$0.50,9/1/2025,9/1/2028,"1st 3,6,9,12",-0.36,All
+,NewtekOne,No,No,Bank,Fix,BB,NEWTG,8.500%,$25.25,-$0.04,8.40%,7.68%,N,NR,NR,$0.53,6/1/2027,6/1/2029,"1st 3,6,9,12",1.39,All
+,NewtekOne,No,No,Bank,Fix,BB,NEWTH,8.625%,$25.54,-$0.04,8.46%,5.63%,N,NR,NR,$0.54,10/15/2026,10/15/2029,"15th 1,4,7,10",0.76,All
+,NewtekOne,No,Yes,Bank,Fix,Trad,NEWTP,8.500%,$23.29,$0.06,9.12%,#DIV/0!,N,NR,NR,$0.53,10/1/2030,NONE,"1st 1,4,7,10",,All
+,Nexpoint Real Estate Finance,Yes,No,mREIT,Fix,Trad,NREF-A,8.500%,$24.36,$0.19,8.70%,3.17%,N,NR,NR,$0.53,7/24/2025,NONE,"25th 1,4,7,10",-0.46,All
+,Nextera Energy,No,No,Ute,Fix,BB,NEE-N,5.650%,$23.94,$0.02,5.90%,3.20%,Y,BBB,Baa2,$0.35,6/15/2024,3/1/2079,"1st 3,6,9,12",-1.57,All
+,Nextera Energy,No,No,Ute,Fix,BB,NEE-U,6.500%,$25.19,-$0.04,6.51%,#DIV/0!,Y,BBB,Baa2,$0.41,6/1/2030,6/1/2085,"1st 3,6,9,12",,All
+,NiSource,Yes,Yes,Ute,Fix-Float,Trad,NI-B,6.500%,Redeem,Redeem,Redeem,Redeem,Y,BBB-,Ba1,$0.41,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Northern Trust,No,"Yes
+",Finance,Fix,Trad,NTRSO,4.700%,$19.56,-$0.06,6.01%,-15.29%,N,BBB+,Baa1,$0.29,1/1/2025,NONE,"15th 3,6,9,12",-1.02,All
+,NuStar Energy,Yes,No,MLP,Fix-Float,Trad,NS-C,9.000%,Redeem,Redeem,Redeem,Redeem,N,B-,B1,Float,12/15/2022,NONE,"15th 3,6,9,12",-3.07,All
+,NuStar Energy,Yes,No,MLP,Fix-Float,Trad,NS-A,8.500%,Redeem,Redeem,Redeem,Redeem,N,B-,B1,Float,12/15/2021,NONE,"15th 3,6,9,12",-4.07,All
+,NuStar Energy,Yes,No,MLP,Fix-Float,Trad,NS-B,7.625%,Redeem,Redeem,Redeem,Redeem,N,B-,B1,Float,6/15/2022,NONE,"15th 3,6,9,12",-3.57,All
+,NuStar Logistics,No,No,MLP,Fix-Float,BB,NSS,7.625%,Redeem,Redeem,Redeem,Redeem,N,B+,Ba2,Float,1/15/2018,1/15/2043,"15th 1,4,7,10",-7.99,All
+,Oaktree Capital,No,No,BDC,Fix,Trad,OAK-A,6.625%,$21.03,$0.21,7.88%,15.88%,Y,BBB,NR,$0.41,6/15/2023,NONE,"15th 3,6,9,12",-2.57,All
+,Oaktree Capital,No,No,BDC,Fix,Trad,OAK-B,6.550%,$20.92,$0.38,7.82%,16.32%,Y,BBB,NR,$0.41,9/15/2023,NONE,"15th 3,6,9,12",-2.32,All
+,OceanFirst Financial,No,Yes,Bank,Fix-Float,Trad,OCFCP,7.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.44,6/1/2025,NONE,"15th 2,5,8,11",-0.61,All
+,Office Properties Income Trust,No,No,eREIT,Fix,BB,OPINL,6.350%,Default,Default,Default,#VALUE!,N,CCC,Caa1,$0.40,6/23/2025,6/23/2050,"1st 3,6,9,12",-0.55,All
+,OFS Capital,No,No,BDC,Fix,BB,OFSSI,5.950%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.37,10/31/2021,10/31/2024,"LD 1,4,7,10",-4.19,All
+,OFS Capital,No,No,BDC,Fix,BB,OFSSH,4.950%,$23.95,NA,5.18%,3.26%,N,NR,NR,$0.31,10/31/2023,10/31/2028,"LD 1,4,7,10",-2.19,All
+,OFS Capital,No,No,BDC,Fix,BB,OFSSO,7.500%,$25.81,NA,7.25%,#DIV/0!,N,NR,NR,$0.47,7/31/2026,7/31/2028,"LD 1,4,7,10",,All
+,OFS Credit,Yes,Var,CEF,Fix,Term,OCCIO,6.125%,$25.04,$0.00,6.23%,-0.16%,N,NR,NR,$0.13,4/30/2023,4/30/2026,LD Month,-2.70,All
+,OFS Credit,Yes,Var,CEF,Fix,Term,OCCIN,5.250%,$24.62,$0.08,5.31%,4.56%,N,NR,NR,$0.11,12/31/2023,12/31/2026,LD Month,-2.03,All
+,OFS Credit,Yes,Var,CEF,Fix,Term,OCCIM,7.875%,$25.25,$0.09,7.84%,6.60%,N,NR,NR,$0.17,10/31/2026,10/31/2029,LD Month,0.81,All
+,Old National Bank,No,Yes,Bank,Fix,Trad,ONBPP,7.000%,$25.15,$0.02,6.96%,8.50%,N,NR,NR,$0.44,8/20/2025,NONE,"20th 2,5,8,11",-0.39,All
+,Old National Bank,No,Yes,Bank,Fix,Trad,ONBPO,7.000%,$25.16,$0.10,7.00%,8.64%,N,NR,NR,$0.44,8/20/2025,NONE,"20th 2,5,8,11",-0.39,All
+,Osaic Financial (Ladenburg),Yes,Yes,Finance,Fix,Trad,LTSAP,8.000%,$20.00,$0.51,10.20%,20.00%,N,NR,NR,$0.17,5/24/2018,NONE,28th of Month,-7.64,All
+,Osaic Financial (Ladenburg),No,No,Finance,Fix,BB,LTSL,6.500%,$24.62,$1.07,6.66%,1.52%,N,NR,NR,$0.41,11/30/2022,11/30/2027,"LD 3,6,9,12",,All
+,Osaic Financial (Ladenburg),No,No,Finance,Fix,BB,LTSH,7.750%,$24.57,$1.06,7.81%,1.72%,N,NR,NR,$0.48,6/30/2022,6/30/2029,"LD 3,6,9,12",,All
+,Osaic Financial (Ladenburg),No,No,Finance,Fix,BB,LTSF,7.000%,$24.57,$1.01,7.16%,1.72%,N,NR,NR,$0.44,5/31/2021,5/31/2028,"LD 3,6,9,12",,All
+,Osaic Financial (Ladenburg),No,No,Finance,Fix,BB,LTSK,7.250%,$24.70,$1.20,7.29%,1.20%,N,NR,NR,$0.45,9/30/2021,9/30/2028,"LD 3,6,9,12",,All
+,Oxford Lane Cap,Yes,Var,CEF,Fix,Term,OXLCM,6.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.14,6/30/2020,6/30/2024,LD Month,-5.53,All
+,Oxford Lane Cap,Yes,Var,CEF,Fix,Term,OXLCP,6.250%,$24.58,-$0.05,6.36%,1.68%,N,NR,NR,$0.13,2/28/2023,2/28/2027,LD Month,-2.87,All
+,Oxford Lane Cap,Yes,Var,CEF,Fix,Term,OXLCO,6.000%,$23.63,-$0.01,6.35%,5.48%,N,NR,NR,$0.13,8/31/2024,8/31/2029,LD Month,-1.36,All
+,Oxford Lane Cap,Yes,Var,CEF,Fix,Term,OXLCN,7.125%,$24.50,$0.05,7.35%,2.00%,N,NR,NR,$0.15,6/30/2024,6/30/2029,LD Month,-1.53,All
+,Oxford Lane Cap,No,No,CEF,Fix,BB,OXLCL,6.750%,$24.25,-$0.03,6.93%,3.00%,N,NR,NR,$0.42,3/16/2024,3/31/2031,"30th 3,6,9,12",-1.82,All
+,Oxford Lane Cap,No,No,CEF,Fix,BB,OXLCZ,5.000%,$24.45,$0.01,5.11%,2.20%,N,NR,NR,$0.31,1/31/2024,1/31/2027,"30th 3,6,9,12",-1.94,All
+,Oxford Lane Cap,No,No,CEF,Fix,BB,OXLCI,8.760%,$25.59,-$0.05,8.52%,7.57%,N,NR,NR,$0.55,6/30/2028,6/30/2030,"30th 3,6,9,12",2.47,All
+,Oxford Square Capital,No,No,BDC,Fix,BB,OXSQL,6.500%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.41,3/30/2020,3/30/2024,"30th 3,6,9,12",-5.78,All
+,Oxford Square Capital,No,No,BDC,Fix,BB,OXSQZ,6.250%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.39,4/30/2022,4/30/2026,"15th 1,4,7,10",-3.70,All
+,Oxford Square Capital,No,No,BDC,Fix,BB,OXSQH,7.750%,$25.51,NA,7.59%,-2.04%,N,NR,NR,$0.48,7/31/2027,7/31/2030,"LD 1,4,7,10",,All
+,Partner RE,No,Yes,Insurance,Fix,Trad,PREJF,4.875%,$17.20,$0.10,7.09%,182.29%,Y,BBB,Baa2,$0.30,3/15/2026,NONE,"15th 3,6,9,12",0.18,All
+,Pearl Diver,Yes,Var,CEF,Fix,Term,PDPA,8.000%,$25.32,$0.09,7.87%,6.55%,N,NR,NR,$0.17,12/31/2026,12/31/2029,LD Month,0.98,All
+,Pebblebrook Hotel (was LaSalle),Yes,No,Hotel REIT,Fix,Trad,PEB-E,6.375%,$19.28,$0.28,8.27%,22.88%,N,NR,NR,$0.40,3/4/2018,NONE,"15th 1,4,7,10",-7.86,All
+,Pebblebrook Hotel (Was LaSalle),Yes,No,Hotel REIT,Fix,Trad,PEB-F,6.300%,$19.12,$0.41,8.24%,23.52%,N,NR,NR,$0.39,5/25/2021,NONE,"15th 1,4,7,10",-4.63,All
+,Pebblebrook Hotel Trust,Yes,No,Hotel REIT,Fix,Trad,PEB-H,5.700%,$17.73,$0.20,8.12%,29.08%,N,NR,NR,$0.36,7/27/2026,NONE,"15th 1,4,7,10",0.55,All
+,PennyMac Mortgage,Yes,No,mREIT,Fix,Trad,PMT-C,6.750%,$18.93,$0.01,8.87%,47.92%,N,NR,NR,$0.42,8/24/2026,NONE,"15th 3,6,9,12",0.62,All
+,PennyMac Mortgage,No,No,mREIT,Fix,BB,PMTU,8.500%,$25.43,$0.01,8.35%,14.57%,N,NR,NR,$0.53,9/30/2025,9/30/2028,"30th 3,6,9,12",-0.28,All
+,PennyMac Mortgage,No,No,mREIT,Fix,BB,PMTV,9.000%,$25.56,$0.00,8.76%,,N,NR,NR,$0.56,2/15/2027,2/15/2030,"15th 2,5,8,11",,All
+,PennyMac Mortgage,No,No,mREIT,Fix,BB,PMTW,9.000%,$25.47,-$0.02,8.79%,,N,NR,NR,$0.56,6/15/2027,6/15/2030,"15th 3,6,9,12",,All
+,PennyMac Mortgage,Yes,No,mREIT,Now Fix,Trad,PMT-A,8.125%,$24.12,$0.04,8.42%,6.49%,N,NR,NR,$0.51,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,PennyMac Mortgage,Yes,No,mREIT,Now Fix,Trad,PMT-B,8.000%,$23.78,$0.00,8.41%,5.30%,N,NR,NR,$0.50,6/15/2024,NONE,"15th 3,6,9,12",-1.57,All
+,PhenixFin,No,No,BDC,Fix,BB,PFXNZ,5.250%,$23.74,$0.00,5.56%,5.04%,N,NR,NR,$0.33,11/1/2023,11/1/2028,"1st 2,5,8,11",-2.19,All
+,Pinnacle Financial Partners,No,Yes,Bank,Fix,Trad,PNFPP,6.750%,$25.02,-$0.08,6.74%,6.97%,N,NR,NR,$0.42,9/1/2025,NONE,"1st 3,6,9,12",-0.36,All
+,Pinnicle (Synovus),No,Yes,Bank,Fix-Float,Trad,SNV-D,6.300%,$25.30,-$0.04,Float,Float,N,BB-,NR,Float,6/21/2023,NONE,"21st 3,6,9,12",-2.56,All
+,Pinnicle (Synovus),No,Yes,Bank,FRR,Trad,SNV-E,5.875%,$25.85,$0.04,Float,#VALUE!,N,BB-,NR,Float,7/1/2024,NONE,"1st 1,4,7,10",-1.53,All
+,Pitney Bowes,No,No,Other,Fix,BB,PBI-B,6.700%,$20.69,$0.09,8.12%,17.24%,N,BB,B1,$0.42,3/7/2018,3/7/2043,"7th 3,6,9,12",-7.85,All
+,Popular,No,No,Bank,Fix,Trust P,BPOPM,6.125%,$25.52,$0.02,6.00%,-2.08%,N,BB-,B2,$0.13,12/1/2009,12/1/2034,1st Month,-16.12,All
+,Popular,No,Yes,Bank,Fix,Trad,BPOPO,6.380%,$24.90,$0.02,6.41%,0.40%,N,B-,B3,$0.13,3/31/2008,NONE,LD Month,-17.79,All
+,Presidio Property Trust,Yes,No,eREIT,Fix,Trad,SQFTP,9.375%,$14.55,$0.02,16.22%,113.40%,N,NR,NR,$0.59,6/15/2026,NONE,15th Month,0.43,All
+,Priority Income Fund   ,Yes,Var,CEF,Fix,Trad,PRIF-K,7.000%,$21.51,$0.02,8.18%,27.48%,N,NR,NR,$0.44,9/30/2026,NONE,"LD 3,6,9,12",0.72,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-D,7.000%,$24.91,$0.20,7.03%,0.36%,N,NR,NR,$0.44,3/31/2022,6/30/2029,"LD 3,6,9,12",-3.78,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-F,6.625%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.41,2/25/2023,6/30/2027,"LD 3,6,9,12",-2.87,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-G,6.250%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.39,3/19/2023,6/30/2026,"LD 3,6,9,12",-2.81,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-H,6.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.38,5/6/2023,12/31/2026,"LD 3,6,9,12",0.98,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term ,PRIF-I,6.125%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.38,6/17/2024,6/30/2028,"LD 3,6,9,12",-1.56,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-J,6.000%,$23.85,-$0.05,6.37%,4.60%,N,NR,NR,$0.38,8/10/2024,12/31/2028,"LD 3,6,9,12",-1.42,All
+,Priority Income Fund Term ,Yes,Var,CEF,Fix,Term,PRIF-L,6.375%,$24.20,$0.00,6.61%,2.94%,N,NR,NR,$0.40,2/25/2025,3/31/2029,"LD 3,6,9,12",-0.87,All
+,Prospect Capital,Yes,No,BDC,Fix,Trad,PSEC-A,5.350%,$17.13,$0.15,7.71%,67.86%,N,BB,Ba2,$0.33,7/19/2026,NONE,"1st 2,5,8,11",0.52,All
+,Prudential Financial   ,No,No,Insurance,Fix,BB,PRS,5.625%,$23.98,$0.05,5.86%,4.08%,Y,BBB+,Baa1,$0.35,8/15/2023,8/15/2058,"15th 2,5,8,11",-2.41,All
+,Prudential Financial   ,No,No,Insurance,Fix,BB,PFH,4.125%,$17.69,$0.00,5.83%,-76.26%,Y,BBB+,Baa1,$0.26,9/1/2025,9/1/2060,"1st 3,6,9,12",-0.36,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-F,5.150%,$20.92,$0.10,6.15%,16.32%,Y,BBB+,A3,$0.32,6/2/2022,NONE,"LD 3,6,9,12",-3.61,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-H,5.600%,$23.22,$0.03,6.03%,2.14%,Y,BBB+,A3,$0.35,3/11/2024,NONE,"LD 3,6,9,12",-1.83,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-G,5.050%,$20.46,$0.00,6.17%,18.16%,Y,BBB+,A3,$0.32,8/9/2022,NONE,"LD 3,6,9,12",-3.42,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-I,4.875%,$19.60,-$0.03,6.22%,21.60%,Y,BBB+,A3,$0.30,9/12/2024,NONE,"LD 3,6,9,12",-1.33,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-J,4.700%,$18.88,-$0.04,6.46%,24.48%,Y,BBB+,A3,$0.30,11/15/2024,NONE,"LD 3,6,9,12",-1.15,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-K,4.750%,$19.23,-$0.04,6.34%,23.08%,Y,BBB+,A3,$0.30,12/20/2024,NONE,"LD 3,6,9,12",-1.05,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-L,4.625%,$18.74,-$0.06,6.50%,-37.86%,Y,BBB+,A3,$0.30,6/17/2025,NONE,"LD 3,6,9,12",-0.56,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-M,4.125%,$16.58,$0.00,6.22%,-76.84%,Y,BBB+,A3,$0.26,8/14/2025,NONE,"LD 3,6,9,12",-0.41,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-N,3.875%,$15.65,$0.01,6.19%,-137.50%,Y,BBB+,A3,$0.24,10/6/2025,NONE,"LD 3,6,9,12",-0.26,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-O,3.900%,$15.80,-$0.03,6.17%,-247.26%,Y,BBB+,A3,$0.24,11/17/2025,NONE,"LD 3,6,9,12",-0.15,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-P,4.000%,$16.16,-$0.01,6.19%,87.87%,Y,BBB+,A3,$0.25,6/16/2026,NONE,"LD 3,6,9,12",0.43,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-Q,3.950%,$15.87,$0.01,6.22%,66.81%,Y,BBB+,A3,$0.25,8/17/2026,NONE,"LD 3,6,9,12",0.60,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-R,4.000%,$16.17,$0.00,6.18%,47.24%,Y,BBB+,A3,$0.25,11/19/2026,NONE,"LD 3,6,9,12",0.86,All
+,Public Storage,Yes,No,eREIT,Fix,Trad,PSA-S,4.100%,$16.47,$0.01,6.22%,40.07%,Y,BBB+,A3,$0.26,1/12/2027,NONE,"LD 3,6,9,12",1.01,All
+,Pyxis Tankers Convert,Yes,No,Shipping,Fix,Conv,PXSAP,7.750%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.16,8/13/2023,NONE,20th Month,-2.41,All
+,QVC Inc,No,No,Retail,Fix,BB,QVCD,6.375%,$8.85,$0.07,18.01%,64.60%,N,BB+,Ba2,$0.40,9/13/2023,9/13/2067,"15th 3,6,9,12",-2.33,All
+,QVC Inc,No,No,Other,Fix,BB,QVCC,6.250%,$8.79,$0.09,17.78%,64.84%,N,BB+,Ba2,$0.39,11/26/2024,11/26/2068,"15th 3,6,9,12",-1.12,All
+,Qwest Corp  ,No,No,Telecom,Fix,BB,CTBB,6.500%,$18.40,$0.05,8.83%,26.40%,N,BB-,B2,$0.41,9/1/2021,9/1/2056,"1st 3,6,9,12",-4.36,All
+,Qwest Corp  ,No,No,Telecom,Fix,BB,CTDD,6.750%,$18.95,$0.15,8.91%,24.20%,N,BB-,B2,$0.42,6/15/2022,6/15/2057,"15th 3,6,9,12",-3.57,All
+,Ramaco Resources,No,No,Other,Fix,BB,METCL,9.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.56,7/30/2023,7/30/2026,"30th 1,4,7,10",-2.45,All
+,Ramaco Resources,No,No,Other,Fix,BB,METCZ,8.375%,$25.60,$0.07,8.13%,5.43%,N,NR,NR,$0.52,11/30/2026,11/30/2029,"30th 1,4,7,10",0.89,All
+,Raymond James,No,Yes,Asset Mgr,Fix-Float,Trad,RJF-B,6.375%,$24.99,$0.00,6.37%,6.45%,Y,NR,Baa3,$0.40,7/1/2026,NONE,"1st 1,4,7,10",0.47,All
+,Ready Capital,No,No,mREIT,Fix,BB,RCB,6.200%,$24.73,$0.23,6.28%,1.08%,N,NR,NR,$0.39,7/30/2022,7/30/2026,"30th 1,4,7,10",-3.45,All
+,Ready Capital,No,No,mREIT,Fix,BB,RCC,5.750%,$25.12,$0.00,5.73%,-0.48%,N,NR,NR,$0.36,2/15/2023,2/15/2026,"30th 1,4,7,10",-2.90,All
+,Ready Capital,Yes,No,mREIT,Fix,Trad,RC-E,6.500%,$13.78,-$0.11,11.90%,119.67%,N,NR,NR,$0.41,6/10/2026,NONE,"LD 1,4,7,10",0.42,All
+,Ready Capital,No,No,mREIT,Fix,BB,RCD,9.000%,$21.03,$0.04,10.71%,27.76%,N,NR,NR,$0.56,12/15/2026,12/15/2029,"1th 3,6,9,12",0.93,All
+,Ready Capital (Anworth),Yes,No,mREIT,Fix,CONV,RC-C,6.250%,$13.60,$0.01,11.49%,45.60%,N,NR,NR,$0.39,1/25/2012,NONE,"15th 1,4,7,10",-13.97,All
+,Realty Income (Spirit),Yes,No,eREIT,Fix,Trad,O-,6.000%,Redeem,Redeem,Redeem,Redeem,N,BB,Ba1,$0.38,10/3/2022,NONE,"LD 3,6,9,12",-3.27,All
+,Redwood Trust,Yes,No,mREIT,Fix,FRR,RWT-A,10.000%,No Quote,#N/A,#VALUE!,#VALUE!,N,NR,NR,$0.63,4/15/2028,NONE,"15th 1,4,7,10",2.27,All
+,Redwood Trust,No,No,mREIT,Fix,BB,RWTN,9.125%,$25.24,$0.19,9.03%,2.16%,N,NR,NR,$0.57,3/1/2026,3/1/2029,"1st 3,6,9,12",0.14,All
+,Redwood Trust,No,No,mREIT,Fix,BB,RWTO,9.000%,$25.09,$0.06,8.97%,8.41%,N,NR,NR,$0.56,9/1/2026,9/1/2029,"1st 3,6,9,12",0.64,All
+,Redwood Trust,No,No,mREIT,Fix,BB,RWTP,9.125%,$24.62,-$0.09,9.26%,10.59%,N,NR,NR,$0.57,3/1/2027,3/1/2030,"1st 3,6,9,12",1.14,All
+,Redwood Trust,No,No,mREIT,Fix,BB,RWTQ,9.500%,$25.53,-$0.19,9.31%,#DIV/0!,N,NR,NR,$0.59,12/1/2027,12/1/2030,"1st 3,6,9,12",,All
+,Regency Centers (Urstadt),Yes,No,eREIT,Fix,Trad,REGCO,5.875%,$22.79,-$0.09,6.49%,-0.44%,N,NR,NR,$0.37,10/1/2024,NONE,"LD 1,4,7,10",-1.27,All
+,Regency Centers (Urstadt),Yes,No,eREIT,Fix,Trad,REGCP,6.250%,$23.63,-$0.12,6.60%,5.48%,N,NR,NR,$0.39,9/18/2022,NONE,"LD 1,4,7,10",-3.31,All
+,Regions Financial,No,Yes,Bank,Fix,Trad,RF-E,4.450%,$17.35,-$0.06,6.46%,77.60%,Y,BB+,Baa3,$0.28,6/15/2026,NONE,"15th 3,6,9,12",0.43,All
+,Regions Financial,No,Yes,Bank,Fix-Float,Trad,RF-B,6.375%,Redeem,Redeem,Redeem,Redeem,Y,BB+,Baa3,$0.40,9/15/2024,NONE,"15th 3,6,9,12",-1.32,All
+,Regions Financial,No,Yes,Bank,Fix-Float,Trad,RF-C,5.700%,$24.14,-$0.01,5.90%,6.86%,Y,BB+,Baa3,$0.36,8/15/2029,NONE,"15h 2,5,8,11",3.60,All
+,Regions Financial,No,Yes,Bank,Fix-Reset,Trad,RF-F,6.950%,$25.38,-$0.04,6.84%,6.43%,Y,BB+,Baa3,$0.43,9/15/2029,NONE,"15th 3,6,9,12",3.68,All
+,Reinsurance Group of America,No,No,Insurance,Fix,BB,RZB,5.750%,$24.93,-$0.05,5.76%,6.41%,Y,BBB,Baa2,$0.36,6/15/2026,6/15/2056,"15th 3,6,9,12",0.43,All
+,Reinsurance Group of America,No,No,Insurance,Fix,BB,RZC,7.125%,$25.43,-$0.01,7.08%,6.10%,Y,BBB,Baa2,$0.45,10/15/2027,10/15/2052,"1st 1,4,7,10",1.76,All
+,RenaissanceRE Holdings,No,Yes,Insurance,Fix,Trad,RNR-G,4.200%,$15.95,-$0.07,6.58%,77.24%,Y,BBB,Baa2,$0.26,7/15/2026,NONE,"1st 3,6,9,12",0.51,All
+,RenaissanceRE Holdings,No,Yes,Insurance,Fix,Trad,RNR-F,5.750%,$22.35,-$0.05,6.43%,10.60%,Y,BBB,Baa2,$0.36,6/30/2023,NONE,"1st 3,6,9,12",-2.53,All
+,Rexford Industrial Realty,Yes,No,eREIT,Fix,Trad,REXR-B,5.875%,$22.31,-$0.12,6.58%,10.76%,N,NR,NR,$0.37,11/13/2022,NONE,"LD 3,6,9,12",-3.16,All
+,Rexford Industrial Realty,Yes,No,eREIT,Fix,Trad,REXR-C,5.625%,$21.24,$0.00,6.62%,-4.91%,N,NR,NR,$0.35,9/20/2024,NONE,"LD 3,6,9,12",-1.30,All
+,Rithm Capital ,Yes,No,mREIT,Fix,Trad,RITM-E,8.750%,$25.67,-$0.01,8.52%,#DIV/0!,N,NR,NR,$0.55,11/15/2030,NONE,"15th 2,5,8,11",,All
+,Rithm Capital (New Rez),Yes,No,mREIT,Fix-Float,Trad,RITM-B,7.125%,$25.63,$0.04,Float,Float,N,NR,NR,Float,8/15/2024,NONE,"15th 2,5,8,11",-1.40,All
+,Rithm Capital (New Rez),Yes,No,mREIT,Fix-Float,Trad,RITM-A,7.500%,$25.73,$0.06,Float,Float,N,NR,NR,Float,8/15/2024,NONE,"15th 2,5,8,11",-1.40,All
+,Rithm Capital (New Rez),Yes,No,mREIT,Fix-Float,Trad,RITM-C,6.375%,$25.04,-$0.05,Float,#VALUE!,N,NR,NR,Float,2/15/2025,NONE,"15th 2,5,8,11",-0.90,All
+,Rithm Capital (New Rez),Yes,No,mREIT,FRR,Trad,RITM-D,7.000%,$24.79,$0.01,7.06%,8.05%,N,NR,NR,$0.44,11/15/2026,NONE,"15th 2,5,8,11",0.85,All
+,Rithm Property Trust,Yes,No,mREIT,FTF,Trad,RPT-C,9.875%,$25.26,$0.06,9.77%,#DIV/0!,N,NR,NR,$0.62,5/15/2030,NONE,"15th 2,5,8,11",,All
+,RiverNorth Capital and Income,Yes,Var,CEF,Fix,Term,RMPL-,5.875%,Redeemed,Redeemed,Redeemed,Redeemed,N,NR,NR,$0.37,10/31/2020,10/31/2024,"15th 2,5,8,11",-5.19,All
+,RiverNorth Opportunities Fund,Yes,Var,CEF,Fix,Trad,RIV-A,6.000%,$23.33,-$0.02,6.43%,11.40%,Y,NR,A1,$0.38,5/15/2027,NONE,"15th 2,5,8,11",1.35,All
+,RiverNorth/DoubleLine Strategic,Yes,Var,CEF,Fix,Trad,OPP-A,4.375%,$17.00,$0.01,6.43%,-205.93%,Y,NR,A1,$0.27,11/15/2025,NONE,"15th 2,5,8,11",-0.15,All
+,RiverNorth/DoubleLine Strategic,Yes,Var,CEF,Fix,Trad,OPP-B,4.750%,$18.52,-$0.08,6.48%,30.01%,Y,NR,A1,$0.30,2/15/2027,NONE,"15th 2,5,8,11",1.10,All
+,RLJ Lodging Trust,Yes,No,Hotel REIT,Fix,CONV,RLJ-A,7.800%,$25.00,$0.03,7.80%,NA,N,NR,NR,$0.49,NONE,NONE,"LD 1,4,7,10", ,All
+,Runway Growth Finance,No,No,BDC,Fix,BB,RWAYL,7.500%,$25.24,$0.02,7.43%,8.09%,N,NR,NR,$0.47,7/28/2024,7/28/2027,"1st 3,6,9,12",-1.45,All
+,Runway Growth Finance,No,No,BDC,Fix,BB,RWAYZ,8.000%,$25.34,$0.01,7.89%,9.22%,N,NR,NR,$0.50,12/31/2024,12/31/2027,"1st 3,6,9,12",-1.02,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCB,7.125%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.45,6/30/2021,6/30/2024,"30th 3,6,9,12",-4.53,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SACC,6.875%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.43,11/7/2021,12/30/2024,"30th 3,6,9,12",-4.18,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCC,7.750%,Called,Called,Called,#VALUE!,N,NR,NR,$0.48,9/4/2022,9/30/2025,"30th 3,6,9,12",-3.35,All
+,Sachem Capital,Yes,No,mREIT,Fix,Trad,SACH-A,7.750%,$18.08,$0.08,10.72%,69.80%,N,NR,NR,$0.48,6/29/2026,NONE,"30th 3,6,9,12",0.47,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCD,6.000%,$24.20,$0.00,6.28%,3.20%,N,NR,NR,$0.38,9/20/2023,9/30/2026,"30th 3,6,9,12",-2.31,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCE,6.000%,$23.35,$0.05,6.51%,2.92%,N,NR,NR,$0.38,3/9/2024,3/30/2026,"30th 3,6,9,12",-1.84,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCF,7.125%,$23.37,$0.13,7.70%,3.79%,N,NR,NR,$0.45,5/11/2024,6/30/2027,"30th 3,6,9,12",-1.67,All
+,Sachem Capital,No,No,mREIT,Fix,BB,SCCG,8.000%,$23.49,-$0.32,8.51%,6.04%,N,NR,NR,$0.50,8/23/2024,9/30/2027,"30th 3,6,9,12",-1.38,All
+,Safe Bulkers,Yes,Yes,Shipping,Fix,Trad,SB-C,8.000%,$25.88,$0.00,7.73%,-3.52%,N,NR,NR,$0.50,5/31/2019,NONE,"30th 1,4,7,10",-6.62,All
+,Safe Bulkers,Yes,Yes,Shipping,Fix,Trad,SB-D,8.000%,$25.70,$0.04,7.78%,-2.80%,N,NR,NR,$0.50,6/30/2019,NONE,"30th 1,4,7,10",-6.53,All
+,Saratoga Investment,No,No,BDC,Fix,BB,SAT,6.000%,$24.86,$0.00,6.03%,5.71%,N,NR,NR,$0.38,4/27/2024,4/30/2027,"LD 2,5,8,11",-1.70,All
+,Saratoga Investment,No,No,BDC,Fix,BB,SAJ,8.000%,$25.54,$0.00,7.83%,9.63%,N,NR,NR,$0.50,10/27/2024,10/31/2027,"LD 2,5,8,11",-1.20,All
+,Saratoga Investment,No,No,BDC,Fix,BB,SAY,8.125%,$25.33,$0.01,8.02%,9.25%,N,NR,NR,$0.51,12/13/2024,12/31/2027,"LD 2,5,8,11",-1.07,All
+,Saratoga Investment,No,No,BDC,Fix,BB,SAZ,8.500%,$25.40,$0.03,8.37%,10.53%,N,NR,NR,$0.53,4/14/2025,4/15/2028,"LD 2,5,8,11",-0.74,All
+,Saul Centers,Yes,No,eREIT,Fix,Trad,BFS-D,6.125%,$20.97,$0.32,7.30%,16.12%,N,NR,NR,$0.38,1/23/2023,NONE,"15th 1,4,7,10",-2.96,All
+,Saul Centers,Yes,No,eREIT,Fix,Trad,BFS-E,6.000%,$22.44,$0.29,6.68%,10.24%,N,NR,NR,$0.38,9/17/2024,NONE,"15th 1,4,7,10",-1.31,All
+,SCE Trust,Yes,Yes,Ute,Fix,Trust P,SCE-G,5.100%,$18.41,-$0.01,6.93%,26.36%,Y,BB+,Baa3,$0.32,3/15/2018,NONE,"15th 3,6,9,12",-7.83,All
+,SCE Trust,Yes,Yes,Ute,Fix,Trust P,SCE-L,5.000%,$18.10,$0.09,6.85%,27.60%,Y,BB+,Baa3,$0.31,6/26/2022,NONE,"15th 3,6,9,12",-3.54,All
+,SCE Trust,Yes,Yes,Ute,Fix-Float,Trust P,SCE-K,5.450%,$25.00,$0.02,5.44%,5.44%,Y,BB+,Baa3,$0.34,3/15/2026,NONE,"15th 3,6,9,12",0.18,All
+,SCE Trust,Yes,Yes,Ute,Fix-Float,Trust P,SCE-J,5.375%,$25.00,$0.01,5.44%,5.44%,Y,BB+,Baa3,$0.34,9/15/2025,NONE,"15th 3,6,9,12",-0.32,All
+,SCE Trust,Yes,Yes,Ute,Fix-Float,Trust P,SCE-H,5.750%,Redeem,Redeem,Redeem,Redeem,Y,BB+,Baa3,Float,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,SCE Trust VII,Yes,Yes,Ute,Fix,Trust P,SCE-M,7.500%,$25.15,$0.16,7.46%,7.25%,Y,BB+,Baa3,$0.47,11/22/2028,NONE,"15th 3,6,9,12",2.87,All
+,SCE Trust VIII,Yes,Yes,Ute,Fix,Trust P,SCE-N,6.950%,$23.96,$0.26,7.18%,8.42%,Y,BB+,Baa3,$0.43,5/13/2029,NONE,"15th 3,6,9,12",3.34,All
+,Schwab Charles,No,Yes,Finance,Fix,Trad,SCHW-D,5.950%,$25.14,$0.02,5.92%,-0.56%,Y,BBB,Baa2,$0.37,6/1/2021,NONE,"1st 3,6,9,12",-4.61,All
+,Schwab Charles,No,Yes,Finance,Fix,Trad,SCHW-J,4.450%,$19.00,$0.02,5.89%,67.15%,Y,BBB,Baa2,$0.28,6/1/2026,NONE,"1st 3,6,9,12",0.39,All
+,Scorpio Tankers,No,No,Shipping,Fix,BB,SBBA,7.000%,Redeemed,Redeemed,Redeemed,#VALUE!,N,NR,NR,$0.44,6/30/2022,6/30/2025,"30th 3,6,9,12",-3.53,All
+,Selective Insurance Group,No,Yes,Insurance,Fix,Trad,SIGIP,4.600%,$16.87,NA,6.82%,-467.98%,N,BB+,Ba1,$0.29,12/15/2025,NONE,"15th 3,6,9,12",-0.07,All
+,Sempra Energy,No,No,Ute,Fix,BB,SREA,5.750%,$22.72,$0.06,6.33%,-0.83%,Y,BBB-,Baa2,$0.36,10/1/2024,7/1/2079,"1st 1,4,7,10",-1.27,All
+,Seritage Growth Properies,Yes,Yes,C-Corp,Fix,Trad,SRG-A,7.000%,$24.13,NA,7.17%,3.48%,N,NR,NR,$0.43,12/14.2022,NONE,"15th 1,4,7,10",,All
+,SiriusPoint,Yes,Yes,Insurance,FRR,Trad,SPNT-B,8.000%,$25.33,NA,7.90%,-2.14%,N,NR,BB+,$0.50,2/26/2026,NONE,"LD 2,5,8,11",0.13,All
+,Site Centers Corp,Yes,No,eREIT,Fix,Trad,SITC-A,6.375%,Redeem,Redeem,Redeem,Redeem,N,BB,Ba1,$0.40,6/5/2022,NONE,"15th 1,4,7,10",-3.60,All
+,SL Green,Yes,No,eREIT,Fix,Trad,SLG-I,6.500%,$22.66,$0.14,7.17%,9.36%,N,BB,Ba1,$0.41,8/10/2017,NONE,"15th 1,4,7,10",-8.42,All
+,Sound Point Meridian,Yes,Var,CEF,Fix,Term,SPMA,8.000%,$25.26,$0.03,7.92%,6.75%,N,NR,NR,$0.17,11/30/2026,11/30/2029,LD Month,0.89,All
+,Sound Point Meridian,Yes,Var,CEF,Fix ,Term,SPME,7.875%,$25.20,$0.00,7.94%,#DIV/0!,N,NR,NR,$0.17,7/31/2027,7/31/2030,LD Month,,All
+,Southern California Gas,Yes,Yes,Ute,Fix,Trad,SOCGP,6.000%,$24.95,-$0.29,6.01%,NA,Y,BBB+,A3,$0.38,Never,NONE,"15th 1,4,7,10",#VALUE!,All
+,Southern Company,No,No,Ute,Fix,BB,SOJC,5.250%,$22.01,$0.04,5.96%,11.96%,Y,BBB,Baa2,$0.33,12/1/2022,12/1/2077,"1st 3,6,9,12",-3.11,All
+,Southern Company,No,No,Ute,Fix,BB,SOJD,4.950%,$20.59,-$0.01,6.02%,17.64%,Y,BBB,Baa2,$0.31,1/30/2025,1/30/2080,"30th 1,4,7,10",-0.94,All
+,Southern Company,No,No,Ute,Fix,BB,SOJE,4.200%,$18.25,$0.01,5.75%,-108.84%,Y,BBB,Baa2,$0.26,10/15/2025,10/15/2060,"15th 1,4,7,10",-0.24,All
+,Southern Company,No,No,Ute,Fix,BB,SOJF,6.500%,$25.48,$0.02,6.38%,,Y,BBB,Baa2,$0.41,3/15/2030,3/15/2085,"15th 3,6,9,12",,All
+,Spire Inc,Yes,Yes,Ute,Fix,Trad,SR-A,5.900%,$25.24,$0.01,5.84%,6.53%,Y,BBB-,Ba1,$0.37,8/15/2024,None,"15th 2,5,8,11",-1.40,All
+,State Street Corp,No,Yes,Finance,Fix,Trad,STT-G,5.350%,$22.85,$0.01,5.85%,54.15%,Y,BBB ,Baa1,$0.33,3/15/2026,NONE,"15th 3,6,9,12",0.18,All
+,State Street Corp,No,Yes,Finance,Fix,Trad,STT-D,5.900%,Redeem,Redeem,Redeem,Redeem,Y,BBB ,Baa1,$0.37,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Steel Partners Holdings,Yes,No,MLP,Fix,Trad,SPLPP,6.000%,Redeem,Redeem,Redeem,NA,N,NR,NR,$0.38,Anytime,2/10/2026,"15th 3,6,9,12",#VALUE!,All
+,Stifel Financial Corp,No,Yes,Finance,Fix,Trad,SF-B,6.250%,$23.99,$0.07,6.51%,4.30%,N,BB-,NR,$0.39,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Stifel Financial Corp,No,Yes,Finance,Fix,Trad,SF-C,6.125%,$23.54,$0.04,6.50%,-3.74%,N,BB-,NR,$0.38,6/15/2025,NONE,"15th 3,6,9,12",-0.57,All
+,Stifel Financial Corp,No,Yes,Finance,Fix,Trad,SF-D,4.500%,$17.10,-$0.11,6.55%,59.46%,N,BB-,NR,$0.28,8/15/2026,NONE,"15th 3,6,9,12",0.60,All
+,StonePeak (AKA Teekay LNG),Yes,Yes,Shipping,Fix,Trad,SEAL-A,9.000%,$25.43,$0.03,8.85%,9.25%,N,NR,NR,$0.56,10/5/2021,NONE,"15th 1,4,7,10",-4.27,All
+,StonePeak (AKA Teekay LNG),Yes,Yes,Shipping,Fix-Float,Trad,SEAL-B,8.500%,$25.47,$0.12,8.34%,7.28%,N,NR,NR,$0.53,10/15/2027,NONE,"15th 1,4,7,10",1.76,All
+,Summit Hotel Properties,Yes,No,Hotel REIT,Fix,Trad,INN-E,6.250%,$18.73,$0.12,8.34%,25.08%,N,NR,NR,$0.39,11/13/2022,NONE,"LD 2,5,8,11",-3.16,All
+,Summit Hotel Properties,Yes,No,Hotel REIT,Fix,Trad,INN-F,5.875%,$18.10,-$0.42,8.18%,55.03%,N,NR,NR,$0.37,8/12/2026,NONE,"Ld 2,5,8,11",0.59,All
+,Sunstone Hotel Investors,Yes,No,Hotel REIT,Fix,Trad,SHO-H,6.125%,$20.60,$0.22,7.38%,54.96%,N,NR,NR,$0.38,5/24/2026,NONE,"15th 1,4,7,10",0.37,All
+,Sunstone Hotel Investors,Yes,No,Hotel REIT,Fix,Trad,SHO-I,5.700%,$19.00,$0.00,7.58%,54.17%,N,NR,NR,$0.36,7/16/2026,NONE,"15th 1,4,7,10",0.52,All
+,SURO Capital,No,No,BDC,Fix,BB,SSSSL,6.000%,$25.02,-$0.02,6.08%,6.15%,N,NR,NR,$0.38,12/30/2024,12/30/2026,"30th  3,6,9,12",-1.03,All
+,SWK Holdings,No,No,Finance,Fix,BB,SWKHL,9.000%,$25.55,$0.05,8.81%,NA,N,NR,NR,$0.56,Anytime,1/31/2027,"LD 3,6,9,12",,All
+,Synchronoss Technology,No,No,Other,Fix,BB,SNCRL,8.375%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.52,6/30/2022,6/30/2026,"LD 1,4,7,10",-3.53,All
+,Synchrony Financial,No,Yes,Finance,Fix,Trad,SYF-A,5.625%,$19.99,$0.04,7.03%,20.04%,N,BB-,NR,$0.35,11/15/2024,NONE,"15th 2,5,8,11",-1.15,All
+,Synchrony Financial,No,Yes,Finance,FRR,Trad,SYF-B,8.250%,$26.38,-$0.03,7.88%,6.24%,N,BB-,NR,$0.52,5/15/2029,NONE,"15th 2,5,8,11",3.35,All
+,T-Mobile,No,No,Telecom,Fix,BB,TMUSI,5.500%,$22.82,$0.01,6.03%,#DIV/0!,N,NR,Baa2,$0.34,6/1/2026,6/1/2070,"1st 3,6,9,12",,All
+,T-Mobile,No,No,Telecom,Fix,BB,TMUSL,6.250%,$25.07,$0.02,6.23%,#DIV/0!,N,NR,Baa2,$0.39,7/1/2025,9/1/2069,"1st 3,6,9,12",,All
+,T-Mobile,No,No,Telecom,Fix,BB,TMUSZ,5.500%,$22.91,-$0.02,6.00%,#DIV/0!,N,NR,Baa2,$0.34,3/1/2026,3/1/2070,"1st 3,6,9,12",,All
+,Telephone and Data Systems,Yes,Yes,Telecom,Fix,Trad,TDS-U,6.625%,$21.65,$0.18,7.58%,67.96%,N,BB,Ba3,$0.41,3/31/2026,NONE,"LD 3,6,9,12",0.22,All
+,Telephone and Data Systems,Yes,Yes,Telecom,Fix,Trad,TDS-V,6.000%,$19.78,$0.08,7.58%,36.45%,N,BB,Ba3,$0.38,9/30/2026,NONE,"LD 3,6,9,12",0.72,All
+,Tellurian,No,No,Energy,Fix,BB,TELZ,8.250%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.52,11/30/2023,11/30/2028,"LD 1,4,7,10",-2.11,All
+,Tennessee Valley Authority,No,No,Ute,Spec,BB,TVE,2.216%,$24.45,-$0.04,2.27%,2.94%,Y,AA+,Aaa,$0.14,None,5/1/2029,"1st 2,5,8,11",3.31,All
+,Tennessee Valley Authority,No,No,Ute,Spec,BB,TVC,2.134%,$24.23,-$0.02,2.20%,3.48%,Y,AA+,Aaa,$0.13,None,6/1/2028,"1st 3,6,9,12",2.39,All
+,Terra Income  Fund 6,No,No,CEF,Fix,BB,TFSA,7.000%,$24.85,$0.00,7.08%,0.60%,N,NR,NR,$0.44,2/10/2023,3/31/2026,"30th 3,6,9,12",-2.92,All
+,Terra Property Trust,No,No,REIT,Fix,BB,TPTA,6.000%,$23.68,$0.03,6.42%,5.28%,N,NR,NR,$0.38,6/30/2023,6/30/2026,"30th 3,6,9,12",-2.53,All
+,Texas Capital Bancshares,No,Yes,Bank,Fix,Trad,TCBIO,5.750%,$20.35,$0.08,7.06%,50.31%,N,B+,Ba2,$0.36,6/15/2026,NONE,"15th 3,6,9,12",0.43,All
+,Textainer Group Holdings,Yes,Yes,Other,Fix,Trad,TGH-B,6.250%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.39,12/15/2026,NONE,"15th 3,6,9,12",0.93,All
+,Textainer Group Holdings,Yes,Yes,Other,FRR,Trad,TGH-A,7.000%,Redeem,Redeem,Redeem,Redeem,N,NR,NR,$0.44,6/15/2026,NONE,"15th 3,6,9,12",0.43,All
+,The Bank of New York Mellon,No,Yes,Bank,FRR,Trad,BK-K,6.150%,$25.64,$0.02,5.94%,#DIV/0!,Y,BBB,Baa1,$0.38,3/20/2030,NONE,"20th 3,6,9,12",,All
+,TPG Operating,No,No,Other,Fix,BB,TPGXL,6.950%,$25.01,$0.03,6.95%,6.93%,Y,BBB-,Baa1,$0.43,3/15/2029,3/15/2064,"15th 3,6,9,12",3.18,All
+,TPG RE Finance,Yes,No,mREIT,Fix,Trad,TRTX-C,6.250%,$18.17,$0.07,8.60%,72.52%,N,NR,NR,$0.39,6/14/2026,NONE,"30th 3,6,9,12",0.43,All
+,Trinity Capital,No,No,BDC,Fix,BB,TRINL,7.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.44,1/16/2023,1/16/2025,"15th 3,6,9,12",-2.98,All
+,Trinity Capital,No,No,BDC,Fix,BB,TRINI,7.875%,$25.34,-$0.06,7.73%,5.85%,N,NR,NR,$0.49,9/30/2026,9/30/2029,"30th 3,6,9,12",0.72,All
+,Trinity Capital,No,No,BDC,Fix ,BB,TRINZ,7.875%,$25.26,-$0.01,7.76%,3.01%,N,NR,NR,$0.49,3/30/2026,3/30/2029,"30th 3,6,9,12",0.22,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-A,8.500%,$25.55,$0.12,8.32%,9.52%,N,BB+,NR,$0.53,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-B,8.000%,$25.26,$0.03,7.92%,8.71%,N,BB+,NR,$0.50,9/15/2024,NONE,"15th 3,6,9,12",-1.32,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-C,7.375%,$24.89,$0.05,7.39%,6.98%,N,BB+,NR,$0.46,12/15/2024,NONE,"15th 3,6,9,12",-1.07,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-D,6.875%,$23.29,$0.04,7.39%,-0.94%,N,BB+,NR,$0.43,3/15/2025,NONE,"15th 3,6,9,12",-0.82,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-E,5.750%,$19.66,-$0.09,7.31%,38.62%,N,BB+,NR,$0.36,9/15/2026,NONE,"15th 3,6,9,12",0.68,All
+,Triton International,Yes,Yes,Other,Fix,Trad,TRTN-F,7.625%,$25.23,-$0.13,7.56%,,N,BB+,NR,$0.48,3/15/2030,NONE,"15th 3,6,9,12",,All
+,Triump Financial,No,Yes,Bank,Fix,Trad,TFINP,7.125%,No Quote,$5.67,#VALUE!,#VALUE!,N,NR,NR,$0.45,6/30/2025,NONE,"LD 3,6,9,12",-0.53,All
+,Truist Financial,No,Yes,Bank,Fix,Trad,TFC-R,4.750%,$19.47,$0.03,6.10%,-56.01%,Y,BBB-,Baa2,$0.30,9/1/2025,NONE,"1st of 3,6,9,12",-0.36,All
+,Truist Financial(Suntrust Bank),No,Yes,Bank,FLR,Trad,TFC-I,4.000%,$20.04,-$0.09,Float,19.84%,Y,BB+,Baa2,Float,9/15/2011,NONE,"15th 3,6,9,12",-14.33,All
+,Tsakos Energy Navigation,Yes,Yes,Shipping,Fix,Trad,TEN-F,9.500%,$27.33,$0.06,8.69%,5.04%,N,NR,NR,$0.59,7/30/2028,NONE,"30th 1,4,7,10",2.56,All
+,Tsakos Energy Navigation,Yes,Yes,Shipping,Fix-Float,Trad,TEN-E,9.250%,$26.60,$0.00,8.69%,4.06%,N,NR,NR,$0.58,5/28/2027,NONE,"28th 2,5,8,11",1.38,All
+,Two Harbors Investment,Yes,No,mREIT,Fix-Float,Trad,TWO-A,8.125%,$24.49,$0.06,8.29%,9.87%,N,NR,NR,$0.51,4/26/2027,NONE,"27th 1,4,7,10",1.29,All
+,Two Harbors Investment,Yes,No,mREIT,Fix-Float,Trad,TWO-B,7.625%,$24.05,$0.15,7.93%,10.39%,N,NR,NR,$0.48,7/27/2027,NONE,"27th 1,4,7,10",1.55,All
+,Two Harbors Investment,Yes,No,mREIT,Fix-Float,Trad,TWO-C,7.250%,$24.99,$0.08,Float,#VALUE!,N,NR,NR,Float,1/27/2025,NONE,"27th 1,4,7,10",-0.95,All
+,Two Harbors Investment,No,No,mREIT,Fix,BB,TWOD,9.375%,$25.86,-$0.03,9.06%,#DIV/0!,N,NR,NR,$0.59,05/15/2027,8/15/2030,"15th 2,5,8,11",,All
+,UMB (Heartland Financial),No,Yes,Bank,FRR,Trad,UMBFP,7.000%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.44,07/15/2025,None,"15th 1,4,7,10",-0.49,All
+,UMH Properties,Yes,No,eREIT,Fix,Trad,UMH-D,6.375%,$22.29,-$0.07,7.15%,10.84%,N,NR,NR,$0.40,1/22/2023,NONE,"15th 3,6,9,12",-2.97,All
+,United Community Banks,No,Yes,Bank,Fix,Trad,UCB-I,6.875%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.43,9/15/2025,NONE,"15th 3,6,9,12",-0.32,All
+,United States Cellular  (Array),No,No,Telecom,Fix,BB,UZD,6.250%,$20.47,-$0.11,7.62%,-43.25%,N,BB,Ba1,$0.39,9/1/2025,9/1/2069,"1st 3,6,9,12",-0.36,All
+,United States Cellular  (Array),No,No,Telecom,Fix,BB,UZE,5.500%,$17.98,-$0.08,7.65%,-24.99%,N,BB,Ba1,$0.34,3/1/2025,3/1/2070,"1st 3,6,9,12",-0.86,All
+,United States Cellular  (Array),No,No,Telecom,Fix,BB,UZF,5.500%,$18.32,$0.29,7.51%,75.71%,N,BB,Ba1,$0.34,6/1/2026,6/1/2070,"1st 3,6,9,12",0.39,All
+,Unum Group,No,No,Insurance,Fix,BB,UNMA,6.250%,$23.31,-$0.03,6.69%,#DIV/0!,N,BB+,Ba1,$0.39,6/15/2023,6/15/2058,"15th 3,6,9,12",,All
+,US Bancorp,No,Yes,Bank,Fix,Trad,USB-P,5.500%,$22.79,-$0.06,6.03%,2.08%,Y,BBB+,Baa2,$0.34,10/15/2023,NONE,"15th 1,4,7,10",-2.24,All
+,US Bancorp,No,Yes,Bank,Fix,Trad,USB-Q,3.750%,$15.46,-$0.03,6.06%,2327.46%,Y,BBB+,Baa2,$0.23,1/15/2026,NONE,"15th 1,4,7,10",0.02,All
+,US Bancorp,No,Yes,Bank,Fix,Trad,USB-R,4.000%,$16.46,-$0.05,6.08%,135.95%,Y,BBB+,Baa2,$0.25,4/15/2026,NONE,"15th 1,4,7,10",0.26,All
+,US Bancorp,No,Y,Bank,Fix,Trad,USB-S,4.500%,$18.45,$0.01,6.07%,26.81%,Y,BBB+,Baa2,$0.28,4/15/2027,NONE,"15th 1,4,7,10",1.26,All
+,US Bancorp,No,Yes,Bank,FLR,Trad,USB-H,3.500%,$18.48,-$0.03,Float,Float,Y,BBB+,Baa2,Float,4/15/2011,NONE,"15th 1,4,7,10", ,All
+,Valley National Bank,No,Yes,Bank,Fix-Float,Trad,VLYPP,6.250%,$25.30,-$0.05,6.18%,8.45%,N,BB-,NR,$0.39,6/30/2025,NONE,"30th  3,6,9,12",-0.53,All
+,Valley National Bank,No,Yes,Bank,Fix-Float,Trad,VLYPO,5.500%,$25.20,$0.05,Float,Float,N,BB-,NR,Float,9/30/2022,NONE,"30th 3,6,9,12",-3.28,All
+,Valley National Bank,No,Yes,Bank,FRR,Trad,VLYPN,8.250%,$25.95,-$0.35,8.02%,7.00%,N,BB-,NR,$0.52,9/30/2029,NONE,"30th  3,6,9,12",3.73,All
+,Via Revewables,Yes,Yes,Ute,Fix-Float,Trad,VIASP,8.750%,$25.42,$0.12,Float,Float,N,NR,NR,Float,4/15/2022,NONE,"15th 1,4,7,10",-3.74,All
+,Virtus Convertible and In II,Yes,Var,CEF,Fix,Trad,NCZ-A,5.500%,$20.71,-$0.06,6.64%,17.16%,Y,NR,NR,$0.34,9/11/2023,NONE,"LD 3,6,9,12",-2.33,All
+,Virtus Convertible and Income ,Yes,Var,CEF,Fix,Trad,NCV-A,5.625%,$21.38,-$0.03,6.58%,14.48%,Y,NR,NR,$0.35,9/20/2023,NONE,"LD 3,6,9,12",-2.31,All
+,Vornado Realty Trust,Yes,No,eREIT,Fix,Trad,VNO-L,5.400%,$17.82,$0.02,7.58%,28.72%,N,BB,Ba1,$0.34,1/25/2018,NONE,"1st 1,4,7,10", ,All
+,Vornado Realty Trust,Yes,No,eREIT,Fix,Trad,VNO-M,5.250%,$17.29,-$0.05,7.59%,30.84%,N,BB,Ba1,$0.33,12/13/2022,NONE,"1st 1,4,7,10",-3.08,All
+,Vornado Realty Trust,Yes,No,eREIT,Fix,Trad,VNO-N,5.250%,$17.17,-$0.02,7.64%,-240.87%,N,BB,Ba1,$0.33,11/24/2025,NONE,"1st 1,4,7,10",-0.13,All
+,Vornado Realty Trust,Yes,No,eREIT,Fix,Trad,VNO-O,4.450%,$14.66,$0.13,7.64%,66.61%,N,BB,Ba1,$0.28,9/22/2026,NONE,"1st 1,4,7,10",0.70,All
+,Voya Financial,No,Yes,Asset Mgr,Fix-Float,Trad,VOYA-B,5.350%,$24.91,-$0.01,5.37%,5.47%,N,BB+,Ba2,$0.33,9/15/2029,NONE,"15th 3,6,9,12",3.68,All
+,Washington Federal,No,Yes,Bank,Fix,Trad,WAFDP,4.875%,$16.51,$0.09,7.27%,136.39%,N,NR,Ba1,$0.30,4/15/2026,NONE,"15th 1,4,7,10",0.26,All
+,Webster Financial,No,Yes,Bank,Fix,Trad,WBS-F,5.250%,$19.33,$0.08,6.79%,22.68%,N,BB,Baa3,$0.33,12/15/2022,NONE,"15th 3,6,9,12",-3.07,All
+,Wells Fargo,No,Yes,Bank,Fix,Trad,WFC-A,4.700%,$19.24,-$0.02,6.11%,-330.28%,N,BB,Baa3,$0.29,12/15/2025,NONE,"15th 3,6,9,12",-0.07,All
+,Wells Fargo,No,Yes,Bank,Fix,Trad,WFC-Y,5.625%,$24.37,$0.00,5.74%,2.52%,Y,BB+,Baa2,$0.35,6/15/2022,NONE,"15th 3,6,9,12",-3.57,All
+,Wells Fargo,No,Yes,Bank,Fix,Trad,WFC-Z,4.750%,$19.48,-$0.04,6.16%,-20.70%,Y,BB+,Baa2,$0.30,3/15/2025,NONE,"15th 3,6,9,12",-0.82,All
+,Wells Fargo,No,Yes,Bank,Fix,Trad,WFC-C,4.375%,$18.10,$0.02,5.97%,160.95%,Y,BB+,Baa2,$0.27,3/15/2026,NONE,"15th 3,6,9,12",0.18,All
+,Wells Fargo,No,Yes,Bank,Fix,Trad,WFC-D,4.250%,$17.75,$0.02,6.08%,48.59%,Y,BB+,Baa2,$0.27,9/15/2026,NONE,"15th 3,6,9,12",0.68,All
+,Wells Fargo,No,Yes,Bank,Fix-Float,Trad,WFC-R,6.625%,Redeem,Redeem,Redeem,Redeem,Y,BB+,Baa2,$0.41,3/15/2024,NONE,"15th 3,6,9,12",-1.82,All
+,Wells Fargo,No,Yes,Bank,Fix-Float,Trad,WFC-Q,5.850%,Redeem,Redeem,Redeem,Redeem,Y,BB+,Baa2,$0.37,9/15/2023,NONE,"15th 3,6,9,12",-2.32,All
+,WesBanco Inc.,No,Yes,Bank,FRR,Trad,WSBCP,6.750%,Redeem,Redeem,Redeem,#VALUE!,N,NR,Ba2,$0.42,11/15/2025,NONE,"15th 2,5,8,11",-0.15,All
+,WesBanco Inc.,No,Yes,Bank,FRR,Trad,WSBCO,7.375%,$25.63,$0.03,7.19%,#DIV/0!,N,NR,Ba2,$0.46,10/1/2030,NONE,"1st 1,4,7,10",,All
+,Wesco International,Yes,Yes,Other,FRR,Trad,WCC-A,10.625%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.66,6/22/2025,NONE,"LD 3,6,9,12",-0.55,All
+,Western Alliance Bancorp,No,Yes,Bank,Fix,Trad,WAL-A,4.250%,$22.59,$0.16,4.70%,18.03%,N,NR,Ba3,$0.27,9/30/2026,NONE,"30th 3,6,9,12",0.72,All
+,Whitehorse Finance,No,No,BDC,Fix,BB,WHFCL,7.875%,$25.23,-$0.04,7.80%,10.70%,N,NR,NR,$0.49,9/15/2025,9/15/2028,"15th 3,6,9,12",-0.32,All
+,Wintrust Financial,No,Yes,Bank,Fix-Float,Trad,WTFCM,6.500%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.41,7/15/2025,NONE,"15th 1,4,7,10",-0.49,All
+,Wintrust Financial,No,Yes,Bank,FRR,Trad,WTFCP,6.875%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.43,7/15/2025,NONE,"15th 1,4,7,10",-0.49,All
+,Wintrust Financial,No,Yes,Bank,FRR,Trad,WTFCN,7.875%,$26.38,-$0.01,7.46%,#DIV/0!,N,NR,NR,$0.49,7/15/2030,NONE,"15th 1,4,7,10",,All
+,WR Berkley,No,No,Insurance,Fix,BB,WRB-F,5.100%,$20.00,$0.01,6.40%,20.00%,Y,BBB-,Baa2,$0.32,12/30/2024,12/30/2059,"30th 3,6,9,12", ,All
+,WR Berkley,No,No,Insurance,Fix,BB,WRB-E,5.700%,$22.41,-$0.02,6.41%,10.36%,Y,BBB-,Baa2,$0.36,3/30/2023,3/30/2058,"30th 3,6,9,12",-2.78,All
+,WR Berkley,No,No,Insurance,Fix,BB,WRB-G,4.250%,$16.75,-$0.05,6.45%,-112.81%,Y,BBB-,Baa2,$0.27,9/30/2025,9/30/2060,"30th 3,6,9,12",-0.28,All
+,WR Berkley,No,No,Insurance,Fix,BB,WRB-H,4.125%,$16.48,-$0.16,6.31%,161.80%,Y,BBB-,Baa2,$0.26,3/30/2026,3/30/2061,"30th 3,6,9,12",0.22,All
+,XAI Octagon Floating Rate ,Yes,Var,CEF,Fix,Term,XFLT-A,6.500%,Redeem,Redeem,Redeem,#VALUE!,N,NR,NR,$0.41,3/31/2023,3/31/2026,"LD 1,4,7,10",-2.78,All
+,Xcel Energy,No,No,Ute,Fix,BB,XELLL,6.250%,$25.03,$0.03,6.24%,#DIV/0!,Y,BBB-,Baa2,$0.39,10/15/2030,10/15/2085,"15th 1,4,7,10",,All
+,Xoma Corporation,Yes,Yes,Other,Fix,Trad,XOMAP,8.625%,$26.63,$0.00,8.10%,9.70%,N,NR,NR,$0.54,12/15/2021,NONE,"15th 1,4,7,10",-4.07,All
+,Xoma Corporation,Yes,Yes,Other,Fix,Trad,XOMAO,8.375%,$25.35,$0.02,8.21%,-1.40%,N,NR,NR,$0.52,4/15/2022,NONE,"15th 1,4,7,10",-3.74,All
+,Zions Bancorporation,No,No,Bank,Fix-Float,BB,ZIONL,6.950%,Redeem,Redeem,Redeem,Redeem,N,BBB,Ba1,Float,9/15/2023,9/15/2028,"15th 3,6,9,12",-2.32,All
+,Zions Bancorporation,No,Yes,Bank,Fix-Float,Trad,ZIONO,6.300%,Redeem,Redeem,Redeem,Redeem,N,BB+,Ba1,Float,3/15/2023,NONE,"15th 3,6,9,12",-2.82,All
+,Zions Bancorporation,No,Yes,Bank,FLR,Trad,ZIONP,4.000%,$20.28,-$0.07,Float,Float,N,BB+,Ba1,Float,12/15/2011,NONE,"15th 3,6,9,12", ,All

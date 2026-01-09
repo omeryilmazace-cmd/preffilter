@@ -396,7 +396,8 @@ def run_full_analysis(threshold=None, mode="preferred"):
             
             # Master Metadata enrichment
             m_data = master_metadata.get(orig, {})
-            coupon = m_data.get("coupon", 0.0)
+            raw_coupon = m_data.get("raw_coupon", 0.0)  # e.g. 0.07875 for 7.875%
+            coupon_str = m_data.get("coupon", "N/A")    # e.g. "7.875%"
             sector = m_data.get("sector", "Other").strip()
             sp_rating = m_data.get("sp_rating", "NR")
             mid_rating = m_data.get("moody_rating", "NR")
@@ -405,7 +406,7 @@ def run_full_analysis(threshold=None, mode="preferred"):
             call_date_str = m_data.get("call_date", "")
             
             # Determine if currently floating (Fix-Float with call date passed)
-            is_currently_floating = False
+            is_currently_floating = m_data.get("is_floating", False)
             if rate_type == "Fix-Float" and call_date_str:
                 try:
                     from datetime import datetime
@@ -443,12 +444,12 @@ def run_full_analysis(threshold=None, mode="preferred"):
                     log_msg(f"Warning: No benchmarks for {v} (Sector: '{sector}'). Expected: {relevant_etfs}, Found: {list(benchmarks_dL60.keys())}")
             else:
                 # Preferred logic: (Coupon * FaceValue) / CurrentPrice. Assuming $25 face value.
-                cur_yield = (coupon * 25.0 / current) if current > 0 and coupon > 0 else 0.0
-                display_coupon = f"{coupon*100:.2f}%" if coupon > 0 else "N/A"
+                cur_yield = (raw_coupon * 25.0 / current) if current > 0 and raw_coupon > 0 else 0.0
+                display_coupon = coupon_str if coupon_str != "N/A" else "N/A"
 
             results["all_data"].append({
                 "ticker": orig,
-                "name": metadata_cache.get(v, {}).get("longName", orig),
+                "name": m_data.get("name", metadata_cache.get(v, {}).get("longName", orig)),
                 "sector": sector,
                 "sp_rating": sp_rating,
                 "moody_rating": mid_rating,
@@ -463,7 +464,7 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 "divergence": display_divergence,
                 "raw_divergence": raw_divergence,
                 "raw_yield": float(cur_yield),
-                "raw_coupon": coupon, # Add raw numeric coupon for frontend index calc
+                "raw_coupon": raw_coupon, # Add raw numeric coupon for frontend index calc
                 "streak_type": streak_type,
                 "streak_count": streak_count,
                 "l60": l60, "h60": h60, "l30": l30, "h30": h30, "l7": l7, "h7": h7,
