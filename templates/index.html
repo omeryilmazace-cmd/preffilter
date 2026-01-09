@@ -886,11 +886,22 @@
                 }
             }
 
-            // Stats
-            document.getElementById('idx7').innerText = `${target.dL7 ? (target.dL7 * 100).toFixed(1) + '%' : '-'} Dip`;
-            document.getElementById('idx30').innerText = `${target.dL30 ? (target.dL30 * 100).toFixed(1) + '%' : '-'} Dip`;
-            document.getElementById('idx60').innerText = `${target.dL60 ? (target.dL60 * 100).toFixed(1) + '%' : '-'} Dip`;
+            // Historical Stats
+            clearTimeout(histDebounce);
+            if (activePeers.length > 0 && !target._isStatic) {
+                document.getElementById('calcHistory').style.display = 'block';
+                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
+                histDebounce = setTimeout(() => {
+                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
+                }, 1000);
+            } else if (target._isStatic) {
+                document.getElementById('calcHistory').style.display = 'block';
+                document.getElementById('calcHistoryContent').innerHTML = '<i style="opacity:0.6; font-size: 0.85rem;">Historical data not available for static fallback tickers.</i>';
+            } else {
+                document.getElementById('calcHistory').style.display = 'none';
+            }
         }
+
 
         function renderTable(targetId, list, mode) {
             const tbody = document.querySelector(`#${targetId} tbody`);
@@ -926,7 +937,6 @@
 
                 // Format percentages
                 const fmtP = (v) => (v * 100).toFixed(2) + '%';
-                const hitClass = (val) => val <= 0.015 ? 'yield-cell' : ''; // Using yield-cell as highlight green for now or create new
 
                 return `<tr>
                     <td>
@@ -954,7 +964,6 @@
             const tbody = document.querySelector('#streakTable tbody');
             tbody.innerHTML = list.map(i => {
                 const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
-                // Add click to calc
                 return `<tr style="cursor:pointer;" onclick="setCalcTicker('${i.ticker}')">
                     <td>
                         <div class="ticker-cell">${i.ticker} ${streakIcon}</div>
@@ -967,11 +976,9 @@
             }).join('');
         }
 
-        // --- Calculator Logic ---
         function setCalcTicker(ticker) {
             document.getElementById('calcTicker').value = ticker;
             calculateFairValue();
-            // Scroll to calculator
             document.querySelector('.bottom-section').scrollIntoView({ behavior: 'smooth' });
         }
 
@@ -979,6 +986,7 @@
         let excludedPeers = new Set();
         let manualPeersList = new Set();
         let currentTargetTicker = "";
+        let histDebounce = null;
 
         function addManualPeer() {
             const input = document.getElementById('manualPeerInput');
@@ -997,126 +1005,6 @@
             }
         }
 
-        function calculateFairValue(isRecalc = false) {
-            const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
-            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
-            const resultDiv = document.getElementById('calcResult');
-
-            if (!tickerInput || !rawData.all_data) {
-                resultDiv.style.display = 'none';
-                return;
-            }
-
-            const prefData = fullModesData['preferred'].all_data || [];
-            const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
-
-            if (!target) return;
-
-            resultDiv.style.display = 'block';
-
-            // Constants for IG logic (copied from original)
-            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
-                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
-
-            const useIgOnly = document.getElementById('calcIgOnly').checked;
-            const sectorFilter = document.getElementById('calcSector').value;
-
-            // Lazy populate sectors if needed for calculator specifics
-            const sectorSelect = document.getElementById('calcSector');
-            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
-                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
-                sectors.forEach(s => {
-                    const opt = document.createElement('option');
-                    opt.value = s;
-                    opt.innerText = s;
-                    sectorSelect.appendChild(opt);
-                });
-            }
-
-            if (!isRecalc) {
-                currentTargetTicker = target.ticker;
-                const targetCoupon = target.raw_coupon || 0;
-                const minC = targetCoupon - (tolerance / 100);
-                const maxC = targetCoupon + (tolerance / 100);
-
-                const autoPeers = prefData.filter(i => {
-                    if (i.ticker === target.ticker) return false;
-                    if (useIgOnly) {
-                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
-                        if (!isIG) return false;
-                    }
-                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
-                    const c = i.raw_coupon || 0;
-                    return c >= minC && c <= maxC;
-                });
-
-                // Merge Auto + Manual
-                const manualPeerObjs = [];
-                manualPeersList.forEach(t => {
-                    const p = prefData.find(x => x.ticker === t);
-                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
-                });
-
-                const combined = [...autoPeers, ...manualPeerObjs];
-                const seen = new Set();
-                currentPeers = combined.filter(item => {
-                    if (seen.has(item.ticker)) return false;
-                    seen.add(item.ticker);
-                    return true;
-                });
-                excludedPeers.clear();
-                renderPeerList();
-            }
-
-            // Calc
-            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
-            let avgPrice = 0;
-            if (activePeers.length > 0) {
-                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
-            }
-            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
-
-            document.getElementById('calcTickerDisplay').innerText = target.ticker;
-            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
-
-            const idxEl = document.getElementById('calcIndexValue');
-            const statusEl = document.getElementById('calcStatus');
-
-            if (activePeers.length === 0) {
-                idxEl.innerText = "N/A";
-                statusEl.innerText = "No peers";
-                statusEl.style.color = "var(--text-muted)";
-            } else {
-                idxEl.innerText = indexVal.toFixed(2);
-                if (indexVal < 0.98) {
-                    statusEl.innerText = "CHEAP (Undervalued)";
-                    statusEl.style.color = "var(--success)";
-                } else if (indexVal > 1.02) {
-                    statusEl.innerText = "EXPENSIVE (Overvalued)";
-                    statusEl.style.color = "var(--danger)";
-                } else {
-                    statusEl.innerText = "FAIR VALUE";
-                    statusEl.style.color = "white";
-                }
-            }
-            document.getElementById('calcPeerStats').innerHTML = `
-                Avg Peer Price: <b>$${avgPrice.toFixed(2)}</b> | 
-                Active Count: <b>${activePeers.length}</b> / ${currentPeers.length}`;
-
-            // Historical Stats
-            clearTimeout(histDebounce);
-            if (activePeers.length > 0) {
-                document.getElementById('calcHistory').style.display = 'block';
-                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
-                histDebounce = setTimeout(() => {
-                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
-                }, 1000);
-            } else {
-                document.getElementById('calcHistory').style.display = 'none';
-            }
-        }
-
-        let histDebounce = null;
         async function fetchHistoricalStats(target, peers) {
             try {
                 const res = await fetch('/api/calc-stats', {
@@ -1131,17 +1019,22 @@
                 }
                 const fmt = (v) => v ? v.toFixed(3) : '-';
                 const html = `
-                    <div>Current Index: <b>${data.current}</b></div>
-                    <div></div>
-                    <div style="opacity:0.7">7 Days:</div>
-                    <div>L: ${fmt(data.l7)} - H: ${fmt(data.h7)}</div>
-                    <div style="opacity:0.7">30 Days:</div>
-                    <div>L: ${fmt(data.l30)} - H: ${fmt(data.h30)}</div>
-                    <div style="opacity:0.7">60 Days:</div>
-                    <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.9rem;">
+                        <div style="color:var(--accent-primary); font-weight:bold;">Current Index:</div>
+                        <div><b>${data.current}</b></div>
+                        <div style="opacity:0.7">7 Days:</div>
+                        <div>L: ${fmt(data.l7)} - H: ${fmt(data.h7)}</div>
+                        <div style="opacity:0.7">30 Days:</div>
+                        <div>L: ${fmt(data.l30)} - H: ${fmt(data.h30)}</div>
+                        <div style="opacity:0.7">60 Days:</div>
+                        <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
+                    </div>
                 `;
                 document.getElementById('calcHistoryContent').innerHTML = html;
-            } catch (e) { console.error(e); }
+            } catch (e) {
+                console.error(e);
+                document.getElementById('calcHistoryContent').innerHTML = '<span style="color:var(--danger)">Failed to load data.</span>';
+            }
         }
 
         function renderPeerList() {
@@ -1161,27 +1054,29 @@
             calculateFairValue(true);
         }
 
-        // Ticker Manager
         async function loadTickers() {
-            const res = await fetch('/api/tickers'); const tickers = await res.json();
-            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag" style="background:var(--card-glass); padding:5px; border-radius:4px; margin:2px; display:inline-block;">${t} <button onclick="removeTicker('${t}')" style="color:red; cursor:pointer; background:none; border:none;">&times;</button></span>`).join('');
-        }
-        async function addTicker() {
-            const input = document.getElementById('newTicker');
-            await fetch('/api/tickers', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ticker: input.value }) });
-            input.value = ''; loadTickers();
-        }
-        async function removeTicker(t) {
-            await fetch(`/api/tickers/${t}`, { method: 'DELETE' }); loadTickers();
+            const res = await fetch('/api/tickers');
+            const tickers = await res.json();
+            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag" style="background:var(--card-glass); padding:5px; border-radius:4px; margin:2px; display:inline-block;">${t} <button onclick="removeTicker('${t}')" style="color:red; cursor:pointer; background:none; border:none; padding-left:5px;">&times;</button></span>`).join('');
         }
 
-        // Mom Logic
+        async function addTicker() {
+            const input = document.getElementById('newTicker');
+            if (!input.value) return;
+            await fetch('/api/tickers', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ticker: input.value }) });
+            input.value = '';
+            loadTickers();
+        }
+
+        async function removeTicker(t) {
+            await fetch(`/api/tickers/${t}`, { method: 'DELETE' });
+            loadTickers();
+        }
+
         if (localStorage.getItem('hideMomModal') === 'true') {
             document.getElementById('momModal').style.display = 'none';
-            // Start polling if modal skipped
             poll();
         } else {
-            // If modal is shown, don't poll until they say yes? No, poll anyway in background.
             poll();
         }
 
