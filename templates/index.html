@@ -665,188 +665,223 @@
                 return true;
             };
 
-            function calculateFairValue(isRecalc = false) {
-                const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
-                const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
-                const resultDiv = document.getElementById('calcResult');
+            const getStrategyFilter = (mode) => (i) => {
+                const results = [];
+                if (checks[7]) results.push((mode === 'buy' ? i.dL7 : i.dH7) <= threshold);
+                if (checks[30]) results.push((mode === 'buy' ? i.dL30 : i.dH30) <= threshold);
+                if (checks[60]) results.push((mode === 'buy' ? i.dL60 : i.dH60) <= threshold);
+                if (results.length === 0) return false;
+                return logic === 'and' ? results.every(v => v === true) : results.some(v => v === true);
+            };
 
-                if (!tickerInput || !rawData.all_data) {
-                    resultDiv.style.display = 'none';
-                    return;
-                }
+            let buyList = rawData.all_data.filter(i => baseFilter(i) && getStrategyFilter('buy')(i));
+            let sellList = rawData.all_data.filter(i => baseFilter(i) && getStrategyFilter('sell')(i));
 
-                // Always search in Preferred data for calculator (unless user specifically wants CEF? usually PREF calc)
-                // User did not specify, but Fair Value logic (Peers, Coupon) is for Preferreds.
-                const prefData = fullModesData['preferred'].all_data || [];
+            let streakList = rawData.all_data.filter(i => {
+                if (!baseFilter(i)) return false;
+                if (i.streak_count < minStreak) return false;
+                if (sType !== 'any' && i.streak_type !== sType) return false;
+                return true;
+            });
 
-                // 1. Exact Match
-                let target = prefData.find(i => i.ticker === tickerInput);
+            const sorter = (a, b) => {
+                let vA = a[currentSort.col];
+                let vB = b[currentSort.col];
+                if (typeof vA === 'string') return currentSort.dir === 'asc' ? vA.localeCompare(vB) : vB.localeCompare(vA);
+                vA = vA || 0; vB = vB || 0;
+                return currentSort.dir === 'asc' ? vA - vB : vB - vA;
+            };
 
-                // 2. Variations (JPM-C -> JPM-PC, etc)
-                if (!target) {
-                    const variations = [
-                        tickerInput.replace(/-P([A-Z])/, '-$1'), // JPM-PC -> JPM-C
-                        tickerInput.replace(/-([A-Z])$/, '-P$1'), // JPM-C -> JPM-PC
-                        tickerInput.replace('-', '.'),           // JPM-C -> JPM.C
-                        tickerInput.replace('.', '-')            // JPM.C -> JPM-C
-                    ];
-                    for (const v of variations) {
-                        target = prefData.find(i => i.ticker === v);
-                        if (target) break;
-                    }
-                }
+            buyList.sort(sorter); sellList.sort(sorter); streakList.sort(sorter);
 
-                if (!target) {
-                    // If filtering by user is causing it? No, we search rawData.
-                    // It means it's not in the SCAN RESULT.
+            document.getElementById('globalSummary').innerText = `${buyList.length} Dips | ${sellList.length} Peaks | ${streakList.length} Momentum`;
+            renderTable('buyTable', buyList, 'buy');
+            renderTable('sellTable', sellList, 'sell');
+            renderStreakTable(streakList);
+        }
 
-                    // Show similar items to help user if they made a typo
-                    const similar = prefData
-                        .filter(i => i.ticker.startsWith(tickerInput.substr(0, 3)))
-                        .slice(0, 5)
-                        .map(i => i.ticker)
-                        .join(', ');
+        function calculateFairValue(isRecalc = false) {
+            const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
+            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
+            const resultDiv = document.getElementById('calcResult');
 
-                    if (similar && tickerInput.length > 2) {
-                        // We only warn if they typed something substantial
-                        console.log(`Ticker '${tickerInput}' not found. Similar: ${similar}`);
-                    }
-
-                    resultDiv.style.display = 'none';
-                    return;
-                }
-
-                resultDiv.style.display = 'block';
-
-                const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
-                    'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
-
-                const useIgOnly = document.getElementById('calcIgOnly').checked;
-                const sectorFilter = document.getElementById('calcSector').value;
-
-                // Populate Sector Dropdown if empty
-                const sectorSelect = document.getElementById('calcSector');
-                if (sectorSelect.options.length <= 1 && prefData.length > 0) {
-                    const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
-                    sectors.forEach(s => {
-                        const opt = document.createElement('option');
-                        opt.value = s;
-                        opt.innerText = s;
-                        sectorSelect.appendChild(opt);
-                    });
-                }
-
-                if (!isRecalc) {
-                    currentTargetTicker = target.ticker;
-                    const targetCoupon = target.raw_coupon || 0;
-                    const minC = targetCoupon - (tolerance / 100);
-                    const maxC = targetCoupon + (tolerance / 100);
-
-                    const autoPeers = prefData.filter(i => {
-                        if (i.ticker === target.ticker) return false;
-                        // Peers ARE filtered by IG/Sector
-                        if (useIgOnly) {
-                            const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
-                            if (!isIG) return false;
-                        }
-                        if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
-                        const c = i.raw_coupon || 0;
-                        return c >= minC && c <= maxC;
-                    });
-
-                    const manualPeerObjs = [];
-                    manualPeersList.forEach(t => {
-                        const p = prefData.find(x => x.ticker === t);
-                        if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
-                    });
-
-                    const combined = [...autoPeers, ...manualPeerObjs];
-                    const seen = new Set();
-                    currentPeers = combined.filter(item => {
-                        if (seen.has(item.ticker)) return false;
-                        seen.add(item.ticker);
-                        return true;
-                    });
-                    excludedPeers.clear();
-                    renderPeerList();
-                }
-
-                // Calculations
-                const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
-                let avgPrice = 0;
-                if (activePeers.length > 0) {
-                    avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
-                }
-                const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
-
-                document.getElementById('calcTickerDisplay').innerText = target.ticker;
-                const dispYield = target.yield || "N/A";
-                document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Yield: ${dispYield} | Rating: ${target.sp_rating}`;
-
-                const idxEl = document.getElementById('calcIndexValue');
-                const statusEl = document.getElementById('calcStatus');
-
-                if (activePeers.length === 0) {
-                    idxEl.innerText = "N/A";
-                    statusEl.innerText = "No peers found (Check filters)";
-                    statusEl.style.color = "var(--text-muted)";
-                } else {
-                    idxEl.innerText = indexVal.toFixed(2);
-                    if (indexVal < 0.98) {
-                        statusEl.innerText = "CHEAP (Undervalued)";
-                        statusEl.style.color = "var(--success)";
-                    } else if (indexVal > 1.02) {
-                        statusEl.innerText = "EXPENSIVE (Overvalued)";
-                        statusEl.style.color = "var(--danger)";
-                    } else {
-                        statusEl.innerText = "Fairly Valued";
-                        statusEl.style.color = "var(--warning)";
-                    }
-                }
-
-                // Stats
-                document.getElementById('idx7').innerText = `${target.dL7 ? (target.dL7 * 100).toFixed(1) + '%' : '-'} Dip`;
-                document.getElementById('idx30').innerText = `${target.dL30 ? (target.dL30 * 100).toFixed(1) + '%' : '-'} Dip`;
-                document.getElementById('idx60').innerText = `${target.dL60 ? (target.dL60 * 100).toFixed(1) + '%' : '-'} Dip`;
+            if (!tickerInput || !rawData.all_data) {
+                resultDiv.style.display = 'none';
+                return;
             }
 
-            function renderTable(targetId, list, mode) {
-                const tbody = document.querySelector(`#${targetId} tbody`);
-                tbody.innerHTML = list.map(i => {
-                    let badge = '';
-                    if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
-                    if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
+            // Always search in Preferred data for calculator (unless user specifically wants CEF? usually PREF calc)
+            // User did not specify, but Fair Value logic (Peers, Coupon) is for Preferreds.
+            const prefData = fullModesData['preferred'].all_data || [];
 
-                    let rsiVal = i.rsi || 50;
-                    let rsiColor = 'inherit';
-                    let rsiWeight = 'normal';
-                    if (rsiVal <= 30) { rsiColor = '#4ade80'; rsiWeight = 'bold'; }
-                    if (rsiVal >= 70) { rsiColor = '#f87171'; rsiWeight = 'bold'; }
+            // 1. Exact Match
+            let target = prefData.find(i => i.ticker === tickerInput);
 
-                    let vol = i.avg_volume || 0;
-                    let volStr = vol > 1000000 ? (vol / 1000000).toFixed(1) + 'M' : (vol > 1000 ? (vol / 1000).toFixed(0) + 'k' : vol);
+            // 2. Variations (JPM-C -> JPM-PC, etc)
+            if (!target) {
+                const variations = [
+                    tickerInput.replace(/-P([A-Z])/, '-$1'), // JPM-PC -> JPM-C
+                    tickerInput.replace(/-([A-Z])$/, '-P$1'), // JPM-C -> JPM-PC
+                    tickerInput.replace('-', '.'),           // JPM-C -> JPM.C
+                    tickerInput.replace('.', '-')            // JPM.C -> JPM-C
+                ];
+                for (const v of variations) {
+                    target = prefData.find(i => i.ticker === v);
+                    if (target) break;
+                }
+            }
 
-                    let yahooTicker = i.ticker;
-                    if (activeMode === 'preferred' && i.ticker.includes('-')) {
-                        yahooTicker = i.ticker.replace('-', '-P');
+            if (!target) {
+                // If filtering by user is causing it? No, we search rawData.
+                // It means it's not in the SCAN RESULT.
+
+                // Show similar items to help user if they made a typo
+                const similar = prefData
+                    .filter(i => i.ticker.startsWith(tickerInput.substr(0, 3)))
+                    .slice(0, 5)
+                    .map(i => i.ticker)
+                    .join(', ');
+
+                if (similar && tickerInput.length > 2) {
+                    // We only warn if they typed something substantial
+                    console.log(`Ticker '${tickerInput}' not found. Similar: ${similar}`);
+                }
+
+                resultDiv.style.display = 'none';
+                return;
+            }
+
+            resultDiv.style.display = 'block';
+
+            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
+                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
+
+            const useIgOnly = document.getElementById('calcIgOnly').checked;
+            const sectorFilter = document.getElementById('calcSector').value;
+
+            // Populate Sector Dropdown if empty
+            const sectorSelect = document.getElementById('calcSector');
+            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
+                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
+                sectors.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s;
+                    opt.innerText = s;
+                    sectorSelect.appendChild(opt);
+                });
+            }
+
+            if (!isRecalc) {
+                currentTargetTicker = target.ticker;
+                const targetCoupon = target.raw_coupon || 0;
+                const minC = targetCoupon - (tolerance / 100);
+                const maxC = targetCoupon + (tolerance / 100);
+
+                const autoPeers = prefData.filter(i => {
+                    if (i.ticker === target.ticker) return false;
+                    // Peers ARE filtered by IG/Sector
+                    if (useIgOnly) {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (!isIG) return false;
                     }
+                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
+                    const c = i.raw_coupon || 0;
+                    return c >= minC && c <= maxC;
+                });
 
-                    const tickerLink = activeMode === 'cef'
-                        ? `https://www.cefconnect.com/fund/${i.ticker}`
-                        : `https://finance.yahoo.com/quote/${yahooTicker}`;
+                const manualPeerObjs = [];
+                manualPeersList.forEach(t => {
+                    const p = prefData.find(x => x.ticker === t);
+                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
+                });
 
-                    const extraCol = activeMode === 'cef'
-                        ? `<td>
+                const combined = [...autoPeers, ...manualPeerObjs];
+                const seen = new Set();
+                currentPeers = combined.filter(item => {
+                    if (seen.has(item.ticker)) return false;
+                    seen.add(item.ticker);
+                    return true;
+                });
+                excludedPeers.clear();
+                renderPeerList();
+            }
+
+            // Calculations
+            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
+            let avgPrice = 0;
+            if (activePeers.length > 0) {
+                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
+            }
+            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
+
+            document.getElementById('calcTickerDisplay').innerText = target.ticker;
+            const dispYield = target.yield || "N/A";
+            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Yield: ${dispYield} | Rating: ${target.sp_rating}`;
+
+            const idxEl = document.getElementById('calcIndexValue');
+            const statusEl = document.getElementById('calcStatus');
+
+            if (activePeers.length === 0) {
+                idxEl.innerText = "N/A";
+                statusEl.innerText = "No peers found (Check filters)";
+                statusEl.style.color = "var(--text-muted)";
+            } else {
+                idxEl.innerText = indexVal.toFixed(2);
+                if (indexVal < 0.98) {
+                    statusEl.innerText = "CHEAP (Undervalued)";
+                    statusEl.style.color = "var(--success)";
+                } else if (indexVal > 1.02) {
+                    statusEl.innerText = "EXPENSIVE (Overvalued)";
+                    statusEl.style.color = "var(--danger)";
+                } else {
+                    statusEl.innerText = "Fairly Valued";
+                    statusEl.style.color = "var(--warning)";
+                }
+            }
+
+            // Stats
+            document.getElementById('idx7').innerText = `${target.dL7 ? (target.dL7 * 100).toFixed(1) + '%' : '-'} Dip`;
+            document.getElementById('idx30').innerText = `${target.dL30 ? (target.dL30 * 100).toFixed(1) + '%' : '-'} Dip`;
+            document.getElementById('idx60').innerText = `${target.dL60 ? (target.dL60 * 100).toFixed(1) + '%' : '-'} Dip`;
+        }
+
+        function renderTable(targetId, list, mode) {
+            const tbody = document.querySelector(`#${targetId} tbody`);
+            tbody.innerHTML = list.map(i => {
+                let badge = '';
+                if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
+                if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
+
+                let rsiVal = i.rsi || 50;
+                let rsiColor = 'inherit';
+                let rsiWeight = 'normal';
+                if (rsiVal <= 30) { rsiColor = '#4ade80'; rsiWeight = 'bold'; }
+                if (rsiVal >= 70) { rsiColor = '#f87171'; rsiWeight = 'bold'; }
+
+                let vol = i.avg_volume || 0;
+                let volStr = vol > 1000000 ? (vol / 1000000).toFixed(1) + 'M' : (vol > 1000 ? (vol / 1000).toFixed(0) + 'k' : vol);
+
+                let yahooTicker = i.ticker;
+                if (activeMode === 'preferred' && i.ticker.includes('-')) {
+                    yahooTicker = i.ticker.replace('-', '-P');
+                }
+
+                const tickerLink = activeMode === 'cef'
+                    ? `https://www.cefconnect.com/fund/${i.ticker}`
+                    : `https://finance.yahoo.com/quote/${yahooTicker}`;
+
+                const extraCol = activeMode === 'cef'
+                    ? `<td>
                         <div style="font-size:0.75rem; font-weight:bold;">${i.sector}</div>
                         <div style="font-size:0.7rem; color:var(--accent-primary); font-weight:bold;">${i.divergence} Div</div>
                        </td>`
-                        : `<td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>`;
+                    : `<td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>`;
 
-                    // Format percentages
-                    const fmtP = (v) => (v * 100).toFixed(2) + '%';
-                    const hitClass = (val) => val <= 0.015 ? 'yield-cell' : ''; // Using yield-cell as highlight green for now or create new
+                // Format percentages
+                const fmtP = (v) => (v * 100).toFixed(2) + '%';
+                const hitClass = (val) => val <= 0.015 ? 'yield-cell' : ''; // Using yield-cell as highlight green for now or create new
 
-                    return `<tr>
+                return `<tr>
                     <td>
                         <div class="ticker-cell">
                             <a href="${tickerLink}" target="_blank" style="color:inherit; text-decoration:none;">${i.ticker}</a>
@@ -865,15 +900,15 @@
                     <td class="${mode === 'buy' && i.dL30 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL30) : fmtP(i.dH30)}</td>
                     <td class="${mode === 'buy' && i.dL60 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL60) : fmtP(i.dH60)}</td>
                 </tr>`;
-                }).join('');
-            }
+            }).join('');
+        }
 
-            function renderStreakTable(list) {
-                const tbody = document.querySelector('#streakTable tbody');
-                tbody.innerHTML = list.map(i => {
-                    const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
-                    // Add click to calc
-                    return `<tr style="cursor:pointer;" onclick="setCalcTicker('${i.ticker}')">
+        function renderStreakTable(list) {
+            const tbody = document.querySelector('#streakTable tbody');
+            tbody.innerHTML = list.map(i => {
+                const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
+                // Add click to calc
+                return `<tr style="cursor:pointer;" onclick="setCalcTicker('${i.ticker}')">
                     <td>
                         <div class="ticker-cell">${i.ticker} ${streakIcon}</div>
                         <div style="font-size:0.7rem; opacity:0.5;">${i.name.slice(0, 15)}</div>
@@ -882,173 +917,173 @@
                     <td style="font-weight:bold;">${i.streak_count}</td>
                     <td class="yield-cell">${i.yield}</td>
                 </tr>`;
-                }).join('');
+            }).join('');
+        }
+
+        // --- Calculator Logic ---
+        function setCalcTicker(ticker) {
+            document.getElementById('calcTicker').value = ticker;
+            calculateFairValue();
+            // Scroll to calculator
+            document.querySelector('.bottom-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        let currentPeers = [];
+        let excludedPeers = new Set();
+        let manualPeersList = new Set();
+        let currentTargetTicker = "";
+
+        function addManualPeer() {
+            const input = document.getElementById('manualPeerInput');
+            const ticker = input.value.toUpperCase().trim();
+            if (!ticker) return;
+
+            const prefData = fullModesData['preferred'].all_data || [];
+            const exists = prefData.find(i => i.ticker === ticker || i.ticker.replace('-P', '-') === ticker);
+
+            if (exists) {
+                manualPeersList.add(exists.ticker);
+                input.value = '';
+                calculateFairValue(false);
+            } else {
+                alert('Ticker not found in database!');
+            }
+        }
+
+        function calculateFairValue(isRecalc = false) {
+            const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
+            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
+            const resultDiv = document.getElementById('calcResult');
+
+            if (!tickerInput || !rawData.all_data) {
+                resultDiv.style.display = 'none';
+                return;
             }
 
-            // --- Calculator Logic ---
-            function setCalcTicker(ticker) {
-                document.getElementById('calcTicker').value = ticker;
-                calculateFairValue();
-                // Scroll to calculator
-                document.querySelector('.bottom-section').scrollIntoView({ behavior: 'smooth' });
+            const prefData = fullModesData['preferred'].all_data || [];
+            const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
+
+            if (!target) return;
+
+            resultDiv.style.display = 'block';
+
+            // Constants for IG logic (copied from original)
+            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
+                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
+
+            const useIgOnly = document.getElementById('calcIgOnly').checked;
+            const sectorFilter = document.getElementById('calcSector').value;
+
+            // Lazy populate sectors if needed for calculator specifics
+            const sectorSelect = document.getElementById('calcSector');
+            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
+                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
+                sectors.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s;
+                    opt.innerText = s;
+                    sectorSelect.appendChild(opt);
+                });
             }
 
-            let currentPeers = [];
-            let excludedPeers = new Set();
-            let manualPeersList = new Set();
-            let currentTargetTicker = "";
+            if (!isRecalc) {
+                currentTargetTicker = target.ticker;
+                const targetCoupon = target.raw_coupon || 0;
+                const minC = targetCoupon - (tolerance / 100);
+                const maxC = targetCoupon + (tolerance / 100);
 
-            function addManualPeer() {
-                const input = document.getElementById('manualPeerInput');
-                const ticker = input.value.toUpperCase().trim();
-                if (!ticker) return;
-
-                const prefData = fullModesData['preferred'].all_data || [];
-                const exists = prefData.find(i => i.ticker === ticker || i.ticker.replace('-P', '-') === ticker);
-
-                if (exists) {
-                    manualPeersList.add(exists.ticker);
-                    input.value = '';
-                    calculateFairValue(false);
-                } else {
-                    alert('Ticker not found in database!');
-                }
-            }
-
-            function calculateFairValue(isRecalc = false) {
-                const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
-                const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
-                const resultDiv = document.getElementById('calcResult');
-
-                if (!tickerInput || !rawData.all_data) {
-                    resultDiv.style.display = 'none';
-                    return;
-                }
-
-                const prefData = fullModesData['preferred'].all_data || [];
-                const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
-
-                if (!target) return;
-
-                resultDiv.style.display = 'block';
-
-                // Constants for IG logic (copied from original)
-                const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
-                    'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
-
-                const useIgOnly = document.getElementById('calcIgOnly').checked;
-                const sectorFilter = document.getElementById('calcSector').value;
-
-                // Lazy populate sectors if needed for calculator specifics
-                const sectorSelect = document.getElementById('calcSector');
-                if (sectorSelect.options.length <= 1 && prefData.length > 0) {
-                    const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
-                    sectors.forEach(s => {
-                        const opt = document.createElement('option');
-                        opt.value = s;
-                        opt.innerText = s;
-                        sectorSelect.appendChild(opt);
-                    });
-                }
-
-                if (!isRecalc) {
-                    currentTargetTicker = target.ticker;
-                    const targetCoupon = target.raw_coupon || 0;
-                    const minC = targetCoupon - (tolerance / 100);
-                    const maxC = targetCoupon + (tolerance / 100);
-
-                    const autoPeers = prefData.filter(i => {
-                        if (i.ticker === target.ticker) return false;
-                        if (useIgOnly) {
-                            const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
-                            if (!isIG) return false;
-                        }
-                        if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
-                        const c = i.raw_coupon || 0;
-                        return c >= minC && c <= maxC;
-                    });
-
-                    // Merge Auto + Manual
-                    const manualPeerObjs = [];
-                    manualPeersList.forEach(t => {
-                        const p = prefData.find(x => x.ticker === t);
-                        if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
-                    });
-
-                    const combined = [...autoPeers, ...manualPeerObjs];
-                    const seen = new Set();
-                    currentPeers = combined.filter(item => {
-                        if (seen.has(item.ticker)) return false;
-                        seen.add(item.ticker);
-                        return true;
-                    });
-                    excludedPeers.clear();
-                    renderPeerList();
-                }
-
-                // Calc
-                const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
-                let avgPrice = 0;
-                if (activePeers.length > 0) {
-                    avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
-                }
-                const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
-
-                document.getElementById('calcTickerDisplay').innerText = target.ticker;
-                document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
-
-                const idxEl = document.getElementById('calcIndexValue');
-                const statusEl = document.getElementById('calcStatus');
-
-                if (activePeers.length === 0) {
-                    idxEl.innerText = "N/A";
-                    statusEl.innerText = "No peers";
-                    statusEl.style.color = "var(--text-muted)";
-                } else {
-                    idxEl.innerText = indexVal.toFixed(2);
-                    if (indexVal < 0.98) {
-                        statusEl.innerText = "CHEAP (Undervalued)";
-                        statusEl.style.color = "var(--success)";
-                    } else if (indexVal > 1.02) {
-                        statusEl.innerText = "EXPENSIVE (Overvalued)";
-                        statusEl.style.color = "var(--danger)";
-                    } else {
-                        statusEl.innerText = "FAIR VALUE";
-                        statusEl.style.color = "white";
+                const autoPeers = prefData.filter(i => {
+                    if (i.ticker === target.ticker) return false;
+                    if (useIgOnly) {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (!isIG) return false;
                     }
+                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
+                    const c = i.raw_coupon || 0;
+                    return c >= minC && c <= maxC;
+                });
+
+                // Merge Auto + Manual
+                const manualPeerObjs = [];
+                manualPeersList.forEach(t => {
+                    const p = prefData.find(x => x.ticker === t);
+                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
+                });
+
+                const combined = [...autoPeers, ...manualPeerObjs];
+                const seen = new Set();
+                currentPeers = combined.filter(item => {
+                    if (seen.has(item.ticker)) return false;
+                    seen.add(item.ticker);
+                    return true;
+                });
+                excludedPeers.clear();
+                renderPeerList();
+            }
+
+            // Calc
+            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
+            let avgPrice = 0;
+            if (activePeers.length > 0) {
+                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
+            }
+            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
+
+            document.getElementById('calcTickerDisplay').innerText = target.ticker;
+            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
+
+            const idxEl = document.getElementById('calcIndexValue');
+            const statusEl = document.getElementById('calcStatus');
+
+            if (activePeers.length === 0) {
+                idxEl.innerText = "N/A";
+                statusEl.innerText = "No peers";
+                statusEl.style.color = "var(--text-muted)";
+            } else {
+                idxEl.innerText = indexVal.toFixed(2);
+                if (indexVal < 0.98) {
+                    statusEl.innerText = "CHEAP (Undervalued)";
+                    statusEl.style.color = "var(--success)";
+                } else if (indexVal > 1.02) {
+                    statusEl.innerText = "EXPENSIVE (Overvalued)";
+                    statusEl.style.color = "var(--danger)";
+                } else {
+                    statusEl.innerText = "FAIR VALUE";
+                    statusEl.style.color = "white";
                 }
-                document.getElementById('calcPeerStats').innerHTML = `
+            }
+            document.getElementById('calcPeerStats').innerHTML = `
                 Avg Peer Price: <b>$${avgPrice.toFixed(2)}</b> | 
                 Active Count: <b>${activePeers.length}</b> / ${currentPeers.length}`;
 
-                // Historical Stats
-                clearTimeout(histDebounce);
-                if (activePeers.length > 0) {
-                    document.getElementById('calcHistory').style.display = 'block';
-                    document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
-                    histDebounce = setTimeout(() => {
-                        fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
-                    }, 1000);
-                } else {
-                    document.getElementById('calcHistory').style.display = 'none';
-                }
+            // Historical Stats
+            clearTimeout(histDebounce);
+            if (activePeers.length > 0) {
+                document.getElementById('calcHistory').style.display = 'block';
+                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
+                histDebounce = setTimeout(() => {
+                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
+                }, 1000);
+            } else {
+                document.getElementById('calcHistory').style.display = 'none';
             }
+        }
 
-            let histDebounce = null;
-            async function fetchHistoricalStats(target, peers) {
-                try {
-                    const res = await fetch('/api/calc-stats', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ target, peers })
-                    });
-                    const data = await res.json();
-                    if (data.error) {
-                        document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">${data.error}</span>`;
-                        return;
-                    }
-                    const fmt = (v) => v ? v.toFixed(3) : '-';
-                    const html = `
+        let histDebounce = null;
+        async function fetchHistoricalStats(target, peers) {
+            try {
+                const res = await fetch('/api/calc-stats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ target, peers })
+                });
+                const data = await res.json();
+                if (data.error) {
+                    document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">${data.error}</span>`;
+                    return;
+                }
+                const fmt = (v) => v ? v.toFixed(3) : '-';
+                const html = `
                     <div>Current Index: <b>${data.current}</b></div>
                     <div></div>
                     <div style="opacity:0.7">7 Days:</div>
@@ -1058,75 +1093,75 @@
                     <div style="opacity:0.7">60 Days:</div>
                     <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
                 `;
-                    document.getElementById('calcHistoryContent').innerHTML = html;
-                } catch (e) { console.error(e); }
-            }
+                document.getElementById('calcHistoryContent').innerHTML = html;
+            } catch (e) { console.error(e); }
+        }
 
-            function renderPeerList() {
-                const container = document.getElementById('calcPeerList');
-                container.innerHTML = currentPeers.map(p => {
-                    const isEx = excludedPeers.has(p.ticker);
-                    return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
+        function renderPeerList() {
+            const container = document.getElementById('calcPeerList');
+            container.innerHTML = currentPeers.map(p => {
+                const isEx = excludedPeers.has(p.ticker);
+                return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
                     ${p.ticker} ($${p.price.toFixed(2)})
                 </span>`;
-                }).join('');
-            }
+            }).join('');
+        }
 
-            function togglePeer(ticker) {
-                if (excludedPeers.has(ticker)) excludedPeers.delete(ticker);
-                else excludedPeers.add(ticker);
-                renderPeerList();
-                calculateFairValue(true);
-            }
+        function togglePeer(ticker) {
+            if (excludedPeers.has(ticker)) excludedPeers.delete(ticker);
+            else excludedPeers.add(ticker);
+            renderPeerList();
+            calculateFairValue(true);
+        }
 
-            // Ticker Manager
-            async function loadTickers() {
-                const res = await fetch('/api/tickers'); const tickers = await res.json();
-                document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag" style="background:var(--card-glass); padding:5px; border-radius:4px; margin:2px; display:inline-block;">${t} <button onclick="removeTicker('${t}')" style="color:red; cursor:pointer; background:none; border:none;">&times;</button></span>`).join('');
-            }
-            async function addTicker() {
-                const input = document.getElementById('newTicker');
-                await fetch('/api/tickers', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ticker: input.value }) });
-                input.value = ''; loadTickers();
-            }
-            async function removeTicker(t) {
-                await fetch(`/api/tickers/${t}`, { method: 'DELETE' }); loadTickers();
-            }
+        // Ticker Manager
+        async function loadTickers() {
+            const res = await fetch('/api/tickers'); const tickers = await res.json();
+            document.getElementById('tickerList').innerHTML = tickers.map(t => `<span class="tag" style="background:var(--card-glass); padding:5px; border-radius:4px; margin:2px; display:inline-block;">${t} <button onclick="removeTicker('${t}')" style="color:red; cursor:pointer; background:none; border:none;">&times;</button></span>`).join('');
+        }
+        async function addTicker() {
+            const input = document.getElementById('newTicker');
+            await fetch('/api/tickers', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ticker: input.value }) });
+            input.value = ''; loadTickers();
+        }
+        async function removeTicker(t) {
+            await fetch(`/api/tickers/${t}`, { method: 'DELETE' }); loadTickers();
+        }
 
-            // Mom Logic
-            if (localStorage.getItem('hideMomModal') === 'true') {
-                document.getElementById('momModal').style.display = 'none';
-                // Start polling if modal skipped
-                poll();
-            } else {
-                // If modal is shown, don't poll until they say yes? No, poll anyway in background.
-                poll();
-            }
+        // Mom Logic
+        if (localStorage.getItem('hideMomModal') === 'true') {
+            document.getElementById('momModal').style.display = 'none';
+            // Start polling if modal skipped
+            poll();
+        } else {
+            // If modal is shown, don't poll until they say yes? No, poll anyway in background.
+            poll();
+        }
 
-            let currentQuestion = 1;
-            function handleMom(isYes) {
-                const questionEl = document.getElementById('momQuestion');
-                const btnGroup = document.querySelector('.mom-btns');
-                const dontAsk = document.getElementById('dontAskAgain').checked;
+        let currentQuestion = 1;
+        function handleMom(isYes) {
+            const questionEl = document.getElementById('momQuestion');
+            const btnGroup = document.querySelector('.mom-btns');
+            const dontAsk = document.getElementById('dontAskAgain').checked;
 
-                if (currentQuestion === 1) {
-                    if (isYes) {
-                        if (dontAsk) localStorage.setItem('hideMomModal', 'true');
-                        document.getElementById('momModal').style.display = 'none';
-                    } else {
-                        currentQuestion = 2;
-                        questionEl.innerText = 'are you sure you dont wanna destroy moms ?';
-                    }
+            if (currentQuestion === 1) {
+                if (isYes) {
+                    if (dontAsk) localStorage.setItem('hideMomModal', 'true');
+                    document.getElementById('momModal').style.display = 'none';
                 } else {
-                    if (isYes) {
-                        questionEl.innerText = 'this site is not for you';
-                        btnGroup.style.display = 'none';
-                    } else {
-                        currentQuestion = 1;
-                        questionEl.innerText = 'do you wanna destroy moms ?';
-                    }
+                    currentQuestion = 2;
+                    questionEl.innerText = 'are you sure you dont wanna destroy moms ?';
+                }
+            } else {
+                if (isYes) {
+                    questionEl.innerText = 'this site is not for you';
+                    btnGroup.style.display = 'none';
+                } else {
+                    currentQuestion = 1;
+                    questionEl.innerText = 'do you wanna destroy moms ?';
                 }
             }
+        }
     </script>
 </body>
 
