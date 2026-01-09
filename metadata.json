@@ -3070,5 +3070,2886 @@
         "sector": "Financial Services",
         "type": "Preferred Stock",
         "rate": "Fixed"
+    },
+    "NRUC": {
+        "name": "NRUC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ABXL": {
+        "name": "ABXL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NEWTP": {
+        "name": "NewtekOne, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.53
+    },
+    "ADAMZ": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.75
+    },
+    "NEE-N": {
+        "name": "NEE-N",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ADAMI": {
+        "name": "New York Mortgage Trust, Inc. 9.125% Senior Notes Due 2029",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "NEE-PU": {
+        "name": "NEE-PU",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ADAMG": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.83
+    },
+    "$19.56": {
+        "name": "$19.56",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ADAMH": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.83
+    },
+    "ADAMM": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.76
+    },
+    "OAK-A": {
+        "name": "OAK-A",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ADAMN": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.0
+    },
+    "ADAML": {
+        "name": "Adamas Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.72
+    },
+    "OAK-PRB": {
+        "name": "OAK-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AEFC": {
+        "name": "AEFC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "OCCIM": {
+        "name": "OCCIM",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MGR": {
+        "name": "MGR",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LTSAP": {
+        "name": "Osaic Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.0
+    },
+    "MGRB": {
+        "name": "MGRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LTSL": {
+        "name": "Ladenburg Thalmann Financial Services Inc. 6.50% NT 27",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.03
+    },
+    "MGRD": {
+        "name": "MGRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LTSH": {
+        "name": "LTSH",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MGRE": {
+        "name": "MGRE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LTSF": {
+        "name": "Ladenburg Thalmann Financial Services Inc. 7.00% SN NT 28",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.03
+    },
+    "MITN": {
+        "name": "MITN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LTSK": {
+        "name": "LTSK",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MITP": {
+        "name": "MITP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PREJF": {
+        "name": "PartnerRe Ltd.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.22
+    },
+    "AGNCZ": {
+        "name": "AGNC Investment Corp.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.76
+    },
+    "PMTU": {
+        "name": "PMTU",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AQNB": {
+        "name": "AQNB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PMTV": {
+        "name": "PMTV",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "PINE-PA": {
+        "name": "Alpine Income Property Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.135
+    },
+    "BPOPO": {
+        "name": "Popular, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.59
+    },
+    "AFGB": {
+        "name": "AFGB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RWTN": {
+        "name": "RWTN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AFSIA": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.69
+    },
+    "RWTO": {
+        "name": "RWTO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AFSIN": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.74
+    },
+    "RWTP": {
+        "name": "Redwood Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.72
+    },
+    "AFSIC": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.91
+    },
+    "RWTQ": {
+        "name": "Redwood Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.72
+    },
+    "AFSIB": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.81
+    },
+    "AFSIP": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.88
+    },
+    "RITM-E": {
+        "name": "RITM-E",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AFSIM": {
+        "name": "AmTrust Financial Services, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.94
+    },
+    "RWAYL": {
+        "name": "RWAYL",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AOMN": {
+        "name": "AOMN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCCD": {
+        "name": "SCCD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AOMD": {
+        "name": "AOMD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCCE": {
+        "name": "SCCE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NLY-PJ": {
+        "name": "Annaly Capital Management, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.55
+    },
+    "SCCF": {
+        "name": "SCCF",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "APOS": {
+        "name": "APOS",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SCCG": {
+        "name": "SCCG",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AHT-PD": {
+        "name": "Ashford Hospitality Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.11
+    },
+    "SAT": {
+        "name": "SAT",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "AIZN": {
+        "name": "AIZN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SAJ": {
+        "name": "SAJ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ATHS": {
+        "name": "ATHS",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SAY": {
+        "name": "SAY",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "RILYN": {
+        "name": "B. Riley Financial, Inc. 6.50% Senior Notes Due 2026",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "SAZ": {
+        "name": "SAZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BWNB": {
+        "name": "BWNB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BIPI": {
+        "name": "BIPI",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SREA": {
+        "name": "SREA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BEPH": {
+        "name": "BEPH",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SRG-PA": {
+        "name": "Seritage Growth Properties",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.75
+    },
+    "SOCGP": {
+        "name": "Southern California Gas Company PFD SER A 6%",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "BEPI": {
+        "name": "BEPI",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SOJD": {
+        "name": "SOJD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BEPJ": {
+        "name": "BEPJ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "SOJE": {
+        "name": "SOJE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BNJ": {
+        "name": "BNJ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BIPH": {
+        "name": "Safeplus International Holdings Limited",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "SOJF": {
+        "name": "SOJF",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BIP-PA": {
+        "name": "Brookfield Infrastructure Partners L.P.",
+        "sector": "Utilities",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.28
+    },
+    "TMUSI": {
+        "name": "T-Mobile US, Inc. 5.500% Senior Notes due June 2070",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "TMUSL": {
+        "name": "T-Mobile US, Inc. 6.250% Senior Notes due 2069",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "BIP-B": {
+        "name": "BIP-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "TMUSZ": {
+        "name": "T-Mobile US, Inc. 5.500% Senior Notes due March 2070",
+        "sector": "Other",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "BPYPM": {
+        "name": "Brookfield Property Preferred L.P.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.56
+    },
+    "TFSA": {
+        "name": "TFSA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BPYPP": {
+        "name": "Brookfield Property Partners L.P.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.63
+    },
+    "TPTA": {
+        "name": "TPTA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BPYPO": {
+        "name": "Brookfield Property Partners L.P.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.59
+    },
+    "UZD": {
+        "name": "UZD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BPYPN": {
+        "name": "Brookfield Property Partners L.P.",
+        "sector": "Real Estate",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.44
+    },
+    "UZE": {
+        "name": "UZE",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "BEP-PRA": {
+        "name": "BEP-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "UZF": {
+        "name": "UZF",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CCID": {
+        "name": "Carlyle Credit Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.84
+    },
+    "WSBCO": {
+        "name": "WesBanco, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.13
+    },
+    "CHRB": {
+        "name": "CHRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB-F": {
+        "name": "WRB-F",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CIMN": {
+        "name": "CIMN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CIMP": {
+        "name": "CIMP",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB.PG": {
+        "name": "WRB.PG",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CMSC": {
+        "name": "CMSC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "WRB.PH": {
+        "name": "WRB.PH",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CMSD": {
+        "name": "CMSD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "XELLL": {
+        "name": "Xcel Energy Inc.",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.26
+    },
+    "CNO.PA": {
+        "name": "CNO.PA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CMA-B": {
+        "name": "CMA-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CODI-A": {
+        "name": "CODI-A",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CODI-C": {
+        "name": "CODI-C",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CODI-PB": {
+        "name": "Compass Diversified",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.97
+    },
+    "CRBD": {
+        "name": "CRBD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "KTBA": {
+        "name": "KTBA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "CUBB": {
+        "name": "CUBB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DHCNI": {
+        "name": "DHCNI",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DTB": {
+        "name": "DTB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DTG": {
+        "name": "DTG",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DTK": {
+        "name": "DTK",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DUKB": {
+        "name": "DUKB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "DLNG-A": {
+        "name": "DLNG-A",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ECCW": {
+        "name": "ECCW",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ECCV": {
+        "name": "ECCV",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "ECCU": {
+        "name": "ECCU",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "EBBNF": {
+        "name": "Enbridge Inc.",
+        "sector": "Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.46
+    },
+    "EMP": {
+        "name": "Entergy Mississippi, Inc. 1M BD 66",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "ETI-": {
+        "name": "ETI-",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FGN": {
+        "name": "FGN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FGSN": {
+        "name": "FGSN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FGNXP": {
+        "name": "FG Nexus Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.0
+    },
+    "INBKZ": {
+        "name": "INBKZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "F.PB": {
+        "name": "F.PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "F-C": {
+        "name": "F-C",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "F-D": {
+        "name": "F-D",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "FBIOP": {
+        "name": "Fortress Biotech, Inc.",
+        "sector": "Healthcare",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "FTAIN": {
+        "name": "FTAI Aviation Ltd.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.07
+    },
+    "FTAIM": {
+        "name": "FTAI Aviation Ltd.",
+        "sector": "Industrials",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.37
+    },
+    "GLOP-PRA": {
+        "name": "GLOP-PRA",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLOP-PRC": {
+        "name": "GLOP-PRC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLOP-PRB": {
+        "name": "GLOP-PRB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GMRE.PB": {
+        "name": "GMRE.PB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GLP-B": {
+        "name": "GLP-B",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GL-PRD": {
+        "name": "GL-PRD",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GECCH": {
+        "name": "GECCH",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "GECCG": {
+        "name": "Great Elm Capital Corp. 7.75% Notes Due 2030",
+        "sector": "Financials/Banking",
+        "type": "Note/ETD",
+        "rate": "Fixed",
+        "dividendRate": 0.0
+    },
+    "HWCPZ": {
+        "name": "HWCPZ",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "HTFC": {
+        "name": "HTFC",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "KMPB": {
+        "name": "KMPB",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "KKRS": {
+        "name": "KKRS",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "KKRT": {
+        "name": "KKRT",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "LOB-PA": {
+        "name": "Live Oak Bancshares, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.76
+    },
+    "MTB-K": {
+        "name": "MTB-K",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MFAN": {
+        "name": "MFAN",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "MFAO": {
+        "name": "MFAO",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "NIE": {
+        "name": "Virtus Equity & Convertible Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.0
+    },
+    "AWP": {
+        "name": "abrdn Global Premier Properties Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.48
+    },
+    "AFB": {
+        "name": "AllianceBernstein National Municipal Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.52
+    },
+    "ACP": {
+        "name": "Abrdn Income Credit Strategies Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.93
+    },
+    "CSQ": {
+        "name": "Calamos Strategic Total Return Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.25
+    },
+    "BBN": {
+        "name": "BlackRock Taxable Municipal Bond Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.18
+    },
+    "RVT": {
+        "name": "Royce Small-Cap Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.42
+    },
+    "AVK": {
+        "name": "Advent Convertible and Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.41
+    },
+    "BFZ": {
+        "name": "BlackRock California Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "EOS": {
+        "name": "Eaton Vance Enhanced Equity Income Fund II",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.83
+    },
+    "BCX": {
+        "name": "Blackrock Resources & Commodities Strategy Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.84
+    },
+    "BFK": {
+        "name": "BlackRock Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "SOR": {
+        "name": "Source Capital",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.5
+    },
+    "BGB": {
+        "name": "Blackstone Strategic Credit 2027 Term Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.0
+    },
+    "BHV": {
+        "name": "BlackRock Virginia Municipal Bond Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.55
+    },
+    "BKN": {
+        "name": "BlackRock Investment Quality Municipal Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.68
+    },
+    "ADX": {
+        "name": "Adams Diversified Equity Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.84
+    },
+    "BGT": {
+        "name": "BlackRock Floating Rate Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Floating",
+        "dividendRate": 1.44
+    },
+    "BLE": {
+        "name": "BlackRock Municipal Income Trust II",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "RMT": {
+        "name": "Royce Micro-Cap Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.79
+    },
+    "BHK": {
+        "name": "BlackRock Core Bond Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.9
+    },
+    "BMN": {
+        "name": "Blackrock 2037 Municipal Target Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.13
+    },
+    "FFA": {
+        "name": "First Trust Enhanced Equity Income Fund",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.48
+    },
+    "BIT": {
+        "name": "BlackRock Multi-Sector Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.48
+    },
+    "BNY": {
+        "name": "BlackRock New York Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "NBXG": {
+        "name": "Neuberger Berman Income Funds - Neuberger Next Generation Connectivity Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.28
+    },
+    "BYM": {
+        "name": "BlackRock Municipal Income Quality Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.67
+    },
+    "BLW": {
+        "name": "BlackRock Limited Duration Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.36
+    },
+    "ETG": {
+        "name": "Eaton Vance Tax-Advantaged Global Dividend Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.55
+    },
+    "BTT": {
+        "name": "Blackrock Municipal 2030 Target Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.56
+    },
+    "CEV": {
+        "name": "Eaton Vance California Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "BTX": {
+        "name": "BlackRock Innovation and Growth Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.63
+    },
+    "BTZ": {
+        "name": "BlackRock Credit Allocation Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.01
+    },
+    "CMU": {
+        "name": "MFS High Yield Municipal Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.19
+    },
+    "EVT": {
+        "name": "Eaton Vance Tax-Advantaged Dividend Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.98
+    },
+    "BXSL": {
+        "name": "Blackstone Secured Lending Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.08
+    },
+    "CXE": {
+        "name": "MFS High Income Municipal Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.21
+    },
+    "ETY": {
+        "name": "Eaton Vance Tax-Managed Diversified Equity Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.19
+    },
+    "CXH": {
+        "name": "MFS Investment Grade Municipal Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.38
+    },
+    "DBL": {
+        "name": "DoubleLine Opportunistic Credit Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "SPXX": {
+        "name": "Nuveen S&P 500 Dynamic Overwrite Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.35
+    },
+    "DMB": {
+        "name": "BNY Mellon Municipal Bond Infrastructure Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.44
+    },
+    "DSL": {
+        "name": "DoubleLine Income Solutions Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "SCD": {
+        "name": "LMP Capital and Income Fund Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.44
+    },
+    "DSM": {
+        "name": "BNY Mellon Strategic Municipal Bond Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.26
+    },
+    "DSU": {
+        "name": "BlackRock Debt Strategies Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.18
+    },
+    "EOI": {
+        "name": "Eaton Vance Enhanced Equity Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.61
+    },
+    "DTF": {
+        "name": "DTF Tax-Free Income 2028 Term Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.39
+    },
+    "ECC": {
+        "name": "Eagle Point Credit Company Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.68
+    },
+    "BXMX": {
+        "name": "Nuveen S&P 500 Buy-Write Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.09
+    },
+    "EIM": {
+        "name": "Eaton Vance Municipal Bond Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "EDF": {
+        "name": "Virtus Stone Harbor Emerging Markets Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.72
+    },
+    "ETO": {
+        "name": "Eaton Vance Tax-Advantaged Global Dividend Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.08
+    },
+    "EFR": {
+        "name": "Eaton Vance Senior Floating-Rate Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Floating",
+        "dividendRate": 0.92
+    },
+    "ENX": {
+        "name": "ENX",
+        "sector": "Other",
+        "type": "Unknown",
+        "rate": "Fixed",
+        "dividendRate": 0.0,
+        "incomplete": true
+    },
+    "JCE": {
+        "name": "Nuveen Core Equity Alpha Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.28
+    },
+    "FFC": {
+        "name": "Flaherty & Crumrine Preferred Securities Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.14
+    },
+    "EOT": {
+        "name": "Eaton Vance National Municipal Opportunities Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.82
+    },
+    "BOE": {
+        "name": "BlackRock Enhanced Global Dividend Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.99
+    },
+    "ETX": {
+        "name": "Eaton Vance Municipal Income 2028 Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.94
+    },
+    "FRA": {
+        "name": "BlackRock Floating Rate Income Strategies Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Floating",
+        "dividendRate": 1.49
+    },
+    "NFJ": {
+        "name": "Virtus Dividend, Interest & Premium Strategy Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.22
+    },
+    "EVN": {
+        "name": "Eaton Vance Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.62
+    },
+    "FSCO": {
+        "name": "FS Credit Opportunities Corp.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.8
+    },
+    "ECAT": {
+        "name": "BlackRock ESG Capital Allocation Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.32
+    },
+    "GHY": {
+        "name": "PGIM Global High Yield Fund, Inc",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.26
+    },
+    "FMN": {
+        "name": "Federated Hermes Premier Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.54
+    },
+    "DIAX": {
+        "name": "Nuveen Dow 30 Dynamic Overwrite Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.2
+    },
+    "GOF": {
+        "name": "Guggenheim Strategic Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.19
+    },
+    "GBAB": {
+        "name": "Guggenheim Taxable Municipal Bond & Investment Grade Debt Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.51
+    },
+    "SPE": {
+        "name": "Special Opportunities Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.31
+    },
+    "GUG": {
+        "name": "Guggenheim Active Allocation Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.43
+    },
+    "IIM": {
+        "name": "Invesco Value Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.93
+    },
+    "ETB": {
+        "name": "Eaton Vance Tax-Managed Buy-Write Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.27
+    },
+    "HIO": {
+        "name": "Western Asset High Income Opportunity Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.43
+    },
+    "IQI": {
+        "name": "Invesco Quality Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.76
+    },
+    "TBLD": {
+        "name": "Thornburg Income Builder Opportunities Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.25
+    },
+    "KTF": {
+        "name": "DWS Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.73
+    },
+    "HPF": {
+        "name": "John Hancock Preferred Income Fund II",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.48
+    },
+    "NMAI": {
+        "name": "Nuveen Multi-Asset Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.39
+    },
+    "HPI": {
+        "name": "John Hancock Preferred Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.48
+    },
+    "LEO": {
+        "name": "BNY Mellon Strategic Municipals, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.26
+    },
+    "GNT": {
+        "name": "GAMCO Natural Resources, Gold & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.57
+    },
+    "HPS": {
+        "name": "John Hancock Preferred Income Fund III",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "MFM": {
+        "name": "MFS Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.28
+    },
+    "EXG": {
+        "name": "Eaton Vance Tax-Managed Global Diversified Equity Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.79
+    },
+    "ISD": {
+        "name": "PGIM High Yield Bond Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.26
+    },
+    "MHD": {
+        "name": "BlackRock MuniHoldings Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.71
+    },
+    "GF": {
+        "name": "The New Germany Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.15
+    },
+    "JPC": {
+        "name": "Nuveen Preferred & Income Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.75
+    },
+    "MHF": {
+        "name": "Western Asset Municipal High Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.41
+    },
+    "CRF": {
+        "name": "Cornerstone Total Return Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.4
+    },
+    "KIO": {
+        "name": "KKR Income Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.46
+    },
+    "MHN": {
+        "name": "BlackRock MuniHoldings New York Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.62
+    },
+    "FUND": {
+        "name": "Sprott Focus Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.58
+    },
+    "KYN": {
+        "name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+        "sector": "Utilities/Energy",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.97
+    },
+    "MIY": {
+        "name": "BlackRock MuniYield Michigan Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "ETW": {
+        "name": "Eaton Vance Tax-Managed Global Buy-Write Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.8
+    },
+    "MSD": {
+        "name": "Morgan Stanley Emerging Markets Debt Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.73
+    },
+    "MMD": {
+        "name": "NYLI MacKay DefinedTerm Muni Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "AOD": {
+        "name": "Abrdn Total Dynamic Dividend Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.17
+    },
+    "NUV": {
+        "name": "Nuveen Municipal Value Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.39
+    },
+    "BDJ": {
+        "name": "BlackRock Enhanced Equity Dividend Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.74
+    },
+    "MPA": {
+        "name": "BlackRock MuniYield Pennsylvania Quality Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.57
+    },
+    "PCN": {
+        "name": "PIMCO Corporate & Income Strategy Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.35
+    },
+    "BCAT": {
+        "name": "BlackRock Capital Allocation Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.13
+    },
+    "MQT": {
+        "name": "BlackRock MuniYield Quality Fund II, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "PDI": {
+        "name": "PIMCO Dynamic Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.65
+    },
+    "MQY": {
+        "name": "BlackRock MuniYield Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.7
+    },
+    "ETJ": {
+        "name": "Eaton Vance Risk-Managed Diversified Equity Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "PDO": {
+        "name": "Pimco Dynamic Income Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.53
+    },
+    "MUA": {
+        "name": "BlackRock MuniAssets Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.67
+    },
+    "CLM": {
+        "name": "Cornerstone Strategic Investment Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.46
+    },
+    "GDV": {
+        "name": "The Gabelli Dividend & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.8
+    },
+    "PFL": {
+        "name": "PIMCO Income Strategy Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.98
+    },
+    "MUC": {
+        "name": "BlackRock MuniHoldings California Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.64
+    },
+    "GGZ": {
+        "name": "The Gabelli Global Small and Mid Cap Value Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.69
+    },
+    "PHK": {
+        "name": "PIMCO High Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.58
+    },
+    "MUE": {
+        "name": "BlackRock MuniHoldings Quality Fund II, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "PIM": {
+        "name": "Putnam Master Intermediate Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.26
+    },
+    "GGT": {
+        "name": "The Gabelli Multimedia Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.88
+    },
+    "MUJ": {
+        "name": "BlackRock MuniHoldings New Jersey Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "MVT": {
+        "name": "BlackRock MuniVest Fund II, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "PTY": {
+        "name": "PIMCO Corporate & Income Opportunity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.43
+    },
+    "USA": {
+        "name": "Liberty All-Star Equity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.67
+    },
+    "MVF": {
+        "name": "BlackRock MuniVest Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.43
+    },
+    "RA": {
+        "name": "Brookfield Real Assets Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.42
+    },
+    "ZTR": {
+        "name": "Virtus Global Dividend & Income Fund Inc.",
+        "sector": "",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.69
+    },
+    "TEI": {
+        "name": "Templeton Emerging Markets Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.57
+    },
+    "MYD": {
+        "name": "BlackRock MuniYield Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "EOD": {
+        "name": "Wells Fargo Advantage Funds - Allspring Global Dividend Opportunity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.51
+    },
+    "MYI": {
+        "name": "BlackRock MuniYield Quality Fund III, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.67
+    },
+    "THQ": {
+        "name": "Abrdn Healthcare Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.16
+    },
+    "AGD": {
+        "name": "abrdn Global Dynamic Dividend",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.205
+    },
+    "THW": {
+        "name": "Abrdn World Healthcare Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.4
+    },
+    "GLO": {
+        "name": "Clough Global Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "MYN": {
+        "name": "BlackRock MuniYield New York Quality Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.61
+    },
+    "RIV": {
+        "name": "RiverNorth Opportunities Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.53
+    },
+    "VVR": {
+        "name": "Invesco Senior Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.46
+    },
+    "NAC": {
+        "name": "Nuveen California Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.88
+    },
+    "LGI": {
+        "name": "Lazard Global Total Return and Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.77
+    },
+    "WDI": {
+        "name": "Western Asset Diversified Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.78
+    },
+    "NAD": {
+        "name": "Nuveen Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.85
+    },
+    "MCN": {
+        "name": "XAI Madison Equity Premium Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "NAZ": {
+        "name": "Nuveen Arizona Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.79
+    },
+    "ETV": {
+        "name": "Eaton Vance Tax-Managed Buy-Write Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.19
+    },
+    "NBB": {
+        "name": "Nuveen Taxable Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.16
+    },
+    "TY": {
+        "name": "Tri-Continental Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.1
+    },
+    "NBH": {
+        "name": "Neuberger Berman Income Funds - Neuberger Municipal Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.65
+    },
+    "BMEZ": {
+        "name": "BlackRock Health Sciences Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "NCA": {
+        "name": "Nuveen California Municipal Value Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.35
+    },
+    "GLV": {
+        "name": "Clough Global Dividend and Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.63
+    },
+    "NDMO": {
+        "name": "Nuveen Dynamic Municipal Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.74
+    },
+    "GCV": {
+        "name": "The Gabelli Convertible and Income Securities Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.48
+    },
+    "NEA": {
+        "name": "Nuveen AMT-Free Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.82
+    },
+    "IGA": {
+        "name": "Voya Global Advantage and Premium Opportunity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.02
+    },
+    "NIM": {
+        "name": "Nuveen Select Maturities Municipal Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.35
+    },
+    "BGY": {
+        "name": "BlackRock Enhanced International Dividend Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.51
+    },
+    "NMI": {
+        "name": "Nuveen Municipal Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.46
+    },
+    "GAB": {
+        "name": "The Gabelli Equity Trust Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "NKX": {
+        "name": "Nuveen California AMT-Free Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.91
+    },
+    "IGD": {
+        "name": "Voya Global Equity Dividend and Premium Opportunity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "NMS": {
+        "name": "Nuveen Minnesota Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.8
+    },
+    "HEQ": {
+        "name": "John Hancock Diversified Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.0
+    },
+    "NMZ": {
+        "name": "Nuveen Municipal High Income Opportunity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.79
+    },
+    "RGT": {
+        "name": "Royce Global Trust, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.19
+    },
+    "NMCO": {
+        "name": "Nuveen Municipal Credit Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.82
+    },
+    "NMT": {
+        "name": "Nuveen Massachusetts Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.77
+    },
+    "GRF": {
+        "name": "Eagle Capital Growth Fund, Inc.",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.85
+    },
+    "NNY": {
+        "name": "Nuveen New York Municipal Value Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.35
+    },
+    "MCR": {
+        "name": "MFS Charter Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.54
+    },
+    "NPV": {
+        "name": "Nuveen Virginia Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "ASG": {
+        "name": "Liberty All-Star Growth Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.48
+    },
+    "NQP": {
+        "name": "Nuveen Pennsylvania Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.94
+    },
+    "PPT": {
+        "name": "Putnam Premier Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.31
+    },
+    "NRK": {
+        "name": "Nuveen New York AMT-Free Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.83
+    },
+    "FINS": {
+        "name": "Angel Oak Financial Strategies Income Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.34
+    },
+    "NVG": {
+        "name": "Nuveen AMT-Free Municipal Credit Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.95
+    },
+    "MIN": {
+        "name": "MFS Intermediate Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.23
+    },
+    "NXC": {
+        "name": "Nuveen California Select Tax-Free Income Portfolio",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.52
+    },
+    "GLQ": {
+        "name": "Clough Global Equity Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "MMT": {
+        "name": "MFS Multimarket Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.4
+    },
+    "NXJ": {
+        "name": "Nuveen New Jersey Quality Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.94
+    },
+    "EHI": {
+        "name": "Western Asset Global High Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.84
+    },
+    "NXN": {
+        "name": "Nuveen New York Select Tax-Free Income Portfolio",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.5
+    },
+    "SWZ": {
+        "name": "Total Return Securities, Inc.",
+        "sector": "Other",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.533
+    },
+    "NXP": {
+        "name": "Nuveen Select Tax-Free Income Portfolio",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.64
+    },
+    "RCG": {
+        "name": "RENN Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.02
+    },
+    "NZF": {
+        "name": "Nuveen Municipal Credit Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.95
+    },
+    "GDL": {
+        "name": "The GDL Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.48
+    },
+    "OIA": {
+        "name": "Invesco Municipal Income Opportunities Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.35
+    },
+    "FOF": {
+        "name": "Cohen & Steers Closed-End Opportunity Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.04
+    },
+    "PCQ": {
+        "name": "PIMCO California Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.43
+    },
+    "STEW": {
+        "name": "SRH Total Return Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.8
+    },
+    "PML": {
+        "name": "PIMCO Municipal Income Fund II",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.47
+    },
+    "GAM": {
+        "name": "General American Investors Company, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.45
+    },
+    "PMM": {
+        "name": "Putnam Managed Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.32
+    },
+    "CPZ": {
+        "name": "Calamos Long/Short Equity & Dynamic Income Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.68
+    },
+    "PMO": {
+        "name": "Putnam Municipal Opportunities Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.47
+    },
+    "ASGI": {
+        "name": "Abrdn Global Infrastructure Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.45
+    },
+    "PNI": {
+        "name": "PIMCO New York Municipal Income Fund II",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.35
+    },
+    "BUI": {
+        "name": "BlackRock Utilities, Infrastructure & Power Opportunities Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.63
+    },
+    "RFM": {
+        "name": "RiverNorth Flexible Municipal Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.11
+    },
+    "DNP": {
+        "name": "DNP Select Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "RFMZ": {
+        "name": "RiverNorth Flexible Municipal Income Fund II, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.01
+    },
+    "DPG": {
+        "name": "Duff & Phelps Utility and Infrastructure Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.84
+    },
+    "RMI": {
+        "name": "RiverNorth Opportunistic Municipal Income Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.12
+    },
+    "ERH": {
+        "name": "Allspring Utilities and High Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.97
+    },
+    "RMM": {
+        "name": "Rivernorth Managed Duration Municipal Income Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.07
+    },
+    "RMMZ": {
+        "name": "RiverNorth Managed Duration Municipal Income Fund II, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.12
+    },
+    "FT": {
+        "name": "Franklin Universal Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.51
+    },
+    "SBI": {
+        "name": "Western Asset Intermediate Muni Fund Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.5
+    },
+    "GLU": {
+        "name": "The Gabelli Global Utility & Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "GUT": {
+        "name": "The Gabelli Utility Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "VCV": {
+        "name": "Invesco California Value Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "HTD": {
+        "name": "John Hancock Tax-Advantaged Dividend Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.8
+    },
+    "VFL": {
+        "name": "abrdn National Municipal Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.6
+    },
+    "IDE": {
+        "name": "Voya Infrastructure, Industrials and Materials Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.2
+    },
+    "VGM": {
+        "name": "Invesco Trust for Investment Grade Municipals",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.78
+    },
+    "MEGI": {
+        "name": "NYLI CBRE Global Infrastructure Megatrends Term Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.5
+    },
+    "VKI": {
+        "name": "Invesco Advantage Municipal Income Trust II",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.67
+    },
+    "NXG": {
+        "name": "NXG NextGen Infrastructure Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 6.48
+    },
+    "PDT": {
+        "name": "John Hancock Premium Dividend Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.99
+    },
+    "VKQ": {
+        "name": "Invesco Municipal Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.75
+    },
+    "UTF": {
+        "name": "Cohen & Steers Infrastructure Fund, Inc",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.86
+    },
+    "VMO": {
+        "name": "Invesco Municipal Opportunity Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.75
+    },
+    "UTG": {
+        "name": "Reaves Utility Income Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.4
+    },
+    "VTN": {
+        "name": "Invesco Trust for Investment Grade New York Municipals",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.82
+    },
+    "RQI": {
+        "name": "Cohen & Steers Quality Income Realty Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.99
+    },
+    "VPV": {
+        "name": "Invesco Pennsylvania Value Municipal Income Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.8
+    },
+    "RNP": {
+        "name": "Cohen & Steers REIT and Preferred Income Fund, Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.63
+    },
+    "STK": {
+        "name": "Columbia Seligman Premium Technology Growth Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.85
+    },
+    "RLTY": {
+        "name": "Cohen & Steers Real Estate Opportunities & Income Fund",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.32
+    },
+    "BST": {
+        "name": "BlackRock Science and Technology Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 3.0
+    },
+    "RFI": {
+        "name": "Cohen & Steers Total Return Realty Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.96
+    },
+    "BSTZ": {
+        "name": "BlackRock Science and Technology Term Trust",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.95
+    },
+    "PGZ": {
+        "name": "Principal Real Estate Income Fund",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.26
+    },
+    "BTO": {
+        "name": "John Hancock Financial Opportunities Fund",
+        "sector": "Financials/Banking",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.6
+    },
+    "NRO": {
+        "name": "Neuberger Berman Income Funds - Neuberger Real Estate Securities Income Fund Inc.",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.37
+    },
+    "QQQX": {
+        "name": "Nuveen Nasdaq 100 Dynamic Overwrite Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.24
+    },
+    "JRS": {
+        "name": "Nuveen Real Estate Income Fund",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.68
+    },
+    "AIO": {
+        "name": "Virtus Artificial Intelligence & Technology Opportunities Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.8
+    },
+    "JRI": {
+        "name": "Nuveen Real Asset Income and Growth Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.6
+    },
+    "CET": {
+        "name": "Central Securities Corporation",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 2.7
+    },
+    "IGR": {
+        "name": "CBRE Global Real Estate Income Fund",
+        "sector": "REITs",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 0.72
+    },
+    "CII": {
+        "name": "BlackRock Enhanced Large Cap Core Fund, Inc.",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.69
+    },
+    "HGLB": {
+        "name": "Highland Global Allocation Fund",
+        "sector": "Financial Services",
+        "type": "Preferred Stock",
+        "rate": "Fixed",
+        "dividendRate": 1.05
     }
 }

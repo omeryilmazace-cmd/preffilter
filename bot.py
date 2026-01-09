@@ -325,7 +325,20 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 series = series.iloc[:, 0] # Handle duplicates
             series = series.dropna()
             
-            if len(series) < 15: continue # Need enough data for RSI
+            # --- DEBUG TRACE JPM-C ---
+            if "JPM" in v and "C" in v:
+                log_msg(f"[DEBUG] {v} (Orig: {orig}) - Length: {len(series)}")
+                try:
+                    last_val = series.iloc[-1]
+                    l60_val = series.tail(60).min()
+                    log_msg(f"[DEBUG] {v} - Last: {last_val}, L60: {l60_val}")
+                except Exception as e:
+                    log_msg(f"[DEBUG] {v} - Error checking values: {e}")
+            # -------------------------
+
+            if len(series) < 15: 
+                if "JPM" in v: log_msg(f"[DEBUG] Skipping {v}: Not enough data (<15)")
+                continue # Need enough data for RSI
             current = float(series.iloc[-1])
             
             # RSI Calculation

@@ -409,9 +409,14 @@ tr:hover td {
 /* Table Cells Formatting */
 .ticker-cell {
     font-family: var(--font-mono);
-    font-weight: 700;
+    font-weight: 800;
+    /* Bolder */
     color: var(--accent-primary);
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    /* Larger */
+    letter-spacing: -0.5px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .price-cell {
