@@ -307,9 +307,9 @@ select:focus {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
-    /* Fixed relative height to force internal scrolling */
-    height: 55vh;
-    min-height: 450px;
+    /* Allow full expansion */
+    height: auto;
+    min-height: 0;
     flex-shrink: 0;
 }
 
@@ -318,9 +318,9 @@ select:focus {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    /* Fixed relative height for bottom section */
-    height: 40vh;
-    min-height: 350px;
+    /* Allow full expansion */
+    height: auto;
+    min-height: 0;
     flex-shrink: 0;
 }
 
@@ -333,7 +333,9 @@ select:focus {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    height: 100%;
+    /* Let card height be defined by content */
+    height: auto;
+    min-height: 200px;
 }
 
 .buy-card {
