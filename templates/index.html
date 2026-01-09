@@ -243,6 +243,29 @@
             background: var(--sell);
             color: white;
         }
+
+        .peer-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            border: 1px solid transparent;
+            user-select: none;
+        }
+
+        .peer-tag:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .peer-tag.excluded {
+            opacity: 0.4;
+            text-decoration: line-through;
+            border-color: rgba(255, 255, 255, 0.1);
+            background: transparent;
+        }
     </style>
 </head>
 
@@ -477,29 +500,114 @@
             </div>
         </div>
 
-        <!-- STREAK SECTION -->
-        <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(255, 107, 107, 0.2);">
+        <!-- FAIR VALUE CALCULATOR -->
+        <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(100, 200, 255, 0.2);">
             <div class="card-header">
-                <h2>🔥 Consecutive Streaks (Price Momentum)</h2>
+                <h2>⚖️ Fair Value Calculator</h2>
             </div>
-            <div class="table-scroll">
-                <table id="streakTable">
-                    <thead>
-                        <tr>
-                            <th onclick="setSort('ticker')">Security</th>
-                            <th onclick="setSort('price')">Price</th>
-                            <th onclick="setSort('streak_count')">Streak</th>
-                            <th onclick="setSort('raw_yield')">Yield</th>
-                            <th onclick="setSort('sp_rating')">S&P / Moody</th>
-                            <th onclick="setSort('call_date')">Call</th>
-                            <th onclick="setSort('maturity')">Mat</th>
-                            <th onclick="setSort('sector')">Sector</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+            <div style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 200px;">
+                        <label style="font-size: 0.8rem; opacity: 0.7;">Target Ticker</label>
+                        <input type="text" id="calcTicker" placeholder="e.g. JPM-L"
+                            style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px;"
+                            oninput="calculateFairValue()">
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <label style="font-size: 0.8rem; opacity: 0.7;">Coupon Tolerance (+/- %)</label>
+                        <input type="number" id="calcTolerance" value="0.5" step="0.1"
+                            style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px;"
+                            oninput="calculateFairValue()">
+                    </div>
+                    <div style="flex: 0 0 auto; display: flex; align-items: flex-end;">
+                        <button onclick="calculateFairValue()" class="primary-btn" style="height: 35px;">Search /
+                            Calc</button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                    <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; cursor: pointer;">
+                        <input type="checkbox" id="calcIgOnly" checked onchange="calculateFairValue()">
+                        <span>⭐ Use Investment Grade Peers Only</span>
+                    </label>
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <label style="font-size: 0.85rem; opacity: 0.7;">Sector:</label>
+                        <select id="calcSector" onchange="calculateFairValue()"
+                            style="padding: 4px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; max-width: 150px;">
+                            <option value="all">Any</option>
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="calcResult" style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <div>
+                        <h3 id="calcTickerDisplay" style="margin: 0; color: var(--accent);">JPM-L</h3>
+                        <div id="calcTickerDetail" style="font-size: 0.8rem; opacity: 0.7;">Price: $25.00 | Coupon:
+                            5.75%</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div id="calcIndexValue" style="font-size: 1.5rem; font-weight: bold;">1.00</div>
+                        <div id="calcStatus" style="font-size: 0.9rem; font-weight: bold;">FAIR VALUE</div>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 10px;">
+                    <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 5px;">Peer Group</div>
+                    <div id="calcPeerStats" style="font-size: 0.9rem;">
+                        Avg Price: $25.00 | Count: 0 | Range: 5.25% - 6.25%
+                    </div>
+                    <div id="calcPeerList"
+                        style="font-size: 0.75rem; opacity: 0.5; margin-top: 5px; max-height: 80px; overflow-y: auto;">
+                        <!-- Peer list here -->
+                    </div>
+                    <div style="margin-top: 8px; display: flex; gap: 5px;">
+                        <input type="text" id="manualPeerInput" placeholder="+ Add Ticker"
+                            style="padding: 4px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: white; width: 100px; font-size: 0.8rem;">
+                        <button onclick="addManualPeer()" class="primary-btn"
+                            style="padding: 4px 8px; font-size: 0.8rem;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Historical Stats -->
+                <div id="calcHistory"
+                    style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: 10px; display:none;">
+                    <div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 5px;">Historical Index Context (90 Days)
+                    </div>
+                    <div id="calcHistoryContent"
+                        style="font-size: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                        <!-- Populated by JS -->
+                        Loading...
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- STREAK SECTION -->
+    <div class="card glass" style="margin-top: 20px; border-top: 1px solid rgba(255, 107, 107, 0.2);">
+        <div class="card-header">
+            <h2>🔥 Consecutive Streaks (Price Momentum)</h2>
+        </div>
+        <div class="table-scroll">
+            <table id="streakTable">
+                <thead>
+                    <tr>
+                        <th onclick="setSort('ticker')">Security</th>
+                        <th onclick="setSort('price')">Price</th>
+                        <th onclick="setSort('streak_count')">Streak</th>
+                        <th onclick="setSort('raw_yield')">Yield</th>
+                        <th onclick="setSort('sp_rating')">S&P / Moody</th>
+                        <th onclick="setSort('call_date')">Call</th>
+                        <th onclick="setSort('maturity')">Mat</th>
+                        <th onclick="setSort('sector')">Sector</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
     </div>
 
     <script>
@@ -751,16 +859,253 @@
                 const streakClass = i.streak_type === 'Green' ? 'hit' : 'miss';
                 const streakIcon = i.streak_type === 'Green' ? '✅' : '❌';
                 return `<tr>
-                    <td><div class="ticker-cell">${i.ticker}</div><div class="name-sub">${i.name.slice(0, 25)}</div></td>
+                    <td>
+                        <div class="ticker-cell" onclick="setCalcTicker('${yahooTicker}')">${i.ticker}</div>
+                        <div class="name-sub">${i.name.slice(0, 25)}</div>
+                        ${badge}
+                    </td>
                     <td>$${i.price.toFixed(2)}</td>
-                    <td class="diff-val ${streakClass}">${streakIcon} ${i.streak_count} Days</td>
-                    <td style="color:var(--accent); font-weight:bold;">${i.yield}</td>
-                    <td style="font-size:0.75rem; opacity:0.8;">${i.sp_rating} <span style="font-size:0.6rem; opacity:0.5">/ ${i.moody_rating}</span></td>
+                    <td style="color:${rsiColor}; font-weight:${rsiWeight}">${rsiVal}</td>
+                    <td style="font-size:0.8rem; opacity:0.7">${volStr}</td>
+                    
+                    ${extraCol}
+
                     <td style="font-size:0.7rem; opacity:0.7;">${i.call_date || '-'}</td>
                     <td style="font-size:0.7rem; opacity:0.7;">${i.maturity || '-'}</td>
-                    <td style="font-size:0.75rem; opacity:0.7;">${i.sector}</td>
+                    <td class="diff-val ${i.dL7 <= 0.01 ? 'hit' : ''}">${(i.dL7 * 100).toFixed(1)}%</td>
+                    <td class="diff-val ${i.dL30 <= 0.01 ? 'hit' : ''}">${(i.dL30 * 100).toFixed(1)}%</td>
+                    <td class="diff-val ${i.dL60 <= 0.01 ? 'hit' : ''}">${(i.dL60 * 100).toFixed(1)}%</td>
                 </tr>`;
             }).join('');
+        }
+
+        function setCalcTicker(ticker) {
+            document.getElementById('calcTicker').value = ticker;
+            calculateFairValue();
+            document.getElementById('calcTicker').scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+
+        let currentPeers = []; // Global to track calculator peers
+        let excludedPeers = new Set();
+        let manualPeersList = new Set(); // Manually added tickers
+        let currentTargetTicker = "";
+
+        function addManualPeer() {
+            const input = document.getElementById('manualPeerInput');
+            const ticker = input.value.toUpperCase().trim();
+            if (!ticker) return;
+
+            // Verify it exists in data
+            const prefData = fullModesData['preferred'].all_data || [];
+            const exists = prefData.find(i => i.ticker === ticker || i.ticker.replace('-P', '-') === ticker);
+
+            if (exists) {
+                manualPeersList.add(exists.ticker);
+                input.value = '';
+                calculateFairValue(false); // Trigger full recalc to include new manual peer
+            } else {
+                alert('Ticker not found in database!');
+            }
+        }
+
+        function calculateFairValue(isRecalc = false) {
+            const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
+            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
+            const resultDiv = document.getElementById('calcResult');
+
+            if (!tickerInput || !rawData.all_data) {
+                resultDiv.style.display = 'none';
+                return;
+            }
+
+            const prefData = fullModesData['preferred'].all_data || [];
+            const target = prefData.find(i => i.ticker === tickerInput || i.ticker.replace('-P', '-') === tickerInput);
+
+            if (!target) return;
+
+            resultDiv.style.display = 'block';
+
+            // Constants for IG logic
+            const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
+                'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
+
+            const useIgOnly = document.getElementById('calcIgOnly').checked;
+            const sectorFilter = document.getElementById('calcSector').value;
+
+            // Lazy populate sectors if needed
+            const sectorSelect = document.getElementById('calcSector');
+            if (sectorSelect.options.length <= 1 && prefData.length > 0) {
+                const sectors = [...new Set(prefData.map(i => i.sector).filter(s => s))].sort();
+                sectors.forEach(s => {
+                    const opt = document.createElement('option');
+                    opt.value = s;
+                    opt.innerText = s;
+                    sectorSelect.appendChild(opt);
+                });
+            }
+
+            // Only find peers if this is a fresh calculation or parameters changed
+            if (!isRecalc) {
+                currentTargetTicker = target.ticker;
+                const targetCoupon = target.raw_coupon || 0;
+                const minC = targetCoupon - (tolerance / 100);
+                const maxC = targetCoupon + (tolerance / 100);
+
+                const autoPeers = prefData.filter(i => {
+                    if (i.ticker === target.ticker) return false;
+
+                    if (useIgOnly) {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (!isIG) return false;
+                        // Manual peers ignore IG filter? No, if user adds them manually they want them.
+                        // But here we are filtering "Auto" peers.
+                    }
+
+                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
+
+                    const c = i.raw_coupon || 0;
+                    return c >= minC && c <= maxC;
+                });
+
+                // Merge Auto + Manual
+                // manualPeers is a list of Tickers. We need to find their objects.
+                const manualPeerObjs = [];
+                manualPeersList.forEach(t => {
+                    const p = prefData.find(x => x.ticker === t);
+                    if (p && p.ticker !== target.ticker) manualPeerObjs.push(p);
+                });
+
+                // Combine and Dedupe
+                const combined = [...autoPeers, ...manualPeerObjs];
+                const seen = new Set();
+                currentPeers = combined.filter(item => {
+                    if (seen.has(item.ticker)) return false;
+                    seen.add(item.ticker);
+                    return true;
+                });
+
+                excludedPeers.clear();
+                renderPeerList();
+            }
+
+            // Calculate Metrics based on ACTIVE peers
+            const activePeers = currentPeers.filter(p => !excludedPeers.has(p.ticker));
+
+            let avgPrice = 0;
+            if (activePeers.length > 0) {
+                avgPrice = activePeers.reduce((sum, p) => sum + p.price, 0) / activePeers.length;
+            }
+
+            const indexVal = avgPrice > 0 ? (target.price / avgPrice) : 0;
+
+            // Display
+            document.getElementById('calcTickerDisplay').innerText = target.ticker;
+            document.getElementById('calcTickerDetail').innerText = `Price: $${target.price.toFixed(2)} | Coupon: ${(target.raw_coupon * 100).toFixed(2)}% | Rating: ${target.sp_rating}`;
+
+            const idxEl = document.getElementById('calcIndexValue');
+            const statusEl = document.getElementById('calcStatus');
+
+            if (activePeers.length === 0) {
+                idxEl.innerText = "N/A";
+                statusEl.innerText = "No peers selected";
+                statusEl.style.color = "gray";
+            } else {
+                idxEl.innerText = indexVal.toFixed(2);
+                if (indexVal < 0.98) {
+                    statusEl.innerText = "CHEAP (Undervalued)";
+                    statusEl.style.color = "#4ade80"; // Green
+                } else if (indexVal > 1.02) {
+                    statusEl.innerText = "EXPENSIVE (Overvalued)";
+                    statusEl.style.color = "#f87171"; // Red
+                } else {
+                    statusEl.innerText = "FAIR VALUE";
+                    statusEl.style.color = "white";
+                }
+            }
+
+            document.getElementById('calcPeerStats').innerHTML = `
+                Avg Peer Price: <b>$${avgPrice.toFixed(2)}</b> | 
+                Active Count: <b>${activePeers.length}</b> / ${currentPeers.length}`;
+
+            // Trigger Historical Stats (Debounced)
+            clearTimeout(histDebounce);
+            if (activePeers.length > 0) {
+                document.getElementById('calcHistory').style.display = 'block';
+                document.getElementById('calcHistoryContent').innerHTML = 'Loading stats...';
+                histDebounce = setTimeout(() => {
+                    fetchHistoricalStats(target.ticker, activePeers.map(p => p.ticker));
+                }, 1000); // 1s wait
+            } else {
+                document.getElementById('calcHistory').style.display = 'none';
+            }
+        }
+
+        let histDebounce = null;
+        async function fetchHistoricalStats(target, peers) {
+            try {
+                const res = await fetch('/api/calc-stats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ target, peers })
+                });
+                const data = await res.json();
+
+                if (data.error) {
+                    document.getElementById('calcHistoryContent').innerHTML = `<span style="color:red">${data.error}</span>`;
+                    return;
+                }
+
+                // Format Data
+                // l7, h7, l30, h30, l60, h60, l90, h90, current
+                const fmt = (v) => v ? v.toFixed(3) : '-';
+                const color = (val) => {
+                    if (!val || !data.current) return 'inherit';
+                    if (data.current < val) return '#4ade80'; // below historic low? Cheap
+                    if (data.current > val) return '#f87171';
+                    return 'inherit';
+                };
+
+                const html = `
+                    <div>Current Index: <b>${data.current}</b></div>
+                    <div></div>
+                    
+                    <div style="opacity:0.7">7 Days:</div>
+                    <div>L: ${fmt(data.l7)} - H: ${fmt(data.h7)}</div>
+                    
+                    <div style="opacity:0.7">30 Days:</div>
+                    <div>L: ${fmt(data.l30)} - H: ${fmt(data.h30)}</div>
+                    
+                    <div style="opacity:0.7">60 Days:</div>
+                    <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
+                    
+                    <div style="opacity:0.7">90 Days:</div>
+                    <div>L: ${fmt(data.l90)} - H: ${fmt(data.h90)}</div>
+                `;
+                document.getElementById('calcHistoryContent').innerHTML = html;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('calcHistoryContent').innerText = "Error loading stats";
+            }
+        }
+
+        function renderPeerList() {
+            const container = document.getElementById('calcPeerList');
+            container.innerHTML = currentPeers.map(p => {
+                const isEx = excludedPeers.has(p.ticker);
+                return `<span class="peer-tag ${isEx ? 'excluded' : ''}" onclick="togglePeer('${p.ticker}')">
+                    ${p.ticker} ($${p.price.toFixed(2)})
+                </span>`;
+            }).join('');
+        }
+
+        function togglePeer(ticker) {
+            if (excludedPeers.has(ticker)) {
+                excludedPeers.delete(ticker);
+            } else {
+                excludedPeers.add(ticker);
+            }
+            renderPeerList(); // re-render to update classes
+            calculateFairValue(true); // reclac
         }
 
         function renderTable(targetId, list, mode) {
