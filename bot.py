@@ -450,6 +450,7 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 "divergence": display_divergence,
                 "raw_divergence": raw_divergence,
                 "raw_yield": float(cur_yield),
+                "raw_coupon": coupon, # Add raw numeric coupon for frontend index calc
                 "streak_type": streak_type,
                 "streak_count": streak_count,
                 "l60": l60, "h60": h60, "l30": l30, "h30": h30, "l7": l7, "h7": h7,
@@ -461,5 +462,105 @@ def run_full_analysis(threshold=None, mode="preferred"):
                 "benchmark_str": benchmark_str if mode == "cef" else ""
             })
 
-    log_msg(f"Scan Finished. {len(results['all_data'])} items analyzed.")
+    log_msg(f"Scan Complete. Found {len(results['all_data'])} items.")
     return results
+
+def calculate_historical_index(target_ticker, peer_tickers):
+    """
+    Fetches 90-day history for target and peers, computes daily index ratio,
+    and returns stats (L7/H7, L30/H30, etc. for the INDEX VALUE).
+    """
+    if not target_ticker or not peer_tickers:
+        return {"error": "Missing target or peers"}
+    
+    # 1. Resolve Yahoo Tickers
+    # The frontend sends "JPM-L" or "C-J".
+    # Need to convert to Yahoo format: "JPM-PL", "C-PJ".
+    # Since I don't have the `load_tickers` map here readily without re-loading,
+    # I'll rely on a simple heuristic or pass the Yahoo tickers from frontend?
+    # Actually, `bot.py` has `load_tickers` but `run_full_analysis` builds the map.
+    # Simple heuristic: If it has hyphen, try inserting 'P'. 
+    # BUT, frontend already has mapped tickers in `rawData`? 
+    # Let's assume frontend sends RAW tickers (e.g. JPM-L) and we convert here or frontend sends Yahoo tickers.
+    # Better: Frontend sends what it has.
+    # In `run_full_analysis`, I use `orig` (JPM-L) and map to `v` (JPM-PL).
+    # I'll reuse `load_tickers()` logic if needed, but let's try a direct map first.
+    
+    def to_yahoo(t):
+        if "-" in t:
+            parts = t.split("-")
+            # Try -P first
+            return f"{parts[0]}-P{parts[1]}"
+        return t
+
+    target_y = to_yahoo(target_ticker)
+    peers_y = [to_yahoo(p) for p in peer_tickers]
+    all_tickers = [target_y] + peers_y
+
+    try:
+        # 2. Fetch History (Batch)
+        # 3mo = ~65 trading days. 6mo might be safer for 90d lookback? Index usually needs 90d?
+        # User asked for "Last 90 day low". Let's fetch "6mo" to be safe.
+        data = yf.download(all_tickers, period="6mo", progress=False)['Close']
+        
+        if data.empty:
+             return {"error": "No data found"}
+        
+        # 3. Process
+        # Ensure target column exists
+        if target_y not in data.columns:
+            # Try alternate formatting? JPM-PL vs JPM-PRL?
+            # Creating a robust fallback is hard without the cache.
+            # Let's try basic fallback
+            alt = target_ticker.replace("-", "-PR")
+            if alt in data.columns: target_y = alt
+            else: return {"error": f"Target {target_ticker} not found in Yahoo"}
+
+        # Calculate Peer Average Daily
+        # Filter peers that exist in columns
+        valid_peers = [p for p in peers_y if p in data.columns]
+        if not valid_peers:
+            return {"error": "No valid peer data found"}
+
+        peer_avg = data[valid_peers].mean(axis=1)
+        target_price = data[target_y]
+        
+        # Index Ratio Series
+        index_series = target_price / peer_avg
+        index_series = index_series.dropna()
+        
+        if index_series.empty:
+            return {"error": "Not enough overlapping data"}
+
+        # 4. Compute Stats
+        current_val = index_series.iloc[-1]
+        
+        def get_stats(days):
+            # Last 'days' trading days. (Approx days * 5/7?). 
+            # Or just take last N rows? 
+            # User said "90 day low". Usually implies calendar days? 
+            # In finance, usually "Last 30 bars". 
+            # Let's assume trading days for simplicity or limit by timestamp.
+            # window = ~days * 0.7 for trading days? 
+            # Let's just use slicing by index for now: last N rows.
+            # 90 calendar days ~= 63 trading days.
+            n = int(days * 0.7) 
+            subset = index_series.tail(n)
+            if subset.empty: return None, None
+            return round(subset.min(), 3), round(subset.max(), 3)
+
+        l7, h7 = get_stats(10) # ~ 7 calendar days
+        l30, h30 = get_stats(30)
+        l60, h60 = get_stats(60)
+        l90, h90 = get_stats(90)
+
+        return {
+            "current": round(current_val, 3),
+            "l7": l7, "h7": h7,
+            "l30": l30, "h30": h30,
+            "l60": l60, "h60": h60,
+            "l90": l90, "h90": h90
+        }
+
+    except Exception as e:
+        return {"error": str(e)}
