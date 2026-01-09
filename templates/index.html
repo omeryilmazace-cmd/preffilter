@@ -345,8 +345,20 @@
         // Data State
         let rawData = { all_data: [] };
         let fullModesData = { preferred: { all_data: [] }, cef: { all_data: [] } };
+        let masterMetadata = {}; // Static metadata for all preferreds (for Fair Value Calculator fallback)
         let activeMode = 'preferred';
         let currentSort = { col: 'dL60', dir: 'asc' };
+
+        // Load master metadata once on page load
+        (async function loadMasterMetadata() {
+            try {
+                const res = await fetch('/api/master-metadata');
+                masterMetadata = await res.json();
+                console.log(`Loaded ${Object.keys(masterMetadata).length} tickers from master_metadata`);
+            } catch (e) {
+                console.error("Failed to load master metadata:", e);
+            }
+        })();
 
         // --- Core Functions ---
 
@@ -705,16 +717,15 @@
             const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
             const resultDiv = document.getElementById('calcResult');
 
-            if (!tickerInput || !rawData.all_data) {
+            if (!tickerInput) {
                 resultDiv.style.display = 'none';
                 return;
             }
 
-            // Always search in Preferred data for calculator (unless user specifically wants CEF? usually PREF calc)
-            // User did not specify, but Fair Value logic (Peers, Coupon) is for Preferreds.
+            // Always search in Preferred data for calculator
             const prefData = fullModesData['preferred'].all_data || [];
 
-            // 1. Exact Match
+            // 1. Exact Match in scan results
             let target = prefData.find(i => i.ticker === tickerInput);
 
             // 2. Variations (JPM-C -> JPM-PC, etc)
@@ -731,19 +742,55 @@
                 }
             }
 
-            if (!target) {
-                // If filtering by user is causing it? No, we search rawData.
-                // It means it's not in the SCAN RESULT.
+            // 3. FALLBACK to masterMetadata (static data) if not in scan results
+            if (!target && Object.keys(masterMetadata).length > 0) {
+                // Check if ticker exists in masterMetadata
+                let metaKey = tickerInput;
+                if (!masterMetadata[metaKey]) {
+                    // Try variations
+                    const variations = [
+                        tickerInput.replace(/-P([A-Z])/, '-$1'),
+                        tickerInput.replace(/-([A-Z])$/, '-P$1'),
+                        tickerInput.replace('-', '.'),
+                        tickerInput.replace('.', '-')
+                    ];
+                    for (const v of variations) {
+                        if (masterMetadata[v]) { metaKey = v; break; }
+                    }
+                }
 
-                // Show similar items to help user if they made a typo
-                const similar = prefData
-                    .filter(i => i.ticker.startsWith(tickerInput.substr(0, 3)))
+                if (masterMetadata[metaKey]) {
+                    const m = masterMetadata[metaKey];
+                    // Build a synthetic target object from static metadata
+                    target = {
+                        ticker: metaKey,
+                        name: m.name || metaKey,
+                        price: m.price || 25.00, // Use static price from masterlist
+                        yield: m.yield || 'N/A',
+                        coupon: m.coupon || 'N/A',
+                        raw_coupon: m.raw_coupon || 0,
+                        sp_rating: m.sp_rating || 'NR',
+                        moody_rating: m.moody_rating || 'NR',
+                        sector: m.sector || 'Other',
+                        call_date: m.call_date || '',
+                        maturity: m.maturity || '',
+                        // No real-time dip data for static fallback
+                        dL7: null, dL30: null, dL60: null,
+                        _isStatic: true // Flag to indicate static data
+                    };
+                    console.log(`Using static metadata for ${metaKey} (not in scan results)`);
+                }
+            }
+
+            if (!target) {
+                // Show similar items to help user
+                const allTickers = Object.keys(masterMetadata);
+                const similar = allTickers
+                    .filter(t => t.startsWith(tickerInput.substr(0, 3)))
                     .slice(0, 5)
-                    .map(i => i.ticker)
                     .join(', ');
 
                 if (similar && tickerInput.length > 2) {
-                    // We only warn if they typed something substantial
                     console.log(`Ticker '${tickerInput}' not found. Similar: ${similar}`);
                 }
 

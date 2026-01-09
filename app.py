@@ -102,6 +102,17 @@ def remove_ticker(ticker):
         return jsonify({"message": "OK"})
     return jsonify({"message": "404"}), 404
 
+@app.route('/api/master-metadata')
+def get_master_metadata():
+    """Serves master_metadata.json for Fair Value Calculator fallback."""
+    try:
+        with open("master_metadata.json", "r", encoding="utf-8") as f:
+            import json
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/api/calc-stats', methods=['POST'])
 def calc_stats():
     """
