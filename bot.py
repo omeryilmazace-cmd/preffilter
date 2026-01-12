@@ -437,6 +437,9 @@ def calculate_historical_index(target_ticker, peer_tickers):
         l30, h30 = get_stats(30)
         l60, h60 = get_stats(60)
         l90, h90 = get_stats(90)
+        l180, h180 = get_stats(180)
+        l360, h360 = get_stats(360)
+        l720, h720 = get_stats(720)
 
         # Prepare series for Chart.js
         # We'll send labels (dates) and values
@@ -449,6 +452,9 @@ def calculate_historical_index(target_ticker, peer_tickers):
             "l30": l30, "h30": h30,
             "l60": l60, "h60": h60,
             "l90": l90, "h90": h90,
+            "l180": l180, "h180": h180,
+            "l360": l360, "h360": h360,
+            "l720": l720, "h720": h720,
             "series": {
                 "labels": labels,
                 "values": values
