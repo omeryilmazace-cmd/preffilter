@@ -219,26 +219,53 @@ input[type="checkbox"]:checked::after {
     font-weight: bold;
 }
 
-/* Inputs */
+/* Inputs & Selects */
 input[type="number"],
 input[type="text"],
 select {
     width: 100%;
     padding: 0.75rem 1rem;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #0f172a !important;
+    /* Solid dark background for better contrast */
     border: 1px solid var(--border-glass);
     border-radius: 8px;
-    color: var(--text-main);
+    color: #f8fafc !important;
+    /* Bright white text */
     font-family: var(--font-main);
     font-size: 0.9rem;
-    transition: all 0.2s;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236366f1'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+/* Fix for dropdown options appearing with light backgrounds on some browsers */
+select option {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    padding: 10px;
 }
 
 input:focus,
 select:focus {
     outline: none;
     border-color: var(--accent-primary);
-    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    background-color: #1e293b !important;
+}
+
+/* Placeholder contrast */
+::placeholder {
+    color: #64748b;
+    opacity: 0.8;
 }
 
 .price-inputs {
