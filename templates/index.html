@@ -34,6 +34,7 @@
         <div class="mode-switcher">
             <button id="prefBtn" class="mode-btn active" onclick="switchMode('preferred')">PREFERRED</button>
             <button id="cefBtn" class="mode-btn" onclick="switchMode('cef')">CEFs</button>
+            <button id="dvBtn" class="mode-btn" onclick="switchMode('deepvalue')">DEEP VALUE</button>
         </div>
 
         <div class="filter-group">
@@ -224,6 +225,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Deep Value Section (Hidden by default) -->
+        <section id="deepValueSection" class="hidden">
+            <div class="card glass-effect" style="margin-bottom: 2rem;">
+                <div class="card-header" style="display:flex; justify-content:space-between; align-items:center;">
+                    <h2>💎 Deep Value Scanner (Historical Fair Value Lows)</h2>
+                    <div style="display:flex; gap:10px; align-items:center;">
+                        <span id="dvScanStatus" style="font-size:0.8rem; opacity:0.7;">Status: Idle</span>
+                        <button onclick="startDeepValueScan()" class="primary-btn"
+                            style="width:auto; padding:0.4rem 1rem;">Refresh Scan</button>
+                    </div>
+                </div>
+                <div id="dvLogs" class="terminal-container hidden"
+                    style="max-height: 150px; margin: 1rem; font-size: 0.75rem; border: 1px solid var(--border-glass); border-radius: 8px; padding: 10px; background: rgba(0,0,0,0.2);">
+                </div>
+                <div class="table-scroll">
+                    <table id="dvTable">
+                        <thead>
+                            <tr>
+                                <th>Sec</th>
+                                <th>Sector</th>
+                                <th>Price</th>
+                                <th>Index Ratio</th>
+                                <th>1Y Low</th>
+                                <th>1Y High</th>
+                                <th style="color:var(--accent-primary)">% vs Low</th>
+                                <th>Peers</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dvTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
         <!-- Bottom Section: Calculator & Streaks -->
         <div class="bottom-section">
@@ -425,6 +461,7 @@
         });
 
         function switchMode(mode) {
+            if (activeMode === mode) return; // Save work if same
             if (mode === 'cef') {
                 alert("CEF Analyzer is currently Under Construction 🛠️\nWe are focusing on Preferred Filter optimizations.");
                 return;
@@ -433,20 +470,100 @@
             // Buttons
             document.getElementById('prefBtn').classList.toggle('active', mode === 'preferred');
             document.getElementById('cefBtn').classList.toggle('active', mode === 'cef');
+            document.getElementById('dvBtn').classList.toggle('active', mode === 'deepvalue');
 
             // Visibility
-            document.getElementById('prefFilters').classList.remove('hidden');
+            const isDV = mode === 'deepvalue';
+            document.getElementById('prefFilters').classList.toggle('hidden', isDV);
+            document.querySelector('.dual-grid').classList.toggle('hidden', isDV);
+            document.querySelector('.bottom-section').classList.toggle('hidden', isDV);
+            document.getElementById('deepValueSection').classList.toggle('hidden', !isDV);
 
-            // Header Logic (Fixed Preferred Only)
-            const show = (id) => document.getElementById(id).classList.remove('hidden');
-            show('prefRatingHeader'); show('prefRatingHeaderSell');
-            show('prefCallHeader'); show('prefCallHeaderSell');
-            show('prefMatHeader'); show('prefMatHeaderSell');
+            if (!isDV) {
+                // Header Logic (Fixed Preferred Only)
+                const show = (id) => document.getElementById(id).classList.remove('hidden');
+                show('prefRatingHeader'); show('prefRatingHeaderSell');
+                show('prefCallHeader'); show('prefCallHeaderSell');
+                show('prefMatHeader'); show('prefMatHeaderSell');
 
-            // Sync
-            rawData = fullModesData[activeMode];
-            updateSectorList();
-            applyFilters();
+                // Sync
+                rawData = fullModesData[activeMode] || { all_data: [] };
+                updateSectorList();
+                applyFilters();
+            } else {
+                fetchDeepValueResults();
+                pollDeepValueStatus();
+            }
+        }
+
+        // --- Deep Value Functions ---
+        async function startDeepValueScan() {
+            await fetch('/api/historical-fv/start', { method: 'POST' });
+            document.getElementById('dvLogs').classList.remove('hidden');
+            pollDeepValueStatus();
+        }
+
+        let dvPollId = null;
+        async function pollDeepValueStatus() {
+            if (dvPollId) clearInterval(dvPollId);
+            dvPollId = setInterval(async () => {
+                const res = await fetch('/api/historical-fv/status');
+                const data = await res.json();
+
+                document.getElementById('dvScanStatus').innerText = `Status: ${data.status}`;
+                const logsEl = document.getElementById('dvLogs');
+                logsEl.innerHTML = data.logs.map(l => `<div>${l}</div>`).join('');
+                logsEl.scrollTop = logsEl.scrollHeight;
+
+                if (data.status === 'done' || data.status.includes('error')) {
+                    clearInterval(dvPollId);
+                    fetchDeepValueResults();
+                    if (data.status === 'done') {
+                        setTimeout(() => logsEl.classList.add('hidden'), 3000);
+                    }
+                } else {
+                    logsEl.classList.remove('hidden');
+                }
+            }, 2000);
+        }
+
+        async function fetchDeepValueResults() {
+            const res = await fetch('/api/historical-fv/results');
+            const data = await res.json();
+            renderDeepValueTable(data);
+        }
+
+        function renderDeepValueTable(data) {
+            const tbody = document.getElementById('dvTableBody');
+            if (!data || data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="9" style="text-align:center; padding:2rem; opacity:0.5;">No scan results found. Click "Refresh Scan" to start.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = data.map(i => {
+                // Heat map for dist_pct: 0% = solid primary, 10% = faded, 20% = text-muted
+                let distColor = 'var(--text-muted)';
+                let distWeight = 'normal';
+                if (i.dist_pct <= 2) { distColor = '#4ade80'; distWeight = 'bold'; }
+                else if (i.dist_pct <= 5) { distColor = 'var(--accent-primary)'; distWeight = 'bold'; }
+                else if (i.dist_pct <= 10) { distColor = 'white'; }
+
+                return `
+                    <tr>
+                        <td style="font-weight:bold;">${i.ticker}</td>
+                        <td style="font-size:0.8rem; opacity:0.7;">${i.sector}</td>
+                        <td class="price-cell">$${i.price.toFixed(2)}</td>
+                        <td>${i.current_ratio.toFixed(3)}</td>
+                        <td style="color:#4ade80;">${i.low.toFixed(3)}</td>
+                        <td style="color:#f87171;">${i.high.toFixed(3)}</td>
+                        <td style="color:${distColor}; font-weight:${distWeight}; font-size:1rem;">${i.dist_pct.toFixed(2)}%</td>
+                        <td style="font-size:0.75rem; opacity:0.5;">${i.peer_count} peers</td>
+                        <td>
+                            <button class="fv-btn" onclick="openFairValueModal('${i.ticker}')" style="width:100%;">FV</button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
         }
 
         // ... (triggerScan, poll, updateSectorList... assume unchanged) ...

@@ -463,3 +463,149 @@ def calculate_historical_index(target_ticker, peer_tickers):
 
     except Exception as e:
         return {"error": f"Calculation error: {str(e)}"}
+
+# Global state for Historical FV Scan
+hist_fv_logs = []
+hist_fv_status = "idle" # idle, scanning, done, error
+
+def run_historical_fv_scan():
+    """
+    Scans entire universe. For each stock, finds auto-peers, 
+    fetches 1y history, computes Index Low, and ranks by current distance to low.
+    """
+    global hist_fv_status, hist_fv_logs
+    hist_fv_status = "scanning"
+    hist_fv_logs = []
+    
+    def hlog(msg):
+        ts = time.strftime("%H:%M:%S")
+        f = f"[{ts}] {msg}"
+        print(f)
+        hist_fv_logs.append(f)
+
+    hlog("--- Starting Global Historical FV Scan ---")
+    
+    try:
+        master_metadata = load_json(MASTER_METADATA_FILE)
+        if not master_metadata:
+            hist_fv_status = "error: No master metadata found"
+            return
+
+        all_tickers = list(master_metadata.keys())
+        hlog(f"Processing {len(all_tickers)} symbols...")
+
+        # 1. Map to Yahoo (from cache)
+        symbol_cache = load_json(SYMBOL_CACHE_FILE)
+        
+        def to_y(t):
+            if t in symbol_cache: return symbol_cache[t]
+            if "-" in t: return f"{t.split('-')[0]}-P{t.split('-')[1]}"
+            return t
+
+        y_map = {t: to_y(t) for t in all_tickers}
+        y_symbols = list(set(y_map.values()))
+
+        # 2. Fetch 1y Data in large chunks
+        hlog("Downloading 1-year historical data for entire universe...")
+        chunk_size = 50
+        chunks = [y_symbols[i:i+chunk_size] for i in range(0, len(y_symbols), chunk_size)]
+        
+        all_closes = pd.DataFrame()
+        for i, chunk in enumerate(chunks):
+            hlog(f"Downloading chunk {i+1}/{len(chunks)}...")
+            df = yf.download(chunk, period="1y", progress=False, threads=True, group_by='ticker')
+            
+            # Extract Closes
+            for t in chunk:
+                try:
+                    if t in df.columns.levels[0]:
+                        s = df[t]['Close'].dropna()
+                        if not s.empty: all_closes[t] = s
+                except:
+                    if 'Close' in df.columns: 
+                        all_closes = pd.concat([all_closes, df['Close']], axis=1)
+                        break
+            
+            del df
+            import gc
+            gc.collect()
+
+        if all_closes.empty:
+            hist_fv_status = "error: No price data available"
+            return
+
+        hlog("Analyzing historical fair value ratios...")
+        IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
+                     'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa']
+
+        deep_dips = []
+        
+        # 3. Analyze each ticker
+        for ticker in all_tickers:
+            y_tick = y_map[ticker]
+            if y_tick not in all_closes.columns: continue
+            
+            meta = master_metadata[ticker]
+            coupon = meta.get("raw_coupon", 0.0)
+            sector = meta.get("sector", "Other")
+            is_ig = IG_RATINGS.includes(meta.get("sp_rating", "")) if hasattr(IG_RATINGS, 'includes') else (meta.get("sp_rating") in IG_RATINGS)
+            # Python fix for 'includes'
+            is_ig = meta.get("sp_rating") in IG_RATINGS or meta.get("moody_rating") in IG_RATINGS
+
+            # Find peers (simplified auto-peer logic)
+            tolerance = 0.5 / 100
+            min_c = coupon - tolerance
+            max_c = coupon + tolerance
+            
+            peers = []
+            for t_other, m_other in master_metadata.items():
+                if t_other == ticker: continue
+                if m_other.get("sector") != sector: continue
+                # Match IG/Non-IG
+                other_ig = m_other.get("sp_rating") in IG_RATINGS or m_other.get("moody_rating") in IG_RATINGS
+                if is_ig != other_ig: continue
+                
+                c_other = m_other.get("raw_coupon", 0.0)
+                if c_other >= min_c and c_other <= max_c:
+                    y_other = y_map.get(t_other)
+                    if y_other in all_closes.columns:
+                        peers.append(y_other)
+
+            if not peers: continue
+
+            # Calc series
+            target_p = all_closes[y_tick]
+            peer_avg = all_closes[peers].mean(axis=1)
+            ratio = (target_p / peer_avg).dropna()
+            
+            if len(ratio) < 20: continue
+            
+            curr = ratio.iloc[-1]
+            low = ratio.min()
+            high = ratio.max()
+            
+            # % Distance from 1y Index Low
+            dist = (curr - low) / low if low > 0 else 999
+            
+            deep_dips.append({
+                "ticker": ticker,
+                "name": meta.get("name", ticker),
+                "sector": sector,
+                "price": round(float(all_closes[y_tick].iloc[-1]), 2),
+                "current_ratio": round(float(curr), 3),
+                "low": round(float(low), 3),
+                "high": round(float(high), 3),
+                "dist_pct": round(dist * 100, 2),
+                "peer_count": len(peers)
+            })
+
+        # Rank by distance to low
+        deep_dips.sort(key=lambda x: x['dist_pct'])
+        
+        save_json("historical_fv_results.json", deep_dips)
+        hlog(f"Scan complete. Found {len(deep_dips)} opportunities.")
+        hist_fv_status = "done"
+
+    except Exception as e:
+        hlog(f"ERROR: {str(e)}")
+        hist_fv_status = f"error: {str(e)}"
