@@ -490,6 +490,7 @@
                     <td>
                         <div class="ticker-cell">
                             <a href="${tickerLink}" target="_blank" style="color:inherit; text-decoration:none;">${i.ticker}</a>
+                            <button class="fv-btn" onclick="openFairValueModal('${i.ticker}')">FV</button>
                             ${badge}
                         </div>
                         <div style="font-size:0.7rem; opacity:0.5; margin-top:2px;">${i.name.slice(0, 15)}...</div>
@@ -1122,6 +1123,44 @@
             poll();
         }
 
+        // --- Fair Value Modal Logic ---
+        function openFairValueModal(ticker) {
+            const overlay = document.getElementById('favModalOverlay');
+            const modalBody = document.getElementById('modalBody');
+            const calculatorCard = document.querySelector('.bottom-section .card'); // The static calculator
+
+            // Move the actual calculator UI into the modal
+            modalBody.appendChild(calculatorCard);
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+
+            // Pre-fill and trigger calculation
+            const calcTickerInput = document.getElementById('calcTicker');
+            if (calcTickerInput) {
+                calcTickerInput.value = ticker;
+                calculateFairValue();
+            }
+        }
+
+        function closeFairValueModal(e) {
+            // Restore the calculator back to its bottom position
+            const calculatorCard = document.querySelector('#modalBody .card');
+            const bottomSection = document.querySelector('.bottom-section');
+            if (calculatorCard) {
+                bottomSection.insertBefore(calculatorCard, bottomSection.firstChild);
+            }
+
+            document.getElementById('favModalOverlay').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        // Close on ESC
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('favModalOverlay').style.display === 'flex') {
+                closeFairValueModal();
+            }
+        });
+
         let currentQuestion = 1;
         function handleMom(isYes) {
             const questionEl = document.getElementById('momQuestion');
@@ -1147,6 +1186,15 @@
             }
         }
     </script>
+    <!-- Fair Value Modal Popup -->
+    <div id="favModalOverlay" onclick="closeFairValueModal(event)">
+        <div id="favModalContent" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeFairValueModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Calculator content will be cloned/moved here when needed -->
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
