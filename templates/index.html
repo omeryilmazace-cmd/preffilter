@@ -880,62 +880,6 @@
         }
 
 
-        function renderTable(targetId, list, mode) {
-            const tbody = document.querySelector(`#${targetId} tbody`);
-            tbody.innerHTML = list.map(i => {
-                let badge = '';
-                if (mode === 'buy' && i.dL7 <= 0.015 && i.dL30 <= 0.015 && i.dL60 <= 0.015) badge = '<span class="badge triple">TRIPLE DIP</span>';
-                if (mode === 'sell' && i.dH7 <= 0.015 && i.dH30 <= 0.015 && i.dH60 <= 0.015) badge = '<span class="badge peak">TRIPLE PEAK</span>';
-
-                let rsiVal = i.rsi || 50;
-                let rsiColor = 'inherit';
-                let rsiWeight = 'normal';
-                if (rsiVal <= 30) { rsiColor = '#4ade80'; rsiWeight = 'bold'; }
-                if (rsiVal >= 70) { rsiColor = '#f87171'; rsiWeight = 'bold'; }
-
-                let vol = i.avg_volume || 0;
-                let volStr = vol > 1000000 ? (vol / 1000000).toFixed(1) + 'M' : (vol > 1000 ? (vol / 1000).toFixed(0) + 'k' : vol);
-
-                let yahooTicker = i.ticker;
-                if (activeMode === 'preferred' && i.ticker.includes('-')) {
-                    yahooTicker = i.ticker.replace('-', '-P');
-                }
-
-                const tickerLink = activeMode === 'cef'
-                    ? `https://www.cefconnect.com/fund/${i.ticker}`
-                    : `https://finance.yahoo.com/quote/${yahooTicker}`;
-
-                const extraCol = activeMode === 'cef'
-                    ? `<td>
-                        <div style="font-size:0.75rem; font-weight:bold;">${i.sector}</div>
-                        <div style="font-size:0.7rem; color:var(--accent-primary); font-weight:bold;">${i.divergence} Div</div>
-                       </td>`
-                    : `<td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>`;
-
-                // Format percentages
-                const fmtP = (v) => (v * 100).toFixed(2) + '%';
-
-                return `<tr>
-                    <td>
-                        <div class="ticker-cell">
-                            <a href="${tickerLink}" target="_blank" style="color:inherit; text-decoration:none;">${i.ticker}</a>
-                            ${badge}
-                        </div>
-                        <div style="font-size:0.7rem; opacity:0.5;">${i.name.slice(0, 15)}...</div>
-                    </td>
-                    <td class="price-cell">$${i.price.toFixed(2)}</td>
-                    <td class="yield-cell">${i.yield}</td>
-                    <td style="color:${rsiColor}; font-weight:${rsiWeight}">${rsiVal}</td>
-                    <td style="font-size:0.75rem; opacity:0.7">${volStr}</td>
-                    ${extraCol}
-                    <td style="font-size:0.75rem;">${i.call_date || '-'}</td>
-                    <td style="font-size:0.75rem;">${i.maturity || '-'}</td>
-                    <td class="${mode === 'buy' && i.dL7 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL7) : fmtP(i.dH7)}</td>
-                    <td class="${mode === 'buy' && i.dL30 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL30) : fmtP(i.dH30)}</td>
-                    <td class="${mode === 'buy' && i.dL60 <= 0.015 ? 'yield-cell' : ''}">${mode === 'buy' ? fmtP(i.dL60) : fmtP(i.dH60)}</td>
-                </tr>`;
-            }).join('');
-        }
 
         function renderStreakTable(list) {
             const tbody = document.querySelector('#streakTable tbody');
