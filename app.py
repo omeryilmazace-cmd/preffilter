@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 from bot import run_full_analysis, TICKER_FILE, scan_logs
+import bot
 import threading
 import time
 import os

@@ -373,83 +373,69 @@ def calculate_historical_index(target_ticker, peer_tickers):
     if not target_ticker or not peer_tickers:
         return {"error": "Missing target or peers"}
     
-    # 1. Resolve Yahoo Tickers
-    # The frontend sends "JPM-L" or "C-J".
-    # Need to convert to Yahoo format: "JPM-PL", "C-PJ".
-    # Since I don't have the `load_tickers` map here readily without re-loading,
-    # I'll rely on a simple heuristic or pass the Yahoo tickers from frontend?
-    # Actually, `bot.py` has `load_tickers` but `run_full_analysis` builds the map.
-    # Simple heuristic: If it has hyphen, try inserting 'P'. 
-    # BUT, frontend already has mapped tickers in `rawData`? 
-    # Let's assume frontend sends RAW tickers (e.g. JPM-L) and we convert here or frontend sends Yahoo tickers.
-    # Better: Frontend sends what it has.
-    # In `run_full_analysis`, I use `orig` (JPM-L) and map to `v` (JPM-PL).
-    # I'll reuse `load_tickers()` logic if needed, but let's try a direct map first.
+    symbol_cache = load_json(SYMBOL_CACHE_FILE)
     
-    def to_yahoo(t):
+    def resolve_t(t):
+        if t in symbol_cache:
+            return symbol_cache[t]
+        # Fallback heuristic
         if "-" in t:
             parts = t.split("-")
-            # Try -P first
             return f"{parts[0]}-P{parts[1]}"
         return t
 
-    target_y = to_yahoo(target_ticker)
-    peers_y = [to_yahoo(p) for p in peer_tickers]
-    all_tickers = [target_y] + peers_y
+    target_y = resolve_t(target_ticker)
+    peers_y = [resolve_t(p) for p in peer_tickers]
+    all_tickers = list(set([target_y] + peers_y))
 
     try:
-        # 2. Fetch History (Batch)
-        # 3mo = ~65 trading days. 6mo might be safer for 90d lookback? Index usually needs 90d?
-        # User asked for "Last 90 day low". Let's fetch "6mo" to be safe.
-        data = yf.download(all_tickers, period="6mo", progress=False)['Close']
+        # Fetch 6 months of data to ensure enough overlap for 90d window
+        # Use group_by='ticker' to get a consistent MultiIndex even for single symbol
+        df = yf.download(all_tickers, period="6mo", progress=False, threads=True, group_by='ticker')
         
-        if data.empty:
-             return {"error": "No data found"}
+        if df.empty:
+             return {"error": "No data found for these symbols"}
         
-        # 3. Process
-        # Ensure target column exists
-        if target_y not in data.columns:
-            # Try alternate formatting? JPM-PL vs JPM-PRL?
-            # Creating a robust fallback is hard without the cache.
-            # Let's try basic fallback
-            alt = target_ticker.replace("-", "-PR")
-            if alt in data.columns: target_y = alt
-            else: return {"error": f"Target {target_ticker} not found in Yahoo"}
+        # Extract Close prices
+        closes = pd.DataFrame()
+        for t in all_tickers:
+            try:
+                if t in df.columns.levels[0]:
+                    s = df[t]['Close'].dropna()
+                    if not s.empty:
+                        closes[t] = s
+            except:
+                # Fallback for single-symbol or different DF structures
+                if 'Close' in df.columns:
+                    closes = df['Close']
+                    break
 
-        # Calculate Peer Average Daily
-        # Filter peers that exist in columns
-        valid_peers = [p for p in peers_y if p in data.columns]
+        if target_y not in closes.columns:
+            return {"error": f"Target {target_ticker} ({target_y}) data missing"}
+
+        valid_peers = [p for p in peers_y if p in closes.columns]
         if not valid_peers:
-            return {"error": "No valid peer data found"}
+            return {"error": "No valid peer data found for index calculation"}
 
-        peer_avg = data[valid_peers].mean(axis=1)
-        target_price = data[target_y]
+        # Calculate Index: Target / Average(Peers)
+        peer_avg = closes[valid_peers].mean(axis=1)
+        target_price = closes[target_y]
         
-        # Index Ratio Series
-        index_series = target_price / peer_avg
-        index_series = index_series.dropna()
+        index_series = (target_price / peer_avg).dropna()
         
-        if index_series.empty:
-            return {"error": "Not enough overlapping data"}
+        if len(index_series) < 5:
+            return {"error": "Not enough overlapping price data"}
 
-        # 4. Compute Stats
-        current_val = index_series.iloc[-1]
+        current_val = float(index_series.iloc[-1])
         
         def get_stats(days):
-            # Last 'days' trading days. (Approx days * 5/7?). 
-            # Or just take last N rows? 
-            # User said "90 day low". Usually implies calendar days? 
-            # In finance, usually "Last 30 bars". 
-            # Let's assume trading days for simplicity or limit by timestamp.
-            # window = ~days * 0.7 for trading days? 
-            # Let's just use slicing by index for now: last N rows.
-            # 90 calendar days ~= 63 trading days.
-            n = int(days * 0.7) 
+            # Calendar days to trading days approximation
+            n = int(days * 0.72) 
             subset = index_series.tail(n)
             if subset.empty: return None, None
-            return round(subset.min(), 3), round(subset.max(), 3)
+            return round(float(subset.min()), 3), round(float(subset.max()), 3)
 
-        l7, h7 = get_stats(10) # ~ 7 calendar days
+        l7, h7 = get_stats(10)
         l30, h30 = get_stats(30)
         l60, h60 = get_stats(60)
         l90, h90 = get_stats(90)
@@ -463,4 +449,4 @@ def calculate_historical_index(target_ticker, peer_tickers):
         }
 
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"Calculation error: {str(e)}"}
