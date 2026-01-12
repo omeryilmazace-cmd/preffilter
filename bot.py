@@ -397,16 +397,32 @@ def calculate_historical_index(target_ticker, peer_tickers):
         
         # Extract Close prices
         closes = pd.DataFrame()
-        for t in all_tickers:
-            try:
-                if t in df.columns.levels[0]:
-                    s = df[t]['Close'].dropna()
-                    if not s.empty:
-                        closes[t] = s
-            except:
-                if 'Close' in df.columns:
-                    closes = df['Close']
-                    break
+        
+        # yf.download behavior varies based on ticker count
+        if len(all_tickers) == 1:
+            ticker = all_tickers[0]
+            if 'Close' in df.columns:
+                closes[ticker] = df['Close']
+            else:
+                return {"error": f"No Close price found for {ticker}"}
+        else:
+            for t in all_tickers:
+                try:
+                    # Check for MultiIndex (group_by='ticker')
+                    if isinstance(df.columns, pd.MultiIndex):
+                        if t in df.columns.levels[0]:
+                            s = df[t]['Close'].dropna()
+                            if not s.empty:
+                                closes[t] = s
+                    else:
+                        # Fallback if MultiIndex didn't form correctly
+                        if t in df.columns:
+                            closes[t] = df[t]
+                except Exception as e:
+                    print(f"Error extracting {t}: {e}")
+
+        if closes.empty:
+            return {"error": "No price data could be extracted"}
 
         if target_y not in closes.columns:
             return {"error": f"Target {target_ticker} ({target_y}) data missing"}

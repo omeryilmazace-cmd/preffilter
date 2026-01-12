@@ -1012,7 +1012,7 @@
                 updateComparison(targetObj, 'target');
             } catch (e) {
                 console.error("fetchHistoricalStats error:", e);
-                document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">Network error fetching history</span>`;
+                document.getElementById('calcHistoryContent').innerHTML = `<div style="color:var(--danger); padding:1rem; font-size:0.8rem;">Network error or Timeout fetching history. Please try with fewer peers or a different ticker.</div>`;
             }
         }
 
