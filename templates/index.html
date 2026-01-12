@@ -263,18 +263,6 @@
                                 <option value="junk">Non-IG Only</option>
                             </select>
                         </div>
-                        <div style="min-width: 150px;">
-                            <label
-                                style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; display:block;">Rate
-                                Type</label>
-                            <select id="calcRateTypeFilter" onchange="calculateFairValue()">
-                                <option value="all">All Types</option>
-                                <option value="Fix">Fixed Only</option>
-                                <option value="Fix-Float">Fix-to-Float Only</option>
-                                <option value="FRR">Reset Rate Only</option>
-                                <option value="FLR">Floating Only</option>
-                            </select>
-                        </div>
                     </div>
 
                     <div id="calcResult"
@@ -707,6 +695,7 @@
 
         function calculateFairValue(isRecalc = false) {
             const tickerInput = document.getElementById('calcTicker').value.toUpperCase().trim();
+            const tolerance = parseFloat(document.getElementById('calcTolerance').value) || 0.5;
             const resultDiv = document.getElementById('calcResult');
 
             if (!tickerInput) {
@@ -795,10 +784,8 @@
             const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
                 'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
 
-            const tolerance = parseFloat(document.getElementById('calcTolerance').value) / 100;
-            const sectorFilter = document.getElementById('calcSector').value;
             const ratingFilter = document.getElementById('calcRatingFilter').value;
-            const rateTypeFilter = document.getElementById('calcRateTypeFilter').value;
+            const sectorFilter = document.getElementById('calcSector').value;
 
             // Populate Sector Dropdown if empty
             const sectorSelect = document.getElementById('calcSector');
@@ -813,39 +800,40 @@
             }
 
             if (!isRecalc) {
-                // --- Automatic Detection (Only if ticker changed) ---
+                // --- Automatic Rating Detection (Only if ticker changed) ---
                 if (target.ticker !== currentTargetTicker) {
-                    const targetRating = (target.sp_rating || target.moody_rating || "").toUpperCase();
-                    const isIG = IG_RATINGS.includes(targetRating);
-                    document.getElementById('calcRatingFilter').value = isIG ? 'ig' : 'junk';
-
-                    if (target.rate_type) {
-                        document.getElementById('calcRateTypeFilter').value = target.rate_type;
+                    const isTargetIG = IG_RATINGS.includes(target.sp_rating) || IG_RATINGS.includes(target.moody_rating);
+                    const ratingSelect = document.getElementById('calcRatingFilter');
+                    if (isTargetIG) {
+                        ratingSelect.value = 'ig';
+                    } else {
+                        ratingSelect.value = 'junk';
                     }
-                    currentTargetTicker = target.ticker;
                 }
 
-                // Re-read filters after potential auto-updates
+                currentTargetTicker = target.ticker;
                 const activeRatingFilter = document.getElementById('calcRatingFilter').value;
-                const activeRateTypeFilter = document.getElementById('calcRateTypeFilter').value;
 
-                const autoPeers = Object.values(masterMetadata).filter(m => {
-                    if (m.ticker === target.ticker) return false;
-                    if (sectorFilter !== 'all' && m.sector !== sectorFilter) return false;
+                const targetCoupon = target.raw_coupon || 0;
+                const minC = targetCoupon - (tolerance / 100);
+                const maxC = targetCoupon + (tolerance / 100);
 
-                    // Rating Filter
-                    if (activeRatingFilter !== 'all') {
-                        const r = (m.sp_rating || m.moody_rating || "").toUpperCase();
-                        const isIG = IG_RATINGS.includes(r);
-                        if (activeRatingFilter === 'ig' && !isIG) return false;
-                        if (activeRatingFilter === 'junk' && isIG) return false;
+                const autoPeers = prefData.filter(i => {
+                    if (i.ticker === target.ticker) return false;
+
+                    // Peers filtered by Rating
+                    if (activeRatingFilter === 'ig') {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (!isIG) return false;
+                    } else if (activeRatingFilter === 'junk') {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (isIG) return false;
                     }
+                    // 'all' passes rating check
 
-                    // Rate Type Filter
-                    if (activeRateTypeFilter !== 'all' && m.rate_type !== activeRateTypeFilter) return false;
-
-                    const c = m.raw_coupon || 0;
-                    return c >= (target.raw_coupon * (1 - tolerance)) && c <= (target.raw_coupon * (1 + tolerance));
+                    if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
+                    const c = i.raw_coupon || 0;
+                    return c >= minC && c <= maxC;
                 });
 
                 const manualPeerObjs = [];
@@ -1012,7 +1000,7 @@
                 updateComparison(targetObj, 'target');
             } catch (e) {
                 console.error("fetchHistoricalStats error:", e);
-                document.getElementById('calcHistoryContent').innerHTML = `<div style="color:var(--danger); padding:1rem; font-size:0.8rem;">Network error or Timeout fetching history. Please try with fewer peers or a different ticker.</div>`;
+                document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">Network error fetching history</span>`;
             }
         }
 

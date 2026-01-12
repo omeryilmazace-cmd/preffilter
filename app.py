@@ -117,17 +117,13 @@ def calc_stats():
     Wraps bot.calculate_historical_index.
     """
     data = request.json
-    target_data = data.get('target', {})
-    target_ticker = target_data.get('ticker') if isinstance(target_data, dict) else target_data
+    target = data.get('target', '')
     peers = data.get('peers', [])
     
-    if not target_ticker or not peers:
+    if not target or not peers:
         return jsonify({"error": "Missing params"}), 400
         
-    # Limit peers to 15 to avoid timeout/OOM on Railway
-    peers = peers[:15]
-        
-    stats = bot.calculate_historical_index(target_ticker, peers)
+    stats = bot.calculate_historical_index(target, peers)
     return jsonify(stats)
 
 if __name__ == '__main__':
