@@ -252,12 +252,15 @@
                                 <option value="all">Any</option>
                             </select>
                         </div>
-                        <div style="padding-bottom: 2px;">
+                        <div style="min-width: 150px;">
                             <label
-                                style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer;">
-                                <input type="checkbox" id="calcIgOnly" checked onchange="calculateFairValue()">
-                                <span>IG Only</span>
-                            </label>
+                                style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; display:block;">Rating
+                                Filter</label>
+                            <select id="calcRatingFilter" onchange="calculateFairValue()">
+                                <option value="all">All Ratings</option>
+                                <option value="ig">IG Only</option>
+                                <option value="junk">Non-IG Only</option>
+                            </select>
                         </div>
                     </div>
 
@@ -780,7 +783,7 @@
             const IG_RATINGS = ['BBB-', 'BBB', 'BBB+', 'A-', 'A', 'A+', 'AA-', 'AA', 'AA+', 'AAA',
                 'Baa3', 'Baa2', 'Baa1', 'A3', 'A2', 'A1', 'Aa3', 'Aa2', 'Aa1', 'Aaa'];
 
-            const useIgOnly = document.getElementById('calcIgOnly').checked;
+            const ratingFilter = document.getElementById('calcRatingFilter').value;
             const sectorFilter = document.getElementById('calcSector').value;
 
             // Populate Sector Dropdown if empty
@@ -796,18 +799,37 @@
             }
 
             if (!isRecalc) {
+                // --- Automatic Rating Detection (Only if ticker changed) ---
+                if (target.ticker !== currentTargetTicker) {
+                    const isTargetIG = IG_RATINGS.includes(target.sp_rating) || IG_RATINGS.includes(target.moody_rating);
+                    const ratingSelect = document.getElementById('calcRatingFilter');
+                    if (isTargetIG) {
+                        ratingSelect.value = 'ig';
+                    } else {
+                        ratingSelect.value = 'junk';
+                    }
+                }
+
                 currentTargetTicker = target.ticker;
+                const activeRatingFilter = document.getElementById('calcRatingFilter').value;
+
                 const targetCoupon = target.raw_coupon || 0;
                 const minC = targetCoupon - (tolerance / 100);
                 const maxC = targetCoupon + (tolerance / 100);
 
                 const autoPeers = prefData.filter(i => {
                     if (i.ticker === target.ticker) return false;
-                    // Peers ARE filtered by IG/Sector
-                    if (useIgOnly) {
+
+                    // Peers filtered by Rating
+                    if (activeRatingFilter === 'ig') {
                         const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
                         if (!isIG) return false;
+                    } else if (activeRatingFilter === 'junk') {
+                        const isIG = IG_RATINGS.includes(i.sp_rating) || IG_RATINGS.includes(i.moody_rating);
+                        if (isIG) return false;
                     }
+                    // 'all' passes rating check
+
                     if (sectorFilter !== 'all' && i.sector !== sectorFilter) return false;
                     const c = i.raw_coupon || 0;
                     return c >= minC && c <= maxC;
