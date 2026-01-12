@@ -974,15 +974,24 @@
                         <div style="opacity:0.7">60 Days:</div>
                         <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
                     </div>
-                    <div style="height: 300px; width: 100%; position: relative;">
+                    <div style="height: 300px; width: 100%; position: relative; margin-bottom: 0.5rem;">
                         <canvas id="fvIndexChart"></canvas>
+                    </div>
+                    <div class="chart-timeframes">
+                        <button onclick="updateFVChartTimeframe(30)" data-days="30">30D</button>
+                        <button onclick="updateFVChartTimeframe(60)" data-days="60">60D</button>
+                        <button onclick="updateFVChartTimeframe(90)" data-days="90" class="active">90D</button>
+                        <button onclick="updateFVChartTimeframe(180)" data-days="180">180D</button>
+                        <button onclick="updateFVChartTimeframe(360)" data-days="360">1Y</button>
+                        <button onclick="updateFVChartTimeframe(720)" data-days="720">2Y</button>
                     </div>
                 `;
                 document.getElementById('calcHistoryContent').innerHTML = html;
 
-                // Render Chart
+                // Render Chart (Default 90 days)
                 if (data.series && data.series.labels) {
-                    renderFVChart(data.series.labels, data.series.values);
+                    window.lastFVSeries = data.series;
+                    updateFVChartTimeframe(90);
                 }
 
                 // Also update comparison for target
@@ -1066,6 +1075,26 @@
                     }
                 }
             });
+        }
+
+        function updateFVChartTimeframe(days) {
+            if (!window.lastFVSeries) return;
+
+            // Update UI
+            document.querySelectorAll('.chart-timeframes button').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.days) === days);
+            });
+
+            const labels = window.lastFVSeries.labels;
+            const values = window.lastFVSeries.values;
+
+            // Slicing logic: index_series is daily trading days. 
+            // We take last N points where N is approx calendar days * 0.73
+            const count = Math.min(labels.length, Math.round(days * 0.73));
+            const sLabels = labels.slice(-count);
+            const sValues = values.slice(-count);
+
+            renderFVChart(sLabels, sValues);
         }
 
         function getTVTicker(ticker) {

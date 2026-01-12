@@ -498,6 +498,39 @@ tr:hover td {
     box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
 }
 
+/* Chart Timeframes */
+.chart-timeframes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chart-timeframes button {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+}
+
+.chart-timeframes button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    opacity: 1;
+}
+
+.chart-timeframes button.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
 .terminal-container {
     margin-top: 1rem;
     border-top: 1px solid var(--border-glass);
@@ -820,7 +853,7 @@ tr:hover td {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border: none;
     color: white;
     width: 40px;
