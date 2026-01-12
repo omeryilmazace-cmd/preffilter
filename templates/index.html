@@ -439,6 +439,10 @@
         });
 
         function switchMode(mode) {
+            if (mode === 'cef') {
+                alert("CEF Analyzer is currently Under Construction 🛠️\nWe are focusing on Preferred Filter optimizations.");
+                return;
+            }
             activeMode = mode;
             // Buttons
             document.getElementById('prefBtn').classList.toggle('active', mode === 'preferred');
@@ -503,26 +507,12 @@
                     ? `https://www.cefconnect.com/fund/${i.ticker}`
                     : `https://finance.yahoo.com/quote/${yahooTicker}`;
 
-                // Dynamic Middle Columns
-                let midCols = '';
-                if (activeMode === 'cef') {
-                    // CEF: Sector+Div (merged in one col for Makas header?) 
-                    // Wait, previous code had header: Vol, Makas, ...
-                    // Let's render 'Makas' nicely
-                    midCols = `
-                        <td>
-                            <div style="font-size:0.75rem; font-weight:bold; color:var(--text-muted);">${i.sector ? i.sector.slice(0, 10) : '-'}</div>
-                            <div style="font-size:0.9rem; color:var(--accent-primary); font-family:var(--font-mono); font-weight:bold;">${i.divergence}</div>
-                        </td>
-                     `;
-                } else {
-                    // Preferred: Rating, Call, Mat
-                    midCols = `
-                        <td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>
-                        <td style="font-size:0.75rem;">${i.call_date || '-'}</td>
-                        <td style="font-size:0.75rem;">${i.maturity || '-'}</td>
-                    `;
-                }
+                // Preferred: Rating, Call, Mat
+                let midCols = `
+                    <td><span class="rating-badge">${i.sp_rating}</span> <span style="opacity:0.5; font-size:0.7rem">/ ${i.moody_rating}</span></td>
+                    <td style="font-size:0.75rem;">${i.call_date || '-'}</td>
+                    <td style="font-size:0.75rem;">${i.maturity || '-'}</td>
+                `;
 
                 // Format percentages
                 const fmtP = (v) => (v * 100).toFixed(2) + '%';
@@ -568,9 +558,7 @@
                 rawData = fullModesData[activeMode];
 
                 const prefStatus = data.preferred.status;
-                const cefStatus = data.cef.status;
-
-                const isScanning = prefStatus === 'scanning' || cefStatus === 'scanning';
+                const isScanning = prefStatus === 'scanning';
 
                 // Update Status UI
                 const dot = document.getElementById('statusDot');
@@ -588,7 +576,7 @@
                     document.getElementById('scanBtn').innerText = 'Force Refresh';
                 }
 
-                if (prefStatus.includes("Error") || cefStatus.includes("Error")) {
+                if (prefStatus.includes("Error")) {
                     text.innerText = "Error - Check Logs";
                     text.style.color = "var(--danger)";
                 }

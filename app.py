@@ -8,13 +8,13 @@ app = Flask(__name__)
 
 # Global state
 modes_data = {
-    "preferred": {"all_data": [], "status": "idle"},
-    "cef": {"all_data": [], "status": "idle"}
+    "preferred": {"all_data": [], "status": "idle"}
 }
 current_settings = {"threshold": 0.015}
 
 def background_scan(mode):
     global modes_data
+    if mode not in modes_data: return
     modes_data[mode]["status"] = "scanning"
     try:
         res = run_full_analysis(threshold=current_settings["threshold"], mode=mode)
@@ -28,17 +28,14 @@ def background_scan(mode):
         modes_data[mode]["status"] = f"error: {str(e)}"
 
 def scheduled_scan_loop():
-    """Runs scan for both modes every 15 minutes."""
+    """Runs scan for preferred mode every 15 minutes."""
     while True:
         try:
             print("[SCHEDULER] Starting background scan...")
             scan_logs.clear()
             
-            # 1. Preferred
+            # Only Preferred
             background_scan("preferred")
-            
-            # 2. CEFs
-            background_scan("cef")
             
             print("[SCHEDULER] Scan complete. Sleeping for 15 mins.")
             time.sleep(900) # 15 minutes
@@ -67,12 +64,11 @@ def start_scan():
 
     scan_logs.clear()
     
-    # Run both Preferred and CEF scans
-    for m in ["preferred", "cef"]:
-        if modes_data[m]["status"] != "scanning":
-            threading.Thread(target=background_scan, args=(m,)).start()
+    # Run only Preferred scan
+    if modes_data["preferred"]["status"] != "scanning":
+        threading.Thread(target=background_scan, args=("preferred",)).start()
 
-    return jsonify({"message": "Scans started for both modes"})
+    return jsonify({"message": "Scan started for preferred mode"})
 
 @app.route('/api/tickers', methods=['GET'])
 def get_tickers():
