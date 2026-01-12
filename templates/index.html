@@ -83,22 +83,6 @@
             </div>
         </div>
 
-        <div class="filter-group hidden" id="cefFilters">
-            <h3>CEF Categories</h3>
-            <select id="cefCategoryFilter" onchange="applyFilters()">
-                <option value="all">All CEF Categories</option>
-                <option value="Municipal Bond">Munis</option>
-                <option value="Equity/Core">QQQ/SPY</option>
-                <option value="Mixed/Debt">Reba</option>
-                <option value="Utility">Utility</option>
-                <option value="Real Estate">Real Estate</option>
-            </select>
-            <div style="margin-top: 8px;">
-                <label style="font-size: 0.75rem; opacity: 0.7; margin-bottom:4px; display:block;">Min Makas (Div
-                    %):</label>
-                <input type="number" id="minDivergence" value="0" step="0.5" oninput="applyFilters()">
-            </div>
-        </div>
 
         <div class="filter-group">
             <h3>Global Sector</h3>
@@ -200,7 +184,6 @@
                                 <th onclick="setSort('rsi')">RSI</th>
                                 <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeader" onclick="setSort('sp_rating')">Rating</th>
-                                <th id="cefDivHeader" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th id="prefCallHeader" onclick="setSort('call_date')">Call</th>
                                 <th id="prefMatHeader" onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dL7')">7D</th>
@@ -228,7 +211,6 @@
                                 <th onclick="setSort('rsi')">RSI</th>
                                 <th onclick="setSort('avg_volume')">Vol</th>
                                 <th id="prefRatingHeaderSell" onclick="setSort('sp_rating')">Rating</th>
-                                <th id="cefDivHeaderSell" class="hidden" onclick="setSort('raw_divergence')">Makas</th>
                                 <th id="prefCallHeaderSell" onclick="setSort('call_date')">Call</th>
                                 <th id="prefMatHeaderSell" onclick="setSort('maturity')">Mat</th>
                                 <th onclick="setSort('dH7')">7D</th>
@@ -449,26 +431,13 @@
             document.getElementById('cefBtn').classList.toggle('active', mode === 'cef');
 
             // Visibility
-            document.getElementById('prefFilters').classList.toggle('hidden', mode === 'cef');
-            document.getElementById('cefFilters').classList.toggle('hidden', mode === 'preferred');
+            document.getElementById('prefFilters').classList.remove('hidden');
 
-            // Headers Logic
+            // Header Logic (Fixed Preferred Only)
             const show = (id) => document.getElementById(id).classList.remove('hidden');
-            const hide = (id) => document.getElementById(id).classList.add('hidden');
-
-            if (mode === 'preferred') {
-                show('prefRatingHeader'); show('prefRatingHeaderSell');
-                show('prefCallHeader'); show('prefCallHeaderSell');
-                show('prefMatHeader'); show('prefMatHeaderSell');
-
-                hide('cefDivHeader'); hide('cefDivHeaderSell');
-            } else {
-                hide('prefRatingHeader'); hide('prefRatingHeaderSell');
-                hide('prefCallHeader'); hide('prefCallHeaderSell');
-                hide('prefMatHeader'); hide('prefMatHeaderSell');
-
-                show('cefDivHeader'); show('cefDivHeaderSell');
-            }
+            show('prefRatingHeader'); show('prefRatingHeaderSell');
+            show('prefCallHeader'); show('prefCallHeaderSell');
+            show('prefMatHeader'); show('prefMatHeaderSell');
 
             // Sync
             rawData = fullModesData[activeMode];
