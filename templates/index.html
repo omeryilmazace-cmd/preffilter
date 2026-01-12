@@ -1069,11 +1069,11 @@
         }
 
         function getTVTicker(ticker) {
-            // Conversion for TradingView: JPM-C -> JPM.PR.C or just JPM-C
-            // yfinance uses -P, our masterlist uses -
+            // TradingView Preferred Symbol Format: MET-A -> MET/PA
             if (activeMode === 'cef') return ticker;
-            let formatted = ticker.replace('-P', '.PR.').replace('-', '.PR.');
-            // Common preferred stock symbology in TV
+
+            // Handle both MET-A (masterlist) and MET-PA (yfinance)
+            let formatted = ticker.replace('-P', '/P').replace('-', '/P');
             return formatted;
         }
 
