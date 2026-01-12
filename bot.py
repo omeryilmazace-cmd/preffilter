@@ -179,7 +179,9 @@ def run_full_analysis(threshold=None, mode="preferred"):
     else:
         log_msg("All tickers resolved from cache. Skipping trials.")
 
-    # Step 2: Price Fetching
+    # Step 2: Price Fetching & Analysis (Chunk-based for memory efficiency)
+    import gc
+    
     SECTOR_ETFS = {
         "Municipal Bond": ["XMPT", "MUB"],
         "Equity/Core": ["QQQ", "SPY"],
@@ -190,294 +192,176 @@ def run_full_analysis(threshold=None, mode="preferred"):
         "Other": ["SPY"]
     }
     
+    symbols_to_download = list(set(resolved_map.values()))
+    # Add benchmark symbols for CEF mode
     benchmark_symbols = []
     if mode == "cef":
         for etf_list in SECTOR_ETFS.values():
             benchmark_symbols.extend(etf_list)
+        benchmark_symbols = list(set(benchmark_symbols))
+        symbols_to_download = list(set(symbols_to_download) | set(benchmark_symbols))
+
+    log_msg(f"Fetching data for {len(symbols_to_download)} symbols in chunks...")
     
-    symbols_to_download = list(set(resolved_map.values()) | set(benchmark_symbols))
-    log_msg(f"Benchmarks: {benchmark_symbols}")
-    log_msg(f"Download Sample: {symbols_to_download[:10]}")
-    log_msg(f"Fetching prices for {len(symbols_to_download)} symbols (Mode: {mode})...")
-    
-    # Reduce chunk size for lower memory usage on Railway
-    chunk_size = 75  # Was 200, reduced for memory efficiency
-    all_prices = []
+    chunk_size = 75
     chunks = [symbols_to_download[i:i+chunk_size] for i in range(0, len(symbols_to_download), chunk_size)]
-    
-    # CEFs need adjusted Close (IDV adjusted)
     adj_flag = True if mode == "cef" else False
-
-    def fetch_chunk(chunk):
-        try:
-            return yf.download(chunk, period="4mo", progress=False, threads=True, auto_adjust=adj_flag)
-        except Exception:
-            return pd.DataFrame()
-
-    log_msg(f"Parallel fetch (Auto-Adjust={adj_flag}) in {len(chunks)} chunks (chunk_size={chunk_size})...")
-    # Use fewer workers to reduce peak memory usage
-    with ThreadPoolExecutor(max_workers=2) as executor:  # Was 5, reduced for memory
-        future_to_chunk = {executor.submit(fetch_chunk, c): c for c in chunks}
-        for i, future in enumerate(as_completed(future_to_chunk)):
-            data = future.result()
-            if not data.empty:
-                all_prices.append(data)
-            pct = ((i + 1) / len(chunks)) * 100
-            log_msg(f"Fetch Progress: {pct:.1f}%...")
-
-    if not all_prices:
-        log_msg("Critical: Price fetch failed.")
-        return {"error": "No data"}
-
-    log_msg("Crunching range analytics...")
-    combined_prices = pd.concat(all_prices, axis=1)
-    # Debug info
-    # log_msg(f"Combined Cols: {list(combined_prices.columns)[:5]}")
-    try:
-        closes = combined_prices['Close']
-        opens = combined_prices['Open']
-        volumes = combined_prices['Volume']
-    except Exception as e:
-        log_msg(f"Error accessing Close/Open: {e}")
-        # Fallback if flat index (rare but possible with 1 ticker)
-        closes = combined_prices
-        opens = combined_prices 
-        volumes = pd.DataFrame() # Fallback
-
-    # Ensure DataFrame format
-    if isinstance(closes, pd.Series): closes = closes.to_frame()
-    if isinstance(opens, pd.Series): opens = opens.to_frame()
-    if isinstance(volumes, pd.Series): volumes = volumes.to_frame()
-
-    # --- FALLBACK FOR MISSING BENCHMARKS ---
-    if mode == "cef" and benchmark_symbols:
-        available = []
-        if hasattr(closes, 'columns'):
-            available = [str(c).upper() for c in closes.columns]
-        
-        missing_benchmarks = [b for b in benchmark_symbols if b not in available]
-        
-        if missing_benchmarks:
-            log_msg(f"Attempting fallback fetch for missing benchmarks: {missing_benchmarks}")
-            for mb in missing_benchmarks:
-                try:
-                    # Individual fetch
-                    mb_data = yf.download(mb, period="4mo", progress=False, threads=False, auto_adjust=adj_flag)
-                    if not mb_data.empty and 'Close' in mb_data.columns:
-                        mb_close = mb_data['Close']
-                        # Handle if it comes back as DataFrame or Series
-                        if isinstance(mb_close, pd.DataFrame):
-                             # Often comes as (Date, Ticker) -> we want just the series
-                             # If column name matches ticker, grab it, else take first col
-                             if mb in mb_close.columns:
-                                 mb_close = mb_close[mb]
-                             else:
-                                 mb_close = mb_close.iloc[:, 0]
-                        
-                        # Rename Series to ticker name to ensure it aligns
-                        mb_close.name = mb
-                        
-                        # Merge into closes
-                        # We use join (outer) to keep existing dates, or concat
-                        # Concat is safer to append a new column
-                        closes = pd.concat([closes, mb_close], axis=1)
-                        log_msg(f"Fallback success for {mb}")
-                except Exception as e:
-                    log_msg(f"Fallback failed for {mb}: {e}")
-    # ---------------------------------------
     
-    if hasattr(closes, 'columns'):
-         log_msg(f"Closes columns (first 10): {list(closes.columns)[:10]}")
+    benchmarks_data = {} # Only used in CEF mode
 
-    # Pre-calculate benchmark dips if in CEF mode
-    benchmarks_dL60 = {}
-    if mode == "cef":
-        log_msg(f"Calculating benchmarks for {len(benchmark_symbols)} ETFs...")
-        # Clean columns for easier matching
-        available_cols = []
-        if isinstance(closes, pd.DataFrame):
-            available_cols = [str(c).upper() for c in closes.columns]
+    def process_chunk_data(chunk_df, chunk_orig_map):
+        chunk_results = []
+        if chunk_df.empty: return []
         
-        log_msg(f"Available Cols for Benchmarks: {available_cols[:20]}... (Total: {len(available_cols)})")
-
-        for sym in benchmark_symbols:
-            s_upper = sym.upper()
-            if s_upper in available_cols:
-                # Get the actual column (could be string or MultiIndex)
-                col_idx = closes.columns[available_cols.index(s_upper)]
-                s = closes[col_idx]
-                if isinstance(s, pd.DataFrame): 
-                    s = s.iloc[:, 0]
-                s = s.dropna()
-                if not s.empty:
-                    current = float(s.iloc[-1])
-                    h60 = float(s.tail(60).max())
-                    if h60 > 0:
-                        benchmarks_dL60[sym] = (h60 - current) / h60
-                        # log_msg(f"Benchmark {sym}: {benchmarks_dL60[sym]*100:.2f}% dip")
+        # Downcast to float32 immediately to save memory
+        chunk_df = chunk_df.astype('float32')
         
-        log_msg(f"Benchmarks ready: {list(benchmarks_dL60.keys())}")
+        try:
+            closes = chunk_df['Close']
+            opens = chunk_df['Open']
+            volumes = chunk_df['Volume']
+        except:
+            closes = chunk_df
+            opens = chunk_df
+            volumes = pd.DataFrame()
 
-    analysis_count = 0
-    for orig, v in resolved_map.items():
-        if v in closes.columns:
-            analysis_count += 1
-            series = closes[v]
-            if isinstance(series, pd.DataFrame):
-                series = series.iloc[:, 0] # Handle duplicates
-            series = series.dropna()
+        if isinstance(closes, pd.Series): closes = closes.to_frame()
+        if isinstance(opens, pd.Series): opens = opens.to_frame()
+        if isinstance(volumes, pd.Series): volumes = volumes.to_frame()
+
+        # Extract bench data if needed
+        if mode == "cef":
+            for b in benchmark_symbols:
+                if b in closes.columns:
+                    s = closes[b].dropna()
+                    if not s.empty:
+                        curr = float(s.iloc[-1])
+                        h60 = float(s.tail(60).max())
+                        if h60 > 0: benchmarks_data[b] = (h60 - curr) / h60
+
+        # Run analysis for each ticker in this chunk
+        for orig, v in chunk_orig_map.items():
+            if v not in closes.columns: continue
             
-            # --- DEBUG TRACE JPM-C ---
-            if "JPM" in v and "C" in v:
-                log_msg(f"[DEBUG] {v} (Orig: {orig}) - Length: {len(series)}")
-                try:
-                    last_val = series.iloc[-1]
-                    l60_val = series.tail(60).min()
-                    log_msg(f"[DEBUG] {v} - Last: {last_val}, L60: {l60_val}")
-                except Exception as e:
-                    log_msg(f"[DEBUG] {v} - Error checking values: {e}")
-            # -------------------------
-
-            if len(series) < 15: 
-                if "JPM" in v: log_msg(f"[DEBUG] Skipping {v}: Not enough data (<15)")
-                continue # Need enough data for RSI
+            series = closes[v].dropna()
+            if len(series) < 15: continue
+            
             current = float(series.iloc[-1])
-            
-            # RSI Calculation
-            try:
-                rsi_s = calculate_rsi(series)
-                rsi_sq = rsi_s.dropna()
-                current_rsi = float(rsi_sq.iloc[-1]) if not rsi_sq.empty else 50.0
-            except:
-                current_rsi = 50.0
-
-            # Volume Calculation
-            try:
-                vol_s = volumes[v]
-                if isinstance(vol_s, pd.DataFrame): vol_s = vol_s.iloc[:, 0]
-                vol_s = vol_s.dropna()
-                avg_vol = float(vol_s.tail(10).mean()) if not vol_s.empty else 0.0
-            except:
-                avg_vol = 0.0
-            
-            # Streak Detection
-            streak_type = "Neutral"
-            streak_count = 0
-            if isinstance(opens, pd.DataFrame) and v in opens.columns:
-                open_v = opens[v]
-                if isinstance(open_v, pd.DataFrame): open_v = open_v.iloc[:, 0]
-                close_v = closes[v]
-                if isinstance(close_v, pd.DataFrame): close_v = close_v.iloc[:, 0]
-                
-                # Align on date index
-                aligned = pd.concat([open_v, close_v], axis=1, keys=['O', 'C']).dropna()
-                if not aligned.empty:
-                    for i in range(len(aligned)-1, -1, -1):
-                        row = aligned.iloc[i]
-                        try:
-                            c_val = float(row['C'])
-                            o_val = float(row['O'])
-                            g = c_val > o_val
-                            r = c_val < o_val
-                            
-                            if i == len(aligned)-1:
-                                if g: streak_type = "Green"
-                                elif r: streak_type = "Red"
-                                else: break
-                                streak_count = 1
-                            else:
-                                if (streak_type == "Green" and g) or (streak_type == "Red" and r):
-                                    streak_count += 1
-                                else: break
-                        except: break
-
             l60, h60 = float(series.tail(60).min()), float(series.tail(60).max())
             l30, h30 = float(series.tail(30).min()), float(series.tail(30).max())
             l7, h7 = float(series.tail(7).min()), float(series.tail(7).max())
             if l60 <= 0: continue
-            
-            # Master Metadata enrichment
-            m_data = master_metadata.get(orig, {})
-            raw_coupon = m_data.get("raw_coupon", 0.0)  # e.g. 0.07875 for 7.875%
-            coupon_str = m_data.get("coupon", "N/A")    # e.g. "7.875%"
-            sector = m_data.get("sector", "Other").strip()
-            sp_rating = m_data.get("sp_rating", "NR")
-            mid_rating = m_data.get("moody_rating", "NR")
-            rate_type = m_data.get("rate", "Fix")
-            asset_type = m_data.get("type", "Trad")
-            call_date_str = m_data.get("call_date", "")
-            
-            # Determine if currently floating (Fix-Float with call date passed)
-            is_currently_floating = m_data.get("is_floating", False)
-            if rate_type == "Fix-Float" and call_date_str:
-                try:
-                    from datetime import datetime
-                    call_date = datetime.strptime(call_date_str, "%m/%d/%Y")
-                    if datetime.now() > call_date:
-                        is_currently_floating = True
-                except:
-                    pass
-            
-            # Yield & Display
-            raw_divergence = 0.0
-            display_divergence = "-"
-            
-            if mode == "cef":
-                m_info = metadata_cache.get(v, {})
-                div_rate = m_info.get("dividendRate", 0.0)
-                cur_yield = (div_rate / current) if current > 0 else 0.0
-                display_coupon = f"${div_rate:.2f}"
-                
-                # Divergence calculation
-                relevant_etfs = SECTOR_ETFS.get(sector, [])
-                used_etfs = [e for e in relevant_etfs if e in benchmarks_dL60]
-                etf_dips = [benchmarks_dL60[e] for e in used_etfs]
-                
-                benchmark_str = ""
-                if used_etfs:
-                    benchmark_str = f"vs {', '.join(used_etfs)}"
-                
-                if etf_dips:
-                    avg_etf_dip = sum(etf_dips) / len(etf_dips)
-                    cef_dip = (h60 - current) / h60 # How much it dipped from 60D high
-                    raw_divergence = (cef_dip - avg_etf_dip)
-                    display_divergence = f"{raw_divergence*100:+.1f}%"
-                else:
-                    log_msg(f"Warning: No benchmarks for {v} (Sector: '{sector}'). Expected: {relevant_etfs}, Found: {list(benchmarks_dL60.keys())}")
-            else:
-                # Preferred logic: (Coupon * FaceValue) / CurrentPrice. Assuming $25 face value.
-                cur_yield = (raw_coupon * 25.0 / current) if current > 0 and raw_coupon > 0 else 0.0
-                display_coupon = coupon_str if coupon_str != "N/A" else "N/A"
 
-            results["all_data"].append({
+            # RSI
+            try:
+                rsi_s = calculate_rsi(series).dropna()
+                current_rsi = float(rsi_s.iloc[-1]) if not rsi_s.empty else 50.0
+            except: current_rsi = 50.0
+
+            # Vol
+            try:
+                vol_s = volumes[v].dropna()
+                avg_vol = float(vol_s.tail(10).mean()) if not vol_s.empty else 0.0
+            except: avg_vol = 0.0
+
+            # Streak
+            streak_type, streak_count = "Neutral", 0
+            if v in opens.columns:
+                o_v = opens[v]
+                c_v = closes[v]
+                aligned = pd.concat([o_v, c_v], axis=1, keys=['O', 'C']).dropna()
+                if not aligned.empty:
+                    for i in range(len(aligned)-1, -1, -1):
+                        row = aligned.iloc[i]
+                        c_val, o_val = float(row['C']), float(row['O'])
+                        g, r = c_val > o_val, c_val < o_val
+                        if i == len(aligned)-1:
+                            if g: streak_type = "Green"
+                            elif r: streak_type = "Red"
+                            else: break
+                            streak_count = 1
+                        else:
+                            if (streak_type == "Green" and g) or (streak_type == "Red" and r): streak_count += 1
+                            else: break
+
+            m_data = master_metadata.get(orig, {})
+            raw_coupon = m_data.get("raw_coupon", 0.0)
+            sector = m_data.get("sector", "Other").strip()
+            
+            # Simplified result item to save memory
+            res_item = {
                 "ticker": orig,
                 "name": m_data.get("name", metadata_cache.get(v, {}).get("longName", orig)),
                 "sector": sector,
-                "sp_rating": sp_rating,
-                "moody_rating": mid_rating,
-                "rate": rate_type,
-                "type": asset_type,
-                "is_floating": is_currently_floating,
-                "call_date": call_date_str,
-                "maturity": m_data.get("maturity", ""),
-                "coupon": display_coupon,
-                "price": current,
-                "yield": f"{cur_yield*100:.2f}%" if cur_yield > 0 else "N/A",
-                "divergence": display_divergence,
-                "raw_divergence": raw_divergence,
-                "raw_yield": float(cur_yield),
-                "raw_coupon": raw_coupon, # Add raw numeric coupon for frontend index calc
+                "sp_rating": m_data.get("sp_rating", "NR"),
+                "moody_rating": m_data.get("moody_rating", "NR"),
+                "rate": m_data.get("rate", "Fix"),
+                "type": m_data.get("type", "Trad"),
+                "coupon": m_data.get("coupon", "N/A"),
+                "price": round(current, 2),
+                "yield": f"{(raw_coupon * 25.0 / current)*100:.2f}%" if current > 0 and raw_coupon > 0 and mode != "cef" else "N/A",
+                "raw_yield": float(raw_coupon * 25.0 / current) if current > 0 and raw_coupon > 0 else 0.0,
+                "raw_coupon": raw_coupon,
                 "streak_type": streak_type,
                 "streak_count": streak_count,
-                "l60": l60, "h60": h60, "l30": l30, "h30": h30, "l7": l7, "h7": h7,
                 "dL60": (current-l60)/l60, "dH60": (h60-current)/h60, 
                 "dL30": (current-l30)/l30, "dH30": (h30-current)/h30, 
                 "dL7": (current-l7)/l7, "dH7": (h7-current)/h7,
                 "rsi": round(current_rsi, 1),
-                "avg_volume": int(avg_vol),
-                "benchmark_str": benchmark_str if mode == "cef" else ""
-            })
+                "avg_volume": int(avg_vol)
+            }
+            if mode == "cef":
+                # Special CEF fields
+                m_info = metadata_cache.get(v, {})
+                div_rate = m_info.get("dividendRate", 0.0)
+                res_item["yield"] = f"{(div_rate/current)*100:.2f}%" if current > 0 else "N/A"
+                res_item["raw_yield"] = float(div_rate/current) if current > 0 else 0.0
+                res_item["coupon"] = f"${div_rate:.2f}"
+                # Divergence will be calculated in post-processing
+                res_item["_cef_h60"] = h60
+                res_item["_cef_current"] = current
+            
+            chunk_results.append(res_item)
+            
+        return chunk_results
 
+    all_data_flattened = []
+    for i, chunk in enumerate(chunks):
+        log_msg(f"Processing chunk {i+1}/{len(chunks)}...")
+        chunk_df = yf.download(chunk, period="4mo", progress=False, threads=True, auto_adjust=adj_flag)
+        
+        # Create a reverse map for this chunk
+        chunk_orig_map = {orig: v for orig, v in resolved_map.items() if v in chunk}
+        
+        chunk_results = process_chunk_data(chunk_df, chunk_orig_map)
+        all_data_flattened.extend(chunk_results)
+        
+        # Immediate memory cleanup
+        del chunk_df
+        gc.collect()
+
+    # Step 3: Post-processing (CEF Divergence)
+    if mode == "cef" and benchmarks_data:
+        log_msg("Calculating CEF Divergences...")
+        for item in all_data_flattened:
+            relevant_etfs = SECTOR_ETFS.get(item["sector"], [])
+            used_etfs = [e for e in relevant_etfs if e in benchmarks_data]
+            if used_etfs:
+                avg_etf_dip = sum(benchmarks_data[e] for e in used_etfs) / len(used_etfs)
+                cef_dip = (item["_cef_h60"] - item["_cef_current"]) / item["_cef_h60"]
+                raw_div = (cef_dip - avg_etf_dip)
+                item["divergence"] = f"{raw_div*100:+.1f}%"
+                item["raw_divergence"] = raw_div
+                item["benchmark_str"] = f"vs {', '.join(used_etfs)}"
+            else:
+                item["divergence"] = "-"
+                item["raw_divergence"] = 0
+            
+            # Clean up temporary CEF helper fields
+            item.pop("_cef_h60", None)
+            item.pop("_cef_current", None)
+
+    results["all_data"] = all_data_flattened
     log_msg(f"Scan Complete. Found {len(results['all_data'])} items.")
     return results
 
