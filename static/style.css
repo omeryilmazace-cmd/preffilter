@@ -531,21 +531,6 @@ tr:hover td {
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
 }
 
-/* Stats Compact Grid */
-.stats-compact-grid .stat-item {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-glass);
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.stats-compact-grid .stat-item b {
-    color: var(--text-muted);
-}
-
 .terminal-container {
     margin-top: 1rem;
     border-top: 1px solid var(--border-glass);

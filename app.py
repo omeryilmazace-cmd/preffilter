@@ -126,30 +126,6 @@ def calc_stats():
     stats = bot.calculate_historical_index(target, peers)
     return jsonify(stats)
 
-@app.route('/api/historical-fv/start', methods=['POST'])
-def start_hist_fv():
-    if bot.hist_fv_status != "scanning":
-        threading.Thread(target=bot.run_historical_fv_scan).start()
-    return jsonify({"message": "Scan started"})
-
-@app.route('/api/historical-fv/status')
-def get_hist_fv_status():
-    return jsonify({
-        "status": bot.hist_fv_status,
-        "logs": bot.hist_fv_logs
-    })
-
-@app.route('/api/historical-fv/results')
-def get_hist_fv_results():
-    try:
-        if os.path.exists("historical_fv_results.json"):
-            with open("historical_fv_results.json", "r") as f:
-                import json
-                return jsonify(json.load(f))
-        return jsonify([])
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
 if __name__ == '__main__':
     # Start background scheduler
     t = threading.Thread(target=scheduled_scan_loop, daemon=True)
