@@ -7,6 +7,7 @@
     <title>Range Trader v4.0 - Professional Monitor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -963,7 +964,7 @@
                 }
                 const fmt = (v) => v ? v.toFixed(3) : '-';
                 const html = `
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.9rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.9rem; margin-bottom: 1.5rem;">
                         <div style="color:var(--accent-primary); font-weight:bold;">Current Index:</div>
                         <div><b>${data.current}</b></div>
                         <div style="opacity:0.7">7 Days:</div>
@@ -973,15 +974,98 @@
                         <div style="opacity:0.7">60 Days:</div>
                         <div>L: ${fmt(data.l60)} - H: ${fmt(data.h60)}</div>
                     </div>
+                    <div style="height: 300px; width: 100%; position: relative;">
+                        <canvas id="fvIndexChart"></canvas>
+                    </div>
                 `;
                 document.getElementById('calcHistoryContent').innerHTML = html;
+
+                // Render Chart
+                if (data.series && data.series.labels) {
+                    renderFVChart(data.series.labels, data.series.values);
+                }
 
                 // Also update comparison for target
                 updateComparison(targetObj, 'target');
             } catch (e) {
-                console.error(e);
-                document.getElementById('calcHistoryContent').innerHTML = '<span style="color:var(--danger)">Failed to load data.</span>';
+                console.error("fetchHistoricalStats error:", e);
+                document.getElementById('calcHistoryContent').innerHTML = `<span style="color:var(--danger)">Network error fetching history</span>`;
             }
+        }
+
+        let fvChart = null;
+        function renderFVChart(labels, values) {
+            const ctx = document.getElementById('fvIndexChart').getContext('2d');
+
+            if (fvChart) {
+                fvChart.destroy();
+            }
+
+            const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+            gradient.addColorStop(0, 'rgba(99, 102, 241, 0.3)');
+            gradient.addColorStop(1, 'rgba(99, 102, 241, 0)');
+
+            fvChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Fair Value Index Ratio',
+                        data: values,
+                        borderColor: '#818cf8',
+                        borderWidth: 2,
+                        fill: true,
+                        backgroundColor: gradient,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 6,
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#818cf8',
+                        pointHoverBorderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: '#1e293b',
+                            titleColor: '#94a3b8',
+                            bodyColor: '#f8fafc',
+                            borderColor: 'rgba(255,255,255,0.1)',
+                            borderWidth: 1,
+                            padding: 12,
+                            displayColors: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: {
+                                color: '#64748b',
+                                font: { size: 10 },
+                                maxRotation: 0,
+                                autoSkip: true,
+                                maxTicksLimit: 8
+                            }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: {
+                                color: '#64748b',
+                                font: { size: 10 }
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'nearest'
+                    }
+                }
+            });
         }
 
         function getTVTicker(ticker) {

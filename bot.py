@@ -389,9 +389,8 @@ def calculate_historical_index(target_ticker, peer_tickers):
     all_tickers = list(set([target_y] + peers_y))
 
     try:
-        # Fetch 6 months of data to ensure enough overlap for 90d window
-        # Use group_by='ticker' to get a consistent MultiIndex even for single symbol
-        df = yf.download(all_tickers, period="6mo", progress=False, threads=True, group_by='ticker')
+        # Fetch 2 years of data for extensive historical context
+        df = yf.download(all_tickers, period="2y", progress=False, threads=True, group_by='ticker')
         
         if df.empty:
              return {"error": "No data found for these symbols"}
@@ -405,7 +404,6 @@ def calculate_historical_index(target_ticker, peer_tickers):
                     if not s.empty:
                         closes[t] = s
             except:
-                # Fallback for single-symbol or different DF structures
                 if 'Close' in df.columns:
                     closes = df['Close']
                     break
@@ -428,8 +426,8 @@ def calculate_historical_index(target_ticker, peer_tickers):
 
         current_val = float(index_series.iloc[-1])
         
+        # stats calculation (keep existing windows)
         def get_stats(days):
-            # Calendar days to trading days approximation
             n = int(days * 0.72) 
             subset = index_series.tail(n)
             if subset.empty: return None, None
@@ -440,12 +438,21 @@ def calculate_historical_index(target_ticker, peer_tickers):
         l60, h60 = get_stats(60)
         l90, h90 = get_stats(90)
 
+        # Prepare series for Chart.js
+        # We'll send labels (dates) and values
+        labels = [d.strftime('%Y-%m-%d') for d in index_series.index]
+        values = [round(float(v), 3) for v in index_series.values]
+
         return {
             "current": round(current_val, 3),
             "l7": l7, "h7": h7,
             "l30": l30, "h30": h30,
             "l60": l60, "h60": h60,
-            "l90": l90, "h90": h90
+            "l90": l90, "h90": h90,
+            "series": {
+                "labels": labels,
+                "values": values
+            }
         }
 
     except Exception as e:
